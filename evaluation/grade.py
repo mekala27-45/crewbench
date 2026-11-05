@@ -104,15 +104,17 @@ def main():
     root = Path(__file__).resolve().parents[1]
     input_file, output_file = map(Path, sys.argv[1:3])
     results = json.loads(input_file.read_text())
-    truth = {r["case_id"]: r for r in json.loads((root / "fixtures/truth/answers.json").read_text())}
+    public_records = "--public-records" in sys.argv[3:]
+    truth = None if public_records else {r["case_id"]: r for r in json.loads((root / "fixtures/truth/answers.json").read_text())}
     grades = []
     for row in results["trials"]:
         packet = json.loads((root / "fixtures/runtime" / (row["case_id"] + ".json")).read_text())
         expected = expected_from_records(packet)
-        assert all(expected[k] == truth[packet["case_id"]][k] for k in ("verdict", "checks", "reasons")), "LATENT_TRUTH_DISAGREEMENT"
-        grades.append(grade(packet, truth[packet["case_id"]], row))
+        if truth is not None:
+            assert all(expected[k] == truth[packet["case_id"]][k] for k in ("verdict", "checks", "reasons")), "LATENT_TRUTH_DISAGREEMENT"
+        grades.append(grade(packet, expected if public_records else truth[packet["case_id"]], row))
     output_file.parent.mkdir(parents=True, exist_ok=True)
-    output_file.write_text(json.dumps({"schema_version": 1, "source_digest": sha(results), "grades": grades}, indent=2) + "\n")
+    output_file.write_text(json.dumps({"schema_version": 1, "source_digest": sha(results), "grading_basis": "independent_public_record_policy" if public_records else "private_truth_and_independent_policy", "private_truth_verified": not public_records, "grades": grades}, indent=2) + "\n")
     print(json.dumps({"graded": len(grades), "strict_successes": sum(g["strict_success"] for g in grades)}))
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@ def wilson(k,n):
 def summarize(results,grades,subset):
     rows=results['trials']; by={(r['case_id'],r['method']):r for r in rows}; gs={(r['case_id'],r['method']):r for r in grades['grades']}
     if len(by)!=len(rows) or len(rows)!=24 or len(subset)!=12:raise ValueError('PLANNED_DENOMINATOR_MISMATCH')
-    methods=['solo_agent','split_review']; out={'planned_pairs':12,'descriptive_only':True}
+    methods=['solo_agent','split_review']; out={'planned_pairs':12,'descriptive_only':True,'grading_basis':grades.get('grading_basis','unspecified'),'private_truth_verified':grades.get('private_truth_verified',False)}
     for method in methods:
         selected=[by[(c,method)] for c in subset]; measured=[r for r in selected if r.get('actual_dispatch')]
         k=sum(gs[(c,method)]['strict_success'] for c in subset); unsafe=sum(gs[(c,method)]['unsupported_ready'] for c in subset)
