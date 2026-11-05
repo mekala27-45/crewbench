@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "execution_mode": "environment_probe",
+  "source_commit": null,
+  "started_at": "2026-11-05T19:30:46.554Z",
+  "node": "v24.19.0",
+  "os": "win32",
+  "arch": "x64",
+  "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+  "memory_bytes": 33737986048,
+  "python": {
+    "status": 0,
+    "version": "Python 3.14.8",
+    "error": null
+  },
+  "packages": [
+    {
+      "name": "eve",
+      "candidate": "1.0.0-rc.5",
+      "status": "unavailable",
+      "code": "ENOTFOUND",
+      "url": "https://registry.npmjs.org/eve/1.0.0-rc.5"
+    },
+    {
+      "name": "ai",
+      "candidate": "7.0.163",
+      "status": "unavailable",
+      "code": "ENOTFOUND",
+      "url": "https://registry.npmjs.org/ai/7.0.163"
+    },
+    {
+      "name": "@ai-sdk/openai-compatible",
+      "candidate": "3.0.85",
+      "status": "unavailable",
+      "code": "ENOTFOUND",
+      "url": "https://registry.npmjs.org/%40ai-sdk%2Fopenai-compatible/3.0.85"
+    },
+    {
+      "name": "pg",
+      "candidate": "8.23.1",
+      "status": "unavailable",
+      "code": "ENOTFOUND",
+      "url": "https://registry.npmjs.org/pg/8.23.1"
+    },
+    {
+      "name": "zod",
+      "candidate": "4.6.7",
+      "status": "unavailable",
+      "code": "ENOTFOUND",
+      "url": "https://registry.npmjs.org/zod/4.6.7"
+    },
+    {
+      "name": "vite",
+      "candidate": "8.3.6",
+      "status": "unavailable",
+      "code": "ENOTFOUND",
+      "url": "https://registry.npmjs.org/vite/8.3.6"
+    },
+    {
+      "name": "typescript",
+      "candidate": "7.0.2",
+      "status": "unavailable",
+      "code": "ENOTFOUND",
+      "url": "https://registry.npmjs.org/typescript/7.0.2"
+    },
+    {
+      "name": "@playwright/test",
+      "candidate": "1.64.1",
+      "status": "unavailable",
+      "code": "ENOTFOUND",
+      "url": "https://registry.npmjs.org/%40playwright%2Ftest/1.64.1"
+    },
+    {
+      "name": "@fontsource/faustina",
+      "candidate": "5.3.0",
+      "status": "unavailable",
+      "code": "ENOTFOUND",
+      "url": "https://registry.npmjs.org/%40fontsource%2Ffaustina/5.3.0"
+    },
+    {
+      "name": "@fontsource/sarabun",
+      "candidate": "5.3.0",
+      "status": "unavailable",
+      "code": "ENOTFOUND",
+      "url": "https://registry.npmjs.org/%40fontsource%2Fsarabun/5.3.0"
+    },
+    {
+      "name": "@fontsource/sono",
+      "candidate": "5.3.0",
+      "status": "unavailable",
+      "code": "ENOTFOUND",
+      "url": "https://registry.npmjs.org/%40fontsource%2Fsono/5.3.0"
+    }
+  ],
+  "model": {
+    "status": "startup_failed",
+    "code": "EACCES",
+    "actual_dispatch": false
+  },
+  "ended_at": "2026-11-05T19:30:46.638Z"
+}

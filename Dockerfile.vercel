@@ -1,0 +1,7 @@
+FROM node:24.19.0-bookworm-slim
+WORKDIR /app
+COPY package.json ./
+COPY src ./src
+ENV NODE_ENV=production HOST=0.0.0.0 PORT=80
+EXPOSE 80
+CMD ["node", "src/api/server.ts"]
