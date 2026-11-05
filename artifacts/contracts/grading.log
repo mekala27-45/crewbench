@@ -1,0 +1,20 @@
+test_clean_and_duplicate_pass (test_grader.GraderCases.test_clean_and_duplicate_pass) ... ok
+test_conflict_has_no_implicit_order_precedence (test_grader.GraderCases.test_conflict_has_no_implicit_order_precedence) ... ok
+test_empty_packet_refuses_ready (test_grader.GraderCases.test_empty_packet_refuses_ready) ... ok
+test_foreign_role_and_case_reference_are_refused (test_grader.GraderCases.test_foreign_role_and_case_reference_are_refused) ... ok
+test_full_grade_and_tampered_reference (test_grader.GraderCases.test_full_grade_and_tampered_reference) ... ok
+test_independent_failure_overrides_conflict (test_grader.GraderCases.test_independent_failure_overrides_conflict) ... ok
+test_model_shaped_fixture_is_not_actual_execution (test_grader.GraderCases.test_model_shaped_fixture_is_not_actual_execution) ... ok
+test_no_assessment_is_retained_as_failure (test_grader.GraderCases.test_no_assessment_is_retained_as_failure) ... ok
+test_old_pass_and_notes_cannot_fill_current_absence (test_grader.GraderCases.test_old_pass_and_notes_cannot_fill_current_absence) ... ok
+test_public_record_cli_is_explicit_and_never_claims_private_key_agreement (test_grader.GraderCases.test_public_record_cli_is_explicit_and_never_claims_private_key_agreement) ... ok
+test_all_fail_is_zero_success_not_missing (test_statistics.StatisticsTests.test_all_fail_is_zero_success_not_missing) ... ok
+test_discordant_exact_binomial (test_statistics.StatisticsTests.test_discordant_exact_binomial) ... ok
+test_empty_refused (test_statistics.StatisticsTests.test_empty_refused) ... ok
+test_missing_dispatch_disables_test (test_statistics.StatisticsTests.test_missing_dispatch_disables_test) ... ok
+test_role_usage_does_not_replace_unknown_with_zero (test_statistics.StatisticsTests.test_role_usage_does_not_replace_unknown_with_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.149s
+
+OK
