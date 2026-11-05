@@ -31,6 +31,7 @@ jobs:
         with:
           node-version: 24.19.0
       - run: npm ci
+      - run: node scripts/check-palette.mjs
       - run: node scripts/migrate.ts
       - name: Start API and independent client
         run: |
@@ -54,6 +55,8 @@ jobs:
           mkdir -p artifacts/api artifacts/browser
           python3 -c 'import json,os,pathlib; pathlib.Path("artifacts/browser/workflow.json").write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"mode":"browser_verification"}))'
           git add artifacts/api artifacts/browser
+          node scripts/seal-evidence.ts web
+          git add artifacts/browser/manifest.json
           git commit -m 'test: preserve independent API and responsive browser evidence'
           gh auth setup-git
           git push origin HEAD

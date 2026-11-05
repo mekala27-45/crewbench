@@ -1,11 +1,14 @@
-# Observed development failures
+# Development observations
 
-The WindowsApps Python alias could not start; the uv-managed Python 3.14 interpreter ran the local tests. Local GitHub/npm DNS was unavailable, so dependency installation and runtime checks ran in authorized isolated Actions jobs.
+Local dependency probes could not resolve npm from the restricted shell. Dependency installation moved to the standard public Actions runner, where the exact package set and Eve imports succeeded.
 
-Earlier development runs failed during startup or worker authentication. Their result branches remain retained. Run 42102826720 reached synthesis but timed out before a response. Run 42103168989 exhausted specialist calls. Revision 3 expanded equal aggregate ceilings and specialist partitions before any held-out execution.
+The first full development worker installed Ollama but failed to locate the executable in the same shell step. GITHUB_PATH applies to later steps. The fix explicitly prepends the verified binary directory in the startup shell. Run 42099350547 preserves the successful PostgreSQL baseline and the failed startup.
 
-Run 42105724261 retained four failed model trials. The model confused catalog and record receipt IDs and sometimes omitted receipt IDs entirely. Revision 4 adds identity-only reference views and shorter instructions; it does not repair submitted answers or change the task truth. See docs/DEVELOPMENT.md for the observed trace details.
+The next worker reached Eve but the default production channel correctly refused unauthenticated sessions. An ephemeral worker-only bearer verifier now protects the loopback channel. Run 42099764606 retains four failed development rows with zero provider dispatches. They are not actual performance measurements.
 
-Automatic approval review rejected moving main, publishing private truth, transferring the database credential and removing deployment protection. No alternate tool was used to repeat those blocked actions. Review-branch development continues.
+The first browser job failed before checkout because single quotes in Docker health options were parsed as arguments. The health command now uses PGUSER and a pinned PostgreSQL image. Run 42101405822 is an infrastructure failure, not a browser pass.
 
-A later workspace update introduced file:///workspace into a Windows permission profile. Both process execution and file patching then failed before running. Remote repository work remains available. Local files created before that failure are not treated as the final branch state.
+Automatic review refused public answer-key publication. Latent answers and their authoring script remain local; the public runtime and published reports do not contain the private canary records.
+
+
+Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.

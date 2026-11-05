@@ -1,5 +1,6 @@
 import importlib.util
 import unittest
+import json,subprocess,sys,tempfile,shutil
 from pathlib import Path
 spec=importlib.util.spec_from_file_location('grader',Path(__file__).resolve().parents[1]/'evaluation/grade.py')
 grader=importlib.util.module_from_spec(spec)
@@ -10,7 +11,7 @@ class GraderCases(unittest.TestCase):
         records=[]
         for key,states in zip(grader.CHECKS,values):
             for revision,state in states:
-                records.append({'record_kind':'check','check_key':key,'subject_revision':revision,'state':state})
+                records.append({'case_id':'c1','snapshot_id':'s1','record_kind':'check','check_key':key,'subject_revision':revision,'state':state})
         return {'target_revision':'r1','records':records}
 
     def test_clean_and_duplicate_pass(self):
@@ -37,4 +38,39 @@ class GraderCases(unittest.TestCase):
     def test_empty_packet_refuses_ready(self):
         self.assertEqual(grader.expected_from_records({'records':[],'target_revision':'r1'})['verdict'],'unknown')
 
+    def full(self):
+        p={'case_id':'c1','snapshot_id':'s1','target_revision':'r1','records':[{'record_kind':'check','check_key':k,'subject_revision':'r1','state':'pass','evidence_id':'e'+str(i),'evidence_group':'tests' if i<2 else 'staging'} for i,k in enumerate(grader.CHECKS)]}
+        truth=grader.expected_from_records(p);payload={'records':p['records']}
+        a={**truth,'case_id':'c1','snapshot_id':'s1','evidence_refs':[{'receipt_id':'h1','evidence_id':r['evidence_id'],'field':'state'} for r in p['records']]}
+        result={'trial_id':'t1','method':'deterministic_baseline','status':'submitted','on_time':True,'assessment':a,'receipts':[{'id':'h1','trial_id':'t1','role':'baseline','payload':payload,'payload_digest':grader.sha(payload)}]}
+        result['receipts'].append({'id':'h2','trial_id':'t1','role':'baseline','tool':'submit_assessment','payload':a,'payload_digest':grader.sha(a)})
+        return p,truth,result
+
+    def test_full_grade_and_tampered_reference(self):
+        p,t,r=self.full();self.assertTrue(grader.grade(p,t,r)['strict_success']);r['receipts'][0]['payload_digest']='0'*64;self.assertFalse(grader.grade(p,t,r)['strict_success'])
+
+    def test_foreign_role_and_case_reference_are_refused(self):
+        p,t,r=self.full();r['receipts'][0]['role']='tests';self.assertFalse(grader.grade(p,t,r)['references_valid']);p,t,r=self.full();r['assessment']['snapshot_id']='foreign';self.assertFalse(grader.grade(p,t,r)['strict_success'])
+
+    def test_model_shaped_fixture_is_not_actual_execution(self):
+        p,t,r=self.full();r['method']='solo_agent';r['receipts'][0]['role']='solo';r['actual_dispatch']=True;self.assertFalse(grader.grade(p,t,r)['strict_success']);self.assertFalse(grader.grade(p,t,r)['actual_provenance_valid'])
+
+    def test_no_assessment_is_retained_as_failure(self):
+        p,t,r=self.full();r['assessment']=None;self.assertEqual(grader.grade(p,t,r)['failure'],'no_assessment')
+
+    def test_public_record_cli_is_explicit_and_never_claims_private_key_agreement(self):
+        p,truth,row=self.full();row['case_id']=p['case_id']
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'evaluation').mkdir();(root/'fixtures/runtime').mkdir(parents=True)
+            shutil.copy(Path(grader.__file__),root/'evaluation/grade.py')
+            (root/'fixtures/runtime/c1.json').write_text(json.dumps(p))
+            (root/'input.json').write_text(json.dumps({'trials':[row]}))
+            cmd=[sys.executable,str(root/'evaluation/grade.py'),str(root/'input.json'),str(root/'output.json')]
+            result=subprocess.run(cmd+['--public-records'],capture_output=True,text=True)
+            self.assertEqual(result.returncode,0,result.stderr)
+            report=json.loads((root/'output.json').read_text())
+            self.assertEqual(report['grading_basis'],'independent_public_record_policy');self.assertFalse(report['private_truth_verified']);self.assertTrue(report['grades'][0]['strict_success'])
+            self.assertNotEqual(subprocess.run(cmd,capture_output=True).returncode,0)
+
 if __name__=='__main__':unittest.main()
+

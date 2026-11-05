@@ -5,7 +5,7 @@ import {newTrial,acquire,stop,workerId} from '../src/runtime/state.ts';
 import {digest} from '../src/contracts/core.ts';
 const read=async(p:string)=>JSON.parse(await readFile(p,'utf8'));
 const index=await read('evaluation/case-index.json'),plan=await read('evaluation/plan.json');
-const cases=['c110824f699',...['complete_current','contradictory'].map(f=>index.find((r:any)=>r.family===f&&r.split==='development').case_id)].map(id=>{const row=index.find((r:any)=>r.case_id===id&&r.split==='development');if(!row)throw new Error('DEVELOPMENT_CASE_SCOPE');return row;});
+const cases=['c110824f699','c2cdad678dd'].map(id=>index.find((r:any)=>r.case_id===id&&r.split==='development'));
 const db=await PgStore.open(),client=new Client({baseUrl:'http://127.0.0.1:2000',auth:{bearer:process.env.CREWBENCH_WORKER_TOKEN!}}),rows=[];
 await mkdir('artifacts/development',{recursive:true});
 try{

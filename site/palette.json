@@ -1,0 +1,16 @@
+{
+  "light": {
+    "surface":"#F0F5F0","raised":"#FFFFFF","ink":"#20372B","ink2":"#486250","control":"#60786B",
+    "slots":["#2F6A52","#1F2161","#B545C4","#611F20","#A78135","#4635A7","#1F4561","#2A8478"],
+    "sequential":["#9FC1AA","#83A58E","#698973","#4F6F5A","#365541"],
+    "diverging":["#3C543C","#546E54","#6E896E","#89A489","#D4D4D4","#A792B1","#8C7895","#715E7A","#574560"],
+    "status":{"good":"#276840","warning":"#855000","serious":"#A84420","critical":"#92234C"}
+  },
+  "dark": {
+    "surface":"#203128","raised":"#2D4538","ink":"#F0F7ED","ink2":"#C1D1BF","control":"#A1B89D",
+    "slots":["#A4D6B8","#648ECE","#CE9764","#C8AAE4","#CDEDEF","#CEBE64","#CDCEEF","#D6D987"],
+    "sequential":["#5A7B65","#74967F","#8FB19A","#ABCEB6","#C8ECD3"],
+    "diverging":["#D4F1D4","#B4D0B4","#95B195","#779277","#4A4A4A","#95809E","#B49FBE","#D4BEDE","#F5DEFF"],
+    "status":{"good":"#99D8B0","warning":"#EAC875","serious":"#FEB69A","critical":"#F0A7C5"}
+  }
+}

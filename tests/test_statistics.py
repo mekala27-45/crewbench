@@ -34,4 +34,9 @@ class StatisticsTests(unittest.TestCase):
         cases,rows,grades=self.data()
         for r in rows:r.update(status='unexecuted',actual_dispatch=False);r.pop('state')
         s=self.summary(cases,rows,grades);self.assertIsNone(s['solo_agent']['model_requests']);self.assertIsNone(s['solo_agent']['output_tokens'])
+    def test_role_usage_does_not_replace_unknown_with_zero(self):
+        cases,rows,grades=self.data()
+        rows[1]['state']={'attempts':[{'role':'tests','status':'response_recorded','input_tokens':10,'output_tokens':3,'elapsed_ms':25},{'role':'tests','status':'timed_out','input_tokens':None,'output_tokens':None,'elapsed_ms':80}],'reservations':[{'role':'tests','input_bytes':100,'output_reserved_tokens':512}],'tool_requests':[{'role':'tests'}]}
+        s=self.summary(cases,rows,grades)['split_review']['roles']
+        self.assertEqual(s['tests']['model_requests'],2);self.assertIsNone(s['tests']['output_tokens']);self.assertEqual(s['tests']['known_output_tokens'],3);self.assertEqual(s['tests']['output_tokens_reserved'],512);self.assertEqual(s['tests']['usage_missing_requests'],1);self.assertEqual(s['tests']['provider_elapsed_known_ms'],105);self.assertIsNone(s['synthesis']['input_tokens'])
 if __name__=='__main__':unittest.main()

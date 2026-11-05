@@ -1,7 +1,7 @@
-# Do not resend an uncertain dispatch
+# Stop uncertain dispatch instead of guessing
 
-Status: accepted for the current development plan; held-out freeze pending.
+Status: accepted for development.
 
-A committed intent followed by worker death cannot prove the provider did no work. After lease turnover, mark it indeterminate and retain the reservation. The strengthened fault test kills a real child process after intent and verifies no second dispatch through fresh readback.
+A transaction can reserve resources and write intent but cannot atomically commit a remote inference. On recovery without a durable response, mark indeterminate and retain the reservation. Do not refund or redispatch. Evidence: src/runtime/state.ts and the uncertain_dispatch overlay.
 
-Evidence: scripts/fault-worker.ts; scripts/recovery.ts; recovery run 42105724261.
+Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.

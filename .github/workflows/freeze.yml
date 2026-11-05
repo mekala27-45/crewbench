@@ -1,0 +1,46 @@
+name: Verify and freeze requested inputs
+on:
+  push:
+    branches: [main]
+    paths: [evaluation/freeze-request.json]
+permissions:
+  contents: write
+jobs:
+  freeze:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      SOURCE_COMMIT: ${{ github.sha }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.19.0
+      - run: npm ci
+      - run: npm test
+      - run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Import retained development and calibration
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/import-freeze-inputs.mjs
+          node scripts/freeze.ts
+          node scripts/freeze.ts --verify
+          node scripts/make-run-request.ts
+      - name: Preserve reviewed freeze without inference
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p artifacts/freeze
+          python3 -c 'import os,json,pathlib; pathlib.Path("artifacts/freeze/workflow.json").write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"freeze_present":pathlib.Path("evaluation/freeze.json").exists()}))'
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/freeze-${GITHUB_RUN_ID}
+          git add artifacts/freeze
+          for item in artifacts/development/accepted-development.json artifacts/probes/payload-fit.json artifacts/probes/accepted-native.json evaluation/freeze.json evaluation/run-request.json; do if [ -f "$item" ]; then git add "$item"; fi; done
+          git commit -m 'test: preserve verified freeze inputs and reviewable evaluation request'
+          gh auth setup-git
+          git push origin HEAD

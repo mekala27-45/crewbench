@@ -6,8 +6,8 @@ class Integrity(unittest.TestCase):
   records=[dict(evidence_id='e'+str(i),record_kind='check',check_key=k,subject_revision='r',state='pass',case_id='c',snapshot_id='s') for i,k in enumerate(g.CHECKS)]
   p=dict(case_id='c',snapshot_id='s',target_revision='r',records=records);truth=g.expected_from_records(p)
   a=dict(case_id='c',snapshot_id='s',**truth,evidence_refs=[dict(receipt_id='h1',evidence_id=r['evidence_id'],field='state') for r in records])
-  def receipt(i,tool,payload,role='solo'):return dict(id=i,trial_id='t',role=role,tool=tool,payload=payload,payload_digest=g.sha(payload))
-  row=dict(trial_id='t',method='solo_agent',status='submitted',on_time=True,assessment=a,receipts=[receipt('h1','read_evidence',dict(records=records)),receipt('h2','submit_assessment',a)])
+  def receipt(i,tool,payload,role='baseline'):return dict(id=i,trial_id='t',role=role,tool=tool,payload=payload,payload_digest=g.sha(payload))
+  row=dict(trial_id='t',method='deterministic_baseline',status='submitted',on_time=True,assessment=a,receipts=[receipt('h1','read_evidence',dict(records=records)),receipt('h2','submit_assessment',a)])
   return p,truth,row
  def test_acceptance_bound(self):
   p,t,r=self.fixture();self.assertTrue(g.grade(p,t,r)['strict_success']);r['receipts'].pop();self.assertFalse(g.grade(p,t,r)['strict_success'])

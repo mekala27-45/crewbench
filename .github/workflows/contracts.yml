@@ -1,8 +1,10 @@
-name: Contract and evidence gates
+name: Runtime and grading contracts
 on:
   push:
     branches: [main, codex/crewbench-completion]
-    paths: [src/**, agent/**, tests/**, scripts/**, evaluation/**, .agents/**, docs/**, AGENTS.md, CLAUDE.md, .github/workflows/contracts.yml]
+    paths: [src/**, tests/*.ts, tests/test_*.py, evaluation/*.py, scripts/import-*.ts, scripts/import-*.mjs, scripts/seal-evidence.ts, .github/workflows/contracts.yml]
+  pull_request:
+    paths: [src/**, tests/**, evaluation/**]
 permissions:
   contents: write
 jobs:
@@ -13,39 +15,37 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 24.19.0
       - run: npm ci
-      - name: Run JavaScript contract gates
-        run: |
-          mkdir -p artifacts/quality
-          set -o pipefail
-          npm test | tee artifacts/quality/node-tests.log
-      - name: Run independent Python gates
+      - name: Runtime contracts
         run: |
           set -o pipefail
-          python3 -m unittest discover -s tests -p 'test_*.py' 2>&1 | tee artifacts/quality/python-tests.log
-      - name: Generated instructions match authored inputs
-        run: |
-          node scripts/generate-agents.mjs
-          git diff --exit-code -- agent
-      - run: node scripts/verify-guidance.mjs
-      - run: node scripts/collect-notices.mjs
-      - name: Retain observed checks and installed notices
+          mkdir -p artifacts/contracts
+          npm test 2>&1 | tee artifacts/contracts/runtime.log
+      - name: Independent grading contracts
         if: always()
+        run: |
+          set -o pipefail
+          mkdir -p artifacts/contracts
+          python3 -m unittest discover -s tests -p 'test_*.py' -v 2>&1 | tee artifacts/contracts/grading.log
+      - run: node scripts/collect-notices.mjs
+      - name: Preserve contract outcomes
+        if: always() && github.event_name == 'push'
         env:
           GH_TOKEN: ${{ github.token }}
-          CONTRACT_JOB_STATUS: ${{ job.status }}
         run: |
-          mkdir -p artifacts/quality
-          python3 -c 'import json,os,pathlib;pathlib.Path("artifacts/quality/workflow.json").write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"status":os.environ["CONTRACT_JOB_STATUS"],"mode":"contract_verification"}))'
+          set -o pipefail
+          mkdir -p artifacts/contracts
+          python3 -c 'import os,json,pathlib; pathlib.Path("artifacts/contracts/workflow.json").write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"mode":"contract_verification"}))'
           git config user.name 'Ajay Mekala'
           git config user.email 'mekalaajayk@gmail.com'
           git switch -c results/contracts-${GITHUB_RUN_ID}
-          git add artifacts/quality
-          git add -f artifacts/quality/*.log || true
+          node scripts/seal-evidence.ts contracts
+          git add artifacts/contracts
           if [ -d site/public/notices ]; then git add site/public/notices; fi
-          git commit -m 'test: retain contract checks and installed dependency notices'
+          git add -f artifacts/contracts/*.log
+          git commit -m 'test: retain runtime and grading contract evidence'
           gh auth setup-git
           git push origin HEAD

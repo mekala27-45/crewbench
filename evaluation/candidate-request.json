@@ -1,0 +1,6 @@
+{
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "reason": "The generic 4B tag resolved to a thinking-only model; probe the explicit instruction-only artifact within the existing CPU and response budget.",
+  "previous_probe": "42108725636",
+  "registered_at": "2026-11-05T21:06:37.908Z"
+}

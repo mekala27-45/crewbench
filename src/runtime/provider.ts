@@ -42,7 +42,7 @@ export async function measuredFetch(role:Role,sessionId:string,_url:any,init:any
    if(m.role==='tool'){const call=input.messages.flatMap((x:any)=>x.tool_calls||[]).find((t:any)=>t.id===m.tool_call_id);if(call)r.tool_name=call.function.name;}
    return r;
   });
-  const body={model:'qwen3:1.7b',messages,tools:input.tools,stream:false,think:false,options:{temperature:0,seed:25,num_ctx:8192,num_predict:state.budget.output_per_request_tokens,num_gpu:0}};
+  const body={model:'qwen3:4b-instruct-2507-q4_K_M',messages,tools:input.tools,stream:false,think:false,options:{temperature:0,seed:25,num_ctx:8192,num_predict:state.budget.output_per_request_tokens,num_gpu:0}};
   const serialized=serializeRequest(body);const op='m_'+randomUUID().replaceAll('-','');
   if(serialized.includes('PRIVATE_TRUTH_'))throw new Refusal('TRUTH_CANARY');
   await store.change(trialId,(s,now)=>reserve(s,now,lease,role,op,Buffer.byteLength(serialized),s.budget.output_per_request_tokens,bytesDigest(serialized),offered));
@@ -67,7 +67,7 @@ export async function measuredFetch(role:Role,sessionId:string,_url:any,init:any
 }
 function openaiResponse(input:any,response:any,control:boolean){
  const calls=(response.message?.tool_calls||[]).map((t:any,i:number)=>({id:t.id||'call_'+i,type:'function',function:{name:t.function.name,arguments:JSON.stringify(t.function.arguments)}}));
- const common={id:'cb_'+randomUUID(),created:Math.floor(Date.now()/1000),model:control?'crewbench-control-ack':'qwen3:1.7b'};
+ const common={id:'cb_'+randomUUID(),created:Math.floor(Date.now()/1000),model:control?'crewbench-control-ack':'qwen3:4b-instruct-2507-q4_K_M'};
  const usage={prompt_tokens:response.prompt_eval_count??0,completion_tokens:response.eval_count??0,total_tokens:(response.prompt_eval_count??0)+(response.eval_count??0)};
  if(!input.stream)return Response.json({...common,object:'chat.completion',choices:[{index:0,message:{role:'assistant',content:response.message?.content||'',...(calls.length?{tool_calls:calls}:{})},finish_reason:calls.length?'tool_calls':'stop'}],usage});
  const chunk=(value:any)=>'data: '+JSON.stringify({...common,object:'chat.completion.chunk',...value})+'\n\n';

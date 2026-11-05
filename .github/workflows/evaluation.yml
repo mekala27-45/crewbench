@@ -1,17 +1,17 @@
 name: Frozen paired evaluation
 on:
   push:
-    branches: [main, codex/crewbench-completion]
-    paths: [evaluation/requests/core.json]
+    branches: [main]
+    paths: [evaluation/run-request.json]
 permissions:
   contents: write
 concurrency:
-  group: crewbench-core-evaluation
+  group: crewbench-frozen-evaluation
   cancel-in-progress: false
 jobs:
-  evaluate:
+  paired:
     runs-on: ubuntu-24.04
-    timeout-minutes: 150
+    timeout-minutes: 180
     services:
       postgres:
         image: postgres:18@sha256:bd5dfa494a5a259704365813dbfa5fa6b3e69be7348d43b547f540c730478583
@@ -24,73 +24,70 @@ jobs:
     env:
       DATABASE_URL: postgresql://postgres:crewbench_test@127.0.0.1:5432/crewbench
       EVE_TELEMETRY_DISABLED: '1'
+      EVE_SCHEDULES_DISABLED: '1'
       CREWBENCH_WORKER_ID: evaluation-${{ github.run_id }}
       OLLAMA_HOST: 127.0.0.1:11434
       OLLAMA_NUM_PARALLEL: '1'
       OLLAMA_MAX_LOADED_MODELS: '1'
       CUDA_VISIBLE_DEVICES: '-1'
+      MODEL_DIGEST: 0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0
+      SOURCE_COMMIT: ${{ github.sha }}
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          fetch-depth: 0
           persist-credentials: false
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 24.19.0
-      - name: Validate committed bounded request
-        id: request
-        run: node scripts/check-request.ts
-      - name: Select the frozen source and preserve the startup inventory
-        env:
-          FROZEN_SOURCE: ${{ steps.request.outputs.source_commit }}
-        run: |
-          git checkout --detach "$FROZEN_SOURCE"
-          export SOURCE_COMMIT="$FROZEN_SOURCE"
-          echo "SOURCE_COMMIT=$FROZEN_SOURCE" >> "$GITHUB_ENV"
-          node scripts/freeze.ts --verify
-          node scripts/initialize-evaluation.ts
+      - name: Preserve every planned row before dependency or database startup
+        run: node scripts/register-fallback.ts
       - run: npm ci
       - run: npm test
       - run: python3 -m unittest discover -s tests -p 'test_*.py'
-      - name: Initialize durable inventory
-        run: |
-          node scripts/migrate.ts
-          node scripts/run-evaluation.ts --initialize
-      - name: Compile isolated worker
+      - run: node scripts/freeze.ts --verify
+      - run: node scripts/migrate.ts
+      - name: Register all twenty-four planned rows before inference
+        run: node scripts/run-evaluation.ts --initialize
+      - name: Create ephemeral worker credential
         run: |
           token=$(node -e 'console.log(require("crypto").randomBytes(32).toString("base64url"))')
           echo "::add-mask::$token"
           echo "CREWBENCH_WORKER_TOKEN=$token" >> "$GITHUB_ENV"
-          npx eve build --skip-sandbox-prewarm > /tmp/eve-build.log 2>&1
-      - name: Start the pinned CPU model
+      - name: Compile fixed workflow
+        run: npx eve build --skip-sandbox-prewarm > /tmp/eve-build.log 2>&1
+      - name: Start verified CPU provider
         run: |
           python3 scripts/install-ollama.py
           export PATH="$RUNNER_TEMP/crewbench-ollama/bin:$PATH"
           ollama serve > /tmp/ollama.log 2>&1 &
           for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:11434/api/version && break; sleep 1; done
-          ollama pull qwen3:1.7b
+          ollama pull qwen3:4b-instruct-2507-q4_K_M
           node scripts/probe-model.mjs
-          cp artifacts/probes/model-native.json artifacts/actual/model-probe.json
-      - name: Execute the frozen paired schedule
+      - name: Start worker without corpus, grader or operator guidance
         run: |
-          npx eve start --host 127.0.0.1 --port 2000 --no-schedules > /tmp/eve-runtime.log 2>&1 &
+          worker_dir="$RUNNER_TEMP/crewbench-worker"
+          mkdir -p "$worker_dir"
+          cp -R .output agent src node_modules package.json "$worker_dir/"
+          (cd "$worker_dir" && HOST=127.0.0.1 PORT=2000 node .output/server/index.mjs > /tmp/eve-runtime.log 2>&1) &
           for attempt in $(seq 1 60); do curl --fail --silent http://127.0.0.1:2000/health && break; sleep 1; done
-          node scripts/run-evaluation.ts
-      - name: Finalize all planned outcomes
-        if: always() && steps.request.outcome == 'success'
-        run: node scripts/run-evaluation.ts --finalize
-      - name: Publish only validated evidence on a results branch
-        if: always() && steps.request.outcome == 'success'
+      - name: Attempt every registered pair once
+        run: node scripts/run-evaluation.ts
+      - name: Finalize rows and preserve every outcome
+        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
-          EVALUATION_JOB_STATUS: ${{ job.status }}
         run: |
-          node scripts/record-evaluation-workflow.ts
-          node scripts/publish-evidence.ts
+          node scripts/run-evaluation.ts --finalize || true
+          mkdir -p artifacts/actual
+          for item in /tmp/eve-build.log /tmp/eve-runtime.log; do if [ -f "$item" ]; then cp "$item" artifacts/actual/; fi; done
+          python3 -c 'import json,os,pathlib; pathlib.Path("artifacts/actual/workflow.json").write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"mode":"actual_model","retained_failed_runs":True}))'
           git config user.name 'Ajay Mekala'
           git config user.email 'mekalaajayk@gmail.com'
-          git switch -c results/core-${GITHUB_RUN_ID}
-          git add artifacts/actual
-          git commit -m 'chore: retain every frozen paired evaluation outcome'
+          git switch -c results/evaluation-${GITHUB_RUN_ID}
+          git add artifacts/actual artifacts/probes
+          node scripts/seal-evidence.ts evaluation
+          git add artifacts/actual/manifest.json
+          git add -f artifacts/actual/*.log || true
+          git commit -m 'test: retain every planned paired model evaluation outcome'
           gh auth setup-git
           git push origin HEAD

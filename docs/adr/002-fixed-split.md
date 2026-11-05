@@ -1,7 +1,7 @@
-# Fix the specialist graph before evaluation
+# Use a fixed split graph
 
-Status: accepted for the current development plan; held-out freeze pending.
+Status: accepted for development.
 
-Use tests and staging specialists followed by synthesis. The root dispatch is code, and the evaluated roles cannot delegate. Fixed partitions make reservations inspectable. Different prompts and decomposition remain confounds, so do not attribute an observed difference solely to agent count.
+Tests and staging have disjoint local evidence; synthesis receives bounded child assertions and canonical receipts. Code schedules the graph. A scripted root dispatch is orchestration, not an evaluated model. All three evaluated split contexts must show actual provider dispatch. Evidence: agent/tools/run_trial.ts and installed Eve 1.0.0-rc.5 workflow documentation in results/bootstrap-42095426722.
 
-Evidence: agent/tools/run_trial.ts; evaluation/plan.json.
+Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.

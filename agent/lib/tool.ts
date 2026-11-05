@@ -1,4 +1,3 @@
-import {modelReceipt} from './model-receipt.ts';
 import {defineTool} from 'eve/tools';
 import {PgStore} from '../../src/runtime/store.ts';
 import {executeTool} from '../../src/runtime/tools.ts';
@@ -11,7 +10,9 @@ export function boundTool(role:Role,name:string,inputSchema:any){return defineTo
   const found=await store.pool.query(`SELECT t.state,c.packet FROM ${store.schema}.trials t JOIN ${store.schema}.roles r ON r.trial_id=t.id JOIN ${store.schema}.cases c ON c.id=t.case_id WHERE r.role=$1 AND r.state->>'session_id'=$2`,[role,ctx.session.id]);
   if(found.rowCount!==1)throw new Refusal('SESSION_SCOPE');const {state,packet}=found.rows[0];
   const receipt=await store.change(state.id,(s,now)=>{const bound:any=s.roles[role];const requestDigest=digest({name,input});const emitted=s.tool_requests.find(r=>r.role===role&&(r.framework_call_id===ctx.callId||r.operation_id===ctx.callId))||s.tool_requests.find(r=>r.role===role&&r.status==='emitted'&&r.request_digest===requestDigest);if(!emitted)throw new Refusal('NO_PROVIDER_TOOL_EMISSION');emitted.framework_call_id=ctx.callId;return executeTool(s,now,{owner:bound.session_owner,generation:bound.session_generation},role,emitted.operation_id,name,input,packet);});
-  return modelReceipt(receipt);
- }catch(e:any){return {refused:true,code:e.code||'TOOL_FAILURE',correction:'The submission was not accepted. Review your existing tool results. Copy the exact reference attached to each cited record; one read receipt can contain multiple records. Check the schema and typed states, then make the one permitted corrected tool submission. Do not answer in prose.'};}finally{await store.close();}},
+  const p:any=receipt.payload;
+  const reference_options=name==='read_evidence'?p.records.filter((r:any)=>r.record_kind==='check').map((r:any)=>({receipt_id:receipt.id,evidence_id:r.evidence_id,field:'state'})):name==='list_evidence'?p.catalogs.map((c:any)=>({receipt_id:receipt.id,evidence_id:'catalog_'+c.group,field:'catalog_complete'})):undefined;
+  return {receipt_id:receipt.id,...p,...(reference_options?{reference_options}:{})};
+ }catch(e:any){return {refused:true,code:e.code||'TOOL_FAILURE'};}finally{await store.close();}},
  endsTurn:(output:any)=>name.startsWith('submit_')&&!output.refused,
 });}

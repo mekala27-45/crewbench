@@ -1,7 +1,7 @@
-# Use a strong deterministic baseline
+# Keep a strong deterministic baseline
 
-Status: accepted for the current development plan; held-out freeze pending.
+Status: accepted for development.
 
-The typed four-check policy admits a complete reference implementation. Keep it separate from actual model performance. The 48-case baseline validates infrastructure and task interpretation; it does not establish agent tool use.
+The task has an exact evidence policy. A weak baseline would confuse task difficulty with model value. Use a rule implementation that reads the same runtime documents and grade it independently. Evidence: artifacts/baseline/postgres-grades.json and the retained PostgreSQL run 42099764606.
 
-Evidence: scripts/baseline.ts; development run 42105724261; evaluation/grade.py.
+Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.

@@ -1,3 +1,5 @@
-# Crewbench
+# Shared instructions
 
-Follow AGENTS.md, docs/SPEC.md and OPERATIONS.md. Preserve mode separation, private truth, immutable evidence and all recorded approval blocks. Operator skills are outside runtime prompts. Do not claim release completion without RESULTS.md evidence.
+Read AGENTS.md and docs/SPEC.md before changes. They define the same execution modes, truth boundary, budget rules and release evidence requirements for every assistant. No additional runtime permissions are granted here.
+
+Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.

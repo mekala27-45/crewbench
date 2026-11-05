@@ -2,7 +2,7 @@ name: CPU model development probe
 on:
   push:
     branches: [main]
-    paths: [scripts/probe-model.mjs, scripts/install-ollama.py, .github/workflows/model-probe.yml]
+    paths: [scripts/probe-model.mjs, scripts/probe-payload-fit.ts, scripts/install-ollama.py, .github/workflows/model-probe.yml]
   workflow_dispatch:
 permissions:
   contents: write
@@ -29,10 +29,12 @@ jobs:
         run: |
           ollama serve > "$RUNNER_TEMP/crewbench-ollama.log" 2>&1 &
           for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:11434/api/version && break; sleep 1; done
-          ollama pull qwen3:1.7b
+          ollama pull qwen3:4b-instruct-2507-q4_K_M
       - name: Retain real provider startup and tool request
         if: always()
         run: node scripts/probe-model.mjs
+      - name: Measure representative output serialization with native tokenizer
+        run: node scripts/probe-payload-fit.ts
       - name: Publish sanitized development evidence
         if: always()
         env:

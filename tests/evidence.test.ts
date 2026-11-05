@@ -1,0 +1,7 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {verifyImport,scanEvidence,retentionPlan} from '../src/report/evidence.ts';
+const expected={source_commit:'a'.repeat(40),plan_digest:'b'.repeat(64),branch:'results/evaluation-123'};
+const valid={...expected,results_branch:expected.branch,mode:'startup_failure',files:[{path:'artifacts/actual/workflow.json',bytes:50,sha256:'c'.repeat(64)}]};
+test('evidence import binds the exact source, plan, branch and paths',()=>{assert.equal(verifyImport(valid,expected),true);assert.throws(()=>verifyImport({...valid,source_commit:'d'.repeat(40)},expected),/IMPORT_PROVENANCE/);assert.throws(()=>verifyImport({...valid,files:[{...valid.files[0],path:'artifacts/../secrets'}]},expected));assert.throws(()=>verifyImport({},expected),/IMPORT_EMPTY/);});
+test('publication refuses credentials and preserves ordinary synthetic data',()=>{assert.match(scanEvidence('{"status":"startup_failed"}'),/^[a-f0-9]{64}$/);assert.throws(()=>scanEvidence('Bearer '+'x'.repeat(32)),/SECRET_IN_EVIDENCE/);assert.throws(()=>scanEvidence('known-secret-value-123',['known-secret-value-123']));});
+test('retention never evicts pinned reports or deletes automatically',()=>{const rows=[1,2,3].map(x=>({id:String(x),created_at:`2026-11-0${x}`}));const p=retentionPlan(rows,['1'],2);assert.deepEqual(p.retained,['1','3']);assert.deepEqual(p.eligible_for_review,['2']);assert.equal(p.automatic_deletion,false);assert.throws(()=>retentionPlan(rows,['missing']),/RETENTION_EVIDENCE_MISSING/);assert.throws(()=>retentionPlan([],[]));});
