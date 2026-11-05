@@ -58,7 +58,7 @@ class GraderCases(unittest.TestCase):
         p,t,r=self.full();r['assessment']=None;self.assertEqual(grader.grade(p,t,r)['failure'],'no_assessment')
 
     def test_public_record_cli_is_explicit_and_never_claims_private_key_agreement(self):
-        p,truth,row=self.full()
+        p,truth,row=self.full();row['case_id']=p['case_id']
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);(root/'evaluation').mkdir();(root/'fixtures/runtime').mkdir(parents=True)
             shutil.copy(Path(grader.__file__),root/'evaluation/grade.py')
