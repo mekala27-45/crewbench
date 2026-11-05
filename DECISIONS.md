@@ -20,4 +20,8 @@ Revision 4 changes the CPU model to qwen3:4b-instruct-2507-q4_K_M with digest 0e
 
 An explicit --public-records grading mode computes expected states from the public evidence using the independent Python policy. It never reads or publishes the private answer key and sets private_truth_verified=false. Such reports are provisional and cannot satisfy the completed release gate. Default grading still fails closed if the private key is unavailable.
 
+Revision 5 sets the same 480-second trial and 210-second request deadlines for both methods. Run 42115848494 supplies accepted solo and full three-role development evidence with verified accounting for all 28 requests. Freeze run 42117814226 seals 101 files before the primary held-out run. Failed development rows remain retained; qualification does not assert model quality.
+
+Vercel's container image and deployment quotas were reached during host iteration. The native Node adapter is now explicit, automatic API deployments are disabled, and package run 42116306332 verifies the compiled function with 21 checks and independent PostgreSQL readback. No paid upgrade or live acceptance is implied.
+
 Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.
