@@ -1,0 +1,42 @@
+
+> crewbench@0.1.0 test
+> node --test tests/*.test.ts
+
+✔ accounting clean pass, corrupted transport and empty refusal (7.176299ms)
+✔ usage, role and response mutations cannot manufacture comparable results (3.388653ms)
+✔ a dispatch intent without outcome is uncertain, never a confirmed execution (0.883115ms)
+✔ an unoffered tool is refused even with updated request bytes and digest (0.978285ms)
+✔ claim gate accepts provenance, refuses mixed modes and empty evidence (2.037236ms)
+✔ missing measurement remains missing (0.35445ms)
+✔ bundle gate accepts startup failure and refuses traversal and nothing (1.322564ms)
+✔ corpus has isolated lineages and exact deterministic subset (1.877507ms)
+✔ runtime packets validate and carry no truth canary or family metadata (11.460292ms)
+✔ packet gate refuses wrong scope, empty and body mutation (0.909224ms)
+✔ failed development stays visible but cannot qualify missing model roles (11.563183ms)
+✔ retained readback must bind state, database counts, timestamp and model (14.699566ms)
+✔ evidence import binds the exact source, plan, branch and paths (2.403518ms)
+✔ publication refuses credentials and preserves ordinary synthetic data (1.431016ms)
+✔ retention never evicts pinned reports or deletes automatically (14.217788ms)
+✔ freeze accepts exact input digests and refuses changed or absent evidence (3.814607ms)
+✔ freeze rejects traversal and unbound development evidence (0.912841ms)
+✔ report binds exact grades and renders deterministic provenance (5.246895ms)
+✔ duplicate grades cannot increase counts (0.261127ms)
+✔ absent evidence never creates claims or measurements (0.244145ms)
+✔ exact role exposure excludes delegation and arbitrary access (4.011894ms)
+✔ catalog reveals no record state or body (0.92322ms)
+✔ reservation is atomic in every dimension and nonrefundable (0.826309ms)
+✔ one remaining request grants one concurrent reservation (1.125898ms)
+✔ child redelivery is stable and changed payload conflicts (3.670879ms)
+✔ lease turnover preserves accepted child and fences old generation (2.065398ms)
+✔ uncertain dispatch terminates on restart without new dispatch (0.652205ms)
+✔ cancellation quarantines late response and keeps reserved usage (0.480095ms)
+✔ expired trial cannot reset the deadline or reserve (0.448997ms)
+✔ structurally valid wrong verdict is preserved for independent grading (1.261731ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 678.192887
