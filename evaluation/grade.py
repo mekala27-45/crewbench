@@ -7,7 +7,7 @@ from pathlib import Path
 CHECKS = ("unit_tests", "api_tests", "artifact_match", "staging_probe")
 
 def sha(value):
-    return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+    return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()).hexdigest()
 
 def expected_from_records(packet):
     # Deliberately separate implementation used to verify latent answers.
@@ -83,7 +83,21 @@ def grade(packet, truth, result):
             valid = False
     out["references_valid"] = bool(valid)
     out["unsupported_ready"] = assessment.get("verdict") == "ready" and not (valid and truth["verdict"] == "ready" and out["check_states_correct"])
-    out["strict_success"] = result["status"] == "submitted" and result.get("on_time") is True and all(out[k] for k in ("verdict_correct", "check_states_correct", "reasons_correct", "references_valid"))
+    provenance = True
+    if result['method'] in ('solo_agent','split_review'):
+        state=result.get('state') or {};attempts=state.get('attempts',[]);reservations=state.get('reservations',[])
+        required=['solo'] if result['method']=='solo_agent' else ['tests','staging','synthesis']
+        provenance=result.get('actual_dispatch') is True and bool(result.get('accounting',{}).get('verified')) and state.get('assessment')==assessment
+        provenance=provenance and all(any(a.get('role')==role and a.get('status')=='response_recorded' and a.get('response') for a in attempts) for role in required)
+        for attempt in attempts:
+            reservation=next((r for r in reservations if r['operation_id']==attempt['operation_id']),None);body=attempt.get('request_body')
+            provenance=provenance and bool(reservation) and bool(body)
+            if reservation and body:provenance=provenance and reservation['request_digest']==sha(body) and reservation['input_bytes']==len(json.dumps(body,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode())
+        final_role='solo' if result['method']=='solo_agent' else 'synthesis'
+        final_args={k:v for k,v in assessment.items() if k not in ('case_id','snapshot_id')}
+        provenance=provenance and any(c.get('function',{}).get('name')=='submit_assessment' and c['function'].get('arguments')==final_args for a in attempts if a.get('role')==final_role and a.get('status')=='response_recorded' for c in (a.get('response') or {}).get('message',{}).get('tool_calls',[]))
+    out['actual_provenance_valid']=bool(provenance)
+    out["strict_success"] = result["status"] == "submitted" and result.get("on_time") is True and provenance and all(out[k] for k in ("verdict_correct", "check_states_correct", "reasons_correct", "references_valid"))
     return out
 
 def main():

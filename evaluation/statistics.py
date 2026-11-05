@@ -41,7 +41,7 @@ def summarize(results,grades,subset):
     return out
 
 if __name__=='__main__':
-    sha=lambda v:hashlib.sha256(json.dumps(v,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+    sha=lambda v:hashlib.sha256(json.dumps(v,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()
     results=json.loads(Path(sys.argv[1]).read_text());grades=json.loads(Path(sys.argv[2]).read_text());subset=json.loads(Path('evaluation/model-subset.json').read_text())
     if grades['source_digest']!=sha(results):raise ValueError('GRADE_SOURCE_MISMATCH')
     summary=summarize(results,grades,subset);summary.update({'source_digest':sha(results),'grades_digest':sha(grades)});Path(sys.argv[3]).write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps({k:v for k,v in summary.items() if k!='rows'}))
