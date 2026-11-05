@@ -1,1 +1,8 @@
-{"framework":"container"}
+{
+  "framework": "container",
+  "git": {
+    "deploymentEnabled": {
+      "results/**": false
+    }
+  }
+}
