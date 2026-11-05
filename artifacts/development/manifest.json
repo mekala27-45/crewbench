@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "mode": "actual_model_development",
+  "source_commit": "fe62f360738c8f0b589cb8df7802349fec7b66ff",
+  "plan_digest": "36740a8c89b57e98190de8eb9fde64e4d8d029324535a53183b2eb93326001fc",
+  "results_branch": "results/development-42111622515",
+  "files": [
+    {
+      "path": "artifacts/development/workflow.json",
+      "bytes": 147,
+      "sha256": "b02c6acf92917cdefa2c79545ac0fc2e06c8f8e0df9697e4494ac4dfb67af151"
+    }
+  ]
+}
