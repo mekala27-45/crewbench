@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "source_commit": "7ba7ee6fdcbb1a34ca3a5b484aa525c082edb34f",
+  "mode": "isolated_compiled_function",
+  "deployed": false,
+  "passed": true,
+  "failure": null,
+  "handler": "server.mjs"
+}
