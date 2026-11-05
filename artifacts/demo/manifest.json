@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "mode": "public_browser_recording",
+  "source_commit": "5992d6effb017920e2d3d8d92a2957fc486ca644",
+  "report_source": "c6a5a39086584c6acd68b76dcba7ce42837756b6",
+  "report_status": "development",
+  "actual_present": false,
+  "site": "https://mekala27-45.github.io/crewbench/",
+  "passed": true,
+  "scenes": [
+    {
+      "name": "Recorded actual comparison or explicit missing-result state",
+      "url": "https://mekala27-45.github.io/crewbench/",
+      "at": "2026-11-05T22:07:33.860Z"
+    },
+    {
+      "name": "Separate recorded deterministic baseline",
+      "url": "https://mekala27-45.github.io/crewbench/",
+      "at": "2026-11-05T22:07:35.286Z"
+    },
+    {
+      "name": "Exact evidence reference",
+      "url": "https://mekala27-45.github.io/crewbench/#case",
+      "at": "2026-11-05T22:07:36.771Z"
+    },
+    {
+      "name": "Scripted recovery with fresh observations",
+      "url": "https://mekala27-45.github.io/crewbench/#recovery",
+      "at": "2026-11-05T22:07:38.295Z"
+    },
+    {
+      "name": "Registered method and limits",
+      "url": "https://mekala27-45.github.io/crewbench/#method",
+      "at": "2026-11-05T22:07:39.751Z"
+    }
+  ],
+  "page_errors": [],
+  "live_api_verified": false,
+  "video": {
+    "path": "artifacts/demo/crewbench-demo.webm",
+    "bytes": 2147876,
+    "sha256": "997aadb7992efd35dfc7d1b89ff7e2ce664911d04e4d32993826f962a1dd930d"
+  }
+}
