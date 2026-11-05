@@ -32,3 +32,17 @@ test('missing actual results remain missing and reduced motion is supported',asy
 test('text remains reachable under enlarged rendering',async({page})=>{
  await page.goto('./#method');await page.evaluate(()=>document.body.style.zoom='2');await expect(page.getByRole('heading',{name:'More agents must earn their place.'})).toBeVisible();await page.getByRole('link',{name:'Download report data'}).scrollIntoViewIfNeeded();await expect(page.getByRole('link',{name:'Download report data'})).toBeVisible();
 });
+
+test('evidence text meets contrast in the active theme',async({page})=>{
+ await page.goto('./#case');
+ const ratios=await page.evaluate(()=>{
+  const rgba=(text:string)=>{const n=text.match(/[\d.]+/g)!.map(Number);return [n[0],n[1],n[2],n[3]??1];};
+  const luminance=(c:number[])=>{const v=c.slice(0,3).map(x=>{x/=255;return x<=0.04045?x/12.92:((x+0.055)/1.055)**2.4;});return .2126*v[0]+.7152*v[1]+.0722*v[2];};
+  return [...document.querySelectorAll('.record,.record p,.record h3,.record .meta,.record .badge')].map(el=>{
+   const fg=rgba(getComputedStyle(el).color);let parent:Element|null=el,bg:number[]|null=null;
+   while(parent){const value=rgba(getComputedStyle(parent).backgroundColor);if(value[3]===1){bg=value;break;}parent=parent.parentElement;}
+   if(!bg)throw new Error('No opaque background');
+   const a=luminance(fg),b=luminance(bg);return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);
+  });
+ });expect(ratios.length).toBeGreaterThan(0);expect(Math.min(...ratios)).toBeGreaterThanOrEqual(4.5);
+});
