@@ -1,0 +1,35 @@
+
+> crewbench@0.1.0 test
+> node --test tests/*.test.ts
+
+✔ accounting reconciles exact transport and complete usage (3.854115ms)
+✔ transport tampering and uncharged dispatch fail verification (2.544303ms)
+✔ unknown usage remains unknown and duplicate reservations fail (0.798284ms)
+✔ freeze rejects missing evidence and any changed input (0.646314ms)
+✔ claim gate accepts provenance, refuses mixed modes and empty evidence (1.296232ms)
+✔ missing measurement remains missing (0.199888ms)
+✔ bundle gate accepts startup failure and refuses traversal and nothing (0.874343ms)
+✔ corpus has isolated lineages and exact deterministic subset (1.32109ms)
+✔ runtime packets validate and carry no truth canary or family metadata (7.775921ms)
+✔ packet gate refuses wrong scope, empty and body mutation (0.528648ms)
+✔ evidence import binds the exact source, plan, branch and paths (1.088032ms)
+✔ publication refuses credentials and preserves ordinary synthetic data (0.707765ms)
+✔ retention never evicts pinned reports or deletes automatically (7.640669ms)
+✔ exact role exposure excludes delegation and arbitrary access (3.055735ms)
+✔ catalog reveals no record state or body (0.671551ms)
+✔ reservation is atomic in every dimension and nonrefundable (0.947171ms)
+✔ one remaining request grants one concurrent reservation (1.042644ms)
+✔ child redelivery is stable and changed payload conflicts (3.049986ms)
+✔ lease turnover preserves accepted child and fences old generation (1.692482ms)
+✔ uncertain dispatch terminates on restart without new dispatch (0.608076ms)
+✔ cancellation quarantines late response and keeps reserved usage (0.409ms)
+✔ expired trial cannot reset the deadline or reserve (0.369641ms)
+✔ structurally valid wrong verdict is preserved for independent grading (1.144256ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 296.241859
