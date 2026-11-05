@@ -44,6 +44,13 @@ export function verifyAccounting(s:any){
   // Dispatch intent alone cannot establish that network execution occurred.
   if(['response_recorded','late_excluded','provider_failed','timed_out'].includes(a.status))confirmed++;
  }
+ if(s.mode==='actual_model'){
+  const emitted=new Map();for(const a of s.attempts)for(const [i,call]of (a.response?.message?.tool_calls||[]).entries())emitted.set('t_'+a.operation_id.slice(2)+'_'+i,{role:a.role,name:call.function.name,request_digest:digest({name:call.function.name,input:call.function.arguments})});
+  const toolIds=new Set();for(const t of s.tool_requests){const native=emitted.get(t.operation_id);const id=t.role+':'+t.operation_id;if(toolIds.has(id)||!native||native.role!==t.role||native.name!==t.name||native.request_digest!==t.request_digest||!count(t.deliveries))fail('TOOL_EMISSION_PROVENANCE');toolIds.add(id);}
+  const charged=s.tool_requests.filter((t:any)=>t.error!=='BUDGET_EXHAUSTED');
+  if(charged.length!==s.spent.tool_requests)fail('TOOL_BUDGET_MISMATCH');
+  for(const [role,r]of Object.entries(s.roles) as [string,any][])if(charged.filter((t:any)=>t.role===role).length!==r.spent.tool_requests)fail('ROLE_TOOL_BUDGET_MISMATCH');
+ }
  const receiptIds=new Set();for(const r of s.receipts){
   if(receiptIds.has(r.id)||digest(r.payload)!==r.payload_digest||r.trial_id!==s.id||!s.roles[r.role])fail('RECEIPT_ACCOUNTING_MISMATCH');receiptIds.add(r.id);
   if(!s.tool_requests.some((t:any)=>t.operation_id===r.operation_id&&t.role===r.role&&t.name===r.tool&&t.status==='executed'))fail('UNBACKED_HANDLER_RECEIPT');
