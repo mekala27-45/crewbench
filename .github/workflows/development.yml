@@ -1,15 +1,15 @@
 name: Database and agent development
 on:
   push:
-    branches: [main]
-    paths: [package.json, package-lock.json,agent/**, src/runtime/**, scripts/run-development.ts, scripts/recovery.ts, .github/workflows/development.yml]
+    branches: [main, codex/crewbench-completion]
+    paths: [evaluation/development-request.json, evaluation/plan.json, package.json, package-lock.json,agent/**, src/runtime/**, scripts/run-development.ts, scripts/recovery.ts, .github/workflows/development.yml]
   workflow_dispatch:
 permissions:
   contents: write
 jobs:
   development:
     runs-on: ubuntu-24.04
-    timeout-minutes: 40
+    timeout-minutes: 60
     services:
       postgres:
         image: postgres:18@sha256:bd5dfa494a5a259704365813dbfa5fa6b3e69be7348d43b547f540c730478583
@@ -68,6 +68,7 @@ jobs:
           npx eve start --host 127.0.0.1 --port 2000 --no-schedules > /tmp/eve-runtime.log 2>&1 &
           for attempt in $(seq 1 60); do curl --fail --silent http://127.0.0.1:2000/health && break; sleep 1; done
           node scripts/run-development.ts
+          node scripts/audit-development.ts
       - name: Preserve all outcomes
         if: always()
         env:
