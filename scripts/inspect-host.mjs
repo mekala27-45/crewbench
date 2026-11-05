@@ -4,7 +4,7 @@ function walk(p){const real=fs.realpathSync(p),st=fs.statSync(p);if(st.isDirecto
 walk('.vercel/output');
 const physicalInputs=rows.filter(p=>/fixtures\/runtime\/.*\.json$/.test(p)),configs=rows.filter(p=>p.endsWith('.vc-config.json')).map(p=>({path:p,config:JSON.parse(fs.readFileSync(p))}));
 const mapped=configs.flatMap(c=>Object.entries(c.config.filePathMap||{}).map(([logical,source])=>{const resolved=path.resolve(String(source));if(!resolved.startsWith(process.cwd()+path.sep))throw Error('HOST_SOURCE_PATH_ESCAPE');if(!fs.statSync(resolved).isFile())throw Error('HOST_SOURCE_MISSING');return{logical,source:String(source),sha256:createHash('sha256').update(fs.readFileSync(resolved)).digest('hex')};}));
-const inputs=[...new Set([...physicalInputs,...mapped.filter(x=>/^fixtures\\/runtime\\/.*\\.json$/.test(x.logical)).map(x=>x.logical)])];
+const inputs=[...new Set([...physicalInputs,...mapped.filter(x=>x.logical.startsWith('fixtures/runtime/')&&x.logical.endsWith('.json')).map(x=>x.logical)])];
 const out={source_commit:process.env.GITHUB_SHA,mode:'offline_host_package_verification',deployed:false,public_packets:inputs.length,report_present:rows.some(p=>p.endsWith('site/public/data/report.json'))||mapped.some(x=>x.logical==='site/public/data/report.json'),configs,mapped_files:mapped,file_count:rows.length,links,paths:rows.filter(p=>!p.includes('/node_modules/')),config_digest:createHash('sha256').update(fs.readFileSync('vercel.json')).digest('hex')};
 fs.mkdirSync('artifacts/host',{recursive:true});fs.writeFileSync('artifacts/host/package.json',JSON.stringify(out,null,2)+'\n');
 if(out.public_packets!==48||!out.report_present)throw Error('PUBLIC_INPUTS_NOT_PACKAGED');
