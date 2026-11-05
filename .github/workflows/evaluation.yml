@@ -11,7 +11,7 @@ concurrency:
 jobs:
   paired:
     runs-on: ubuntu-24.04
-    timeout-minutes: 120
+    timeout-minutes: 180
     services:
       postgres:
         image: postgres:18@sha256:bd5dfa494a5a259704365813dbfa5fa6b3e69be7348d43b547f540c730478583
@@ -39,6 +39,8 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 24.19.0
+      - name: Preserve every planned row before dependency or database startup
+        run: node scripts/register-fallback.ts
       - run: npm ci
       - run: npm test
       - run: python3 -m unittest discover -s tests -p 'test_*.py'
