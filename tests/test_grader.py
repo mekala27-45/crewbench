@@ -12,7 +12,7 @@ class GraderCases(unittest.TestCase):
         for key,states in zip(grader.CHECKS,values):
             for revision,state in states:
                 records.append({'case_id':'c1','snapshot_id':'s1','record_kind':'check','check_key':key,'subject_revision':revision,'state':state})
-        return {'target_revision':'r1','records':records}
+        return {'case_id':'c1','snapshot_id':'s1','target_revision':'r1','records':records}
 
     def test_clean_and_duplicate_pass(self):
         p=self.packet([[('r1','pass'),('r1','pass')]]*4)
@@ -39,7 +39,7 @@ class GraderCases(unittest.TestCase):
         self.assertEqual(grader.expected_from_records({'records':[],'target_revision':'r1'})['verdict'],'unknown')
 
     def full(self):
-        p={'case_id':'c1','snapshot_id':'s1','target_revision':'r1','records':[{'record_kind':'check','check_key':k,'subject_revision':'r1','state':'pass','evidence_id':'e'+str(i),'evidence_group':'tests' if i<2 else 'staging'} for i,k in enumerate(grader.CHECKS)]}
+        p={'case_id':'c1','snapshot_id':'s1','target_revision':'r1','records':[{'case_id':'c1','snapshot_id':'s1','record_kind':'check','check_key':k,'subject_revision':'r1','state':'pass','evidence_id':'e'+str(i),'evidence_group':'tests' if i<2 else 'staging'} for i,k in enumerate(grader.CHECKS)]}
         truth=grader.expected_from_records(p);payload={'records':p['records']}
         a={**truth,'case_id':'c1','snapshot_id':'s1','evidence_refs':[{'receipt_id':'h1','evidence_id':r['evidence_id'],'field':'state'} for r in p['records']]}
         result={'trial_id':'t1','method':'deterministic_baseline','status':'submitted','on_time':True,'assessment':a,'receipts':[{'id':'h1','trial_id':'t1','role':'baseline','payload':payload,'payload_digest':grader.sha(payload)}]}

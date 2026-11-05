@@ -43,6 +43,7 @@ jobs:
       - run: python3 -m unittest discover -s tests -p 'test_*.py'
       - run: node scripts/migrate.ts
       - run: node scripts/baseline.ts --postgres
+      - run: python3 evaluation/grade.py artifacts/baseline/results.json artifacts/baseline/provisional-grades.json --public-records
       - run: node scripts/recovery.ts
       - run: python3 evaluation/recovery.py artifacts/recovery/results.json artifacts/recovery/grades.json
       - name: Create ephemeral loopback worker credential
