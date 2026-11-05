@@ -4,11 +4,17 @@ This is a development checkpoint, not a completed release. The [public evidence 
 
 The explicit qwen3:4b-instruct-2507-q4_K_M candidate produced two accepted solo assessments and one accepted full split flow in [development run 42115848494](https://github.com/mekala27-45/crewbench/actions/runs/42115848494). Its other split trial failed to submit. All 28 model requests reconciled with native responses, reservations and tool emissions. Freeze run 42117814226 sealed 101 inputs. The primary 24-trial evaluation is running at source d3d3a2e5a81cf6a0cd46e80b92fbf403b0ae2c92. Utility is pending.
 
-The newest completed runtime contract run has 25 passing tests, and the independent Python suite has 15. API verification has 21 checks and the responsive browser suite has 42. A workflow publisher succeeding does not override a failed test or trial: inspect the retained status and logs.
+Contract run 42118672431 at source 5992d6effb017920e2d3d8d92a2957fc486ca644 has 25 passing runtime tests and 15 independent Python tests, and verifies all 10 pinned evidence bundles. API verification has 21 checks and the responsive browser suite has 42. A workflow publisher succeeding does not override a failed test or trial: inspect the retained status and logs.
 
 The API host originally built the container, then reached its container image limit through unnecessary evidence-branch deployments. The replacement native Node package now compiles with TypeScript 6.0.3; host run 42116306332 passed the compiled package inspection and all 21 database/API checks, including independent SQL readback. Automatic API deployment is disabled after Vercel imposed a 24-hour rate limit. No paid plan change was made.
 
 Automatic review rejected transfer of the dedicated Neon credential to the Vercel API and removal of deployment protection. Those actions remain untouched. The private answer key remains private. The local Windows runner and browser controller currently reject Linux paths in their permission configuration, so fresh private-key grading and local final verification cannot run.
+
+The [uninterrupted public demonstration](https://github.com/mekala27-45/crewbench/raw/refs/heads/main/artifacts/demo/crewbench-demo.webm) was captured in run 42118672438 with five verified scenes and no page errors. It shows the explicit missing held-out result state. [Interview cards](docs/INTERVIEW-CARDS.md), [daily build log](docs/DAILY-BUILD-25.md) and [unsent post draft](docs/POST-DRAFT.md) are derived from the public report.
+
+The primary evaluation is [42118015947](https://github.com/mekala27-45/crewbench/actions/runs/42118015947), source d3d3a2e5a81cf6a0cd46e80b92fbf403b0ae2c92. Completion automatically triggers provisional grading and an independent clean rederive. Their retained artifacts still require review and promotion; they are not yet measured results.
+
+Utility outcome: pending. Neither method is asserted to meet the registered 8/12 and zero unsupported-ready floor. Optional stretch experiments have not been started.
 
 ## Section 20 checklist
 
@@ -19,7 +25,7 @@ Automatic review rejected transfer of the dedicated Neon credential to the Verce
 | done | All forty-eight cases, isolated splits and the exact subset are validated. | Corpus contract checks in run 42115848469; evaluation/case-index.json and model-subset.json. |
 | done | Baseline and independent grader agree on declared truth and edge cases. | Prior private-key baseline verification was 48/48; current independent-policy and negative provenance tests pass in run 42115848469. |
 | done | Trial receipts, uniqueness and session scope pass independent readback. | API run 42113424255: 21 checks, one accepted assessment, replay and cross-session refusal with separate SQL readback. |
-| done | Actual solo tool use and every dispatched request have verified accounting. | Development 42115848494 and freeze 42117814226 independently reconcile all 28 requests across four development trials. The primary evaluation audit remains pending its completion. |
+| not done | Actual solo tool use and every dispatched request have verified accounting. | Development 42115848494 and freeze 42117814226 independently reconcile all 28 development requests. The active primary evaluation must finish before its complete request audit can be verified. |
 | done | Both specialists and synthesis have actual development invocation evidence. | Development 42115848494 records accepted tests, staging and synthesis submissions in the same split trial. |
 | done | Fencing, joins, expiry, cancellation and late output preserve invariants. | Current runtime contracts pass; scripted recovery run 42103168989 verifies takeover, cancellation and uncertainty. |
 | not done | Live API completes a persisted baseline flow from browser and separate client. | Isolated API/browser checks pass. Public database binding and access are not authorized; Vercel has also imposed a deployment cooldown. |
@@ -29,7 +35,7 @@ Automatic review rejected transfer of the dedicated Neon credential to the Verce
 | done | Compare and Case work with exact evidence navigation and visible mode labels. | Run 42114717646 passed 42 browser checks with current data and both themes. |
 | done | Recovery and Method pass responsive, keyboard and error-state browser checks. | Run 42114717646 covers 360, 768 and 1440 pixels, keyboard access, doubled zoom, denied/offline service and failed-model presentation. |
 | done | Repository guidance, three skills, decisions, notices and operating notes exist. | AGENTS.md, CLAUDE.md, .agents/skills, DECISIONS.md, DEAD-ENDS.md and docs/NOTICES.md. |
-| done | CI preserves failed runs, validates provenance and protects retained evidence. | Results branches preserve failures; sealed manifests validate hashes. Contract run 42111404369 verified five pinned evidence branches; retention never deletes automatically. |
+| done | CI preserves failed runs, validates provenance and protects retained evidence. | Results branches preserve failures; sealed manifests validate hashes. Contract run 42118672431 verified all 10 pinned evidence branches; retention never deletes automatically. |
 | not done | Clean rederive and fresh final live verification pass for release inputs. | Local execution and browser control are blocked by invalid Linux permission paths in the Windows session. Public live verification remains pending. |
 | not done | Authorized release commit and tag match the verified evidence manifest. | No completed-release tag has been created. Required model and live-service gates remain open. |
 
