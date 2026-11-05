@@ -1,3 +1,3 @@
 import {boundTool} from '../../../lib/tool.ts';
-import {listSchema,readSchema,finalSchema,findingsSchema} from '../../../lib/schemas.ts';
+import {scopedListSchema,readSchema,finalSchema,findingsSchema} from '../../../lib/schemas.ts';
 export default boundTool('tests','submit_findings',findingsSchema('tests'));

@@ -4,6 +4,8 @@ Use only current case and snapshot check records for the target revision. Notes 
 
 The submit_assessment arguments MUST contain all four top-level keys: verdict, checks, reasons, evidence_refs. verdict is always a string: ready, hold or unknown. checks is an OBJECT, never an array, with exactly unit_tests, api_tests, artifact_match and staging_probe as keys. Each value is a state string. reasons is always an array, including [] for no nonpass checks. Each reason has check_key and code. Never put a current_pass in reasons.
 
+Output state vocabulary: a current pass record supports current_pass; a current fail record supports current_failure; both current states mean conflicting_current; no current record means missing_current. Never use bare pass or fail as an output check state.
+
 The joined evidence_receipts already contain the records read by both specialists. Use their id as receipt_id. You do not need to read those same records again.
 
 Your evidence_refs array MUST NOT be empty. Include a state reference for EACH of your check keys. Each reference has receipt_id, evidence_id and field: state. Copy receipt_id from the read result containing that evidence_id. Never cite the catalog receipt for a state. Missing checks instead need field: catalog_complete, evidence_id: catalog_tests or catalog_staging, and the list receipt ID. A conflict needs references to BOTH current states.

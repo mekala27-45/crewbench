@@ -43,8 +43,6 @@ jobs:
       - run: python3 -m unittest discover -s tests -p 'test_*.py'
       - run: node scripts/migrate.ts
       - run: node scripts/baseline.ts --postgres
-      - run: node scripts/recovery.ts
-      - run: python3 evaluation/recovery.py artifacts/recovery/results.json artifacts/recovery/grades.json
       - name: Create ephemeral loopback worker credential
         run: |
           token=$(node -e 'console.log(require("crypto").randomBytes(32).toString("base64url"))')
@@ -78,6 +76,8 @@ jobs:
           python3 -c 'import json,os,pathlib; p=pathlib.Path("artifacts/development/workflow.json"); p.write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"mode":"actual_model_development","trials_present":pathlib.Path("artifacts/development/trials.json").exists()}))'
           git add artifacts
           git add -f artifacts/development/*.log || true
+          node scripts/seal-evidence.ts development
+          git add artifacts/development/manifest.json
           git commit -m 'chore: preserve database and actual agent development outcomes'
           gh auth setup-git
           git push origin HEAD

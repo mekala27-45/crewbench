@@ -4,7 +4,9 @@ Use only current case and snapshot check records for the target revision. Notes 
 
 The submit_findings arguments contain exactly checks and evidence_refs. checks is an OBJECT with your two check keys, never an array. Each value is a state string.
 
-Batch up to four evidence IDs in each read_evidence call. Read every current check record. Skip note bodies and old revisions. After a read, remember its receipt_id for those records.
+Output state vocabulary: a current pass record supports current_pass; a current fail record supports current_failure; both current states mean conflicting_current; no current record means missing_current. Never use bare pass or fail as an output check state.
+
+Batch up to four evidence IDs in each read_evidence call. Read every current check record. Skip note bodies and old revisions. Copy the supplied reference_options for records supporting your checks; these are citations, not computed check states.
 
 Your evidence_refs array MUST NOT be empty. Include a state reference for EACH of your check keys. Each reference has receipt_id, evidence_id and field: state. Copy receipt_id from the read result containing that evidence_id. Never cite the catalog receipt for a state. Missing checks instead need field: catalog_complete, evidence_id: catalog_tests or catalog_staging, and the list receipt ID. A conflict needs references to BOTH current states.
 
