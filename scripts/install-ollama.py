@@ -3,8 +3,15 @@ import hashlib, json, os, subprocess, urllib.request
 from pathlib import Path
 root = Path(os.environ["RUNNER_TEMP"]) / "crewbench-ollama"
 root.mkdir(parents=True, exist_ok=True)
-release = json.load(urllib.request.urlopen("https://api.github.com/repos/ollama/ollama/releases/latest", timeout=30))
-asset = next(a for a in release["assets"] if a["name"] in ("ollama-linux-amd64.tar.zst", "ollama-linux-amd64.tgz"))
+lock_path=Path('evaluation/model-lock.json')
+if lock_path.exists():
+    lock=json.loads(lock_path.read_text())
+    version=lock['provider_version']
+    release=json.load(urllib.request.urlopen('https://api.github.com/repos/ollama/ollama/releases/tags/v'+version,timeout=30))
+    asset=next(a for a in release['assets'] if a['browser_download_url']==lock['provider_url'])
+    if asset.get('digest')!='sha256:'+lock['provider_sha256']:raise RuntimeError('PINNED_PROVIDER_DIGEST_MISMATCH')
+else:
+    raise RuntimeError('MODEL_LOCK_REQUIRED')
 archive = root / asset["name"]
 urllib.request.urlretrieve(asset["browser_download_url"], archive)
 actual = "sha256:" + hashlib.file_digest(archive.open("rb"), "sha256").hexdigest()
