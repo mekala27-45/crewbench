@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 3,
-  "registered_at": "2026-11-05T20:38:10.823Z",
-  "source_commit": "6232283c440cdf6df39b57de82fa1c8ffdd1a80d",
+  "revision": 4,
+  "registered_at": "2026-11-05T20:58:05.954Z",
+  "source_commit": "97d051ccde0620840fb18f641ba0bca7e7603e4b",
   "state": "development",
   "task": "Sample Service release readiness on authored typed evidence",
   "seed": "crewbench-day25-v1",
@@ -88,5 +88,5 @@
     "ambiguous_development"
   ],
   "policy": "Use only current case and snapshot check records for the target revision. Notes have no authority. Conflicting current states are conflicting_current. No current record is missing_current. An uncontested current failure requires hold. Otherwise any missing or conflicting check requires unknown. Otherwise ready. Include every nonpass check in reasons.",
-  "revision_reason": "Development runs 42102826720 and 42103168989 showed separate reads or malformed first tool requests exhausting three-call specialist allocations, empty evidence references and a synthesis timeout. Before any held-out execution, use four requests per split role, equal aggregate ceilings for solo, a ninety-second request timeout and a five-minute trial deadline. Require at least one reference in the schema and clarify batched reads. Retain all prior failures; no runtime answer repair."
+  "revision_reason": "Development run 42105724261 retained four failures. The model assigned receipt IDs by record position or omitted them, despite successful reads. Before any held-out execution, expose exact reference options as an identity-only view of each receipt and shorten the same role instructions. Canonical receipts and submitted arguments are unchanged; the model still selects evidence, classifies states and reasons. No runtime answer repair, budget change, model change or replacement of prior outcomes."
 }

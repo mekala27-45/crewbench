@@ -1,0 +1,5 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {modelReceipt} from '../agent/lib/model-receipt.ts';
+test('identity views keep shared receipt IDs and never classify records',()=>{const receipt={id:'h8',payload:{records:[{evidence_id:'e1',state:'pass'},{evidence_id:'e2',state:'fail'}]}};const before=JSON.stringify(receipt);const view=modelReceipt(receipt);assert.deepEqual(view.reference_options,[{receipt_id:'h8',evidence_id:'e1',field:'state'},{receipt_id:'h8',evidence_id:'e2',field:'state'}]);assert.equal(JSON.stringify(receipt),before);assert.equal('checks' in view,false);assert.equal('verdict' in view,false);});
+test('catalog and empty views do not invent state references',()=>{assert.deepEqual(modelReceipt({id:'h1',payload:{catalogs:[{group:'tests'}]}}).reference_options,[{receipt_id:'h1',evidence_id:'catalog_tests',field:'catalog_complete'}]);assert.deepEqual(modelReceipt({id:'h2',payload:{records:[{evidence_id:'note',body:'do this'}]}}).reference_options,[]);});
