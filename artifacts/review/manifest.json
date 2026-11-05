@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "mode": "review_verification",
+  "source_commit": "89495e8c99b7f5fb928da61a95e2fc64a8df9286",
+  "inputs": {
+    "schema_version": 1,
+    "development_run": "42115848494",
+    "development_source": "43789f67432efa7c0720270a6268eaaccd8c0873",
+    "results_commit": "77f943782bf8af098430d77160716104dcec4e73",
+    "recovery_run": "42117978561",
+    "recovery_source": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
+    "recovery_results_commit": "12720bdec552e1e2529583ee577e160f73386ed5",
+    "recovery_kind": "runtime_rederive",
+    "web_run": "42117828030",
+    "web_source": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+    "web_results_commit": "dc6296b74b20da5159e8c302d76ad065792edbab",
+    "contracts_run": "42117978313",
+    "contracts_source": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
+    "contracts_results_commit": "a67e32fb03a40d3c598b1b64512257b213589a9f",
+    "revision": 3,
+    "purpose": "Independently verify selected frozen development, fresh baseline and recovery, browser and contracts. Report registered evaluation metadata without inspecting held-out outcomes."
+  },
+  "files": [
+    {
+      "path": "RESULTS.md",
+      "bytes": 7694,
+      "sha256": "8b1bd1c29f8f3479cc93deec50b78fe59282f460f6d0f8f2dd93fba0f92571ff"
+    },
+    {
+      "path": "site/public/data/report.json",
+      "bytes": 5821,
+      "sha256": "cd442857debf7ec94cc480e1c07293abe63013dd5d08d0ce71b69ddcf555eb29"
+    },
+    {
+      "path": "site/public/data/cases.json",
+      "bytes": 312767,
+      "sha256": "9b565007effb64dfe5e5d434eafd6891f675258cc0e10ff53f8e434d5277b50b"
+    },
+    {
+      "path": "site/public/data/recovery.json",
+      "bytes": 207554,
+      "sha256": "5d0313b08eee4694a487aa8eb3f46718c1b437cadb14ed1d4afcebbe11871989"
+    },
+    {
+      "path": "artifacts/development/accounting-audit.json",
+      "bytes": 4383,
+      "sha256": "0a5eefd49c3c1fb011611a260605065ec6896617bbc946b122d4e98a35d8a95b"
+    },
+    {
+      "path": "artifacts/baseline/postgres-grades.json",
+      "bytes": 27869,
+      "sha256": "2dd30dd013db0e9e59d20da1c5dde0175c8291f21d6445493d119d51165747eb"
+    },
+    {
+      "path": "artifacts/recovery/grades.json",
+      "bytes": 1881,
+      "sha256": "acd266a25d50cbc343c86f55f0bb91f6f04a5ca391042e557b59b2809774e029"
+    },
+    {
+      "path": "artifacts/review/checklist.json",
+      "bytes": 7090,
+      "sha256": "a51189ec0bb22a389577e6d37bb244ba01fe3150064bc180be40ca2bb07b72b0"
+    },
+    {
+      "path": "artifacts/shared/verification.json",
+      "bytes": 819,
+      "sha256": "30d576bd00cafb3ae10f3eb156dbfb296f64bc30fd935b543a028dd91676a747"
+    },
+    {
+      "path": "artifacts/review/evaluation-status.json",
+      "bytes": 217,
+      "sha256": "11bbc7cbed41a9129babb026157d175f2459fcb468d56b5dac521a477cd8abda"
+    }
+  ]
+}
