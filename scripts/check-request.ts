@@ -1,0 +1,12 @@
+import {readFile,appendFile} from 'node:fs/promises';
+import {execFileSync} from 'node:child_process';
+import {validateEvaluationRequest} from '../src/report/request.ts';
+const read=async(p:string)=>JSON.parse(await readFile(p,'utf8'));
+if(process.env.GITHUB_REPOSITORY!=='mekala27-45/crewbench')throw new Error('REPOSITORY_SCOPE');
+const request=await read('evaluation/requests/core.json');
+validateEvaluationRequest(request,await read('evaluation/freeze.json'),await read('evaluation/plan.json'));
+execFileSync('git',['merge-base','--is-ancestor',request.source_commit,process.env.GITHUB_SHA!]);
+const changed=execFileSync('git',['diff','--name-only',request.source_commit,process.env.GITHUB_SHA!],{encoding:'utf8'}).trim().split('\n');
+if(changed.length!==1||changed[0]!=='evaluation/requests/core.json')throw new Error('REQUEST_SOURCE_CHANGED');
+if(process.env.GITHUB_OUTPUT)await appendFile(process.env.GITHUB_OUTPUT,'source_commit='+request.source_commit+'\n');
+console.log(JSON.stringify({validated:true,request_id:request.request_id,source_commit:request.source_commit}));

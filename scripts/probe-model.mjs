@@ -3,7 +3,7 @@ import {createHash} from 'node:crypto';
 import os from 'node:os';
 const path=new URL('../artifacts/probes/model-native.json',import.meta.url);
 await mkdir(new URL('.',path),{recursive:true});
-const report={schema_version:1,execution_mode:'development_native_probe',source_commit:process.env.GITHUB_SHA||null,started_at:new Date().toISOString(),status:'startup_failed',actual_dispatch:false,worker:{os:os.platform(),cpu:os.cpus()[0]?.model,memory_bytes:os.totalmem(),node:process.version},provider:null,model:null,requests:[],error:null};
+const report={schema_version:1,execution_mode:'development_native_probe',source_commit:process.env.SOURCE_COMMIT||process.env.GITHUB_SHA||null,started_at:new Date().toISOString(),status:'startup_failed',actual_dispatch:false,worker:{os:os.platform(),cpu:os.cpus()[0]?.model,memory_bytes:os.totalmem(),node:process.version},provider:null,model:null,requests:[],error:null};
 const hash=s=>createHash('sha256').update(typeof s==='string'?s:JSON.stringify(s)).digest('hex');
 async function request(route,body,timeout=30000){const options={signal:AbortSignal.timeout(timeout)};if(body){options.method='POST';options.body=JSON.stringify(body);options.headers={'content-type':'application/json'};}const r=await fetch('http://127.0.0.1:11434'+route,options);if(!r.ok)throw new Error(`HTTP_${r.status}`);return r.json();}
 try{

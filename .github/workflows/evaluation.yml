@@ -1,0 +1,96 @@
+name: Frozen paired evaluation
+on:
+  push:
+    branches: [main, codex/crewbench-completion]
+    paths: [evaluation/requests/core.json]
+permissions:
+  contents: write
+concurrency:
+  group: crewbench-core-evaluation
+  cancel-in-progress: false
+jobs:
+  evaluate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    services:
+      postgres:
+        image: postgres:18@sha256:bd5dfa494a5a259704365813dbfa5fa6b3e69be7348d43b547f540c730478583
+        env:
+          POSTGRES_PASSWORD: crewbench_test
+          POSTGRES_DB: crewbench
+          PGUSER: postgres
+        ports: ['5432:5432']
+        options: --health-cmd pg_isready --health-interval 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:crewbench_test@127.0.0.1:5432/crewbench
+      EVE_TELEMETRY_DISABLED: '1'
+      CREWBENCH_WORKER_ID: evaluation-${{ github.run_id }}
+      OLLAMA_HOST: 127.0.0.1:11434
+      OLLAMA_NUM_PARALLEL: '1'
+      OLLAMA_MAX_LOADED_MODELS: '1'
+      CUDA_VISIBLE_DEVICES: '-1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.19.0
+      - name: Validate committed bounded request
+        id: request
+        run: node scripts/check-request.ts
+      - name: Select the frozen source and preserve the startup inventory
+        env:
+          FROZEN_SOURCE: ${{ steps.request.outputs.source_commit }}
+        run: |
+          git checkout --detach "$FROZEN_SOURCE"
+          export SOURCE_COMMIT="$FROZEN_SOURCE"
+          echo "SOURCE_COMMIT=$FROZEN_SOURCE" >> "$GITHUB_ENV"
+          node scripts/freeze.ts --verify
+          node scripts/initialize-evaluation.ts
+      - run: npm ci
+      - run: npm test
+      - run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Initialize durable inventory
+        run: |
+          node scripts/migrate.ts
+          node scripts/run-evaluation.ts --initialize
+      - name: Compile isolated worker
+        run: |
+          token=$(node -e 'console.log(require("crypto").randomBytes(32).toString("base64url"))')
+          echo "::add-mask::$token"
+          echo "CREWBENCH_WORKER_TOKEN=$token" >> "$GITHUB_ENV"
+          npx eve build --skip-sandbox-prewarm > /tmp/eve-build.log 2>&1
+      - name: Start the pinned CPU model
+        run: |
+          python3 scripts/install-ollama.py
+          export PATH="$RUNNER_TEMP/crewbench-ollama/bin:$PATH"
+          ollama serve > /tmp/ollama.log 2>&1 &
+          for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:11434/api/version && break; sleep 1; done
+          ollama pull qwen3:1.7b
+          node scripts/probe-model.mjs
+          cp artifacts/probes/model-native.json artifacts/actual/model-probe.json
+      - name: Execute the frozen paired schedule
+        run: |
+          npx eve start --host 127.0.0.1 --port 2000 --no-schedules > /tmp/eve-runtime.log 2>&1 &
+          for attempt in $(seq 1 60); do curl --fail --silent http://127.0.0.1:2000/health && break; sleep 1; done
+          node scripts/run-evaluation.ts
+      - name: Finalize all planned outcomes
+        if: always() && steps.request.outcome == 'success'
+        run: node scripts/run-evaluation.ts --finalize
+      - name: Publish only validated evidence on a results branch
+        if: always() && steps.request.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVALUATION_JOB_STATUS: ${{ job.status }}
+        run: |
+          node scripts/record-evaluation-workflow.ts
+          node scripts/publish-evidence.ts
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/core-${GITHUB_RUN_ID}
+          git add artifacts/actual
+          git commit -m 'chore: retain every frozen paired evaluation outcome'
+          gh auth setup-git
+          git push origin HEAD
