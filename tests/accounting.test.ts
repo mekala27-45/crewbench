@@ -1,0 +1,13 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {newTrial,acquire,reserve,dispatchIntent,recordResponse} from '../src/runtime/state.ts';
+import {canonical,bytesDigest,digest} from '../src/contracts/core.ts';
+import {verifyAccounting} from '../src/report/accounting.ts';
+import {verifyFreeze} from '../src/report/freeze.ts';
+const read=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
+function trial(){const p=read('evaluation/plan.json'),packet=read('fixtures/runtime/'+read('evaluation/model-subset.json')[0]+'.json');const s=newTrial({id:'accounting',packet,plan:p,method:'solo_agent'});const lease=acquire(s,1000,'worker');const body={model:'qwen3:1.7b',messages:[{role:'user',content:'synthetic request'}],options:{num_predict:p.budget.output_per_request_tokens}};const wire=canonical(body);reserve(s,1001,lease,'solo','request',Buffer.byteLength(wire),p.budget.output_per_request_tokens,bytesDigest(wire),[]);const a:any=dispatchIntent(s,1002,lease,'request');a.request_body=body;recordResponse(s,1003,lease,'request',{message:'result'},{input_tokens:10,output_tokens:5},1);return s;}
+test('accounting reconciles exact transport and complete usage',()=>{assert.deepEqual(verifyAccounting(trial()),{verified:true,reserved:1,dispatched:1,observed_responses:1,known_input_tokens:10,known_output_tokens:5,usage_missing:0});});
+test('transport tampering and uncharged dispatch fail verification',()=>{let s=trial();s.attempts[0].request_body.messages[0].content='changed';assert.throws(()=>verifyAccounting(s),/TRANSPORT_BYTES_MISMATCH/);s=trial();s.attempts.push({...s.attempts[0],operation_id:'unreserved'});assert.throws(()=>verifyAccounting(s),/DISPATCH_RESERVATION_MISMATCH/);});
+test('unknown usage remains unknown and duplicate reservations fail',()=>{const s=trial();s.attempts[0].input_tokens=null;assert.equal(verifyAccounting(s).usage_missing,1);s.reservations.push(s.reservations[0]);assert.throws(()=>verifyAccounting(s),/DUPLICATE_RESERVATION/);assert.throws(()=>verifyAccounting(null),/ACCOUNTING_EMPTY/);});
+test('freeze rejects missing evidence and any changed input',()=>{assert.throws(()=>verifyFreeze({},{}),/FREEZE_EMPTY/);const files=Object.fromEntries(Array.from({length:50},(_,i)=>['file'+i,digest(i)]));const manifest={schema_version:1,files,model:{model_digest:'a'.repeat(64)},development_provenance:{source_commit:'b'.repeat(40)},plan_digest:'c'.repeat(64)};assert.equal(verifyFreeze(manifest,files),true);assert.throws(()=>verifyFreeze(manifest,{...files,file1:digest('changed')}),/FREEZE_MISMATCH/);});

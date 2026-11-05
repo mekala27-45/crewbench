@@ -44,6 +44,13 @@ def grade(packet, truth, result):
             valid = False
             continue
         payload = receipt["payload"]
+        allowed_role = "baseline" if result["method"] == "deterministic_baseline" else "solo" if result["method"] == "solo_agent" else "synthesis"
+        if receipt.get("role") != allowed_role:
+            join = result.get("join") or {}
+            transferred = join.get("evidence_receipts", [])
+            if result["method"] != "split_review" or receipt not in transferred or join.get("trial_id") != result["trial_id"] or join.get("case_id") != packet["case_id"] or join.get("snapshot_id") != packet["snapshot_id"]:
+                valid = False
+                continue
         if ref["field"] == "catalog_complete":
             group = ref["evidence_id"].removeprefix("catalog_")
             catalog = next((c for c in payload.get("catalogs", []) if c["group"] == group), None)

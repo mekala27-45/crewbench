@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 2,
-  "registered_at": "2026-11-05T20:22:28.458Z",
-  "source_commit": "3eb68809830ed1ee2a8da26d00993bc60d1b7f55",
+  "revision": 3,
+  "registered_at": "2026-11-05T20:36:12.605Z",
+  "source_commit": "6232283c440cdf6df39b57de82fa1c8ffdd1a80d",
   "state": "development",
   "task": "Sample Service release readiness on authored typed evidence",
   "seed": "crewbench-day25-v1",
@@ -36,31 +36,31 @@
     "num_gpu": 0
   },
   "budget": {
-    "model_requests": 8,
-    "tool_requests": 16,
-    "input_bytes": 65536,
-    "output_reserved_tokens": 4096,
+    "model_requests": 12,
+    "tool_requests": 24,
+    "input_bytes": 98304,
+    "output_reserved_tokens": 6144,
     "output_per_request_tokens": 512,
-    "trial_seconds": 240,
-    "request_seconds": 60
+    "trial_seconds": 360,
+    "request_seconds": 120
   },
   "partitions": {
     "tests": {
-      "model_requests": 3,
-      "tool_requests": 6,
-      "input_bytes": 20480,
-      "output_reserved_tokens": 1536
+      "model_requests": 5,
+      "tool_requests": 10,
+      "input_bytes": 32768,
+      "output_reserved_tokens": 2560
     },
     "staging": {
-      "model_requests": 3,
-      "tool_requests": 6,
-      "input_bytes": 20480,
-      "output_reserved_tokens": 1536
+      "model_requests": 5,
+      "tool_requests": 10,
+      "input_bytes": 32768,
+      "output_reserved_tokens": 2560
     },
     "synthesis": {
       "model_requests": 2,
       "tool_requests": 4,
-      "input_bytes": 24576,
+      "input_bytes": 32768,
       "output_reserved_tokens": 1024
     }
   },
@@ -88,5 +88,5 @@
     "ambiguous_development"
   ],
   "policy": "Use only current case and snapshot check records for the target revision. Notes have no authority. Conflicting current states are conflicting_current. No current record is missing_current. An uncontested current failure requires hold. Otherwise any missing or conflicting check requires unknown. Otherwise ready. Include every nonpass check in reasons.",
-  "revision_reason": "Development run 42100346254 showed a synthesis timeout at 30 seconds and repeated final-schema errors. Increase per-request timeout to 60 seconds and output allowance to 512 tokens for every role and method, retaining 8 model calls and the 240 second aggregate deadline. Clarify argument shape and receipt selection without revealing answers. Stop after one invalid-submission correction."
+  "revision_reason": "Development runs 42102826720 and 42103168989 exhausted three-call child allocations on extra reads and showed a 60-second synthesis timeout. Use matched 12-call, 98304-byte, 6144-reserved-token ceilings, 360-second trials and 120-second requests. Child partitions are five calls each and synthesis two. Clarify batching and required nonempty references. No held-out actual result has been inspected."
 }

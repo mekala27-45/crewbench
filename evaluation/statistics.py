@@ -1,0 +1,35 @@
+"""Paired descriptive statistics with retained planned denominators."""
+import math,json,sys
+from pathlib import Path
+
+def wilson(k,n):
+    if not n:return None
+    z=1.959963984540054; p=k/n; d=1+z*z/n
+    center=(p+z*z/(2*n))/d; half=z*math.sqrt(p*(1-p)/n+z*z/(4*n*n))/d
+    return [center-half,center+half]
+
+def summarize(results,grades,subset):
+    rows=results['trials']; by={(r['case_id'],r['method']):r for r in rows}; gs={(r['case_id'],r['method']):r for r in grades['grades']}
+    if len(by)!=len(rows) or len(rows)!=24 or len(subset)!=12:raise ValueError('PLANNED_DENOMINATOR_MISMATCH')
+    methods=['solo_agent','split_review']; out={'planned_pairs':12,'descriptive_only':True}
+    for method in methods:
+        selected=[by[(c,method)] for c in subset]; measured=[r for r in selected if r.get('actual_dispatch')]
+        k=sum(gs[(c,method)]['strict_success'] for c in subset); unsafe=sum(gs[(c,method)]['unsupported_ready'] for c in subset)
+        attempts=[a for r in selected for a in r.get('state',{}).get('attempts',[])]
+        missing=sum(a.get('output_tokens') is None or a.get('input_tokens') is None for a in attempts)
+        out[method]={'successes':k,'planned':12,'attempted':len(measured),'unexecuted':12-len(measured),'wilson_95_descriptive':wilson(k,12),'unsupported_ready':unsafe,'utility_floor_met':k>=8 and unsafe==0,'model_requests':len(attempts),'input_bytes':sum(r.get('state',{}).get('spent',{}).get('input_bytes',0) for r in selected),'output_tokens':sum(a['output_tokens'] for a in attempts) if not missing else None,'usage_missing_requests':missing,'known_output_tokens':sum(a.get('output_tokens') or 0 for a in attempts)}
+    solo_only=split_only=both=neither=0
+    for case in subset:
+        a=gs[(case,'solo_agent')]['strict_success'];b=gs[(case,'split_review')]['strict_success']
+        if a and b:both+=1
+        elif a:solo_only+=1
+        elif b:split_only+=1
+        else:neither+=1
+    complete=all(by[(c,m)].get('actual_dispatch') for c in subset for m in methods)
+    discordant=solo_only+split_only
+    p=min(1,2*sum(math.comb(discordant,i) for i in range(min(solo_only,split_only)+1))/2**discordant) if complete and discordant else 1.0 if complete else None
+    out.update({'difference':f"{out['split_review']['successes']-out['solo_agent']['successes']:+d} / 12",'paired_table':{'both':both,'solo_only':solo_only,'split_only':split_only,'neither':neither},'exact_mcnemar_p':p,'inference_missing_reason':None if complete else 'At least one planned method-case row lacks actual dispatch','conclusion':'No broad superiority claim. Interpret paired counts together with utility floors and resource measurements.'})
+    return out
+
+if __name__=='__main__':
+    results=json.loads(Path(sys.argv[1]).read_text());grades=json.loads(Path(sys.argv[2]).read_text());subset=json.loads(Path('evaluation/model-subset.json').read_text());summary=summarize(results,grades,subset);Path(sys.argv[3]).write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary))
