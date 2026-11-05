@@ -1,0 +1,40 @@
+
+> crewbench@0.1.0 test
+> node --test tests/*.test.ts
+
+✔ accounting clean pass, corrupted transport and empty refusal (11.610652ms)
+✔ usage, role and response mutations cannot manufacture comparable results (2.849634ms)
+✔ a dispatch intent without outcome is uncertain, never a confirmed execution (2.103577ms)
+✔ an unoffered tool is refused even with updated request bytes and digest (0.762191ms)
+✔ claim gate accepts provenance, refuses mixed modes and empty evidence (1.782097ms)
+✔ missing measurement remains missing (0.3139ms)
+✔ bundle gate accepts startup failure and refuses traversal and nothing (1.191332ms)
+✔ corpus has isolated lineages and exact deterministic subset (2.174173ms)
+✔ runtime packets validate and carry no truth canary or family metadata (9.90818ms)
+✔ packet gate refuses wrong scope, empty and body mutation (0.811484ms)
+✔ evidence import binds the exact source, plan, branch and paths (2.047284ms)
+✔ publication refuses credentials and preserves ordinary synthetic data (1.324632ms)
+✔ retention never evicts pinned reports or deletes automatically (12.730619ms)
+✔ freeze accepts exact input digests and refuses changed or absent evidence (3.172797ms)
+✔ freeze rejects traversal and unbound development evidence (0.730393ms)
+✔ report binds exact grades and renders deterministic provenance (5.286329ms)
+✔ duplicate grades cannot increase counts (0.358316ms)
+✔ absent evidence never creates claims or measurements (0.41408ms)
+✔ exact role exposure excludes delegation and arbitrary access (4.995014ms)
+✔ catalog reveals no record state or body (1.71789ms)
+✔ reservation is atomic in every dimension and nonrefundable (1.091483ms)
+✔ one remaining request grants one concurrent reservation (1.489098ms)
+✔ child redelivery is stable and changed payload conflicts (4.401196ms)
+✔ lease turnover preserves accepted child and fences old generation (2.770185ms)
+✔ uncertain dispatch terminates on restart without new dispatch (0.919366ms)
+✔ cancellation quarantines late response and keeps reserved usage (0.657884ms)
+✔ expired trial cannot reset the deadline or reserve (0.618476ms)
+✔ structurally valid wrong verdict is preserved for independent grading (1.619373ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 564.278637
