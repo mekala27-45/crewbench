@@ -13,4 +13,8 @@ Evidence retention takes priority over demo availability. Expired capabilities c
 Use an isolated loopback database for recovery tests. The script refuses remote hosts, creates a dedicated test schema, kills only its own child PID and obtains post-action observations from another process. Never inject faults into the hosted demo database.
 
 
+If the local Windows command runner rejects a file:///workspace permission URI before process launch, restore a Windows-compatible workspace configuration before running the private-key grader. Do not route shell execution through another tool to evade the rejected sandbox configuration.
+
+The provisional report workflow imports exact sealed result bytes, verifies source, plan and freeze identities, and requires the frozen grader hashes. It uses --public-records explicitly and keeps the private answer-key check pending. Restore local grading before a complete release tag.
+
 Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.

@@ -44,10 +44,10 @@ Development and model-probe result branches retain failed runs. The freeze workf
 - [Baseline and first actual runtime evidence](https://github.com/mekala27-45/crewbench/tree/results/development-42099764606/artifacts)
 - [Verified scripted recovery](https://github.com/mekala27-45/crewbench/tree/results/development-42103168989/artifacts/recovery)
 - [Responsive browser and API evidence](https://github.com/mekala27-45/crewbench/tree/results/web-42106567251/artifacts)
-- [Native provider and submission-size calibration](https://github.com/mekala27-45/crewbench/tree/results/model-probe-42107739545/artifacts/probes)
+- [Native provider and submission-size calibration](https://github.com/mekala27-45/crewbench/tree/results/model-probe-42109940072/artifacts/probes)
 - [Decisions](DECISIONS.md), [retained failures](DEAD-ENDS.md), [operating notes](docs/OPERATIONS.md) and [limitations](docs/LIMITATIONS.md)
 
-The model has produced invalid references, omitted fields and incomplete reviews during development. Those are actual failures, not successful model assessments. The calibration probe found the largest representative development submissions fit within the 512-token output ceiling: 191 tokens for solo and synthesis, 102 for the test specialist and 106 for the staging specialist.
+The 1.7B candidate produced invalid references and omitted fields. The explicit 4B instruction-only candidate is now pinned by native artifact and template hashes. Run 42109940250 produced bare JSON instead of native submission tool calls, so all four trials failed. Tool-format clarification is being verified on development cases. Those are actual failures, not successful model assessments. The calibration probe found the largest representative development submissions fit within the 512-token output ceiling: 191 tokens for solo and synthesis, 102 for the test specialist and 106 for the staging specialist.
 
 Fixed partitions, context construction and role prompts differ as well as agent count. The experiment cannot isolate agent count alone, establish general superiority or measure production release quality. Inference is serialized, so no parallel speedup is claimed. The registered utility floor is 8 of 12 strict successes per method with no accepted unsupported ready verdict. It is not forced to pass.
 

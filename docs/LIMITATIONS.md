@@ -12,4 +12,6 @@ The public report is usable without the live API. That does not satisfy live API
 
 The private latent answer key and original generator remain local. Public runtime records are inspectable, but an independently repeated latent-truth generation requires the retained local files or explicit authorization to publish them.
 
+Public-record grading is a provisional fallback while local execution is unavailable. It independently applies the declared policy and validates execution receipts, but does not repeat agreement with the separately retained private latent answer key. Reports expose this distinction and keep release completion pending.
+
 Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.

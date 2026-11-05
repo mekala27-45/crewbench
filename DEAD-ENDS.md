@@ -12,4 +12,10 @@ The expanded browser run 42105939020 passed 36 checks and failed six width check
 
 Automatic approval review rejected two live API actions: sending the dedicated Neon database credential to Vercel and disabling Vercel deployment protection. It also rejected publishing the private latent answer key. Those actions have not been retried through another mechanism.
 
+Run 42107541552 accepted one solo submission with an incorrect reason set, while the specialists failed their output contract. No held-out inference was used for the next model choice. The generic qwen3:4b tag in probe 42108725636 resolved to a thinking-only variant. Probe 42109645983 verified the explicit instruction-only artifact. Run 42109940250 then produced ordinary JSON instead of native submission calls; all four development rows remained failed.
+
+The first contract pipeline retained a real failing Python test but returned success because tee masked the exit code. The fixture was missing case_id. The fixture now includes it, and both logging pipelines use pipefail. Retained logs, not the publisher exit alone, determine test success.
+
+Later local commands could not start because the Windows sandbox configuration contained a Linux /workspace URI. Cloud verification continues, but fresh private answer-key grading remains pending restoration of that local environment.
+
 Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.
