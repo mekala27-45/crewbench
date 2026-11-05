@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "freeze_digest": "b4074a3379d5cee8177956e23477b49531d9a2a5f9ff2b9ad53eb8d58eb3a429",
+  "verified_source_commit": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+  "planned_method_case_trials": 24,
+  "model_subset": "evaluation/model-subset.json",
+  "mode": "actual_model",
+  "created_at": "2026-11-05T22:01:34.111Z"
+}
