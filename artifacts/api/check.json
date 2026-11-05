@@ -1,0 +1,543 @@
+{
+  "schema_version": 1,
+  "mode": "deterministic_baseline",
+  "environment": "isolated_ci_database",
+  "canonical_url": "http://127.0.0.1:8080",
+  "source_commit": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+  "passed": true,
+  "failure": null,
+  "events": [
+    {
+      "path": "/healthz",
+      "status": 200,
+      "request_digest": "a773647c9c48744e05c1e7735a5a68e0d3f9669fc430ae391dc73ba729f08b88",
+      "response_digest": "232f3a4816ec891e53cfbf152e7dfa0855e51087729b667ed2f01d8585c0e8e5",
+      "at": "2026-11-05T21:32:02.885Z"
+    },
+    {
+      "path": "/readyz",
+      "status": 200,
+      "request_digest": "48711cd0ff7524f6f20d7fafc8e3a65b6a7d0c257c7729c9b006e6c0222e1a93",
+      "response_digest": "4a127979a8be92c6d5f70f2841e5203cdd4bf82981c2eabb78fa864475a05c27",
+      "at": "2026-11-05T21:32:02.942Z"
+    },
+    {
+      "path": "/api/v1/reports/latest",
+      "status": 200,
+      "request_digest": "33079f5dfe3591b5bfb1619a8f6296aa948b196675dae3bea8f0bfdff1551355",
+      "response_digest": "eb8bc13bb1fbfeb7725afbaa7e47487ff508e50c80afe9bc713e8f414a15b043",
+      "at": "2026-11-05T21:32:02.982Z"
+    },
+    {
+      "path": "/api/v1/catalog",
+      "status": 200,
+      "request_digest": "6e5d50aa89b96770d40551f59222ce1c429ccf0f1694623e9c8ea9f36ebd2e70",
+      "response_digest": "8342bc85bef867497b8ffe7c63d3e69e76854c9a775bf48c5965fad02b1b6da7",
+      "at": "2026-11-05T21:32:02.987Z"
+    },
+    {
+      "path": "/api/v1/sessions",
+      "status": 201,
+      "request_digest": "e643ee233cdb9f4d4ab0275d414788ac4b49ea6bf93b3f58729e4eee9acb1720",
+      "response_digest": "5d00fdbac4d7db50c7d49489d693d9dc7bb3a2727d8a6cac0577021d02f6f2d9",
+      "at": "2026-11-05T21:32:02.991Z"
+    },
+    {
+      "path": "/api/v1/trials",
+      "status": 201,
+      "request_digest": "2b2bfca813faab28485bf430613956c4296c5575b55479b9b61733bcac5336fe",
+      "response_digest": "252f9d9cfe61c3b4448f15b18c4c9c036c91d729f64289157bf2fcccea5e9de7",
+      "at": "2026-11-05T21:32:03.012Z"
+    },
+    {
+      "path": "/api/v1/trials",
+      "status": 200,
+      "request_digest": "2b2bfca813faab28485bf430613956c4296c5575b55479b9b61733bcac5336fe",
+      "response_digest": "252f9d9cfe61c3b4448f15b18c4c9c036c91d729f64289157bf2fcccea5e9de7",
+      "at": "2026-11-05T21:32:03.035Z"
+    },
+    {
+      "path": "/api/v1/trials",
+      "status": 409,
+      "request_digest": "03ade95b5676d5294bc96f48452538b96907590b8d064cf78b3ae5a11f69587d",
+      "response_digest": "434a91d4373ba88afd1463cff22006a90dae21cd4e7360edaa14d0d3f8041ad1",
+      "at": "2026-11-05T21:32:03.050Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_25c2db357cca49bb89aaf9af123011de/advance",
+      "status": 202,
+      "request_digest": "ce3936bced5e10abd8c214660689c0e397bb19163713dddd01d02bd697639e35",
+      "response_digest": "e4f303a52e5a621ecbfafb73b48b5a92eff038b222acf7300b096a44a128f79a",
+      "at": "2026-11-05T21:32:03.064Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_25c2db357cca49bb89aaf9af123011de/advance",
+      "status": 200,
+      "request_digest": "ce3936bced5e10abd8c214660689c0e397bb19163713dddd01d02bd697639e35",
+      "response_digest": "2f016010886c9ee57338c5c33fec944d9affb392d4cc7be1a04e162ac4c67fde",
+      "at": "2026-11-05T21:32:03.092Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_25c2db357cca49bb89aaf9af123011de/advance",
+      "status": 200,
+      "request_digest": "ce3936bced5e10abd8c214660689c0e397bb19163713dddd01d02bd697639e35",
+      "response_digest": "e4f303a52e5a621ecbfafb73b48b5a92eff038b222acf7300b096a44a128f79a",
+      "at": "2026-11-05T21:32:03.127Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_25c2db357cca49bb89aaf9af123011de",
+      "status": 200,
+      "request_digest": "79d529b28e0e9ed3670a33e2dcbc7cc1b1c5754acf56f7a68de08ce1f8f0143f",
+      "response_digest": "2f016010886c9ee57338c5c33fec944d9affb392d4cc7be1a04e162ac4c67fde",
+      "at": "2026-11-05T21:32:03.141Z"
+    },
+    {
+      "path": "/api/v1/sessions",
+      "status": 201,
+      "request_digest": "e643ee233cdb9f4d4ab0275d414788ac4b49ea6bf93b3f58729e4eee9acb1720",
+      "response_digest": "3c3a9087a66c182718ac2ef006ee49e971090109c1f3a9150abc9c1786329954",
+      "at": "2026-11-05T21:32:03.152Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_25c2db357cca49bb89aaf9af123011de",
+      "status": 404,
+      "request_digest": "79d529b28e0e9ed3670a33e2dcbc7cc1b1c5754acf56f7a68de08ce1f8f0143f",
+      "response_digest": "1312cc7251c46a06735019ac12f9aca1b6024e50e82dea11c07c761477a55a0a",
+      "at": "2026-11-05T21:32:03.165Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_25c2db357cca49bb89aaf9af123011de",
+      "status": 401,
+      "request_digest": "79d529b28e0e9ed3670a33e2dcbc7cc1b1c5754acf56f7a68de08ce1f8f0143f",
+      "response_digest": "8a5a2493425e2c7edbd75a177bc3295b29c39ad62482485d933d90efeda58850",
+      "at": "2026-11-05T21:32:03.176Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_25c2db357cca49bb89aaf9af123011de/events?cursor=oops",
+      "status": 400,
+      "request_digest": "803a6379219d7a613544a2304f4920aad1f0eb6a8b55619b2e30c7e199dc6b21",
+      "response_digest": "ace7ad169c9657ff6e774f6d8d9061402ace97e380da1f1639de002cf218a274",
+      "at": "2026-11-05T21:32:03.186Z"
+    },
+    {
+      "path": "/api/v1/trials",
+      "status": 400,
+      "request_digest": "aea12b66f64da4da7969d004ac3bb894afcf1a2cfcd0da593364ac8c15bd7490",
+      "response_digest": "7e9d389351363045f579e33a490a3d3cf6420f4d9975a01b44b08101a83a8319",
+      "at": "2026-11-05T21:32:03.198Z"
+    },
+    {
+      "path": "/api/v1/trials",
+      "status": 400,
+      "request_digest": "8c6a927fcf9b09730989d7ba30774f9c2400e00675cfe7d5e34f3a2b5fe5bc0f",
+      "response_digest": "a1ecf335085590292be29d29db6fe521b842e7635f3f6c279d96e7962b6f3c74",
+      "at": "2026-11-05T21:32:03.209Z"
+    },
+    {
+      "path": "/api/v1/trials",
+      "status": 413,
+      "request_digest": "517b3af5c55b6e1a7784934c2362bd1668ec80c7cd445da18cc264266d1f068f",
+      "response_digest": "bc176d9c779d5ca13d17cf7dfbabfe857ab908c9ce852a226283edf7ce31e1fe",
+      "at": "2026-11-05T21:32:03.222Z"
+    },
+    {
+      "path": "/api/v1/catalog",
+      "status": 403,
+      "request_digest": "6e5d50aa89b96770d40551f59222ce1c429ccf0f1694623e9c8ea9f36ebd2e70",
+      "response_digest": "50b14235209d88659753bb1a14eec59af5b64d444b8237b82c1e25c1edd0a017",
+      "at": "2026-11-05T21:32:03.224Z"
+    },
+    {
+      "path": "/api/v1/catalog",
+      "status": 200,
+      "request_digest": "6e5d50aa89b96770d40551f59222ce1c429ccf0f1694623e9c8ea9f36ebd2e70",
+      "response_digest": "8342bc85bef867497b8ffe7c63d3e69e76854c9a775bf48c5965fad02b1b6da7",
+      "at": "2026-11-05T21:32:03.226Z"
+    }
+  ],
+  "observation": {
+    "trial_id": "demo_25c2db357cca49bb89aaf9af123011de",
+    "schema": "crewbench",
+    "state_digest": "54d7f7cd6258dc8f14673d4103d53e7690ae3b5f35f85e9010b7d1b4273717d4",
+    "state": {
+      "id": "demo_25c2db357cca49bb89aaf9af123011de",
+      "join": null,
+      "mode": "deterministic_baseline",
+      "owner": "baseline-worker",
+      "roles": {
+        "baseline": {
+          "spent": {
+            "input_bytes": 0,
+            "tool_requests": 0,
+            "model_requests": 0,
+            "output_reserved_tokens": 0
+          },
+          "status": "submitted",
+          "session_id": null
+        }
+      },
+      "spent": {
+        "input_bytes": 0,
+        "tool_requests": 0,
+        "model_requests": 0,
+        "output_reserved_tokens": 0
+      },
+      "budget": {
+        "input_bytes": 98304,
+        "tool_requests": 24,
+        "trial_seconds": 360,
+        "model_requests": 12,
+        "request_seconds": 120,
+        "output_reserved_tokens": 6144,
+        "output_per_request_tokens": 512
+      },
+      "events": [
+        {
+          "at": "2026-11-05T21:32:03.084Z",
+          "type": "activated",
+          "details": {},
+          "sequence": 1
+        },
+        {
+          "at": "2026-11-05T21:32:03.084Z",
+          "type": "lease_acquired",
+          "details": {
+            "owner": "baseline-worker",
+            "generation": 1
+          },
+          "sequence": 2
+        },
+        {
+          "at": "2026-11-05T21:32:03.113Z",
+          "type": "lease_acquired",
+          "details": {
+            "owner": "baseline-worker",
+            "generation": 1
+          },
+          "sequence": 3
+        },
+        {
+          "at": "2026-11-05T21:32:03.113Z",
+          "type": "handler_executed",
+          "details": {
+            "name": "list_evidence",
+            "role": "baseline",
+            "operation_id": "list"
+          },
+          "sequence": 4
+        },
+        {
+          "at": "2026-11-05T21:32:03.113Z",
+          "type": "handler_executed",
+          "details": {
+            "name": "read_evidence",
+            "role": "baseline",
+            "operation_id": "read_0"
+          },
+          "sequence": 5
+        },
+        {
+          "at": "2026-11-05T21:32:03.113Z",
+          "type": "handler_executed",
+          "details": {
+            "name": "submit_assessment",
+            "role": "baseline",
+            "operation_id": "submit"
+          },
+          "sequence": 6
+        },
+        {
+          "at": "2026-11-05T21:32:03.113Z",
+          "type": "assessment_committed",
+          "details": {
+            "receipt_id": "h3"
+          },
+          "sequence": 7
+        }
+      ],
+      "method": "deterministic_baseline",
+      "status": "submitted",
+      "case_id": "c061cbcf2cc",
+      "failure": null,
+      "attempts": [],
+      "children": {},
+      "deadline": 1793914683084.508,
+      "receipts": [
+        {
+          "id": "h1",
+          "role": "baseline",
+          "tool": "list_evidence",
+          "payload": {
+            "catalogs": [
+              {
+                "rows": [
+                  {
+                    "check_key": "unit_tests",
+                    "evidence_id": "e8572b65",
+                    "record_kind": "check",
+                    "evidence_group": "tests",
+                    "subject_revision": "r6991686"
+                  },
+                  {
+                    "check_key": "api_tests",
+                    "evidence_id": "e6a054d7",
+                    "record_kind": "check",
+                    "evidence_group": "tests",
+                    "subject_revision": "r6991686"
+                  }
+                ],
+                "group": "tests",
+                "case_id": "c061cbcf2cc",
+                "snapshot_id": "s785fa6ab",
+                "catalog_complete": true
+              },
+              {
+                "rows": [
+                  {
+                    "check_key": "staging_probe",
+                    "evidence_id": "eff19ad1",
+                    "record_kind": "check",
+                    "evidence_group": "staging",
+                    "subject_revision": "rf64ef2a"
+                  },
+                  {
+                    "check_key": "artifact_match",
+                    "evidence_id": "ed58b3ae",
+                    "record_kind": "check",
+                    "evidence_group": "staging",
+                    "subject_revision": "r6991686"
+                  }
+                ],
+                "group": "staging",
+                "case_id": "c061cbcf2cc",
+                "snapshot_id": "s785fa6ab",
+                "catalog_complete": true
+              }
+            ]
+          },
+          "sequence": 4,
+          "trial_id": "demo_25c2db357cca49bb89aaf9af123011de",
+          "created_at": "2026-11-05T21:32:03.113Z",
+          "operation_id": "list",
+          "payload_digest": "26d3584bd238a562937d139b4c63ec1a6fdfb4bfd4bbe47fb4de54043b3e40a3"
+        },
+        {
+          "id": "h2",
+          "role": "baseline",
+          "tool": "read_evidence",
+          "payload": {
+            "records": [
+              {
+                "body": "Sample Service check staging_probe on revision rf64ef2a. Recorded state: pass.",
+                "state": "pass",
+                "case_id": "c061cbcf2cc",
+                "check_key": "staging_probe",
+                "body_digest": "ea58e44465c260c4a53fdb89d2de2a093fc167160274f805b764941abf88ae0a",
+                "evidence_id": "eff19ad1",
+                "record_kind": "check",
+                "snapshot_id": "s785fa6ab",
+                "evidence_group": "staging",
+                "observed_order": 4,
+                "subject_revision": "rf64ef2a"
+              },
+              {
+                "body": "Sample Service check artifact_match on revision r6991686. Recorded state: pass.",
+                "state": "pass",
+                "case_id": "c061cbcf2cc",
+                "check_key": "artifact_match",
+                "body_digest": "2c3425b770bbbc7422d818d627257109d19dba0a5a3c4c05b35341ea2a239098",
+                "evidence_id": "ed58b3ae",
+                "record_kind": "check",
+                "snapshot_id": "s785fa6ab",
+                "evidence_group": "staging",
+                "observed_order": 3,
+                "subject_revision": "r6991686"
+              },
+              {
+                "body": "Sample Service check unit_tests on revision r6991686. Recorded state: pass.",
+                "state": "pass",
+                "case_id": "c061cbcf2cc",
+                "check_key": "unit_tests",
+                "body_digest": "1b17920e638d10e450bfd1f78bdd5254a90caa4196be0dc028b9b35ff4f2f2d3",
+                "evidence_id": "e8572b65",
+                "record_kind": "check",
+                "snapshot_id": "s785fa6ab",
+                "evidence_group": "tests",
+                "observed_order": 1,
+                "subject_revision": "r6991686"
+              },
+              {
+                "body": "Sample Service check api_tests on revision r6991686. Recorded state: pass.",
+                "state": "pass",
+                "case_id": "c061cbcf2cc",
+                "check_key": "api_tests",
+                "body_digest": "77569c6a53ca594e38622387ca960e2af3166dccf717a466e058ec3a30a2d26f",
+                "evidence_id": "e6a054d7",
+                "record_kind": "check",
+                "snapshot_id": "s785fa6ab",
+                "evidence_group": "tests",
+                "observed_order": 2,
+                "subject_revision": "r6991686"
+              }
+            ]
+          },
+          "sequence": 5,
+          "trial_id": "demo_25c2db357cca49bb89aaf9af123011de",
+          "created_at": "2026-11-05T21:32:03.113Z",
+          "operation_id": "read_0",
+          "payload_digest": "66275d196576d2d0b7d0aa32f1d4ab144ea7b4b34e34f63e2be38f0cf78537bc"
+        },
+        {
+          "id": "h3",
+          "role": "baseline",
+          "tool": "submit_assessment",
+          "payload": {
+            "checks": {
+              "api_tests": "current_pass",
+              "unit_tests": "current_pass",
+              "staging_probe": "missing_current",
+              "artifact_match": "current_pass"
+            },
+            "case_id": "c061cbcf2cc",
+            "reasons": [
+              {
+                "code": "missing_current",
+                "check_key": "staging_probe"
+              }
+            ],
+            "verdict": "unknown",
+            "snapshot_id": "s785fa6ab",
+            "evidence_refs": [
+              {
+                "field": "state",
+                "receipt_id": "h2",
+                "evidence_id": "e8572b65"
+              },
+              {
+                "field": "state",
+                "receipt_id": "h2",
+                "evidence_id": "e6a054d7"
+              },
+              {
+                "field": "state",
+                "receipt_id": "h2",
+                "evidence_id": "ed58b3ae"
+              },
+              {
+                "field": "catalog_complete",
+                "receipt_id": "h1",
+                "evidence_id": "catalog_staging"
+              }
+            ]
+          },
+          "sequence": 6,
+          "trial_id": "demo_25c2db357cca49bb89aaf9af123011de",
+          "created_at": "2026-11-05T21:32:03.113Z",
+          "operation_id": "submit",
+          "payload_digest": "b424d30829ae094df09193a65a44573a6b1b41d2f75d7cc69bf726cabe97142c"
+        }
+      ],
+      "assessment": {
+        "checks": {
+          "api_tests": "current_pass",
+          "unit_tests": "current_pass",
+          "staging_probe": "missing_current",
+          "artifact_match": "current_pass"
+        },
+        "case_id": "c061cbcf2cc",
+        "reasons": [
+          {
+            "code": "missing_current",
+            "check_key": "staging_probe"
+          }
+        ],
+        "verdict": "unknown",
+        "snapshot_id": "s785fa6ab",
+        "evidence_refs": [
+          {
+            "field": "state",
+            "receipt_id": "h2",
+            "evidence_id": "e8572b65"
+          },
+          {
+            "field": "state",
+            "receipt_id": "h2",
+            "evidence_id": "e6a054d7"
+          },
+          {
+            "field": "state",
+            "receipt_id": "h2",
+            "evidence_id": "ed58b3ae"
+          },
+          {
+            "field": "catalog_complete",
+            "receipt_id": "h1",
+            "evidence_id": "catalog_staging"
+          }
+        ]
+      },
+      "generation": 1,
+      "partitions": {
+        "baseline": {
+          "input_bytes": 98304,
+          "tool_requests": 24,
+          "trial_seconds": 360,
+          "model_requests": 12,
+          "request_seconds": 120,
+          "output_reserved_tokens": 6144,
+          "output_per_request_tokens": 512
+        }
+      },
+      "lease_until": 1793914368113.68,
+      "plan_digest": "36740a8c89b57e98190de8eb9fde64e4d8d029324535a53183b2eb93326001fc",
+      "snapshot_id": "s785fa6ab",
+      "terminal_at": 1793914323113.68,
+      "activated_at": 1793914323084.508,
+      "model_digest": null,
+      "reservations": [],
+      "config_digest": "36740a8c89b57e98190de8eb9fde64e4d8d029324535a53183b2eb93326001fc",
+      "packet_digest": "2b7934d666a40a521d316ab48a74cfbd64b31bcdc7b9a0bc6a95bdd1f29c9096",
+      "tool_requests": [
+        {
+          "name": "list_evidence",
+          "role": "baseline",
+          "error": null,
+          "status": "executed",
+          "deliveries": 1,
+          "operation_id": "list",
+          "request_digest": "4c728469991790b436fcb9f726f7cb86d9380270adb760484c095174dde6b136"
+        },
+        {
+          "name": "read_evidence",
+          "role": "baseline",
+          "error": null,
+          "status": "executed",
+          "deliveries": 1,
+          "operation_id": "read_0",
+          "request_digest": "e363b700c73c1b45e8873508061abc32fcea4a35c87f438dfe2ae3b3460ec0a7"
+        },
+        {
+          "name": "submit_assessment",
+          "role": "baseline",
+          "error": null,
+          "status": "executed",
+          "deliveries": 1,
+          "operation_id": "submit",
+          "request_digest": "f8dba3347961704a590a4e04f0df4ce8a0cf28a22a381b3e5abd4ac8a85441af"
+        }
+      ],
+      "assessment_receipt": "h3"
+    },
+    "counts": {
+      "child_packets": 0,
+      "join_receipts": 0,
+      "assessments": 1,
+      "budget_reservations": 0,
+      "provider_attempts": 0,
+      "tool_receipts": 3
+    },
+    "event_sequence": 7,
+    "read_at": "2026-11-05T21:32:03.267Z",
+    "connection_id": 121
+  }
+}

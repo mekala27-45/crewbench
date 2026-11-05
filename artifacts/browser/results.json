@@ -1,0 +1,2053 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+      "/home/runner/work/crewbench/crewbench/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/home/runner/work/crewbench/crewbench/playwright.config.ts",
+    "rootDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+        "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+        "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+      },
+      "gitCommit": {
+        "shortHash": "0b7f5d0",
+        "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+        "subject": "feat: serve the recorded report with its evidence mode and provenance",
+        "body": "feat: serve the recorded report with its evidence mode and provenance",
+        "author": {
+          "name": "Ajay Mekala",
+          "email": "mekalaajayk@gmail.com",
+          "time": 1793914285000
+        },
+        "committer": {
+          "name": "Ajay Mekala",
+          "email": "mekalaajayk@gmail.com",
+          "time": 1793914285000
+        },
+        "branch": "main"
+      },
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+          },
+          "gitCommit": {
+            "shortHash": "0b7f5d0",
+            "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "subject": "feat: serve the recorded report with its evidence mode and provenance",
+            "body": "feat: serve the recorded report with its evidence mode and provenance",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "id": "360-light",
+        "name": "360-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+          },
+          "gitCommit": {
+            "shortHash": "0b7f5d0",
+            "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "subject": "feat: serve the recorded report with its evidence mode and provenance",
+            "body": "feat: serve the recorded report with its evidence mode and provenance",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "id": "360-dark",
+        "name": "360-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+          },
+          "gitCommit": {
+            "shortHash": "0b7f5d0",
+            "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "subject": "feat: serve the recorded report with its evidence mode and provenance",
+            "body": "feat: serve the recorded report with its evidence mode and provenance",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "id": "768-light",
+        "name": "768-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+          },
+          "gitCommit": {
+            "shortHash": "0b7f5d0",
+            "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "subject": "feat: serve the recorded report with its evidence mode and provenance",
+            "body": "feat: serve the recorded report with its evidence mode and provenance",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "id": "768-dark",
+        "name": "768-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+          },
+          "gitCommit": {
+            "shortHash": "0b7f5d0",
+            "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "subject": "feat: serve the recorded report with its evidence mode and provenance",
+            "body": "feat: serve the recorded report with its evidence mode and provenance",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "id": "1440-light",
+        "name": "1440-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+          },
+          "gitCommit": {
+            "shortHash": "0b7f5d0",
+            "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "subject": "feat: serve the recorded report with its evidence mode and provenance",
+            "body": "feat: serve the recorded report with its evidence mode and provenance",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "id": "1440-dark",
+        "name": "1440-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+          },
+          "gitCommit": {
+            "shortHash": "0b7f5d0",
+            "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "subject": "feat: serve the recorded report with its evidence mode and provenance",
+            "body": "feat: serve the recorded report with its evidence mode and provenance",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "name": "360-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 360,
+            "height": 1000
+          },
+          "colorScheme": "light"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "360-light"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+          },
+          "gitCommit": {
+            "shortHash": "0b7f5d0",
+            "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "subject": "feat: serve the recorded report with its evidence mode and provenance",
+            "body": "feat: serve the recorded report with its evidence mode and provenance",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "name": "360-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 360,
+            "height": 1000
+          },
+          "colorScheme": "dark"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "360-dark"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+          },
+          "gitCommit": {
+            "shortHash": "0b7f5d0",
+            "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "subject": "feat: serve the recorded report with its evidence mode and provenance",
+            "body": "feat: serve the recorded report with its evidence mode and provenance",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "name": "768-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 768,
+            "height": 1000
+          },
+          "colorScheme": "light"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "768-light"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+          },
+          "gitCommit": {
+            "shortHash": "0b7f5d0",
+            "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "subject": "feat: serve the recorded report with its evidence mode and provenance",
+            "body": "feat: serve the recorded report with its evidence mode and provenance",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "name": "768-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 768,
+            "height": 1000
+          },
+          "colorScheme": "dark"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "768-dark"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+          },
+          "gitCommit": {
+            "shortHash": "0b7f5d0",
+            "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "subject": "feat: serve the recorded report with its evidence mode and provenance",
+            "body": "feat: serve the recorded report with its evidence mode and provenance",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "name": "1440-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "colorScheme": "light"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "1440-light"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "commitHash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42113424255"
+          },
+          "gitCommit": {
+            "shortHash": "0b7f5d0",
+            "hash": "0b7f5d0ac79cee2ffc466a1a7f784d2cec878cf4",
+            "subject": "feat: serve the recorded report with its evidence mode and provenance",
+            "body": "feat: serve the recorded report with its evidence mode and provenance",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793914285000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "name": "1440-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "colorScheme": "dark"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "1440-dark"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "artifacts/browser/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 2,
+    "webServer": {
+      "command": "npx vite --host 0.0.0.0",
+      "url": "http://localhost:5173/crewbench/",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "workbench.spec.ts",
+      "file": "workbench.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1505,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:33.486Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-44a7feaf00fe7f862f69",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "theme persists and enlarged text remains navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 591,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:35.333Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-31f2e3f04b194d42997c",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "denied service 401 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 406,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:35.946Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-f1a4b26e7045e5d6ec71",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "denied service 403 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 384,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:36.374Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-94d1f50791a868c43550",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "all-failed model results keep the planned denominator and query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 427,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:36.780Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-8fd1d6fe4be81ae903b1",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 559,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:37.225Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-7e5d2054f66a8e002f22",
+          "file": "workbench.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 383,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:37.801Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-93d866814b79c11d8fd4",
+          "file": "workbench.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1530,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:33.488Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-26738ceeb535fec15d1b",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "theme persists and enlarged text remains navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 582,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:35.344Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-a655a439dbab2e4e638c",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "denied service 401 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 355,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:35.943Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-d71a833ec6fbf8868c33",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "denied service 403 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 387,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:36.321Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-4370274f4289d56f466a",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "all-failed model results keep the planned denominator and query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 460,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:36.728Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-55efccaf5108e4b691aa",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 609,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:37.208Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-3ab87218d46ac89f050e",
+          "file": "workbench.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 406,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:37.839Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-a445536f9dc8c55c2bcc",
+          "file": "workbench.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1646,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:38.757Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-df58062a1557d945b8f7",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "theme persists and enlarged text remains navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 634,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:40.555Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-a1d76571f1ab6a4fdedc",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "denied service 401 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 405,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:41.213Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-371b36d82e68374ab84b",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "denied service 403 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 487,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:41.635Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-5703c92148d3e6de2a91",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "all-failed model results keep the planned denominator and query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 469,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:42.147Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-d66f8ee6c003952aec9c",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 568,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:42.644Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-e17d6e7475806b4d7cfc",
+          "file": "workbench.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 384,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:43.232Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-0445731136ecabb62e32",
+          "file": "workbench.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1633,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:38.839Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-f81ca1171679773df1b9",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "theme persists and enlarged text remains navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 596,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:40.637Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-d682b1a46094d9240dd0",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "denied service 401 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 445,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:41.252Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-51af9cd38a0bfd2b6d90",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "denied service 403 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 458,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:41.722Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-1a9ccad38061416048aa",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "all-failed model results keep the planned denominator and query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 498,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:42.205Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-1c6814a37bf114d180bc",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 558,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:42.745Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-7233fc2c2d0a6712fec7",
+          "file": "workbench.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 374,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:43.324Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-cfcfbfcffabe5c45e9ec",
+          "file": "workbench.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1904,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:44.198Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-556d5d8e7433ac09a9b1",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "theme persists and enlarged text remains navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 638,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:46.245Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-25aec51a21a9a8894fff",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "denied service 401 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 494,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:46.911Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-aeff8de8e481c17071bd",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "denied service 403 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 467,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:47.429Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-0325f411b6361bb59c2a",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "all-failed model results keep the planned denominator and query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 440,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:47.925Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-02068f651f87413c37aa",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 576,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:48.390Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-8ee9d77815f2358e5855",
+          "file": "workbench.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 377,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:48.988Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-5b2e6228df25eaf0c154",
+          "file": "workbench.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1879,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:44.284Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-7b79e4fcc43d62e7d6b6",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "theme persists and enlarged text remains navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 578,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:46.349Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-8cb1828d37ecf58c92f9",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "denied service 401 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 474,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:46.961Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-f3771528971edca5f611",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "denied service 403 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 506,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:47.457Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-87dcbae98da34b2db969",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "all-failed model results keep the planned denominator and query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 478,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:47.989Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-3b2e03153755efee596f",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 624,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:48.496Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-bfa210f47d08ff749e5f",
+          "file": "workbench.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 370,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:32:49.149Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-6aebc9709020e74a5233",
+          "file": "workbench.spec.ts",
+          "line": 28,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-05T21:32:31.994Z",
+    "duration": 17645.919,
+    "expected": 42,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
