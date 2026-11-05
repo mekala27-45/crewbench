@@ -1,0 +1,48 @@
+name: CPU model development probe
+on:
+  push:
+    branches: [main]
+    paths: [scripts/probe-model.mjs, scripts/install-ollama.py, .github/workflows/model-probe.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      OLLAMA_HOST: 127.0.0.1:11434
+      OLLAMA_NUM_PARALLEL: 1
+      OLLAMA_MAX_LOADED_MODELS: 1
+      OLLAMA_CONTEXT_LENGTH: 8192
+      CUDA_VISIBLE_DEVICES: '-1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.19.0
+      - name: Install verified official local provider
+        run: python3 scripts/install-ollama.py
+      - name: Start loopback provider and download candidate
+        run: |
+          ollama serve > "$RUNNER_TEMP/crewbench-ollama.log" 2>&1 &
+          for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:11434/api/version && break; sleep 1; done
+          ollama pull qwen3:1.7b
+      - name: Retain real provider startup and tool request
+        if: always()
+        run: node scripts/probe-model.mjs
+      - name: Publish sanitized development evidence
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/model-probe-${GITHUB_RUN_ID}
+          git add artifacts/probes
+          git commit -m 'chore: retain actual CPU provider development probe'
+          gh auth setup-git
+          git push origin HEAD
