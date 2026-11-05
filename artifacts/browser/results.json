@@ -1,0 +1,475 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+      "/home/runner/work/crewbench/crewbench/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/home/runner/work/crewbench/crewbench/playwright.config.ts",
+    "rootDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/mekala27-45/crewbench/commit/9b9b111a334559a26a7cf9ea611400a182e8bb10",
+        "commitHash": "9b9b111a334559a26a7cf9ea611400a182e8bb10",
+        "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42101562002"
+      },
+      "gitCommit": {
+        "shortHash": "9b9b111",
+        "hash": "9b9b111a334559a26a7cf9ea611400a182e8bb10",
+        "subject": "fix: pin PostgreSQL image and correct container health command",
+        "body": "fix: pin PostgreSQL image and correct container health command",
+        "author": {
+          "name": "Ajay Mekala",
+          "email": "mekalaajayk@gmail.com",
+          "time": 1793909674000
+        },
+        "committer": {
+          "name": "Ajay Mekala",
+          "email": "mekalaajayk@gmail.com",
+          "time": 1793909674000
+        },
+        "branch": "main"
+      },
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/9b9b111a334559a26a7cf9ea611400a182e8bb10",
+            "commitHash": "9b9b111a334559a26a7cf9ea611400a182e8bb10",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42101562002"
+          },
+          "gitCommit": {
+            "shortHash": "9b9b111",
+            "hash": "9b9b111a334559a26a7cf9ea611400a182e8bb10",
+            "subject": "fix: pin PostgreSQL image and correct container health command",
+            "body": "fix: pin PostgreSQL image and correct container health command",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793909674000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793909674000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/9b9b111a334559a26a7cf9ea611400a182e8bb10",
+            "commitHash": "9b9b111a334559a26a7cf9ea611400a182e8bb10",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42101562002"
+          },
+          "gitCommit": {
+            "shortHash": "9b9b111",
+            "hash": "9b9b111a334559a26a7cf9ea611400a182e8bb10",
+            "subject": "fix: pin PostgreSQL image and correct container health command",
+            "body": "fix: pin PostgreSQL image and correct container health command",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793909674000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793909674000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/9b9b111a334559a26a7cf9ea611400a182e8bb10",
+            "commitHash": "9b9b111a334559a26a7cf9ea611400a182e8bb10",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42101562002"
+          },
+          "gitCommit": {
+            "shortHash": "9b9b111",
+            "hash": "9b9b111a334559a26a7cf9ea611400a182e8bb10",
+            "subject": "fix: pin PostgreSQL image and correct container health command",
+            "body": "fix: pin PostgreSQL image and correct container health command",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793909674000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793909674000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "name": "desktop",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/9b9b111a334559a26a7cf9ea611400a182e8bb10",
+            "commitHash": "9b9b111a334559a26a7cf9ea611400a182e8bb10",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42101562002"
+          },
+          "gitCommit": {
+            "shortHash": "9b9b111",
+            "hash": "9b9b111a334559a26a7cf9ea611400a182e8bb10",
+            "subject": "fix: pin PostgreSQL image and correct container health command",
+            "body": "fix: pin PostgreSQL image and correct container health command",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793909674000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793909674000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "name": "mobile",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 360,
+            "height": 800
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "artifacts/browser/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 2,
+    "webServer": {
+      "command": "npx vite --host 0.0.0.0",
+      "url": "http://localhost:5173/crewbench/",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "workbench.spec.ts",
+      "file": "workbench.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1185,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T20:15:31.353Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-2a498b3fccaaaaca0d09",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 439,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T20:15:32.838Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-2df49c76d8f13b3d305a",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 263,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T20:15:33.296Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-3bff5a111f19463e79d3",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1065,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T20:15:31.381Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-6dfca3032d593255eff4",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 442,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T20:15:32.693Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-eaadc91eb41df94e379b",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 253,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T20:15:33.153Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-a609dd9bd3b421e05bf7",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-05T20:15:30.050Z",
+    "duration": 3567.2309999999998,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
