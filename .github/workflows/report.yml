@@ -33,6 +33,7 @@ jobs:
           python3 evaluation/statistics.py artifacts/actual/results.json artifacts/actual/grades.json artifacts/actual/summary.json
           python3 evaluation/recovery.py artifacts/recovery/results.json artifacts/recovery/grades.json
           node scripts/build-report.ts
+          node scripts/build-career.ts
       - name: Validate report rendering and static build
         run: npx vite build
       - name: Preserve provisional report and failures
@@ -45,7 +46,7 @@ jobs:
           git config user.name 'Ajay Mekala'
           git config user.email 'mekalaajayk@gmail.com'
           git switch -c results/report-${GITHUB_RUN_ID}
-          git add artifacts site/public/data
+          git add artifacts site/public/data docs/INTERVIEW-CARDS.md docs/DAILY-BUILD-25.md docs/POST-DRAFT.md
           git commit -m 'test: retain provisional grades with exact execution provenance'
           gh auth setup-git
           git push origin HEAD
