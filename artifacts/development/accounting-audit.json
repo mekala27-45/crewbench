@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "mode": "actual_model_development_audit",
+  "source_commit": "dafc20b58e897fa45fc02527997362e73a214107",
+  "plan_digest": "36740a8c89b57e98190de8eb9fde64e4d8d029324535a53183b2eb93326001fc",
+  "input_digest": "ee1756b0acac9f752110554a29021435cf24d7298639abeb27cb39a7acbaf26a",
+  "verified": true,
+  "trial_count": 4,
+  "role_evidence": {
+    "solo": 10,
+    "tests": 6,
+    "staging": 7,
+    "synthesis": 0
+  },
+  "three_role_flow_observed": false,
+  "all_required_roles_observed": false,
+  "rows": [
+    {
+      "trial_id": "dev_42111083922_c110824f699_solo_agent",
+      "case_id": "c110824f699",
+      "method": "solo_agent",
+      "status": "submitted",
+      "failure": null,
+      "assessment_present": true,
+      "state_digest": "4a085b14484d427b3958d6b5a54b327ca20f221f1785649800060a0857d8e3a6",
+      "read_at": "2026-11-05T21:21:45.927Z",
+      "connection_id": 605,
+      "accounting": {
+        "verified": true,
+        "reserved": 4,
+        "dispatch_intents": 4,
+        "confirmed_attempts": 4,
+        "observed_responses": 4,
+        "known_input_tokens": 7099,
+        "known_output_tokens": 444,
+        "usage_missing": 0
+      },
+      "roles": {
+        "solo": {
+          "responses": 4,
+          "tools": 3,
+          "receipts": 3,
+          "status": "submitted"
+        }
+      }
+    },
+    {
+      "trial_id": "dev_42111083922_c110824f699_split_review",
+      "case_id": "c110824f699",
+      "method": "split_review",
+      "status": "timed_out",
+      "failure": "The operation was aborted due to timeout",
+      "assessment_present": false,
+      "state_digest": "b639add255affe7e53da143bf70e4a512a9e3eb0a5bde4c2077a15d6639a14f4",
+      "read_at": "2026-11-05T21:27:13.809Z",
+      "connection_id": 1151,
+      "accounting": {
+        "verified": true,
+        "reserved": 8,
+        "dispatch_intents": 8,
+        "confirmed_attempts": 8,
+        "observed_responses": 7,
+        "known_input_tokens": 9501,
+        "known_output_tokens": 337,
+        "usage_missing": 1
+      },
+      "roles": {
+        "tests": {
+          "responses": 3,
+          "tools": 3,
+          "receipts": 3,
+          "status": "submitted"
+        },
+        "staging": {
+          "responses": 4,
+          "tools": 3,
+          "receipts": 3,
+          "status": "submitted"
+        },
+        "synthesis": {
+          "responses": 0,
+          "tools": 0,
+          "receipts": 0,
+          "status": "timed_out"
+        }
+      }
+    },
+    {
+      "trial_id": "dev_42111083922_c2cdad678dd_split_review",
+      "case_id": "c2cdad678dd",
+      "method": "split_review",
+      "status": "timed_out",
+      "failure": "The operation was aborted due to timeout",
+      "assessment_present": false,
+      "state_digest": "0e95781451b7d34e913695873fc58cb18dd120ac7859ea0d1362bc5d979705b6",
+      "read_at": "2026-11-05T21:31:56.822Z",
+      "connection_id": 1620,
+      "accounting": {
+        "verified": true,
+        "reserved": 7,
+        "dispatch_intents": 7,
+        "confirmed_attempts": 7,
+        "observed_responses": 6,
+        "known_input_tokens": 8336,
+        "known_output_tokens": 349,
+        "usage_missing": 1
+      },
+      "roles": {
+        "tests": {
+          "responses": 3,
+          "tools": 3,
+          "receipts": 3,
+          "status": "submitted"
+        },
+        "staging": {
+          "responses": 3,
+          "tools": 3,
+          "receipts": 3,
+          "status": "submitted"
+        },
+        "synthesis": {
+          "responses": 0,
+          "tools": 0,
+          "receipts": 0,
+          "status": "timed_out"
+        }
+      }
+    },
+    {
+      "trial_id": "dev_42111083922_c2cdad678dd_solo_agent",
+      "case_id": "c2cdad678dd",
+      "method": "solo_agent",
+      "status": "submitted",
+      "failure": null,
+      "assessment_present": true,
+      "state_digest": "7fce76783f0616e5b114fe299ec1a38ccb5d7c9fc03ac5a160af40ecdb3a5481",
+      "read_at": "2026-11-05T21:34:39.656Z",
+      "connection_id": 1898,
+      "accounting": {
+        "verified": true,
+        "reserved": 6,
+        "dispatch_intents": 6,
+        "confirmed_attempts": 6,
+        "observed_responses": 6,
+        "known_input_tokens": 12114,
+        "known_output_tokens": 432,
+        "usage_missing": 0
+      },
+      "roles": {
+        "solo": {
+          "responses": 6,
+          "tools": 4,
+          "receipts": 4,
+          "status": "submitted"
+        }
+      }
+    }
+  ]
+}
