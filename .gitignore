@@ -9,3 +9,7 @@ playwright-report/
 test-results/
 work/
 *.log
+__pycache__/
+*.pyc
+.eve/
+.output/

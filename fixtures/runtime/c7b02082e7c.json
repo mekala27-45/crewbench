@@ -1,0 +1,73 @@
+{
+  "case_id": "c7b02082e7c",
+  "catalog_complete": true,
+  "records": [
+    {
+      "body": "Sample Service check artifact_match on revision rb48502a. Recorded state: pass.",
+      "body_digest": "b97861e6c5d07ea28a5bebeafa63de2a158458a1fbcc0567a371510facf36fa6",
+      "case_id": "c7b02082e7c",
+      "check_key": "artifact_match",
+      "evidence_group": "staging",
+      "evidence_id": "e4e3316c",
+      "observed_order": 3,
+      "record_kind": "check",
+      "snapshot_id": "sed91f336",
+      "state": "pass",
+      "subject_revision": "rb48502a"
+    },
+    {
+      "body": "Sample Service check api_tests on revision rb48502a. Recorded state: pass.",
+      "body_digest": "29f678cbc9e80eca5a746ffbf2dee0f2363771eb16ef7dafed0002b8f059e54f",
+      "case_id": "c7b02082e7c",
+      "check_key": "api_tests",
+      "evidence_group": "tests",
+      "evidence_id": "ef6132d4",
+      "observed_order": 2,
+      "record_kind": "check",
+      "snapshot_id": "sed91f336",
+      "state": "pass",
+      "subject_revision": "rb48502a"
+    },
+    {
+      "body": "Sample Service check unit_tests on revision rb48502a. Recorded state: pass.",
+      "body_digest": "016433b9d82fd5944cd2e41f83e914c519cd3e594fa2911935f7509f9e9b6d7f",
+      "case_id": "c7b02082e7c",
+      "check_key": "unit_tests",
+      "evidence_group": "tests",
+      "evidence_id": "e9278448",
+      "observed_order": 1,
+      "record_kind": "check",
+      "snapshot_id": "sed91f336",
+      "state": "pass",
+      "subject_revision": "rb48502a"
+    },
+    {
+      "body": "Sample Service check staging_probe on revision rb48502a. Recorded state: pass.",
+      "body_digest": "5787a6581bbda4005a32ee4196b3da5dee33a4113dacceb1e110e7ca0667ea84",
+      "case_id": "c7b02082e7c",
+      "check_key": "staging_probe",
+      "evidence_group": "staging",
+      "evidence_id": "eb46869b",
+      "observed_order": 5,
+      "record_kind": "check",
+      "snapshot_id": "sed91f336",
+      "state": "pass",
+      "subject_revision": "rb48502a"
+    },
+    {
+      "body": "Sample Service check staging_probe on revision rb48502a. Recorded state: pass.",
+      "body_digest": "5787a6581bbda4005a32ee4196b3da5dee33a4113dacceb1e110e7ca0667ea84",
+      "case_id": "c7b02082e7c",
+      "check_key": "staging_probe",
+      "evidence_group": "staging",
+      "evidence_id": "ef9bb22c",
+      "observed_order": 4,
+      "record_kind": "check",
+      "snapshot_id": "sed91f336",
+      "state": "pass",
+      "subject_revision": "rb48502a"
+    }
+  ],
+  "snapshot_id": "sed91f336",
+  "target_revision": "rb48502a"
+}

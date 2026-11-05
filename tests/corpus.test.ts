@@ -1,0 +1,8 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync,readdirSync} from 'node:fs';
+import {validatePacket,digest} from '../src/contracts/core.ts';
+const read=(p:string)=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
+test('corpus has isolated lineages and exact deterministic subset',()=>{const rows=read('evaluation/case-index.json');const subset=read('evaluation/model-subset.json');assert.equal(rows.length,48);assert.equal(new Set(rows.map((r:any)=>r.lineage_id)).size,48);assert.equal(subset.length,12);for(const family of new Set(rows.map((r:any)=>r.family))){const f=rows.filter((r:any)=>r.family===family);assert.equal(f.filter((r:any)=>r.split==='development').length,4);assert.equal(f.filter((r:any)=>r.split==='held_out').length,4);assert.equal(f.filter((r:any)=>subset.includes(r.case_id)&&r.split==='held_out').length,2);}});
+test('runtime packets validate and carry no truth canary or family metadata',()=>{const files=readdirSync(new URL('../fixtures/runtime/',import.meta.url)).sort();const packets=files.map(f=>read('fixtures/runtime/'+f));for(const p of packets){validatePacket(p);assert.ok(!JSON.stringify(p).includes('PRIVATE_TRUTH_'));assert.ok(!('family' in p));}assert.equal(digest(packets),read('evaluation/corpus-manifest.json').corpus_digest);});
+test('packet gate refuses wrong scope, empty and body mutation',()=>{const p=read('fixtures/runtime/'+readdirSync(new URL('../fixtures/runtime/',import.meta.url))[0]);assert.throws(()=>validatePacket({} as any));assert.throws(()=>validatePacket({...p,case_id:'wrong'}));assert.throws(()=>validatePacket({...p,records:[{...p.records[0],body:'changed'}]}));});

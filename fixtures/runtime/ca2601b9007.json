@@ -1,0 +1,73 @@
+{
+  "case_id": "ca2601b9007",
+  "catalog_complete": true,
+  "records": [
+    {
+      "body": "Sample Service check artifact_match on revision r0c2215b. Recorded state: pass.",
+      "body_digest": "6ba851146502eef95818d42e0da1f0df9bc47d8dc26530b5e85fc8d8bf01b093",
+      "case_id": "ca2601b9007",
+      "check_key": "artifact_match",
+      "evidence_group": "staging",
+      "evidence_id": "ee534b26",
+      "observed_order": 3,
+      "record_kind": "check",
+      "snapshot_id": "sf6b67f74",
+      "state": "pass",
+      "subject_revision": "r0c2215b"
+    },
+    {
+      "body": "Sample Service check unit_tests on revision r0c2215b. Recorded state: pass.",
+      "body_digest": "1732941516768aec1c0e2e9519a69b2fdf6a964ce19b4a9c4cb7630853aa7239",
+      "case_id": "ca2601b9007",
+      "check_key": "unit_tests",
+      "evidence_group": "tests",
+      "evidence_id": "e1de238b",
+      "observed_order": 1,
+      "record_kind": "check",
+      "snapshot_id": "sf6b67f74",
+      "state": "pass",
+      "subject_revision": "r0c2215b"
+    },
+    {
+      "body": "Sample Service check artifact_match on revision r0c2215b. Recorded state: fail.",
+      "body_digest": "45c1e831a2e6add4bf5f833814cc4278845d01d3459566091bafa9f223545edb",
+      "case_id": "ca2601b9007",
+      "check_key": "artifact_match",
+      "evidence_group": "staging",
+      "evidence_id": "e09d5e2b",
+      "observed_order": 4,
+      "record_kind": "check",
+      "snapshot_id": "sf6b67f74",
+      "state": "fail",
+      "subject_revision": "r0c2215b"
+    },
+    {
+      "body": "Sample Service check staging_probe on revision r0c2215b. Recorded state: pass.",
+      "body_digest": "d4915f82564af09f6842dec585b56ed8931eb13b593a5faf4b8bb2415f9f5754",
+      "case_id": "ca2601b9007",
+      "check_key": "staging_probe",
+      "evidence_group": "staging",
+      "evidence_id": "eca66874",
+      "observed_order": 5,
+      "record_kind": "check",
+      "snapshot_id": "sf6b67f74",
+      "state": "pass",
+      "subject_revision": "r0c2215b"
+    },
+    {
+      "body": "Sample Service check api_tests on revision r0c2215b. Recorded state: pass.",
+      "body_digest": "fa3eb73a2979a78844a62726495a844de153fc434b50fd1eeba57b296b77cf8d",
+      "case_id": "ca2601b9007",
+      "check_key": "api_tests",
+      "evidence_group": "tests",
+      "evidence_id": "e955612a",
+      "observed_order": 2,
+      "record_kind": "check",
+      "snapshot_id": "sf6b67f74",
+      "state": "pass",
+      "subject_revision": "r0c2215b"
+    }
+  ],
+  "snapshot_id": "sf6b67f74",
+  "target_revision": "r0c2215b"
+}

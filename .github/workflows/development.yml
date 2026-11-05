@@ -1,0 +1,74 @@
+name: Database and agent development
+on:
+  push:
+    branches: [main]
+    paths: [agent/**, src/runtime/**, scripts/run-development.ts, scripts/recovery.ts, .github/workflows/development.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  development:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_PASSWORD: crewbench_test
+          POSTGRES_DB: crewbench
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:crewbench_test@127.0.0.1:5432/crewbench
+      EVE_TELEMETRY_DISABLED: '1'
+      CREWBENCH_WORKER_ID: development-${{ github.run_id }}
+      OLLAMA_HOST: 127.0.0.1:11434
+      OLLAMA_NUM_PARALLEL: '1'
+      OLLAMA_MAX_LOADED_MODELS: '1'
+      CUDA_VISIBLE_DEVICES: '-1'
+      MODEL_DIGEST: 8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.19.0
+      - run: npm ci
+      - run: npm test
+      - run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - run: node scripts/migrate.ts
+      - run: node scripts/baseline.ts --postgres
+      - name: Compile fixed Eve workflow
+        run: npx eve build --skip-sandbox-prewarm > /tmp/eve-build.log 2>&1
+      - name: Install and start CPU provider
+        run: |
+          python3 scripts/install-ollama.py
+          ollama serve > /tmp/ollama.log 2>&1 &
+          for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:11434/api/version && break; sleep 1; done
+          ollama pull qwen3:1.7b
+          node scripts/probe-model.mjs
+      - name: Run actual development roles
+        run: |
+          npx eve start --host 127.0.0.1 --port 2000 --no-schedules > /tmp/eve-runtime.log 2>&1 &
+          for attempt in $(seq 1 60); do curl --fail --silent http://127.0.0.1:2000/health && break; sleep 1; done
+          node scripts/run-development.ts
+      - name: Preserve all outcomes
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p artifacts/development
+          for item in /tmp/eve-build.log /tmp/eve-runtime.log; do if [ -f "$item" ]; then cp "$item" artifacts/development/; fi; done
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/development-${GITHUB_RUN_ID}
+          git add artifacts
+          git commit -m 'chore: preserve database and actual agent development outcomes'
+          gh auth setup-git
+          git push origin HEAD
+

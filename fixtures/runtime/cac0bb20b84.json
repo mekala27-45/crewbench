@@ -1,0 +1,73 @@
+{
+  "case_id": "cac0bb20b84",
+  "catalog_complete": true,
+  "records": [
+    {
+      "body": "Sample Service check unit_tests on revision r480f9a8. Recorded state: pass.",
+      "body_digest": "052077b7a2c29c682b804c09e0a7fe255dd18cbbcb98fdc83e9acb71db3d059c",
+      "case_id": "cac0bb20b84",
+      "check_key": "unit_tests",
+      "evidence_group": "tests",
+      "evidence_id": "e73410d5",
+      "observed_order": 1,
+      "record_kind": "check",
+      "snapshot_id": "s8448faca",
+      "state": "pass",
+      "subject_revision": "r480f9a8"
+    },
+    {
+      "body": "Sample Service check api_tests on revision r480f9a8. Recorded state: pass.",
+      "body_digest": "f0d577d80d49dd978cd2f1dab5a15b3e2713b9534b5de0d67f9e6b153e6a70c4",
+      "case_id": "cac0bb20b84",
+      "check_key": "api_tests",
+      "evidence_group": "tests",
+      "evidence_id": "e35b5072",
+      "observed_order": 2,
+      "record_kind": "check",
+      "snapshot_id": "s8448faca",
+      "state": "pass",
+      "subject_revision": "r480f9a8"
+    },
+    {
+      "body": "Sample Service check artifact_match on revision r480f9a8. Recorded state: pass.",
+      "body_digest": "e7752ebf81123a535ec1f15615c17dadd73ae8c6281abf044208c54e9fcf8f95",
+      "case_id": "cac0bb20b84",
+      "check_key": "artifact_match",
+      "evidence_group": "staging",
+      "evidence_id": "e3916b3d",
+      "observed_order": 4,
+      "record_kind": "check",
+      "snapshot_id": "s8448faca",
+      "state": "pass",
+      "subject_revision": "r480f9a8"
+    },
+    {
+      "body": "Sample Service check api_tests on revision r480f9a8. Recorded state: fail.",
+      "body_digest": "4071b4708aaf9f0535af3aa7e3392b15c893b4feb273b5a7ab04851a4f7a2bf2",
+      "case_id": "cac0bb20b84",
+      "check_key": "api_tests",
+      "evidence_group": "tests",
+      "evidence_id": "e0a21a40",
+      "observed_order": 3,
+      "record_kind": "check",
+      "snapshot_id": "s8448faca",
+      "state": "fail",
+      "subject_revision": "r480f9a8"
+    },
+    {
+      "body": "Sample Service check staging_probe on revision r480f9a8. Recorded state: fail.",
+      "body_digest": "2b4ae6956def6e9211f50d2b877278ec5bc6459205a7cbba7fd92a032fcc600f",
+      "case_id": "cac0bb20b84",
+      "check_key": "staging_probe",
+      "evidence_group": "staging",
+      "evidence_id": "e86926bb",
+      "observed_order": 5,
+      "record_kind": "check",
+      "snapshot_id": "s8448faca",
+      "state": "fail",
+      "subject_revision": "r480f9a8"
+    }
+  ],
+  "snapshot_id": "s8448faca",
+  "target_revision": "r480f9a8"
+}

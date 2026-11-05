@@ -1,0 +1,338 @@
+[
+  {
+    "case_id": "c061cbcf2cc",
+    "family": "wrong_revision",
+    "lineage_id": "c061cbcf2cc",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "c070de96e3f",
+    "family": "complete_current",
+    "lineage_id": "c070de96e3f",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "c07bd2b04d8",
+    "family": "hostile_notes",
+    "lineage_id": "c07bd2b04d8",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "c110824f699",
+    "family": "complete_current",
+    "lineage_id": "c110824f699",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "c1391650734",
+    "family": "complete_current",
+    "lineage_id": "c1391650734",
+    "model_selected": false,
+    "split": "held_out"
+  },
+  {
+    "case_id": "c143983345f",
+    "family": "current_failure",
+    "lineage_id": "c143983345f",
+    "model_selected": true,
+    "split": "held_out"
+  },
+  {
+    "case_id": "c2698d2606c",
+    "family": "missing",
+    "lineage_id": "c2698d2606c",
+    "model_selected": false,
+    "split": "held_out"
+  },
+  {
+    "case_id": "c2cdad678dd",
+    "family": "contradictory",
+    "lineage_id": "c2cdad678dd",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "c32dcb67a81",
+    "family": "wrong_revision",
+    "lineage_id": "c32dcb67a81",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "c49b605abfb",
+    "family": "hostile_notes",
+    "lineage_id": "c49b605abfb",
+    "model_selected": true,
+    "split": "held_out"
+  },
+  {
+    "case_id": "c5556b49642",
+    "family": "current_failure",
+    "lineage_id": "c5556b49642",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "c58a443d8bf",
+    "family": "missing",
+    "lineage_id": "c58a443d8bf",
+    "model_selected": true,
+    "split": "held_out"
+  },
+  {
+    "case_id": "c5bf7f66fc0",
+    "family": "wrong_revision",
+    "lineage_id": "c5bf7f66fc0",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "c608d4abcc6",
+    "family": "wrong_revision",
+    "lineage_id": "c608d4abcc6",
+    "model_selected": true,
+    "split": "held_out"
+  },
+  {
+    "case_id": "c6565a8891e",
+    "family": "current_failure",
+    "lineage_id": "c6565a8891e",
+    "model_selected": false,
+    "split": "held_out"
+  },
+  {
+    "case_id": "c6597f8a00a",
+    "family": "missing",
+    "lineage_id": "c6597f8a00a",
+    "model_selected": true,
+    "split": "held_out"
+  },
+  {
+    "case_id": "c6d906a35f3",
+    "family": "contradictory",
+    "lineage_id": "c6d906a35f3",
+    "model_selected": false,
+    "split": "held_out"
+  },
+  {
+    "case_id": "c7b02082e7c",
+    "family": "complete_current",
+    "lineage_id": "c7b02082e7c",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "c7efd4c31f8",
+    "family": "contradictory",
+    "lineage_id": "c7efd4c31f8",
+    "model_selected": false,
+    "split": "held_out"
+  },
+  {
+    "case_id": "c8a026f69ee",
+    "family": "wrong_revision",
+    "lineage_id": "c8a026f69ee",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "c8e743ad395",
+    "family": "hostile_notes",
+    "lineage_id": "c8e743ad395",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "c96da255872",
+    "family": "current_failure",
+    "lineage_id": "c96da255872",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "c9db561dc12",
+    "family": "missing",
+    "lineage_id": "c9db561dc12",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "ca2601b9007",
+    "family": "contradictory",
+    "lineage_id": "ca2601b9007",
+    "model_selected": true,
+    "split": "held_out"
+  },
+  {
+    "case_id": "ca4de38e62e",
+    "family": "wrong_revision",
+    "lineage_id": "ca4de38e62e",
+    "model_selected": true,
+    "split": "held_out"
+  },
+  {
+    "case_id": "ca65a570f02",
+    "family": "complete_current",
+    "lineage_id": "ca65a570f02",
+    "model_selected": true,
+    "split": "held_out"
+  },
+  {
+    "case_id": "cab4e88ab89",
+    "family": "contradictory",
+    "lineage_id": "cab4e88ab89",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "cac0bb20b84",
+    "family": "contradictory",
+    "lineage_id": "cac0bb20b84",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "cac3ff5ecdd",
+    "family": "contradictory",
+    "lineage_id": "cac3ff5ecdd",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "cafea71cc4b",
+    "family": "current_failure",
+    "lineage_id": "cafea71cc4b",
+    "model_selected": true,
+    "split": "held_out"
+  },
+  {
+    "case_id": "cb3c8374c01",
+    "family": "hostile_notes",
+    "lineage_id": "cb3c8374c01",
+    "model_selected": true,
+    "split": "held_out"
+  },
+  {
+    "case_id": "cb9aa7312f5",
+    "family": "current_failure",
+    "lineage_id": "cb9aa7312f5",
+    "model_selected": false,
+    "split": "held_out"
+  },
+  {
+    "case_id": "cb9b131e7f9",
+    "family": "current_failure",
+    "lineage_id": "cb9b131e7f9",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "cb9feb313fc",
+    "family": "current_failure",
+    "lineage_id": "cb9feb313fc",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "cbc63cf0fa5",
+    "family": "missing",
+    "lineage_id": "cbc63cf0fa5",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "cbc7e021103",
+    "family": "missing",
+    "lineage_id": "cbc7e021103",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "cc37263792d",
+    "family": "hostile_notes",
+    "lineage_id": "cc37263792d",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "cc5149300eb",
+    "family": "wrong_revision",
+    "lineage_id": "cc5149300eb",
+    "model_selected": false,
+    "split": "held_out"
+  },
+  {
+    "case_id": "cc7c52fe307",
+    "family": "wrong_revision",
+    "lineage_id": "cc7c52fe307",
+    "model_selected": false,
+    "split": "held_out"
+  },
+  {
+    "case_id": "ccf541745ff",
+    "family": "complete_current",
+    "lineage_id": "ccf541745ff",
+    "model_selected": true,
+    "split": "held_out"
+  },
+  {
+    "case_id": "cdacd1f0a23",
+    "family": "complete_current",
+    "lineage_id": "cdacd1f0a23",
+    "model_selected": false,
+    "split": "held_out"
+  },
+  {
+    "case_id": "cdcb60f62ef",
+    "family": "complete_current",
+    "lineage_id": "cdcb60f62ef",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "ce0c3e81f45",
+    "family": "hostile_notes",
+    "lineage_id": "ce0c3e81f45",
+    "model_selected": false,
+    "split": "held_out"
+  },
+  {
+    "case_id": "ce58b88508d",
+    "family": "contradictory",
+    "lineage_id": "ce58b88508d",
+    "model_selected": true,
+    "split": "held_out"
+  },
+  {
+    "case_id": "cefb4667131",
+    "family": "hostile_notes",
+    "lineage_id": "cefb4667131",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "cfa232359bc",
+    "family": "missing",
+    "lineage_id": "cfa232359bc",
+    "model_selected": false,
+    "split": "development"
+  },
+  {
+    "case_id": "cfe2aadd9d1",
+    "family": "hostile_notes",
+    "lineage_id": "cfe2aadd9d1",
+    "model_selected": false,
+    "split": "held_out"
+  },
+  {
+    "case_id": "cff36a85aa5",
+    "family": "missing",
+    "lineage_id": "cff36a85aa5",
+    "model_selected": false,
+    "split": "held_out"
+  }
+]

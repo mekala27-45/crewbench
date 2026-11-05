@@ -1,0 +1,60 @@
+{
+  "case_id": "c5556b49642",
+  "catalog_complete": true,
+  "records": [
+    {
+      "body": "Sample Service check artifact_match on revision rfd9c91f. Recorded state: fail.",
+      "body_digest": "96975ee433a5222b6f27aafe49007cb0e09fa533d236feb75792f65cfb7876d0",
+      "case_id": "c5556b49642",
+      "check_key": "artifact_match",
+      "evidence_group": "staging",
+      "evidence_id": "e276e637",
+      "observed_order": 2,
+      "record_kind": "check",
+      "snapshot_id": "sb5f31076",
+      "state": "fail",
+      "subject_revision": "rfd9c91f"
+    },
+    {
+      "body": "Sample Service check staging_probe on revision rfd9c91f. Recorded state: pass.",
+      "body_digest": "53122c59e3d023324f4e7962289c29708626616a0237773f0eb51b40cb215cca",
+      "case_id": "c5556b49642",
+      "check_key": "staging_probe",
+      "evidence_group": "staging",
+      "evidence_id": "e2445bfb",
+      "observed_order": 3,
+      "record_kind": "check",
+      "snapshot_id": "sb5f31076",
+      "state": "pass",
+      "subject_revision": "rfd9c91f"
+    },
+    {
+      "body": "Sample Service check unit_tests on revision r11f8f11. Recorded state: pass.",
+      "body_digest": "ab151aa780f2c62d7533ba9d613b67447cf01817049d2d7a1e4bfef40d310860",
+      "case_id": "c5556b49642",
+      "check_key": "unit_tests",
+      "evidence_group": "tests",
+      "evidence_id": "e6d5a796",
+      "observed_order": 4,
+      "record_kind": "check",
+      "snapshot_id": "sb5f31076",
+      "state": "pass",
+      "subject_revision": "r11f8f11"
+    },
+    {
+      "body": "Sample Service check api_tests on revision rfd9c91f. Recorded state: pass.",
+      "body_digest": "281a17ba4a4af4a6f519b1eb20efa874c6df7f1aacf4eb4618f7208075a8aaf3",
+      "case_id": "c5556b49642",
+      "check_key": "api_tests",
+      "evidence_group": "tests",
+      "evidence_id": "ed97ccb7",
+      "observed_order": 1,
+      "record_kind": "check",
+      "snapshot_id": "sb5f31076",
+      "state": "pass",
+      "subject_revision": "rfd9c91f"
+    }
+  ],
+  "snapshot_id": "sb5f31076",
+  "target_revision": "rfd9c91f"
+}

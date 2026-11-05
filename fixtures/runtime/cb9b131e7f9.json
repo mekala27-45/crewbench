@@ -1,0 +1,60 @@
+{
+  "case_id": "cb9b131e7f9",
+  "catalog_complete": true,
+  "records": [
+    {
+      "body": "Sample Service check unit_tests on revision r5f63ac1. Recorded state: pass.",
+      "body_digest": "7fb126507a158b7a694d9b296cdafda6329678814b6e770d0a7614b9e9e2e79a",
+      "case_id": "cb9b131e7f9",
+      "check_key": "unit_tests",
+      "evidence_group": "tests",
+      "evidence_id": "e98ae15a",
+      "observed_order": 1,
+      "record_kind": "check",
+      "snapshot_id": "sfb7faf97",
+      "state": "pass",
+      "subject_revision": "r5f63ac1"
+    },
+    {
+      "body": "Sample Service check api_tests on revision r5f63ac1. Recorded state: pass.",
+      "body_digest": "184d87c0f9020d062d102878e7c6c3af70a7b356b24befd3dc69b4f7c5ff3e7a",
+      "case_id": "cb9b131e7f9",
+      "check_key": "api_tests",
+      "evidence_group": "tests",
+      "evidence_id": "e03c60d7",
+      "observed_order": 2,
+      "record_kind": "check",
+      "snapshot_id": "sfb7faf97",
+      "state": "pass",
+      "subject_revision": "r5f63ac1"
+    },
+    {
+      "body": "Sample Service check artifact_match on revision r5f63ac1. Recorded state: pass.",
+      "body_digest": "99fbe5cae1578039319c397688c78b8d9654404e5155227ebf81ce59e2f7aa89",
+      "case_id": "cb9b131e7f9",
+      "check_key": "artifact_match",
+      "evidence_group": "staging",
+      "evidence_id": "e9bc76e5",
+      "observed_order": 3,
+      "record_kind": "check",
+      "snapshot_id": "sfb7faf97",
+      "state": "pass",
+      "subject_revision": "r5f63ac1"
+    },
+    {
+      "body": "Sample Service check staging_probe on revision r5f63ac1. Recorded state: fail.",
+      "body_digest": "9966e175f391c23b4ccaa5e68d8be9e0449ba6a6a142f1c65cc69aa04ad22de1",
+      "case_id": "cb9b131e7f9",
+      "check_key": "staging_probe",
+      "evidence_group": "staging",
+      "evidence_id": "e3c312f9",
+      "observed_order": 4,
+      "record_kind": "check",
+      "snapshot_id": "sfb7faf97",
+      "state": "fail",
+      "subject_revision": "r5f63ac1"
+    }
+  ],
+  "snapshot_id": "sfb7faf97",
+  "target_revision": "r5f63ac1"
+}

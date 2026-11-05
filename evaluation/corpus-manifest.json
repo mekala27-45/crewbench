@@ -1,0 +1,10 @@
+{
+  "case_count": 48,
+  "corpus_digest": "b7ebd00fb28671a27899d98fa62a1901fe9dc2fe3c70912e9edfeb214c143e82",
+  "generator_digest": "020d4430f68ac5a58a13111b7cab8736023e3f48cac6ebef6310c10347bdfcc1",
+  "index_digest": "0fccba0604484254fb3cb46aefcdc88d493e94a9582db32366b7b20aedf634af",
+  "schema_version": 1,
+  "seed": "crewbench-day25-v1",
+  "subset_digest": "cc4b5d5c4d2a14d28db114f67823d231c7ecb56fe3e3011a5172fa1b590ca676",
+  "truth_digest": "75dc1eda96a3075b87a8388d7f6c8f775b9009a0e5b56c39ac7700684f92c0a6"
+}

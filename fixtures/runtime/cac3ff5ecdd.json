@@ -1,0 +1,73 @@
+{
+  "case_id": "cac3ff5ecdd",
+  "catalog_complete": true,
+  "records": [
+    {
+      "body": "Sample Service check staging_probe on revision r1361207. Recorded state: pass.",
+      "body_digest": "d438fdeb404c04a32f62e254c5eb9151b78bf7e7f36e00a0fe6b6445262e1340",
+      "case_id": "cac3ff5ecdd",
+      "check_key": "staging_probe",
+      "evidence_group": "staging",
+      "evidence_id": "e5f92089",
+      "observed_order": 4,
+      "record_kind": "check",
+      "snapshot_id": "sb17774b9",
+      "state": "pass",
+      "subject_revision": "r1361207"
+    },
+    {
+      "body": "Sample Service check artifact_match on revision r1361207. Recorded state: pass.",
+      "body_digest": "67013f03ea63d68e893b0434d0ca64baba6a8fe73cb3d5ebd5a5927deea53334",
+      "case_id": "cac3ff5ecdd",
+      "check_key": "artifact_match",
+      "evidence_group": "staging",
+      "evidence_id": "e6947701",
+      "observed_order": 3,
+      "record_kind": "check",
+      "snapshot_id": "sb17774b9",
+      "state": "pass",
+      "subject_revision": "r1361207"
+    },
+    {
+      "body": "Sample Service check api_tests on revision r1361207. Recorded state: fail.",
+      "body_digest": "918b23277f9834c96f131bfd6089b95450d3d9c5667c07282b946bec901ecf5d",
+      "case_id": "cac3ff5ecdd",
+      "check_key": "api_tests",
+      "evidence_group": "tests",
+      "evidence_id": "eafb86b4",
+      "observed_order": 2,
+      "record_kind": "check",
+      "snapshot_id": "sb17774b9",
+      "state": "fail",
+      "subject_revision": "r1361207"
+    },
+    {
+      "body": "Sample Service check staging_probe on revision r1361207. Recorded state: fail.",
+      "body_digest": "b064178647e8ebd66413d0183e0db60d9b0ec56b6a75bfeff632c8b2c4d0ae13",
+      "case_id": "cac3ff5ecdd",
+      "check_key": "staging_probe",
+      "evidence_group": "staging",
+      "evidence_id": "e090b53c",
+      "observed_order": 5,
+      "record_kind": "check",
+      "snapshot_id": "sb17774b9",
+      "state": "fail",
+      "subject_revision": "r1361207"
+    },
+    {
+      "body": "Sample Service check unit_tests on revision r1361207. Recorded state: pass.",
+      "body_digest": "ba3643055288ce6d9aa3e53070b608b69d9dd677e4c54962bf531753e31a7fc9",
+      "case_id": "cac3ff5ecdd",
+      "check_key": "unit_tests",
+      "evidence_group": "tests",
+      "evidence_id": "e90ca23e",
+      "observed_order": 1,
+      "record_kind": "check",
+      "snapshot_id": "sb17774b9",
+      "state": "pass",
+      "subject_revision": "r1361207"
+    }
+  ],
+  "snapshot_id": "sb17774b9",
+  "target_revision": "r1361207"
+}

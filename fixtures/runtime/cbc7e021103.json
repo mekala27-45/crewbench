@@ -1,0 +1,47 @@
+{
+  "case_id": "cbc7e021103",
+  "catalog_complete": true,
+  "records": [
+    {
+      "body": "Sample Service check staging_probe on revision r70ee02a. Recorded state: pass.",
+      "body_digest": "b997a1b9ea4d14aa38a3e5d276dfa4d5aa53ce536ab6efb43b17062050047d48",
+      "case_id": "cbc7e021103",
+      "check_key": "staging_probe",
+      "evidence_group": "staging",
+      "evidence_id": "e672cfc2",
+      "observed_order": 3,
+      "record_kind": "check",
+      "snapshot_id": "s9778b062",
+      "state": "pass",
+      "subject_revision": "r70ee02a"
+    },
+    {
+      "body": "Sample Service check api_tests on revision r70ee02a. Recorded state: pass.",
+      "body_digest": "a12fbd45c3d7aecdb9ba8d955a03d3f36c65d7afb26efaf3ab99243df86750ea",
+      "case_id": "cbc7e021103",
+      "check_key": "api_tests",
+      "evidence_group": "tests",
+      "evidence_id": "e71ebb03",
+      "observed_order": 1,
+      "record_kind": "check",
+      "snapshot_id": "s9778b062",
+      "state": "pass",
+      "subject_revision": "r70ee02a"
+    },
+    {
+      "body": "Sample Service check artifact_match on revision r70ee02a. Recorded state: pass.",
+      "body_digest": "7aa0f41820122b4a09c732083bfd24fb3f90e849f6e4f649ff2e519a6d1443f0",
+      "case_id": "cbc7e021103",
+      "check_key": "artifact_match",
+      "evidence_group": "staging",
+      "evidence_id": "ea4a50a5",
+      "observed_order": 2,
+      "record_kind": "check",
+      "snapshot_id": "s9778b062",
+      "state": "pass",
+      "subject_revision": "r70ee02a"
+    }
+  ],
+  "snapshot_id": "s9778b062",
+  "target_revision": "r70ee02a"
+}

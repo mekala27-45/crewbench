@@ -1,0 +1,60 @@
+{
+  "case_id": "cb9aa7312f5",
+  "catalog_complete": true,
+  "records": [
+    {
+      "body": "Sample Service check staging_probe on revision r91cb898. Recorded state: pass.",
+      "body_digest": "945f3fd68cddcfd113b5a060e9e063ac906faa08c32cc067bcdf436dbe0993fd",
+      "case_id": "cb9aa7312f5",
+      "check_key": "staging_probe",
+      "evidence_group": "staging",
+      "evidence_id": "e5a3caf6",
+      "observed_order": 4,
+      "record_kind": "check",
+      "snapshot_id": "s71d6af13",
+      "state": "pass",
+      "subject_revision": "r91cb898"
+    },
+    {
+      "body": "Sample Service check unit_tests on revision r91cb898. Recorded state: pass.",
+      "body_digest": "197df460b906bd540f3ba70a18badeed0ca3a47f606123754039f4992d825bc7",
+      "case_id": "cb9aa7312f5",
+      "check_key": "unit_tests",
+      "evidence_group": "tests",
+      "evidence_id": "efc10c11",
+      "observed_order": 1,
+      "record_kind": "check",
+      "snapshot_id": "s71d6af13",
+      "state": "pass",
+      "subject_revision": "r91cb898"
+    },
+    {
+      "body": "Sample Service check api_tests on revision r91cb898. Recorded state: fail.",
+      "body_digest": "a50558c93bfd8c229dc64ddd976ce684734a2dbd335241dda5ead2118265119d",
+      "case_id": "cb9aa7312f5",
+      "check_key": "api_tests",
+      "evidence_group": "tests",
+      "evidence_id": "eb3e4fb4",
+      "observed_order": 2,
+      "record_kind": "check",
+      "snapshot_id": "s71d6af13",
+      "state": "fail",
+      "subject_revision": "r91cb898"
+    },
+    {
+      "body": "Sample Service check artifact_match on revision r91cb898. Recorded state: pass.",
+      "body_digest": "daa98c374a9d8d3df1bb8aa6430ce1092187d9ff53552210b05ab82fb8b9a5c7",
+      "case_id": "cb9aa7312f5",
+      "check_key": "artifact_match",
+      "evidence_group": "staging",
+      "evidence_id": "e3c4256f",
+      "observed_order": 3,
+      "record_kind": "check",
+      "snapshot_id": "s71d6af13",
+      "state": "pass",
+      "subject_revision": "r91cb898"
+    }
+  ],
+  "snapshot_id": "s71d6af13",
+  "target_revision": "r91cb898"
+}
