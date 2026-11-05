@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "mode": "instrument_calibration",
+  "scope": "Largest representative valid submission in the 24 development cases for each role; raw native token count with 8-token delimiter margin; not an actual task assessment",
+  "source_commit": "003695d49a95b06fd1a6a73d94432fee50713407",
+  "plan_digest": "ac29898883518a83c3de2f44f47026ee686336d115f0afe4c66cae35806e72b7",
+  "model_digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+  "rows": [
+    {
+      "role": "solo",
+      "case_id": "c2cdad678dd",
+      "serialized_bytes": 673,
+      "request_digest": "b61bade799a536e2c9c306a280104cce199aff37b9d9f9ef0b1d34dff031d7e1",
+      "response": {
+        "model": "qwen3:1.7b",
+        "created_at": "2026-11-05T20:55:24.89398397Z",
+        "response": "",
+        "done": true,
+        "done_reason": "length",
+        "total_duration": 3069872585,
+        "load_duration": 1197843,
+        "prompt_eval_count": 191,
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_duration": 3055128000,
+        "eval_count": 1,
+        "eval_duration": 1000
+      },
+      "tokenized_submission_tokens": 191,
+      "output_ceiling": 512,
+      "fits": true
+    },
+    {
+      "role": "tests",
+      "case_id": "c2cdad678dd",
+      "serialized_bytes": 342,
+      "request_digest": "553db80d790ae9839a560ab18c360fd58bd061b42ac131bcc5048c7570bc38c9",
+      "response": {
+        "model": "qwen3:1.7b",
+        "created_at": "2026-11-05T20:55:26.33675452Z",
+        "response": "",
+        "done": true,
+        "done_reason": "length",
+        "total_duration": 1434561740,
+        "load_duration": 882073,
+        "prompt_eval_count": 102,
+        "prompt_eval_cached_count": 14,
+        "prompt_eval_duration": 1420185000,
+        "eval_count": 1,
+        "eval_duration": 1000
+      },
+      "tokenized_submission_tokens": 102,
+      "output_ceiling": 512,
+      "fits": true
+    },
+    {
+      "role": "staging",
+      "case_id": "cac3ff5ecdd",
+      "serialized_bytes": 350,
+      "request_digest": "f96b901ffbbf618082b53725739cc887f50e78191eaa142bc8ccb4ed560a1177",
+      "response": {
+        "model": "qwen3:1.7b",
+        "created_at": "2026-11-05T20:55:27.920579656Z",
+        "response": "",
+        "done": true,
+        "done_reason": "length",
+        "total_duration": 1580344157,
+        "load_duration": 1910002,
+        "prompt_eval_count": 106,
+        "prompt_eval_cached_count": 7,
+        "prompt_eval_duration": 1570425000,
+        "eval_count": 1,
+        "eval_duration": 1000
+      },
+      "tokenized_submission_tokens": 106,
+      "output_ceiling": 512,
+      "fits": true
+    },
+    {
+      "role": "synthesis",
+      "case_id": "c2cdad678dd",
+      "serialized_bytes": 673,
+      "request_digest": "b61bade799a536e2c9c306a280104cce199aff37b9d9f9ef0b1d34dff031d7e1",
+      "response": {
+        "model": "qwen3:1.7b",
+        "created_at": "2026-11-05T20:55:27.990831996Z",
+        "response": "",
+        "done": true,
+        "done_reason": "length",
+        "total_duration": 67048354,
+        "load_duration": 848689,
+        "prompt_eval_count": 191,
+        "prompt_eval_cached_count": 190,
+        "prompt_eval_duration": 54027000,
+        "eval_count": 1,
+        "eval_duration": 1000
+      },
+      "tokenized_submission_tokens": 191,
+      "output_ceiling": 512,
+      "fits": true
+    }
+  ],
+  "all_fit": true
+}
