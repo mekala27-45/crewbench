@@ -1,0 +1,15 @@
+Vercel CLI 65.11.0
+WARNING! Build not running on Vercel. System environment variables will not be available.
+Warning: Detected "engines": { "node": "24.19.0" } in your `package.json` with major.minor.patch, but only major Node.js Version can be selected. Learn More: https://vercel.link/node-version
+Running "install" command: `npm ci`...
+
+added 59 packages, and audited 60 packages in 4s
+
+12 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[90m[1m[36m✓[39m[22m Build complete — Using [1mserver.ts[22m as the root entrypoint.[39m
+Using TypeScript 6.0.3 (local user-provided)
+[90m[1m[36m✓[39m[22m Typecheck complete[39m
+Build Completed in .vercel/output [6s]
