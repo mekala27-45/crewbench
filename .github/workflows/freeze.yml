@@ -1,7 +1,7 @@
 name: Verify and freeze requested inputs
 on:
   push:
-    branches: [main]
+    branches: [main, codex/crewbench-completion]
     paths: [evaluation/freeze-request.json]
 permissions:
   contents: write
@@ -15,6 +15,7 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
+          fetch-depth: 0
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 24.19.0
@@ -40,7 +41,7 @@ jobs:
           git config user.email 'mekalaajayk@gmail.com'
           git switch -c results/freeze-${GITHUB_RUN_ID}
           git add artifacts/freeze
-          for item in artifacts/development/accepted-development.json artifacts/probes/payload-fit.json artifacts/probes/accepted-native.json evaluation/freeze.json evaluation/run-request.json; do if [ -f "$item" ]; then git add "$item"; fi; done
+          for item in artifacts/development/accepted-development.json artifacts/development/accounting-audit.json artifacts/probes/payload-fit.json artifacts/probes/accepted-native.json evaluation/freeze.json evaluation/run-request.json; do if [ -f "$item" ]; then git add "$item"; fi; done
           git commit -m 'test: preserve verified freeze inputs and reviewable evaluation request'
           gh auth setup-git
           git push origin HEAD

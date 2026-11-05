@@ -2,7 +2,7 @@ name: API and browser verification
 on:
   push:
     branches: [main, codex/crewbench-completion]
-    paths: [site/**, src/api/**, tests/browser/**, scripts/check-api.ts, db/**, vite.config.ts, playwright.config.ts, .github/workflows/web.yml]
+    paths: [package.json, package-lock.json,site/**, src/api/**, tests/browser/**, scripts/check-api.ts, db/**, vite.config.ts, playwright.config.ts, .github/workflows/web.yml]
   workflow_dispatch:
 permissions:
   contents: write
@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 15
     services:
       postgres:
-        image: postgres:18@sha256:bd5dfa494a5a259704365813dbfa5fa6b3e69be7348d43b547f540c730478583
+        image: postgres:18@sha256:bd5dfa494a5a259704365813dbfa5fa6b3e69be7348d43b547f540c730478583@sha256:bd5dfa494a5a259704365813dbfa5fa6b3e69be7348d43b547f540c730478583
         env:
           POSTGRES_PASSWORD: crewbench_test
           POSTGRES_DB: crewbench

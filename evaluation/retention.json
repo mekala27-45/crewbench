@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "automatic_deletion": false,
+  "recent_capacity": 32,
+  "pins": [
+    {
+      "purpose": "baseline",
+      "run_id": "42099764606",
+      "source_commit": "75378c3df20fee09c04c2ea6abfbb084bf0c0d8f",
+      "results_branch": "results/development-42099764606",
+      "results_commit": "e157bb179d0ce1ef822bc0a2b3b3130d7b9f0617"
+    },
+    {
+      "purpose": "recovery",
+      "run_id": "42103168989",
+      "source_commit": "6232283c440cdf6df39b57de82fa1c8ffdd1a80d",
+      "results_branch": "results/development-42103168989",
+      "results_commit": "5f187bf8369e1a26835cb4ce7006c3d2b28b3f90"
+    },
+    {
+      "purpose": "browser",
+      "run_id": "42106567251",
+      "source_commit": "12789c90b93ebaae063aa679d5a5de4c7e1480bf",
+      "results_branch": "results/web-42106567251",
+      "results_commit": "c3a1e8514ba4d8f1656226fb4dc80d427e3596bd"
+    },
+    {
+      "purpose": "model_calibration",
+      "run_id": "42109940072",
+      "source_commit": "796d3a599c5c59221832e164dc7f1f33302cb53d",
+      "results_branch": "results/model-probe-42109940072",
+      "results_commit": "428910e1232b7f5040ddea7f98bd5f0d80ff00cf"
+    },
+    {
+      "purpose": "candidate_failure",
+      "run_id": "42109940250",
+      "source_commit": "796d3a599c5c59221832e164dc7f1f33302cb53d",
+      "results_branch": "results/development-42109940250",
+      "results_commit": "8e576cfccedae0bd90a5b0193507c4433cdab880"
+    }
+  ]
+}
