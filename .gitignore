@@ -13,3 +13,7 @@ __pycache__/
 *.pyc
 .eve/
 .output/
+
+# Private evaluator inputs never enter public source or model runtime.
+fixtures/truth/
+scripts/generate-corpus.py
