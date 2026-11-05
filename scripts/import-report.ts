@@ -1,6 +1,8 @@
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import {digest,bytesDigest} from '../src/contracts/core.ts';
+import {verifyAccounting} from '../src/report/accounting.ts';
+import {verification as shared} from './verify-shared-execution.ts';
 import {verifyImport,scanEvidence} from '../src/report/evidence.ts';
 const read=async(p:string)=>JSON.parse(await readFile(p,'utf8'));
 const request=await read('evaluation/report-request.json'),plan=await read('evaluation/plan.json'),freeze=await read('evaluation/freeze.json');
@@ -10,7 +12,9 @@ const branch='results/evaluation-'+request.evaluation_run,manifest=JSON.parse(ge
 verifyImport(manifest,{source_commit:request.evaluation_source,plan_digest:digest(plan),branch});
 const actual=get(request.evaluation_results_commit,'artifacts/actual/results.json'),record=manifest.files.find((r:any)=>r.path==='artifacts/actual/results.json');
 if(!record||record.bytes!==Buffer.byteLength(actual)||record.sha256!==bytesDigest(actual))throw new Error('ACTUAL_CONTENT_MISMATCH');
-scanEvidence(actual);const parsed=JSON.parse(actual);if(parsed.source_commit!==request.evaluation_source||parsed.plan_digest!==digest(plan)||parsed.freeze_digest!==digest(freeze))throw new Error('ACTUAL_PROVENANCE_MISMATCH');
+scanEvidence(actual);const parsed=JSON.parse(actual);if(parsed.source_commit!==request.evaluation_source||parsed.plan_digest!==digest(plan)||parsed.freeze_digest!==shared.execution_freeze_digest||request.evaluation_source!==shared.execution_source||String(request.evaluation_run)!==shared.execution_run)throw new Error('ACTUAL_PROVENANCE_MISMATCH');
+const audits=parsed.trials.map((row:any)=>{const audit=verifyAccounting(row.state);if(row.actual_dispatch!==(audit.confirmed_attempts>0)||row.accounting?.verified!==true||digest(row.assessment)!==digest(row.state.assessment)||digest(row.receipts)!==digest(row.state.receipts)||row.on_time!==(row.state.status==='submitted'&&row.state.terminal_at<row.state.deadline))throw Error('RAW_EXECUTION_METADATA_DISPUTED');return{trial_id:row.trial_id,...audit};});
+await mkdir('artifacts/actual',{recursive:true});await writeFile('artifacts/actual/independent-accounting.json',JSON.stringify({source_digest:digest(parsed),analysis_freeze_digest:digest(freeze),shared_execution:shared,raw_results_unchanged:true,audits},null,2)+'\n');
 for(const path of ['evaluation/grade.py','evaluation/statistics.py'])if(bytesDigest(await readFile(path))!==freeze.files[path])throw new Error('FROZEN_GRADER_CHANGED');
 const referenceBranch=request.reference_branch;if(referenceBranch!=='results/recovery-'+request.reference_run)throw new Error('REFERENCE_BRANCH_REQUIRED');const referenceManifest=JSON.parse(get(request.reference_results_commit,'artifacts/recovery/manifest.json'));
 verifyImport(referenceManifest,{source_commit:request.reference_source,plan_digest:digest(plan),branch:referenceBranch});
