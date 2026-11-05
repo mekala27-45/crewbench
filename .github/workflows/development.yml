@@ -48,6 +48,7 @@ jobs:
       - name: Install and start CPU provider
         run: |
           python3 scripts/install-ollama.py
+          export PATH="$RUNNER_TEMP/crewbench-ollama/bin:$PATH"
           ollama serve > /tmp/ollama.log 2>&1 &
           for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:11434/api/version && break; sleep 1; done
           ollama pull qwen3:1.7b
@@ -67,7 +68,9 @@ jobs:
           git config user.name 'Ajay Mekala'
           git config user.email 'mekalaajayk@gmail.com'
           git switch -c results/development-${GITHUB_RUN_ID}
+          python3 -c 'import json,os,pathlib; p=pathlib.Path("artifacts/development/workflow.json"); p.write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"mode":"actual_model_development","trials_present":pathlib.Path("artifacts/development/trials.json").exists()}))'
           git add artifacts
+          git add -f artifacts/development/*.log || true
           git commit -m 'chore: preserve database and actual agent development outcomes'
           gh auth setup-git
           git push origin HEAD
