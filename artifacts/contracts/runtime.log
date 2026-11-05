@@ -1,0 +1,37 @@
+
+> crewbench@0.1.0 test
+> node --test tests/*.test.ts
+
+✔ accounting reconciles exact transport and complete usage (4.593688ms)
+✔ transport tampering and uncharged dispatch fail verification (2.306557ms)
+✔ unknown usage remains unknown and duplicate reservations fail (0.855271ms)
+✔ freeze rejects missing evidence and any changed input (0.962327ms)
+✔ role reservations and tool emissions cannot be reassigned or omitted (2.717768ms)
+✔ claim gate accepts provenance, refuses mixed modes and empty evidence (1.684286ms)
+✔ missing measurement remains missing (0.334724ms)
+✔ bundle gate accepts startup failure and refuses traversal and nothing (1.190369ms)
+✔ corpus has isolated lineages and exact deterministic subset (1.681744ms)
+✔ runtime packets validate and carry no truth canary or family metadata (9.587763ms)
+✔ packet gate refuses wrong scope, empty and body mutation (0.823231ms)
+✔ evidence import binds the exact source, plan, branch and paths (1.873681ms)
+✔ publication refuses credentials and preserves ordinary synthetic data (1.301912ms)
+✔ retention never evicts pinned reports or deletes automatically (11.952589ms)
+✔ exact role exposure excludes delegation and arbitrary access (4.811265ms)
+✔ catalog reveals no record state or body (0.973942ms)
+✔ reservation is atomic in every dimension and nonrefundable (1.048884ms)
+✔ one remaining request grants one concurrent reservation (1.29533ms)
+✔ child redelivery is stable and changed payload conflicts (3.722492ms)
+✔ lease turnover preserves accepted child and fences old generation (2.630039ms)
+✔ uncertain dispatch terminates on restart without new dispatch (0.938812ms)
+✔ cancellation quarantines late response and keeps reserved usage (0.647902ms)
+✔ expired trial cannot reset the deadline or reserve (0.705319ms)
+✔ structurally valid wrong verdict is preserved for independent grading (1.449648ms)
+✔ an oversized native tool batch is fully logged and cannot accept an earlier submission (3.892959ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 449.895335
