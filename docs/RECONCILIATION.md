@@ -1,9 +1,9 @@
 # Review-branch reconciliation
 
-Main advanced independently while this branch was under review. The reconciliation preserves main commit 5f532acb6fba2d64f14fb2172e0a56a3ecbc13f8, including its explicit 4B instruction-only model, prompts, calibration, provisional grading workflow, retained import manifests and richer UI.
+Main advanced independently during review. This branch preserves the current instruction-only model and native API packaging changes through main commit 07c9d056788d47105ffa46ce815d24b80ffdba27. It also retains the dependency correction, bounded development cleanup, evidence retention policy and disabled automatic API deployment safeguard.
 
-The branch contributes strengthened accounting, accepted-receipt binding in the independent grader, exact statistical inventory checks, immutable freeze creation, both cancellation orderings with actual worker-kill evidence, deterministic report binding, safer network-error wording and computed evidence-text contrast checks. It does not replace the new model plan with the earlier 1.7B development experiments.
+The review adds native transport and tool-emission accounting, accepted-receipt binding, exact statistical inventories, immutable freeze creation, both cancellation orderings with actual worker kills, deterministic report binding and UI recovery of an already committed baseline assessment. Earlier model experiments remain available in their original results branches.
 
-Earlier branch experiments remain on results/development-42105724261, results/development-42108290635 and results/development-42110678610. They are development observations, not held-out outcomes and not qualification for a different model.
+The matched development timing adjustment is recorded in docs/adr/008-development-timeouts.md. Its new development and calibration evidence must qualify before held-out inference. The previous timing runs do not qualify a changed plan.
 
-Private-key grading and the production persisted API flow remain blocked. This branch is a draft review, not a completed release.
+Private-key grading and the production persisted API flow remain blocked. This branch is a review candidate, not a completed release. Review results are generated from the exact inputs in evaluation/review-request.json.

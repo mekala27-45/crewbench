@@ -6,7 +6,7 @@
   "functions": {
     "server.ts": {
       "maxDuration": 10,
-      "includeFiles": "{fixtures/runtime/**,evaluation/plan.json,evaluation/case-index.json}",
+      "includeFiles": "{fixtures/runtime/**,evaluation/plan.json,evaluation/case-index.json,site/public/data/report.json}",
       "excludeFiles": "{agent/**,fixtures/truth/**,evaluation/grade.py,evaluation/statistics.py,artifacts/**,tests/**,.agents/**,AGENTS.md,CLAUDE.md}"
     }
   },

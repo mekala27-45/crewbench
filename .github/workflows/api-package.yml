@@ -1,0 +1,44 @@
+name: Native API package verification
+on:
+  push:
+    branches: [main]
+    paths: [server.ts, src/api/**, vercel.json, package.json, package-lock.json, .github/workflows/api-package.yml]
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.19.0
+      - name: Prepare offline host metadata without credentials
+        run: |
+          mkdir -p .vercel artifacts/host
+          node -e 'const fs=require("fs");fs.writeFileSync(".vercel/project.json",JSON.stringify({projectId:"prj_QjxSIUWElOIEPoiEdWj4CEsVM6xa",orgId:"team_NNcxgB3J9dHQnUJYJJYvRMda",projectName:"crewbench-api",settings:{framework:"node",nodeVersion:"24.x",installCommand:"npm ci",buildCommand:null,devCommand:null,outputDirectory:null,rootDirectory:null}}));fs.writeFileSync(".vercel/.env.production.local","SOURCE_COMMIT="+process.env.GITHUB_SHA+"\n")'
+      - name: Build native function without deployment
+        run: |
+          set -o pipefail
+          npx --yes vercel@65.11.0 build --prod --yes 2>&1 | tee artifacts/host/build.log
+      - name: Inspect packaged public inputs and runtime exclusions
+        run: |
+          node -e 'const fs=require("fs"),path=require("path"),crypto=require("crypto");const rows=[];function walk(p){for(const e of fs.readdirSync(p,{withFileTypes:true})){const q=path.join(p,e.name);if(e.isDirectory())walk(q);else if(e.isFile())rows.push(q);}}walk(".vercel/output");const inputs=rows.filter(p=>/fixtures\/runtime\/.*\.json$/.test(p));if(inputs.length!==48||!rows.some(p=>p.endsWith("site/public/data/report.json")))throw Error("PUBLIC_INPUTS_NOT_PACKAGED");if(rows.some(p=>/fixtures\/truth\/|\/agent\/subagents\//.test(p)))throw Error("PRIVATE_WORKER_PACKAGED");const configs=rows.filter(p=>p.endsWith(".vc-config.json")).map(p=>({path:p,config:JSON.parse(fs.readFileSync(p))}));fs.writeFileSync("artifacts/host/package.json",JSON.stringify({source_commit:process.env.GITHUB_SHA,mode:"offline_host_package_verification",deployed:false,public_packets:inputs.length,configs,file_count:rows.length,config_digest:crypto.createHash("sha256").update(fs.readFileSync("vercel.json")).digest("hex")},null,2));'
+      - name: Preserve build evidence
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p artifacts/host
+          python3 -c 'import os,json,pathlib; pathlib.Path("artifacts/host/workflow.json").write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"deployed":False}))'
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/host-${GITHUB_RUN_ID}
+          git add artifacts/host
+          git add -f artifacts/host/*.log || true
+          git commit -m 'test: retain native host packaging evidence without deployment'
+          gh auth setup-git
+          git push origin HEAD

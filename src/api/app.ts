@@ -1,12 +1,13 @@
 import {randomBytes,randomUUID} from 'node:crypto';
 import {readFile} from 'node:fs/promises';
+import {join} from 'node:path';
 import {digest,exactKeys,validId,Refusal} from '../contracts/core.ts';
 import {newTrial,stop} from '../runtime/state.ts';
 import {PgStore} from '../runtime/store.ts';
 import {advanceBaseline} from '../methods/run-baseline.ts';
 import {STATEMENT,STATEMENT_ID} from '../report/statement.ts';
 const root=new URL('../../',import.meta.url);
-const json=async(p:string)=>JSON.parse(await readFile(new URL(p,root),'utf8'));
+const json=async(p:string)=>JSON.parse(await readFile(process.env.VERCEL?join(process.cwd(),p):new URL(p,root),'utf8'));
 export async function demoCatalog(){const index=await json('evaluation/case-index.json');return [...new Set(index.map((r:any)=>r.family))].map(f=>index.find((r:any)=>r.family===f&&r.split==='development')).map((r:any)=>({case_id:r.case_id,title:r.family.replaceAll('_',' ')}));}
 const view=(s:any)=>({trial_id:s.id,case_id:s.case_id,mode:s.mode,method:s.method,status:s.status,assessment:s.assessment,failure:s.failure,receipt_digests:s.receipts.map((r:any)=>({id:r.id,tool:r.tool,role:r.role,digest:r.payload_digest})),events:s.events.length});
 export async function route(req:any,res:any){
@@ -23,7 +24,7 @@ export async function route(req:any,res:any){
   const url=new URL(req.url,'http://localhost'),path=url.pathname;
   if(req.method==='GET'&&path==='/healthz'){reply(200,{service:'crewbench-api',commit:process.env.SOURCE_COMMIT||process.env.VERCEL_GIT_COMMIT_SHA||null,statement_id:STATEMENT_ID});return;}
   if(req.method==='GET'&&path==='/api/v1/catalog'){reply(200,{cases:await demoCatalog(),statement:STATEMENT,statement_id:STATEMENT_ID});return;}
-  if(req.method==='GET'&&path==='/api/v1/reports/latest'){reply(200,{status:'not_yet_frozen',report:null,reason:'The frozen actual comparison has not been published.',statement_id:STATEMENT_ID});return;}
+  if(req.method==='GET'&&path==='/api/v1/reports/latest'){const report=await json('site/public/data/report.json');reply(200,{status:report.status,report,statement_id:STATEMENT_ID});return;}
   db=await PgStore.open();
   if(req.method==='GET'&&path==='/readyz'){const ready=await db.ready();reply(ready?200:503,{ready,schema_version:1});return;}
   if(!path.startsWith('/api/v1/'))throw new Refusal('NOT_FOUND',404);

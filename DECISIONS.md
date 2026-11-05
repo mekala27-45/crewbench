@@ -20,4 +20,6 @@ Revision 4 changes the CPU model to qwen3:4b-instruct-2507-q4_K_M with digest 0e
 
 An explicit --public-records grading mode computes expected states from the public evidence using the independent Python policy. It never reads or publishes the private answer key and sets private_truth_verified=false. Such reports are provisional and cannot satisfy the completed release gate. Default grading still fails closed if the private key is unavailable.
 
+The matched timing revision is documented in [the development timeout decision](docs/adr/008-development-timeouts.md). The transport and independent readback audit must qualify the retained development bundle before the freeze gate can accept it.
+
 Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.

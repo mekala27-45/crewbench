@@ -11,6 +11,7 @@ async function call(path:string,body?:any,token?:string,key=randomUUID().replace
 let observation:any=null;let failure:string|null=null;
 try{
  assert.equal((await call('/healthz')).status,200);assert.equal((await call('/readyz')).status,200);
+ const recorded=await call('/api/v1/reports/latest');assert.equal(recorded.status,200);assert.match(recorded.data.report.source_commit,/^[a-f0-9]{40}$/);assert.equal(recorded.data.report.baseline.mode,'deterministic_baseline');
  const catalog=(await call('/api/v1/catalog')).data;assert.equal(catalog.cases.length,6);
  const session=await call('/api/v1/sessions',{});assert.equal(session.status,201);const token=session.data.capability;assert.equal(Buffer.from(token,'base64url').length,32);
  const key=randomUUID().replaceAll('-','');const body={case_id:catalog.cases[0].case_id,method:'deterministic_baseline'};
