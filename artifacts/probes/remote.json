@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "execution_mode": "environment_probe",
+  "source_commit": "83b6b607b93425445315826b7db4c96bd351b852",
+  "started_at": "2026-11-05T19:32:27.600Z",
+  "node": "v24.19.0",
+  "os": "linux",
+  "arch": "x64",
+  "cpu": "AMD EPYC 7763 64-Core Processor",
+  "memory_bytes": 16760344576,
+  "python": {
+    "status": 0,
+    "version": "Python 3.12.3",
+    "error": null
+  },
+  "packages": [
+    {
+      "name": "eve",
+      "candidate": "1.0.0-rc.5",
+      "version": "1.0.0-rc.5",
+      "engines": {
+        "node": ">=24"
+      },
+      "integrity": "sha512-ZxYbX4BhgfasRjbsCmUTcu2AX0U+GIalnqrnW98fz/wRa0DRdRAyIWnwTCFlgoohYmbD1AKs7xB30fGe+dJgug==",
+      "tarball": "https://registry.npmjs.org/eve/-/eve-1.0.0-rc.5.tgz",
+      "license": "Apache-2.0",
+      "status": "verified",
+      "url": "https://registry.npmjs.org/eve/1.0.0-rc.5"
+    },
+    {
+      "name": "ai",
+      "candidate": "7.0.163",
+      "version": "7.0.163",
+      "engines": {
+        "node": ">=22"
+      },
+      "integrity": "sha512-nm8+qn36NQXO4Hjfj7SlbcNRhUyNXKtdoS9xhXr/z92lvdGFuPkzHmA2tFzhaUQy13IitNYrcw2QSNpEJC/iSA==",
+      "tarball": "https://registry.npmjs.org/ai/-/ai-7.0.163.tgz",
+      "license": "Apache-2.0",
+      "status": "verified",
+      "url": "https://registry.npmjs.org/ai/7.0.163"
+    },
+    {
+      "name": "@ai-sdk/openai-compatible",
+      "candidate": "3.0.85",
+      "version": "3.0.85",
+      "engines": {
+        "node": ">=22"
+      },
+      "integrity": "sha512-vZx3MvZjc7h7Ud8GUEvS9Qngtoec+Zogv5Zxw8kVjXrZhp/OOHfEosXoqjScnokoCK/d5cQfurfNNUmTrbZOQQ==",
+      "tarball": "https://registry.npmjs.org/@ai-sdk/openai-compatible/-/openai-compatible-3.0.85.tgz",
+      "license": "Apache-2.0",
+      "status": "verified",
+      "url": "https://registry.npmjs.org/%40ai-sdk%2Fopenai-compatible/3.0.85"
+    },
+    {
+      "name": "pg",
+      "candidate": "8.23.1",
+      "version": "8.23.1",
+      "engines": {
+        "node": ">= 16.0.0"
+      },
+      "integrity": "sha512-aL96AHANtWjPLDOLqnhx+ngp9+UK7ETEU8VJrDCGvsSSi/mGLcWYsS6Herg7lmaBJe4uwrfqsa7gTEFaSizDoQ==",
+      "tarball": "https://registry.npmjs.org/pg/-/pg-8.23.1.tgz",
+      "license": "MIT",
+      "status": "verified",
+      "url": "https://registry.npmjs.org/pg/8.23.1"
+    },
+    {
+      "name": "zod",
+      "candidate": "4.6.7",
+      "version": "4.6.7",
+      "engines": null,
+      "integrity": "sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==",
+      "tarball": "https://registry.npmjs.org/zod/-/zod-4.6.7.tgz",
+      "license": "MIT",
+      "status": "verified",
+      "url": "https://registry.npmjs.org/zod/4.6.7"
+    },
+    {
+      "name": "vite",
+      "candidate": "8.3.6",
+      "version": "8.3.6",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "integrity": "sha512-UI7dK29NnS54Fk+mmo7o+jI6U8Fp7hDl+X5Q1k45WH+d4dSlbLVUETGQ+hfkNgvLQGyoElPj837nZyv4MBc0VA==",
+      "tarball": "https://registry.npmjs.org/vite/-/vite-8.3.6.tgz",
+      "license": "MIT",
+      "status": "verified",
+      "url": "https://registry.npmjs.org/vite/8.3.6"
+    },
+    {
+      "name": "typescript",
+      "candidate": "7.0.2",
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      },
+      "integrity": "sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==",
+      "tarball": "https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz",
+      "license": "Apache-2.0",
+      "status": "verified",
+      "url": "https://registry.npmjs.org/typescript/7.0.2"
+    },
+    {
+      "name": "@playwright/test",
+      "candidate": "1.64.1",
+      "version": "1.64.1",
+      "engines": {
+        "node": ">=20"
+      },
+      "integrity": "sha512-IaYGml/nSOiZWROfPtuIL7neuu9qDOZ3TNvNljUIrhDMxiGTgPjzj/g9p9RxpS2tSepPDRY+UwAaEeiKtUvIAg==",
+      "tarball": "https://registry.npmjs.org/@playwright/test/-/test-1.64.1.tgz",
+      "license": "Apache-2.0",
+      "status": "verified",
+      "url": "https://registry.npmjs.org/%40playwright%2Ftest/1.64.1"
+    },
+    {
+      "name": "@fontsource/faustina",
+      "candidate": "5.3.0",
+      "version": "5.3.0",
+      "engines": null,
+      "integrity": "sha512-EYZCaLU3Aw454/dfyx6mGnORmD0qEiHqideM0rHJhmoPsrEWrq5+slZkZZG1q5gq5HOZfrTFcEekABpMoRvOqg==",
+      "tarball": "https://registry.npmjs.org/@fontsource/faustina/-/faustina-5.3.0.tgz",
+      "license": "OFL-1.1",
+      "status": "verified",
+      "url": "https://registry.npmjs.org/%40fontsource%2Ffaustina/5.3.0"
+    },
+    {
+      "name": "@fontsource/sarabun",
+      "candidate": "5.3.0",
+      "version": "5.3.0",
+      "engines": null,
+      "integrity": "sha512-8GWxnEIG9g/2JlZxU+APaVwipcLMkZkBps9N1tEyBxXWaJEnAtHpuaDYmFVG7lzTgr28orG7//htD/rfxDlfFg==",
+      "tarball": "https://registry.npmjs.org/@fontsource/sarabun/-/sarabun-5.3.0.tgz",
+      "license": "OFL-1.1",
+      "status": "verified",
+      "url": "https://registry.npmjs.org/%40fontsource%2Fsarabun/5.3.0"
+    },
+    {
+      "name": "@fontsource/sono",
+      "candidate": "5.3.0",
+      "version": "5.3.0",
+      "engines": null,
+      "integrity": "sha512-NjQa4zyi6synWCeYACNx+nn3xe6Gyq9n9T9amYEf/YgsVdgaHDTz67mYvnfi01B+VMMv+jxLbX7icFYEPUVBPQ==",
+      "tarball": "https://registry.npmjs.org/@fontsource/sono/-/sono-5.3.0.tgz",
+      "license": "OFL-1.1",
+      "status": "verified",
+      "url": "https://registry.npmjs.org/%40fontsource%2Fsono/5.3.0"
+    }
+  ],
+  "model": {
+    "status": "startup_failed",
+    "code": "ECONNREFUSED",
+    "actual_dispatch": false
+  },
+  "ended_at": "2026-11-05T19:32:28.691Z"
+}
