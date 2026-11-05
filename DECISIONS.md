@@ -23,3 +23,7 @@ An explicit --public-records grading mode computes expected states from the publ
 The matched timing revision is documented in [the development timeout decision](docs/adr/008-development-timeouts.md). The transport and independent readback audit must qualify the retained development bundle before the freeze gate can accept it.
 
 Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.
+
+The final pre-inference plan is revision 5: 480-second trials and 210-second requests under identical aggregate budgets for both methods. Actual execution uses run 42118015947 at d3d3a2e5a81cf6a0cd46e80b92fbf403b0ae2c92. The stricter analysis was independently frozen at 22:01:33.870Z before inference began at 22:04:47Z. Both freezes remain retained separately. The shared-execution verifier checks causal files and dispatch-control equivalence, then the independent importer validates unchanged raw traces. The duplicate queued run was canceled before execution. No result-dependent model or prompt changes are permitted.
+
+This merge adopts execution provenance without starting another model run. Its commit skips automatic Actions; subsequent review and report requests run the normal validation workflows. The physical execution is reproduced from its exact source commit, while analysis is reproduced from evaluation/analysis-freeze.json.

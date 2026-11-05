@@ -3,7 +3,7 @@ import {execFileSync} from 'node:child_process';
 import {digest,bytesDigest} from '../src/contracts/core.ts';
 import {frozenInputs,verifyFreeze} from '../src/report/freeze.ts';
 const read=async(p:string)=>JSON.parse(await readFile(p,'utf8'));
-const share=await read('evaluation/shared-execution.json'),analysis=await read('evaluation/freeze.json'),execution=await read('evaluation/shared-execution-freeze.json');
+const share=await read('evaluation/shared-execution.json'),analysis=await read('evaluation/analysis-freeze.json'),execution=await read('evaluation/shared-execution-freeze.json');
 verifyFreeze(analysis,await frozenInputs());
 if(digest(analysis)!==share.analysis_freeze_digest||analysis.plan_digest!==share.plan_digest||execution.plan_digest!==share.plan_digest||digest(analysis.model)!==digest(execution.model)||!/^[a-f0-9]{40}$/.test(share.execution_source)||!/^\d+$/.test(share.execution_run))throw Error('SHARED_DECLARATION_MISMATCH');
 const api=(path:string)=>JSON.parse(execFileSync('gh',['api','repos/mekala27-45/crewbench/'+path],{encoding:'utf8',maxBuffer:32*1024*1024}));

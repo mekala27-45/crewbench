@@ -37,6 +37,41 @@
       "source_commit": "796d3a599c5c59221832e164dc7f1f33302cb53d",
       "results_branch": "results/development-42109940250",
       "results_commit": "8e576cfccedae0bd90a5b0193507c4433cdab880"
+    },
+    {
+      "purpose": "qualified_development",
+      "run_id": "42115848494",
+      "source_commit": "43789f67432efa7c0720270a6268eaaccd8c0873",
+      "results_branch": "results/development-42115848494",
+      "results_commit": "77f943782bf8af098430d77160716104dcec4e73"
+    },
+    {
+      "purpose": "frozen_calibration",
+      "run_id": "42114717980",
+      "source_commit": "3c6c1ea1654a05612907af45b3dbf90f20dbe712",
+      "results_branch": "results/model-probe-42114717980",
+      "results_commit": "a79d664014cbbe7b25793d95200002c4d08cae57"
+    },
+    {
+      "purpose": "verified_freeze",
+      "run_id": "42117814226",
+      "source_commit": "c757ac223ce7c47c01148b54715a6bc734d4aa19",
+      "results_branch": "results/freeze-42117814226",
+      "results_commit": "1a64173b8de81ac149f6d463f491d0160ca3e700"
+    },
+    {
+      "purpose": "native_api_package",
+      "run_id": "42116306332",
+      "source_commit": "7ba7ee6fdcbb1a34ca3a5b484aa525c082edb34f",
+      "results_branch": "results/host-42116306332",
+      "results_commit": "0d0e5207e92d1cc4df77ecc334973cc30810c496"
+    },
+    {
+      "purpose": "current_browser",
+      "run_id": "42114717646",
+      "source_commit": "3c6c1ea1654a05612907af45b3dbf90f20dbe712",
+      "results_branch": "results/web-42114717646",
+      "results_commit": "a83bd499a4c3b44e8b031a983f75ead63b855a37"
     }
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "reference_run": "42117978561",
+  "reference_branch": "results/recovery-42117978561",
+  "reference_source": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
+  "reference_results_commit": "12720bdec552e1e2529583ee577e160f73386ed5",
+  "reference_baseline_digest": "70280d6e8c3587ae16e0349212254d32f655a48bb16cc7cd8e905534222c4f53",
+  "reference_recovery_digest": "19faca8afca392278b4dd7d3eae588a8b1961421eb2de64256658434bb3ef843"
+}

@@ -1,10 +1,48 @@
 {
   "schema_version": 1,
-  "created_at": "2026-11-05T22:01:33.870Z",
-  "parent_source_commit": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+  "created_at": "2026-11-05T22:01:27.024Z",
+  "parent_source_commit": "c757ac223ce7c47c01148b54715a6bc734d4aa19",
   "development_provenance": {
     "source_commit": "43789f67432efa7c0720270a6268eaaccd8c0873",
-    "digest": "dd82515755ee28f51d16f59c333069cd49f49dc9e5b1c6665673432b19877384"
+    "digest": "dd82515755ee28f51d16f59c333069cd49f49dc9e5b1c6665673432b19877384",
+    "accounting": [
+      {
+        "verified": true,
+        "reserved": 4,
+        "dispatched": 4,
+        "observed_responses": 4,
+        "known_input_tokens": 7099,
+        "known_output_tokens": 279,
+        "usage_missing": 0
+      },
+      {
+        "verified": true,
+        "reserved": 9,
+        "dispatched": 9,
+        "observed_responses": 9,
+        "known_input_tokens": 16738,
+        "known_output_tokens": 703,
+        "usage_missing": 0
+      },
+      {
+        "verified": true,
+        "reserved": 9,
+        "dispatched": 9,
+        "observed_responses": 9,
+        "known_input_tokens": 16664,
+        "known_output_tokens": 491,
+        "usage_missing": 0
+      },
+      {
+        "verified": true,
+        "reserved": 6,
+        "dispatched": 6,
+        "observed_responses": 6,
+        "known_input_tokens": 12114,
+        "known_output_tokens": 432,
+        "usage_missing": 0
+      }
+    ]
   },
   "calibration_provenance": {
     "source_commit": "3c6c1ea1654a05612907af45b3dbf90f20dbe712",
@@ -23,7 +61,7 @@
   },
   "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
   "files": {
-    ".github/workflows/evaluation.yml": "91c66fd93a42b63e565c9e68786a0764e1dbf67fee091a4086060d84c2096f70",
+    ".github/workflows/evaluation.yml": "2f89ee8bc0e87348b13d81f884dfab58282953ea146fb236048bfdb087746a7e",
     "agent/agent.ts": "be15b6ece892773144b40fcc684c73d8c729ad652a1807f13deb32227c7b7d62",
     "agent/channels/eve.ts": "601fb4887b23c10ff8fe5ca9cf5f926d9447658f61bbb37a17b1702737351d5b",
     "agent/instructions.md": "3277b028b855b2a5e7e6e87da3e972f820c34d6d8a1acd81d9c547b4e8bd38e7",
@@ -53,11 +91,11 @@
     "agent/tools/run_trial.ts": "b32a09d395effbe72ec097ae62bf4e020e9672074a2c8a551001ac5c9f7271d2",
     "evaluation/case-index.json": "5c420dc48dca325ba530ea31cca5265d98314b20cf9c0ebd5c104e5476e4337c",
     "evaluation/corpus-manifest.json": "8ba75ec8ad416f95da9cdd80f6c369ab3807c7809940c1729ec6ef0b76e31a79",
-    "evaluation/grade.py": "79dc872907d3cad0aa9e2e6effddd9b27185ce9775f71ab9e40e05c98c667391",
+    "evaluation/grade.py": "fe7b016d892fb7af468417b3fdbd6bffc74fb1e4211fa93e04206c3835631d0b",
     "evaluation/model-lock.json": "daa17cf622adf1362d9623a4f5fd94cfcf950a55c8166b91f67c141423252971",
     "evaluation/model-subset.json": "11cd2969dc975f1c6e6d246663f969a38d72e6eb71e6211ad7a58a7f9611b3c3",
     "evaluation/plan.json": "fa42ea4eac1e501b78a8a13dc75e91cdc607f5260ad3e9b8eff92edbcecf53b3",
-    "evaluation/statistics.py": "5e04d10e2b11a170965ded5e11881cc49c98329c266eac0a3aea82cfd27c1e9b",
+    "evaluation/statistics.py": "abe797bd9689bddfea7bb28964a356b21dfd20680421815c860976f83346efd8",
     "fixtures/runtime/c061cbcf2cc.json": "40f04b71ffbe37be5b8fe537003e239bdbe00ab765cf10b13bf2de870f0d20e0",
     "fixtures/runtime/c070de96e3f.json": "683fc630f4c056c4e061693ad8d25c417b044a3d09413336335933677f4b7fcc",
     "fixtures/runtime/c07bd2b04d8.json": "9a79c23ae7358891e4efba93feea3953554c628a199ded62df24bb2ec486fdcb",
@@ -108,19 +146,17 @@
     "fixtures/runtime/cff36a85aa5.json": "b0504c84e965b3eb0c6656c50d4a47af3ffe071e7cc089f419667201dd486c54",
     "package-lock.json": "603d7d98e7c8dd1b5eb306120bb6d840f532e767a208df3c74efb855fabb1daf",
     "package.json": "e605194400a18cd5797475f072049318ae906619b73ff61649392224d8bc85d7",
-    "scripts/audit-development.ts": "afedd91221dfdd843b09b12f85bce0325cc0f97d1f8d9e68c839b7df272d4d3f",
-    "scripts/freeze.ts": "bf333d1f5b3de0c8a35700348d3be5f706bed003f1fa2c2765c99cde18779eab",
+    "scripts/freeze.ts": "c1d742d3fcb24e339d2dcf74f864b86a58a39dc0090461c62baac0f454bf5837",
     "scripts/install-ollama.py": "ed67a0c91054a2881384eb718f01ac5b7a1ce788031c05bfacf06380039d6a05",
     "scripts/register-fallback.ts": "1b2c0acad2053928183992b7b03952dbe0fbe0f42d45fc433bfda336e88ee8a3",
-    "scripts/run-evaluation.ts": "034c23d6981c57da1782e5892fea981da8005d06c68a553a95d3651df0e2402b",
+    "scripts/run-evaluation.ts": "7934e24c3f9437bf52761f6a8ecad1f976b73eaab937dba9c085dae8a9d0c245",
     "scripts/seal-evidence.ts": "a9febf6d6a404c95c6b7d985e9b16c0f5730e68e128a66ab966765f410d05950",
     "src/contracts/core.ts": "a0e63461786f0fef96e55409de4af34db6f22749c4bf1173c904b65d3dd63078",
     "src/methods/baseline.ts": "d6bc8adda7805b9d16fc8904c303f465f877c331ac15146fde712060d4e78956",
     "src/methods/run-baseline.ts": "450784defd28651bb04bbc2d856dd57f7da5f72fadd399cf88b7f875e0d5a0a2",
-    "src/report/accounting.ts": "854e869f41520202300b21b984858298f764517cba9c93bfd02ede8c08f64f17",
-    "src/report/development.ts": "4093a2b0f6cde82090f911323ba6ef620f9144c1fc4f5f395e8fc6cbcb792d3b",
+    "src/report/accounting.ts": "3f8098e640f2d773fd821906022c837ada65d813b2e6f9589d669e889d784318",
     "src/report/evidence.ts": "0a5794d03449a0231a7a00984c058362c787d0519db147da05f42ae4fd5a6930",
-    "src/report/freeze.ts": "00349d82ce513a2275f3de7c75f0534a82dc5d3e86597eb8bbdf410b55851d6d",
+    "src/report/freeze.ts": "1fd921b97559fd6c3bedda945c44d3dafc14250dbd5217a94f1dba5aea7756ce",
     "src/runtime/provider.ts": "300e4c19b2974175006c0a4cf4792491f83a581891e30ee8d4785c07d3ab054b",
     "src/runtime/state.ts": "a4877adc55274b3be0755264d2ef053e1f54e9fc0b0ab090b8ef5d9640d3235a",
     "src/runtime/store.ts": "7d242c6ae83a86af1de95374c5074b67040f9082727dc8f324a4a699f9554084",
