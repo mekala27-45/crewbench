@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "mode": "actual_model_development",
+  "source_commit": "29a67fe19d9191551229445095571d9dda07e6c3",
+  "plan_digest": "36740a8c89b57e98190de8eb9fde64e4d8d029324535a53183b2eb93326001fc",
+  "results_branch": "results/development-42111904893",
+  "files": [
+    {
+      "path": "artifacts/development/eve-build.log",
+      "bytes": 18312,
+      "sha256": "c0d8e6cc2eee3a384de3255dd8c726b8b2c6fb8b5c8b3d887b79a7f798d05bd0"
+    },
+    {
+      "path": "artifacts/development/eve-runtime.log",
+      "bytes": 24611,
+      "sha256": "36e1cbc8d8b06a333d4c62b0e730d2907fc1d99faf3642ae2920b918e0a30d92"
+    },
+    {
+      "path": "artifacts/development/trials.json",
+      "bytes": 522107,
+      "sha256": "11fa8d996a0de5224924afb90b9251ba93b3cdb8be3d16858fff50247d88ebf7"
+    },
+    {
+      "path": "artifacts/development/workflow.json",
+      "bytes": 146,
+      "sha256": "e8f70e564d152e2eb7792311f95e7107383d76837cc70f44f42a1985d019ab0b"
+    },
+    {
+      "path": "artifacts/recovery/grades.json",
+      "bytes": 1881,
+      "sha256": "c96ab497c6b9a61a778d6a532904362b399a8f589b31c2183777efdcfdf6db3c"
+    },
+    {
+      "path": "artifacts/recovery/results.json",
+      "bytes": 415003,
+      "sha256": "d9c145f4c1454db0744de40eedcbc8c9a3e9d41d5dfa6ce7e3cda7232aaaf36b"
+    }
+  ]
+}
