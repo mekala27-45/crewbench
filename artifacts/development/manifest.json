@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "mode": "actual_model_development",
+  "source_commit": "dafc20b58e897fa45fc02527997362e73a214107",
+  "plan_digest": "36740a8c89b57e98190de8eb9fde64e4d8d029324535a53183b2eb93326001fc",
+  "results_branch": "results/development-42111083922",
+  "files": [
+    {
+      "path": "artifacts/development/eve-build.log",
+      "bytes": 18312,
+      "sha256": "f5aa2ebf938953a0a7b39828655140ee6412d45f83e4a0f6b7ff64394488cd47"
+    },
+    {
+      "path": "artifacts/development/eve-runtime.log",
+      "bytes": 24611,
+      "sha256": "4f107a5ebc1fa6bb81592cc2d7d8ad400c9900daa890b94aeaf6a9ddfeae6a04"
+    },
+    {
+      "path": "artifacts/development/trials.json",
+      "bytes": 506638,
+      "sha256": "8abee7606d2cfa210afdbfde516baa99392e350a5c4703c32eaecb453c4be278"
+    },
+    {
+      "path": "artifacts/development/workflow.json",
+      "bytes": 146,
+      "sha256": "185331fa9ff23056e3541d9a224cd03dc265addb487a4a9c1e4530ddabbf4bbb"
+    }
+  ]
+}
