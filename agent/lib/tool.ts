@@ -12,6 +12,6 @@ export function boundTool(role:Role,name:string,inputSchema:any){return defineTo
   if(found.rowCount!==1)throw new Refusal('SESSION_SCOPE');const {state,packet}=found.rows[0];
   const receipt=await store.change(state.id,(s,now)=>{const bound:any=s.roles[role];const requestDigest=digest({name,input});const emitted=s.tool_requests.find(r=>r.role===role&&(r.framework_call_id===ctx.callId||r.operation_id===ctx.callId))||s.tool_requests.find(r=>r.role===role&&r.status==='emitted'&&r.request_digest===requestDigest);if(!emitted)throw new Refusal('NO_PROVIDER_TOOL_EMISSION');emitted.framework_call_id=ctx.callId;return executeTool(s,now,{owner:bound.session_owner,generation:bound.session_generation},role,emitted.operation_id,name,input,packet);});
   return modelReceipt(receipt);
- }catch(e:any){return {refused:true,code:e.code||'TOOL_FAILURE'};}finally{await store.close();}},
+ }catch(e:any){return {refused:true,code:e.code||'TOOL_FAILURE',correction:'The submission was not accepted. Review your existing tool results. Copy the exact reference attached to each cited record; one read receipt can contain multiple records. Check the schema and typed states, then make the one permitted corrected tool submission. Do not answer in prose.'};}finally{await store.close();}},
  endsTurn:(output:any)=>name.startsWith('submit_')&&!output.refused,
 });}
