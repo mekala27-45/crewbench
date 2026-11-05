@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "mode": "scripted_runtime",
+  "source_commit": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
+  "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
+  "results_branch": "results/recovery-42117978561",
+  "files": [
+    {
+      "path": "artifacts/baseline/provisional-grades.json",
+      "bytes": 27869,
+      "sha256": "2dd30dd013db0e9e59d20da1c5dde0175c8291f21d6445493d119d51165747eb"
+    },
+    {
+      "path": "artifacts/baseline/results.json",
+      "bytes": 395658,
+      "sha256": "a1535a2de7063ab8aa511442746e3c011580d1a1fe394f9c40d24cc47cb0c2d6"
+    },
+    {
+      "path": "artifacts/recovery/grades.json",
+      "bytes": 1881,
+      "sha256": "acd266a25d50cbc343c86f55f0bb91f6f04a5ca391042e557b59b2809774e029"
+    },
+    {
+      "path": "artifacts/recovery/results.json",
+      "bytes": 415008,
+      "sha256": "c088fcb2d0735bd050b2b13e65b92f7ed0df65ee979317eacc8c82625212c0ae"
+    },
+    {
+      "path": "artifacts/recovery/workflow.json",
+      "bytes": 147,
+      "sha256": "0709a88a6c0dd12f7d46cb5ea2265c351a6d1bc7f01d26789c545ecddb845c0a"
+    }
+  ]
+}
