@@ -8,7 +8,7 @@ Public evidence site: https://mekala27-45.github.io/crewbench/
 
 API destination: https://crewbench-api.vercel.app (public persisted flow pending).
 
-Report source: c6a5a39086584c6acd68b76dcba7ce42837756b6. Actual source: not yet executed. This source reference is not a final release verification.
+Report source: c6a5a39086584c6acd68b76dcba7ce42837756b6. Actual source: not yet published. This source reference is not a final release verification.
 
 The held-out actual comparison is pending. Development traces establish model invocation only; no held-out model success rate is claimed.
 

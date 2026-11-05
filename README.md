@@ -8,6 +8,10 @@ The evidence site is published. The qualified CPU model and 101 executable input
 
 The deterministic PostgreSQL baseline passed independent grading on all 48 authored cases, including 24 held-out cases and the exact 12-case paired subset. Run 42103168989 verified 12 of 12 scripted recovery overlays with post-action reads from a separate process. API and browser run 42114717646 passed 21 API checks and 42 browser checks across 360, 768 and 1440 pixels, both themes and enlarged text.
 
+[Watch the recorded demonstration](https://github.com/mekala27-45/crewbench/raw/refs/heads/main/artifacts/demo/crewbench-demo.webm) · [Interview cards](docs/INTERVIEW-CARDS.md) · [Daily build log](docs/DAILY-BUILD-25.md)
+
+The demonstration captures the public development checkpoint, including the explicit missing actual-result state. It does not claim a live API result.
+
 ## Architecture
 
 ```mermaid
