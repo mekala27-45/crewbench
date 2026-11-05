@@ -1,0 +1,2257 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+      "/home/runner/work/crewbench/crewbench/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/home/runner/work/crewbench/crewbench/playwright.config.ts",
+    "rootDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+        "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+        "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+      },
+      "gitCommit": {
+        "shortHash": "6c2952a",
+        "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+        "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+        "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+        "author": {
+          "name": "Ajay Mekala",
+          "email": "mekalaajayk@gmail.com",
+          "time": 1793913081000
+        },
+        "committer": {
+          "name": "Ajay Mekala",
+          "email": "mekalaajayk@gmail.com",
+          "time": 1793913081000
+        },
+        "branch": "codex/crewbench-completion"
+      },
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+          },
+          "gitCommit": {
+            "shortHash": "6c2952a",
+            "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "id": "1440-light",
+        "name": "1440-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+          },
+          "gitCommit": {
+            "shortHash": "6c2952a",
+            "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "id": "1440-dark",
+        "name": "1440-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+          },
+          "gitCommit": {
+            "shortHash": "6c2952a",
+            "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "id": "768-light",
+        "name": "768-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+          },
+          "gitCommit": {
+            "shortHash": "6c2952a",
+            "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "id": "768-dark",
+        "name": "768-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+          },
+          "gitCommit": {
+            "shortHash": "6c2952a",
+            "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "id": "360-light",
+        "name": "360-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+          },
+          "gitCommit": {
+            "shortHash": "6c2952a",
+            "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "id": "360-dark",
+        "name": "360-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+          },
+          "gitCommit": {
+            "shortHash": "6c2952a",
+            "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "name": "1440-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "colorScheme": "light"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "1440-light"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+          },
+          "gitCommit": {
+            "shortHash": "6c2952a",
+            "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "name": "1440-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "colorScheme": "dark"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "1440-dark"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+          },
+          "gitCommit": {
+            "shortHash": "6c2952a",
+            "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "name": "768-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 768,
+            "height": 1000
+          },
+          "colorScheme": "light"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "768-light"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+          },
+          "gitCommit": {
+            "shortHash": "6c2952a",
+            "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "name": "768-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 768,
+            "height": 1000
+          },
+          "colorScheme": "dark"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "768-dark"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+          },
+          "gitCommit": {
+            "shortHash": "6c2952a",
+            "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "name": "360-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 360,
+            "height": 1000
+          },
+          "colorScheme": "light"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "360-light"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "commitHash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42110351652"
+          },
+          "gitCommit": {
+            "shortHash": "6c2952a",
+            "hash": "6c2952ae79fbca1ed2ad9d367a0a2d119e4d8939",
+            "subject": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "body": "fix: restore dark evidence contrast and refresh displayed design limits",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793913081000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "name": "360-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 360,
+            "height": 1000
+          },
+          "colorScheme": "dark"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "360-dark"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "artifacts/browser/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 2,
+    "webServer": {
+      "command": "npx vite --host 0.0.0.0",
+      "url": "http://localhost:5173/crewbench/",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "workbench.spec.ts",
+      "file": "workbench.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1865,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:22.908Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-556d5d8e7433ac09a9b1",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 576,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:25.099Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-8ee9d77815f2358e5855",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 469,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:25.718Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-5b2e6228df25eaf0c154",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "theme preference persists and case selection retains focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 696,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:26.211Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-22f9dfd2277b70173898",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "expired and denied sessions produce a finite useful error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 443,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:26.931Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-191ee264314e4639814d",
+          "file": "workbench.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "missing actual results remain missing and reduced motion is supported",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 402,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:27.403Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-7cdafa46bcf6a897a85b",
+          "file": "workbench.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "text remains reachable under enlarged rendering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 421,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:27.837Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-e260ed29d0681742dab4",
+          "file": "workbench.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "evidence text meets contrast in the active theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 236,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:28.288Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-cec8e580622a51b0d9d5",
+          "file": "workbench.spec.ts",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1745,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:22.905Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-7b79e4fcc43d62e7d6b6",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 600,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:24.984Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-bfa210f47d08ff749e5f",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 424,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:25.613Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-6aebc9709020e74a5233",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "theme preference persists and case selection retains focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 639,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:26.052Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-70a4dfc74a9aed59c188",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "expired and denied sessions produce a finite useful error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 497,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:26.717Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-5d97494d0addd8a94cec",
+          "file": "workbench.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "missing actual results remain missing and reduced motion is supported",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 336,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:27.233Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-edc61f74ae0e3d1bb14c",
+          "file": "workbench.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "text remains reachable under enlarged rendering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 444,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:27.592Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-6991a083210de0e96a90",
+          "file": "workbench.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "evidence text meets contrast in the active theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 271,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:28.058Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-09684665595f04891da1",
+          "file": "workbench.spec.ts",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1749,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:28.940Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-df58062a1557d945b8f7",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 595,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:30.798Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-e17d6e7475806b4d7cfc",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 393,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:31.416Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-0445731136ecabb62e32",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "theme preference persists and case selection retains focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 641,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:31.833Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-6638e5a61cc30304eddd",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "expired and denied sessions produce a finite useful error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 416,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:32.497Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-6fb00be617fa51e95781",
+          "file": "workbench.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "missing actual results remain missing and reduced motion is supported",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 381,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:32.941Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-8ea0984c17f5868169bd",
+          "file": "workbench.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "text remains reachable under enlarged rendering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 403,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:33.345Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-1eb9bbc5dff158d931d4",
+          "file": "workbench.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "evidence text meets contrast in the active theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 272,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:33.766Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-868c9c1e8b36de0cbbe9",
+          "file": "workbench.spec.ts",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1580,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:29.157Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-f81ca1171679773df1b9",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 575,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:30.899Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-7233fc2c2d0a6712fec7",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 437,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:31.502Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-cfcfbfcffabe5c45e9ec",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "theme preference persists and case selection retains focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 623,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:31.961Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-0511ca490eeb7a455bdd",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "expired and denied sessions produce a finite useful error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 389,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:32.613Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-d7c31fcbe83fc895eeb5",
+          "file": "workbench.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "missing actual results remain missing and reduced motion is supported",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 391,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:33.030Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-9a912be1261f96d65a70",
+          "file": "workbench.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "text remains reachable under enlarged rendering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 364,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:33.442Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-a570bc4a21b47f4968ca",
+          "file": "workbench.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "evidence text meets contrast in the active theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 250,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:33.829Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-ce8ecae56c589ee642af",
+          "file": "workbench.spec.ts",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1414,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:34.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-44a7feaf00fe7f862f69",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 525,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:36.212Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-7e5d2054f66a8e002f22",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 392,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:36.762Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-93d866814b79c11d8fd4",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "theme preference persists and case selection retains focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 547,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:37.167Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-e21cc3837a5bbc6322d5",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "expired and denied sessions produce a finite useful error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 376,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:37.732Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-6efb17bbc3d142bf2992",
+          "file": "workbench.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "missing actual results remain missing and reduced motion is supported",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 312,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:38.129Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-f47b85e92ff74536169f",
+          "file": "workbench.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "text remains reachable under enlarged rendering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 404,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:38.457Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-449e95d023436df9134c",
+          "file": "workbench.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "evidence text meets contrast in the active theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 284,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:38.879Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-01df486f8a563fd794b6",
+          "file": "workbench.spec.ts",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1453,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:34.659Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-26738ceeb535fec15d1b",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 523,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:36.259Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-3ab87218d46ac89f050e",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 442,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:36.811Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-a445536f9dc8c55c2bcc",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "theme preference persists and case selection retains focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 548,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:37.273Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-4d28c1e30a45d31232c6",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "expired and denied sessions produce a finite useful error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 354,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:37.839Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-f3f588105497a70473bf",
+          "file": "workbench.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "missing actual results remain missing and reduced motion is supported",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 335,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:38.213Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-295c97865ad4e364a2ff",
+          "file": "workbench.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "text remains reachable under enlarged rendering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 341,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:38.575Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-2cf81c44b0fd4ebf8878",
+          "file": "workbench.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "evidence text meets contrast in the active theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T21:12:38.937Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-57948ba136d5c00d94c7",
+          "file": "workbench.spec.ts",
+          "line": 36,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-05T21:12:21.397Z",
+    "duration": 17912.923000000003,
+    "expected": 48,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
