@@ -53,6 +53,7 @@ export function reserve(s:Trial,now:number,lease:Lease,role:Role,operation:strin
 export function dispatchIntent(s:Trial,now:number,lease:Lease,operation:string){
  const r=s.reservations.find(r=>r.operation_id===operation);if(!r)throw new Refusal('NO_RESERVATION');guard(s,now,lease,r.role);
  if(s.attempts.some(a=>a.operation_id===operation))throw new Refusal('DUPLICATE_DISPATCH',409);
+ s.lease_until=Math.min(s.deadline!,Math.max(s.lease_until,now+s.budget.request_seconds*1000+5000));
  const a={operation_id:operation,role:r.role,status:'dispatch_intent',dispatch_at:new Date(now).toISOString(),request_digest:r.request_digest,input_tokens:null,output_tokens:null,usage_missing_reason:'Response not recorded',response_digest:null};
  s.attempts.push(a);event(s,now,'dispatch_intent',{operation_id:operation});return a;
 }
