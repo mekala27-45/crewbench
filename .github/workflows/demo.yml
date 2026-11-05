@@ -18,6 +18,7 @@ jobs:
           node-version: 24.19.0
       - run: npm ci
       - run: npx playwright install --with-deps chromium
+      - run: node scripts/build-career.ts
       - run: node scripts/capture-demo.mjs
       - name: Retain recording and observed outcome
         if: always()
@@ -30,6 +31,7 @@ jobs:
           git config user.email 'mekalaajayk@gmail.com'
           git switch -c results/demo-${GITHUB_RUN_ID}
           git add artifacts/demo/manifest.json artifacts/demo/workflow.json || true
+          for item in docs/INTERVIEW-CARDS.md docs/DAILY-BUILD-25.md docs/POST-DRAFT.md; do if [ -f "$item" ]; then git add "$item"; fi; done
           if [ -f artifacts/demo/crewbench-demo.webm ]; then git add -f artifacts/demo/crewbench-demo.webm; fi
           git commit -m 'docs: retain uninterrupted public evidence demonstration'
           gh auth setup-git
