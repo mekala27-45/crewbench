@@ -1,0 +1,498 @@
+{
+  "schema_version": 1,
+  "mode": "actual_model_development",
+  "source_commit": "75378c3df20fee09c04c2ea6abfbb084bf0c0d8f",
+  "plan_digest": "f00deed591ff6ce78c00e8404cb42299063e4d60926b374573bf136907963a41",
+  "trials": [
+    {
+      "trial_id": "dev_42099764606_c070de96e3f_solo_agent",
+      "schema": "crewbench",
+      "state_digest": "e47d06d06c9613f2e7c179547642dc3e1a858ed0b95cd7aaa65b76cd7e4081c0",
+      "state": {
+        "id": "dev_42099764606_c070de96e3f_solo_agent",
+        "join": null,
+        "mode": "actual_model",
+        "owner": "development-42099764606",
+        "roles": {
+          "solo": {
+            "spent": {
+              "input_bytes": 0,
+              "tool_requests": 0,
+              "model_requests": 0,
+              "output_reserved_tokens": 0
+            },
+            "status": "failed",
+            "session_id": null
+          }
+        },
+        "spent": {
+          "input_bytes": 0,
+          "tool_requests": 0,
+          "model_requests": 0,
+          "output_reserved_tokens": 0
+        },
+        "budget": {
+          "input_bytes": 65536,
+          "tool_requests": 16,
+          "trial_seconds": 240,
+          "model_requests": 8,
+          "request_seconds": 30,
+          "output_reserved_tokens": 2048,
+          "output_per_request_tokens": 256
+        },
+        "events": [
+          {
+            "at": "2026-11-05T20:05:37.323Z",
+            "type": "activated",
+            "details": {},
+            "sequence": 1
+          },
+          {
+            "at": "2026-11-05T20:05:37.323Z",
+            "type": "lease_acquired",
+            "details": {
+              "owner": "development-42099764606",
+              "generation": 1
+            },
+            "sequence": 2
+          },
+          {
+            "at": "2026-11-05T20:05:37.448Z",
+            "type": "terminal",
+            "details": {
+              "reason": "Authorization is required for this route.",
+              "status": "failed"
+            },
+            "sequence": 3
+          }
+        ],
+        "method": "solo_agent",
+        "status": "failed",
+        "case_id": "c070de96e3f",
+        "failure": "Authorization is required for this route.",
+        "attempts": [],
+        "children": {},
+        "deadline": 1793909377323.462,
+        "receipts": [],
+        "assessment": null,
+        "case_order": 0,
+        "generation": 2,
+        "partitions": {
+          "solo": {
+            "input_bytes": 65536,
+            "tool_requests": 16,
+            "trial_seconds": 240,
+            "model_requests": 8,
+            "request_seconds": 30,
+            "output_reserved_tokens": 2048,
+            "output_per_request_tokens": 256
+          }
+        },
+        "lease_until": 0,
+        "plan_digest": "f00deed591ff6ce78c00e8404cb42299063e4d60926b374573bf136907963a41",
+        "snapshot_id": "sfb1b6a83",
+        "terminal_at": 1793909137448.917,
+        "activated_at": 1793909137323.462,
+        "model_digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+        "reservations": [],
+        "config_digest": "f00deed591ff6ce78c00e8404cb42299063e4d60926b374573bf136907963a41",
+        "packet_digest": "c95ab8de026991af0760e925f8038ba7192f6ff21765bb7c6e34506a22b83d4b",
+        "tool_requests": [],
+        "assessment_receipt": null
+      },
+      "counts": {
+        "child_packets": 0,
+        "join_receipts": 0,
+        "assessments": 0,
+        "budget_reservations": 0,
+        "provider_attempts": 0,
+        "tool_receipts": 0
+      },
+      "event_sequence": 3,
+      "read_at": "2026-11-05T20:05:37.465Z",
+      "connection_id": 255
+    },
+    {
+      "trial_id": "dev_42099764606_c070de96e3f_split_review",
+      "schema": "crewbench",
+      "state_digest": "6f68fd5289f51f009868e1c1320266c545858b29a7affa97aaf20884e42c7756",
+      "state": {
+        "id": "dev_42099764606_c070de96e3f_split_review",
+        "join": null,
+        "mode": "actual_model",
+        "owner": "development-42099764606",
+        "roles": {
+          "tests": {
+            "spent": {
+              "input_bytes": 0,
+              "tool_requests": 0,
+              "model_requests": 0,
+              "output_reserved_tokens": 0
+            },
+            "status": "failed",
+            "session_id": null
+          },
+          "staging": {
+            "spent": {
+              "input_bytes": 0,
+              "tool_requests": 0,
+              "model_requests": 0,
+              "output_reserved_tokens": 0
+            },
+            "status": "failed",
+            "session_id": null
+          },
+          "synthesis": {
+            "spent": {
+              "input_bytes": 0,
+              "tool_requests": 0,
+              "model_requests": 0,
+              "output_reserved_tokens": 0
+            },
+            "status": "failed",
+            "session_id": null
+          }
+        },
+        "spent": {
+          "input_bytes": 0,
+          "tool_requests": 0,
+          "model_requests": 0,
+          "output_reserved_tokens": 0
+        },
+        "budget": {
+          "input_bytes": 65536,
+          "tool_requests": 16,
+          "trial_seconds": 240,
+          "model_requests": 8,
+          "request_seconds": 30,
+          "output_reserved_tokens": 2048,
+          "output_per_request_tokens": 256
+        },
+        "events": [
+          {
+            "at": "2026-11-05T20:05:37.471Z",
+            "type": "activated",
+            "details": {},
+            "sequence": 1
+          },
+          {
+            "at": "2026-11-05T20:05:37.471Z",
+            "type": "lease_acquired",
+            "details": {
+              "owner": "development-42099764606",
+              "generation": 1
+            },
+            "sequence": 2
+          },
+          {
+            "at": "2026-11-05T20:05:37.477Z",
+            "type": "terminal",
+            "details": {
+              "reason": "Authorization is required for this route.",
+              "status": "failed"
+            },
+            "sequence": 3
+          }
+        ],
+        "method": "split_review",
+        "status": "failed",
+        "case_id": "c070de96e3f",
+        "failure": "Authorization is required for this route.",
+        "attempts": [],
+        "children": {},
+        "deadline": 1793909377471.584,
+        "receipts": [],
+        "assessment": null,
+        "case_order": 0,
+        "generation": 2,
+        "partitions": {
+          "tests": {
+            "input_bytes": 20480,
+            "tool_requests": 6,
+            "model_requests": 3,
+            "output_reserved_tokens": 768
+          },
+          "staging": {
+            "input_bytes": 20480,
+            "tool_requests": 6,
+            "model_requests": 3,
+            "output_reserved_tokens": 768
+          },
+          "synthesis": {
+            "input_bytes": 24576,
+            "tool_requests": 4,
+            "model_requests": 2,
+            "output_reserved_tokens": 512
+          }
+        },
+        "lease_until": 0,
+        "plan_digest": "f00deed591ff6ce78c00e8404cb42299063e4d60926b374573bf136907963a41",
+        "snapshot_id": "sfb1b6a83",
+        "terminal_at": 1793909137477.833,
+        "activated_at": 1793909137471.584,
+        "model_digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+        "reservations": [],
+        "config_digest": "f00deed591ff6ce78c00e8404cb42299063e4d60926b374573bf136907963a41",
+        "packet_digest": "c95ab8de026991af0760e925f8038ba7192f6ff21765bb7c6e34506a22b83d4b",
+        "tool_requests": [],
+        "assessment_receipt": null
+      },
+      "counts": {
+        "child_packets": 0,
+        "join_receipts": 0,
+        "assessments": 0,
+        "budget_reservations": 0,
+        "provider_attempts": 0,
+        "tool_receipts": 0
+      },
+      "event_sequence": 3,
+      "read_at": "2026-11-05T20:05:37.488Z",
+      "connection_id": 256
+    },
+    {
+      "trial_id": "dev_42099764606_c2cdad678dd_split_review",
+      "schema": "crewbench",
+      "state_digest": "a99986cb4761904bfac7f276146731e36f99e16883e3d4df7eb600c96a95dbe2",
+      "state": {
+        "id": "dev_42099764606_c2cdad678dd_split_review",
+        "join": null,
+        "mode": "actual_model",
+        "owner": "development-42099764606",
+        "roles": {
+          "tests": {
+            "spent": {
+              "input_bytes": 0,
+              "tool_requests": 0,
+              "model_requests": 0,
+              "output_reserved_tokens": 0
+            },
+            "status": "failed",
+            "session_id": null
+          },
+          "staging": {
+            "spent": {
+              "input_bytes": 0,
+              "tool_requests": 0,
+              "model_requests": 0,
+              "output_reserved_tokens": 0
+            },
+            "status": "failed",
+            "session_id": null
+          },
+          "synthesis": {
+            "spent": {
+              "input_bytes": 0,
+              "tool_requests": 0,
+              "model_requests": 0,
+              "output_reserved_tokens": 0
+            },
+            "status": "failed",
+            "session_id": null
+          }
+        },
+        "spent": {
+          "input_bytes": 0,
+          "tool_requests": 0,
+          "model_requests": 0,
+          "output_reserved_tokens": 0
+        },
+        "budget": {
+          "input_bytes": 65536,
+          "tool_requests": 16,
+          "trial_seconds": 240,
+          "model_requests": 8,
+          "request_seconds": 30,
+          "output_reserved_tokens": 2048,
+          "output_per_request_tokens": 256
+        },
+        "events": [
+          {
+            "at": "2026-11-05T20:05:37.493Z",
+            "type": "activated",
+            "details": {},
+            "sequence": 1
+          },
+          {
+            "at": "2026-11-05T20:05:37.493Z",
+            "type": "lease_acquired",
+            "details": {
+              "owner": "development-42099764606",
+              "generation": 1
+            },
+            "sequence": 2
+          },
+          {
+            "at": "2026-11-05T20:05:37.500Z",
+            "type": "terminal",
+            "details": {
+              "reason": "Authorization is required for this route.",
+              "status": "failed"
+            },
+            "sequence": 3
+          }
+        ],
+        "method": "split_review",
+        "status": "failed",
+        "case_id": "c2cdad678dd",
+        "failure": "Authorization is required for this route.",
+        "attempts": [],
+        "children": {},
+        "deadline": 1793909377493.563,
+        "receipts": [],
+        "assessment": null,
+        "case_order": 1,
+        "generation": 2,
+        "partitions": {
+          "tests": {
+            "input_bytes": 20480,
+            "tool_requests": 6,
+            "model_requests": 3,
+            "output_reserved_tokens": 768
+          },
+          "staging": {
+            "input_bytes": 20480,
+            "tool_requests": 6,
+            "model_requests": 3,
+            "output_reserved_tokens": 768
+          },
+          "synthesis": {
+            "input_bytes": 24576,
+            "tool_requests": 4,
+            "model_requests": 2,
+            "output_reserved_tokens": 512
+          }
+        },
+        "lease_until": 0,
+        "plan_digest": "f00deed591ff6ce78c00e8404cb42299063e4d60926b374573bf136907963a41",
+        "snapshot_id": "s2a4724c4",
+        "terminal_at": 1793909137500.009,
+        "activated_at": 1793909137493.563,
+        "model_digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+        "reservations": [],
+        "config_digest": "f00deed591ff6ce78c00e8404cb42299063e4d60926b374573bf136907963a41",
+        "packet_digest": "5718c4cd4ab69c132b6208996ac910bc8b901cc9c9cea952aca94b2285efc816",
+        "tool_requests": [],
+        "assessment_receipt": null
+      },
+      "counts": {
+        "child_packets": 0,
+        "join_receipts": 0,
+        "assessments": 0,
+        "budget_reservations": 0,
+        "provider_attempts": 0,
+        "tool_receipts": 0
+      },
+      "event_sequence": 3,
+      "read_at": "2026-11-05T20:05:37.669Z",
+      "connection_id": 257
+    },
+    {
+      "trial_id": "dev_42099764606_c2cdad678dd_solo_agent",
+      "schema": "crewbench",
+      "state_digest": "3e00142e575a615bb1b1479f66517774341fc74bebacd781b6f75e65edfb23d5",
+      "state": {
+        "id": "dev_42099764606_c2cdad678dd_solo_agent",
+        "join": null,
+        "mode": "actual_model",
+        "owner": "development-42099764606",
+        "roles": {
+          "solo": {
+            "spent": {
+              "input_bytes": 0,
+              "tool_requests": 0,
+              "model_requests": 0,
+              "output_reserved_tokens": 0
+            },
+            "status": "failed",
+            "session_id": null
+          }
+        },
+        "spent": {
+          "input_bytes": 0,
+          "tool_requests": 0,
+          "model_requests": 0,
+          "output_reserved_tokens": 0
+        },
+        "budget": {
+          "input_bytes": 65536,
+          "tool_requests": 16,
+          "trial_seconds": 240,
+          "model_requests": 8,
+          "request_seconds": 30,
+          "output_reserved_tokens": 2048,
+          "output_per_request_tokens": 256
+        },
+        "events": [
+          {
+            "at": "2026-11-05T20:05:37.720Z",
+            "type": "activated",
+            "details": {},
+            "sequence": 1
+          },
+          {
+            "at": "2026-11-05T20:05:37.720Z",
+            "type": "lease_acquired",
+            "details": {
+              "owner": "development-42099764606",
+              "generation": 1
+            },
+            "sequence": 2
+          },
+          {
+            "at": "2026-11-05T20:05:37.725Z",
+            "type": "terminal",
+            "details": {
+              "reason": "Authorization is required for this route.",
+              "status": "failed"
+            },
+            "sequence": 3
+          }
+        ],
+        "method": "solo_agent",
+        "status": "failed",
+        "case_id": "c2cdad678dd",
+        "failure": "Authorization is required for this route.",
+        "attempts": [],
+        "children": {},
+        "deadline": 1793909377720.759,
+        "receipts": [],
+        "assessment": null,
+        "case_order": 1,
+        "generation": 2,
+        "partitions": {
+          "solo": {
+            "input_bytes": 65536,
+            "tool_requests": 16,
+            "trial_seconds": 240,
+            "model_requests": 8,
+            "request_seconds": 30,
+            "output_reserved_tokens": 2048,
+            "output_per_request_tokens": 256
+          }
+        },
+        "lease_until": 0,
+        "plan_digest": "f00deed591ff6ce78c00e8404cb42299063e4d60926b374573bf136907963a41",
+        "snapshot_id": "s2a4724c4",
+        "terminal_at": 1793909137725.823,
+        "activated_at": 1793909137720.759,
+        "model_digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+        "reservations": [],
+        "config_digest": "f00deed591ff6ce78c00e8404cb42299063e4d60926b374573bf136907963a41",
+        "packet_digest": "5718c4cd4ab69c132b6208996ac910bc8b901cc9c9cea952aca94b2285efc816",
+        "tool_requests": [],
+        "assessment_receipt": null
+      },
+      "counts": {
+        "child_packets": 0,
+        "join_receipts": 0,
+        "assessments": 0,
+        "budget_reservations": 0,
+        "provider_attempts": 0,
+        "tool_receipts": 0
+      },
+      "event_sequence": 3,
+      "read_at": "2026-11-05T20:05:37.735Z",
+      "connection_id": 258
+    }
+  ]
+}
