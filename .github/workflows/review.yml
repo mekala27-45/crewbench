@@ -30,6 +30,7 @@ jobs:
           python3 evaluation/grade.py artifacts/baseline/postgres.json artifacts/baseline/postgres-grades.json --public-records
           python3 evaluation/recovery.py artifacts/recovery/results.json artifacts/recovery/grades.json
           node scripts/build-report.ts
+          node scripts/write-review-results.ts
           npx vite build
       - name: Preserve report and any failures
         if: always()
@@ -43,6 +44,8 @@ jobs:
           git config user.email 'mekalaajayk@gmail.com'
           git switch -c results/review-${GITHUB_RUN_ID}
           git add artifacts site/public/data
+          if [ -f RESULTS.md ]; then git add RESULTS.md; fi
+          if [ -f artifacts/review/runtime.log ]; then git add -f artifacts/review/*.log; fi
           git commit -m 'test: retain independent review accounting and provisional report'
           gh auth setup-git
           git push origin HEAD

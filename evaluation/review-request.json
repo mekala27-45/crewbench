@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "development_run": "42111083922",
+  "development_source": "dafc20b58e897fa45fc02527997362e73a214107",
+  "results_commit": "8fc65259b693b13a81f7fc80efe0aa298b2d44b2",
+  "recovery_run": "42110678610",
+  "recovery_source": "a0a058944e48a88734fc25da04c1d6942a0ad06f",
+  "recovery_results_commit": "79ce68038a343914d54226d74286ea7fe29e3fe6",
+  "web_run": "42114543977",
+  "web_source": "8981896982cc0c6b04efe28b40e3a9560b545c4e",
+  "web_results_commit": "0f5082b26dffc5400e9d7154e5df86f17bce07b2",
+  "contracts_run": "42114112170",
+  "contracts_source": "53d7a6d684951f72c39dbe7cdda0f25ee2cbb0f4",
+  "contracts_results_commit": "56fc3966b600596eb2d533a86282fa9046b5204b",
+  "purpose": "Independent development accounting, provisional baseline grading, strict recovery verification and Section 20 review. No held-out inference or release publication."
+}
