@@ -1,0 +1,36 @@
+name: Record public evidence demonstration
+on:
+  push:
+    branches: [main]
+    paths: [evaluation/demo-request.json]
+permissions:
+  contents: write
+jobs:
+  demo:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.19.0
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/capture-demo.mjs
+      - name: Retain recording and observed outcome
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p artifacts/demo
+          python3 -c 'import json,os,pathlib; pathlib.Path("artifacts/demo/workflow.json").write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"manifest_present":pathlib.Path("artifacts/demo/manifest.json").exists()}))'
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/demo-${GITHUB_RUN_ID}
+          git add artifacts/demo/manifest.json artifacts/demo/workflow.json || true
+          if [ -f artifacts/demo/crewbench-demo.webm ]; then git add -f artifacts/demo/crewbench-demo.webm; fi
+          git commit -m 'docs: retain uninterrupted public evidence demonstration'
+          gh auth setup-git
+          git push origin HEAD
