@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "mode": "scripted_runtime",
+  "planned": 12,
+  "observed": 12,
+  "verified": 12,
+  "grades": [
+    {
+      "trial_id": "fault_c070de96e3f_lost_child_response_42102826720",
+      "verified": true,
+      "fault": "lost_child_response"
+    },
+    {
+      "trial_id": "fault_c070de96e3f_duplicate_delivery_42102826720",
+      "verified": true,
+      "fault": "duplicate_delivery"
+    },
+    {
+      "trial_id": "fault_c070de96e3f_worker_death_42102826720",
+      "verified": true,
+      "fault": "worker_death"
+    },
+    {
+      "trial_id": "fault_c070de96e3f_cancel_race_42102826720",
+      "verified": true,
+      "fault": "cancel_race"
+    },
+    {
+      "trial_id": "fault_c070de96e3f_budget_race_42102826720",
+      "verified": true,
+      "fault": "budget_race"
+    },
+    {
+      "trial_id": "fault_c070de96e3f_uncertain_dispatch_42102826720",
+      "verified": true,
+      "fault": "uncertain_dispatch"
+    },
+    {
+      "trial_id": "fault_c2cdad678dd_lost_child_response_42102826720",
+      "verified": true,
+      "fault": "lost_child_response"
+    },
+    {
+      "trial_id": "fault_c2cdad678dd_duplicate_delivery_42102826720",
+      "verified": true,
+      "fault": "duplicate_delivery"
+    },
+    {
+      "trial_id": "fault_c2cdad678dd_worker_death_42102826720",
+      "verified": true,
+      "fault": "worker_death"
+    },
+    {
+      "trial_id": "fault_c2cdad678dd_cancel_race_42102826720",
+      "verified": true,
+      "fault": "cancel_race"
+    },
+    {
+      "trial_id": "fault_c2cdad678dd_budget_race_42102826720",
+      "verified": true,
+      "fault": "budget_race"
+    },
+    {
+      "trial_id": "fault_c2cdad678dd_uncertain_dispatch_42102826720",
+      "verified": true,
+      "fault": "uncertain_dispatch"
+    }
+  ]
+}
