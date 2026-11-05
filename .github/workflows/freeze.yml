@@ -40,7 +40,7 @@ jobs:
           git config user.email 'mekalaajayk@gmail.com'
           git switch -c results/freeze-${GITHUB_RUN_ID}
           git add artifacts/freeze
-          for item in artifacts/development/accepted-development.json artifacts/probes/payload-fit.json evaluation/freeze.json evaluation/run-request.json; do if [ -f "$item" ]; then git add "$item"; fi; done
+          for item in artifacts/development/accepted-development.json artifacts/probes/payload-fit.json artifacts/probes/accepted-native.json evaluation/freeze.json evaluation/run-request.json; do if [ -f "$item" ]; then git add "$item"; fi; done
           git commit -m 'test: preserve verified freeze inputs and reviewable evaluation request'
           gh auth setup-git
           git push origin HEAD
