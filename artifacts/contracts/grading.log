@@ -1,0 +1,82 @@
+test_clean_and_duplicate_pass (test_grader.GraderCases.test_clean_and_duplicate_pass) ... FAIL
+test_conflict_has_no_implicit_order_precedence (test_grader.GraderCases.test_conflict_has_no_implicit_order_precedence) ... FAIL
+test_empty_packet_refuses_ready (test_grader.GraderCases.test_empty_packet_refuses_ready) ... ok
+test_foreign_role_and_case_reference_are_refused (test_grader.GraderCases.test_foreign_role_and_case_reference_are_refused) ... ok
+test_full_grade_and_tampered_reference (test_grader.GraderCases.test_full_grade_and_tampered_reference) ... FAIL
+test_independent_failure_overrides_conflict (test_grader.GraderCases.test_independent_failure_overrides_conflict) ... FAIL
+test_model_shaped_fixture_is_not_actual_execution (test_grader.GraderCases.test_model_shaped_fixture_is_not_actual_execution) ... ok
+test_no_assessment_is_retained_as_failure (test_grader.GraderCases.test_no_assessment_is_retained_as_failure) ... ok
+test_old_pass_and_notes_cannot_fill_current_absence (test_grader.GraderCases.test_old_pass_and_notes_cannot_fill_current_absence) ... ok
+test_public_record_cli_is_explicit_and_never_claims_private_key_agreement (test_grader.GraderCases.test_public_record_cli_is_explicit_and_never_claims_private_key_agreement) ... FAIL
+test_acceptance_bound (test_grader_integrity.Integrity.test_acceptance_bound) ... ok
+test_corrupt_and_empty (test_grader_integrity.Integrity.test_corrupt_and_empty) ... ok
+test_role_scope (test_grader_integrity.Integrity.test_role_scope) ... ok
+test_scope_precedes_current_state (test_grader_integrity.Integrity.test_scope_precedes_current_state) ... ok
+test_empty_is_not_perfect_recovery (test_recovery.RecoveryTests.test_empty_is_not_perfect_recovery) ... ok
+test_fresh_read_clean_mutated_and_missing (test_recovery.RecoveryTests.test_fresh_read_clean_mutated_and_missing) ... ok
+test_old_cancellation_without_both_barriers_is_refused (test_recovery.RecoveryTests.test_old_cancellation_without_both_barriers_is_refused) ... ok
+test_stale_wrong_trial_and_runtime_schema_fail (test_recovery.RecoveryTests.test_stale_wrong_trial_and_runtime_schema_fail) ... ok
+test_all_fail_is_zero_success_not_missing (test_statistics.StatisticsTests.test_all_fail_is_zero_success_not_missing) ... ok
+test_discordant_exact_binomial (test_statistics.StatisticsTests.test_discordant_exact_binomial) ... ok
+test_empty_and_duplicate_grades_refused (test_statistics.StatisticsTests.test_empty_and_duplicate_grades_refused) ... ok
+test_mismatched_grade_source_refused (test_statistics.StatisticsTests.test_mismatched_grade_source_refused) ... ok
+test_missing_dispatch_disables_test_and_utility (test_statistics.StatisticsTests.test_missing_dispatch_disables_test_and_utility) ... ok
+test_role_usage_does_not_replace_unknown_with_zero (test_statistics.StatisticsTests.test_role_usage_does_not_replace_unknown_with_zero) ... ok
+test_unexecuted_rows_never_become_zero_measured_tokens (test_statistics.StatisticsTests.test_unexecuted_rows_never_become_zero_measured_tokens) ... ok
+test_unverified_accounting_suppresses_inference (test_statistics.StatisticsTests.test_unverified_accounting_suppresses_inference) ... ok
+
+======================================================================
+FAIL: test_clean_and_duplicate_pass (test_grader.GraderCases.test_clean_and_duplicate_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/crewbench/crewbench/tests/test_grader.py", line 19, in test_clean_and_duplicate_pass
+    self.assertEqual(grader.expected_from_records(p)['verdict'],'ready')
+AssertionError: 'unknown' != 'ready'
+- unknown
++ ready
+
+
+======================================================================
+FAIL: test_conflict_has_no_implicit_order_precedence (test_grader.GraderCases.test_conflict_has_no_implicit_order_precedence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/crewbench/crewbench/tests/test_grader.py", line 25, in test_conflict_has_no_implicit_order_precedence
+    self.assertEqual(grader.expected_from_records(p)['checks']['unit_tests'],'conflicting_current')
+AssertionError: 'missing_current' != 'conflicting_current'
+- missing_current
++ conflicting_current
+
+
+======================================================================
+FAIL: test_full_grade_and_tampered_reference (test_grader.GraderCases.test_full_grade_and_tampered_reference)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/crewbench/crewbench/tests/test_grader.py", line 50, in test_full_grade_and_tampered_reference
+    p,t,r=self.full();self.assertTrue(grader.grade(p,t,r)['strict_success']);r['receipts'][0]['payload_digest']='0'*64;self.assertFalse(grader.grade(p,t,r)['strict_success'])
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_independent_failure_overrides_conflict (test_grader.GraderCases.test_independent_failure_overrides_conflict)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/crewbench/crewbench/tests/test_grader.py", line 30, in test_independent_failure_overrides_conflict
+    self.assertEqual(answer['verdict'],'hold')
+AssertionError: 'unknown' != 'hold'
+- unknown
++ hold
+
+
+======================================================================
+FAIL: test_public_record_cli_is_explicit_and_never_claims_private_key_agreement (test_grader.GraderCases.test_public_record_cli_is_explicit_and_never_claims_private_key_agreement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/crewbench/crewbench/tests/test_grader.py", line 72, in test_public_record_cli_is_explicit_and_never_claims_private_key_agreement
+    self.assertEqual(report['grading_basis'],'independent_public_record_policy');self.assertFalse(report['private_truth_verified']);self.assertTrue(report['grades'][0]['strict_success'])
+                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.042s
+
+FAILED (failures=5)
