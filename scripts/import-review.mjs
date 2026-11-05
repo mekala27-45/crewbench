@@ -3,16 +3,14 @@ import {execFileSync} from 'node:child_process';import {createHash} from 'node:c
 const request=JSON.parse(readFileSync('evaluation/review-request.json','utf8'));
 for(const key of ['development_source','results_commit'])if(!/^[a-f0-9]{40}$/.test(request[key]))throw Error('EXACT_COMMIT_REQUIRED');
 if(!/^\d+$/.test(String(request.development_run)))throw Error('RUN_ID_REQUIRED');
-const fetchFile=(path,ref=request.results_commit)=>{const output=execFileSync('gh',['api','repos/mekala27-45/crewbench/contents/'+path+'?ref='+ref],{encoding:'utf8',maxBuffer:32*1024*1024});return Buffer.from(JSON.parse(output).content,'base64').toString('utf8');};
+const fetchFile=(path,ref=request.results_commit,expectedBlob)=>{const output=execFileSync('gh',['api','repos/mekala27-45/crewbench/contents/'+path+'?ref='+ref],{encoding:'utf8',maxBuffer:32*1024*1024});const record=JSON.parse(output);if(expectedBlob&&record.sha!==expectedBlob)throw Error('GIT_BLOB_MISMATCH');return Buffer.from(record.content,'base64').toString('utf8');};
 const manifest=JSON.parse(fetchFile('artifacts/development/manifest.json'));
 if(manifest.source_commit!==request.development_source||manifest.results_branch!=='results/development-'+request.development_run)throw Error('RESULT_MANIFEST_SOURCE');
 const importFile=(path,target,ref,source,sealedManifest)=>{const bytes=fetchFile(path,ref),raw=JSON.parse(bytes);if(raw.source_commit!==source)throw Error('IMPORTED_SOURCE_MISMATCH');if(sealedManifest){const record=sealedManifest.files.find(f=>f.path===path);if(!record||record.bytes!==Buffer.byteLength(bytes)||record.sha256!==createHash('sha256').update(bytes).digest('hex'))throw Error('IMPORTED_DIGEST_MISMATCH');}mkdirSync(target.slice(0,target.lastIndexOf('/')),{recursive:true});writeFileSync(target,bytes);};
 importFile('artifacts/development/trials.json','artifacts/development/trials.json',request.results_commit,request.development_source,manifest);
 const rr=request.recovery_results_commit||request.results_commit,rs=request.recovery_source||request.development_source;
 if(!/^[a-f0-9]{40}$/.test(rr)||!/^[a-f0-9]{40}$/.test(rs))throw Error('RECOVERY_COMMIT_REQUIRED');
-const recoveryManifest=JSON.parse(fetchFile('artifacts/development/manifest.json',rr));
-if(recoveryManifest.source_commit!==rs)throw Error('RECOVERY_SOURCE_MISMATCH');
-importFile('artifacts/recovery/results.json','artifacts/recovery/results.json',rr,rs,recoveryManifest);
+if(request.recovery_input_integrity==='git_commit_and_blob'){if(!/^[a-f0-9]{40}$/.test(request.recovery_blob_sha))throw Error('RECOVERY_BLOB_REQUIRED');const bytes=fetchFile('artifacts/recovery/results.json',rr,request.recovery_blob_sha);if(JSON.parse(bytes).source_commit!==rs||JSON.parse(bytes).mode!=='scripted_runtime')throw Error('RECOVERY_SOURCE_MISMATCH');mkdirSync('artifacts/recovery',{recursive:true});writeFileSync('artifacts/recovery/results.json',bytes);}else{const recoveryManifest=JSON.parse(fetchFile('artifacts/development/manifest.json',rr));if(recoveryManifest.source_commit!==rs)throw Error('RECOVERY_SOURCE_MISMATCH');importFile('artifacts/recovery/results.json','artifacts/recovery/results.json',rr,rs,recoveryManifest);}
 importFile('artifacts/baseline/results.json','artifacts/baseline/postgres.json',rr,rs,null);
 execFileSync('git',['fetch','--no-tags','origin',request.development_source],{stdio:'inherit'});
 execFileSync('git',['diff','--exit-code',request.development_source,'HEAD','--','agent','src/runtime','src/contracts','src/methods','fixtures/runtime','evaluation/plan.json','evaluation/model-lock.json'],{stdio:'inherit'});

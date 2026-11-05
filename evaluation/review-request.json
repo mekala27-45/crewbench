@@ -12,5 +12,8 @@
   "contracts_run": "42114112170",
   "contracts_source": "53d7a6d684951f72c39dbe7cdda0f25ee2cbb0f4",
   "contracts_results_commit": "56fc3966b600596eb2d533a86282fa9046b5204b",
-  "purpose": "Independent development accounting, provisional baseline grading, strict recovery verification and Section 20 review. No held-out inference or release publication."
+  "purpose": "Independent development accounting, provisional baseline grading, strict recovery verification and Section 20 review. No held-out inference or release publication.",
+  "recovery_input_integrity": "git_commit_and_blob",
+  "recovery_blob_sha": "0f1bcfa574240f4d9afb73c853d5c1970a82cb55",
+  "revision": 2
 }
