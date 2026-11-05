@@ -22,6 +22,16 @@ jobs:
           node-version: 24.19.0
       - name: Run package and environment probes
         run: node scripts/probe-environment.mjs
+      - name: Install verified candidates and retain matching documentation
+        run: |
+          npm install --save-exact eve@1.0.0-rc.5 ai@7.0.163 @ai-sdk/openai-compatible@3.0.85 pg@8.23.1 zod@4.6.7
+          npm install --save-dev --save-exact vite@8.3.6 typescript@7.0.2 @playwright/test@1.64.1 @fontsource/faustina@5.3.0 @fontsource/sarabun@5.3.0 @fontsource/sono@5.3.0
+          mkdir -p artifacts/probes/eve-docs
+          cp -R node_modules/eve/docs/. artifacts/probes/eve-docs/
+          cp package-lock.json artifacts/probes/verified-package-lock.json
+          cp package.json artifacts/probes/verified-package.json
+          node -e "const fs=require('fs');fs.writeFileSync('artifacts/probes/eve-exports.json',JSON.stringify(JSON.parse(fs.readFileSync('node_modules/eve/package.json')).exports,null,2))"
+          find node_modules/eve/docs -type f | sort > artifacts/probes/eve-doc-index.txt
       - name: Preserve probe evidence
         if: always()
         env:
