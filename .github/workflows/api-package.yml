@@ -2,13 +2,24 @@ name: Native API package verification
 on:
   push:
     branches: [main]
-    paths: [scripts/inspect-host.mjs, tsconfig.json, server.ts, src/api/**, vercel.json, package.json, package-lock.json, .github/workflows/api-package.yml]
+    paths: [scripts/smoke-host.mjs, scripts/inspect-host.mjs, tsconfig.json, server.ts, src/api/**, vercel.json, package.json, package-lock.json, .github/workflows/api-package.yml]
 permissions:
   contents: write
 jobs:
   package:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:18@sha256:bd5dfa494a5a259704365813dbfa5fa6b3e69be7348d43b547f540c730478583
+        env:
+          POSTGRES_PASSWORD: crewbench_test
+          POSTGRES_DB: crewbench
+          PGUSER: postgres
+        ports: ['5432:5432']
+        options: --health-cmd pg_isready --health-interval 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:crewbench_test@127.0.0.1:5432/crewbench
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -26,6 +37,9 @@ jobs:
           npx --yes vercel@65.11.0 build --prod --yes 2>&1 | tee artifacts/host/build.log
       - name: Inspect packaged public inputs and runtime exclusions
         run: node scripts/inspect-host.mjs
+      - run: node scripts/migrate.ts
+      - name: Exercise the compiled native function and separate client
+        run: node scripts/smoke-host.mjs
       - name: Preserve build evidence
         if: always()
         env:
