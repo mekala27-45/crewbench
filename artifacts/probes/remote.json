@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "execution_mode": "environment_probe",
-  "source_commit": "83b6b607b93425445315826b7db4c96bd351b852",
-  "started_at": "2026-11-05T19:32:27.600Z",
+  "source_commit": "c8185d35c35e3550e020b308b770356add1c105d",
+  "started_at": "2026-11-05T19:36:11.515Z",
   "node": "v24.19.0",
   "os": "linux",
   "arch": "x64",
@@ -155,5 +155,5 @@
     "code": "ECONNREFUSED",
     "actual_dispatch": false
   },
-  "ended_at": "2026-11-05T19:32:28.691Z"
+  "ended_at": "2026-11-05T19:36:12.906Z"
 }
