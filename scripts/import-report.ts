@@ -5,7 +5,7 @@ import {verifyImport,scanEvidence} from '../src/report/evidence.ts';
 const read=async(p:string)=>JSON.parse(await readFile(p,'utf8'));
 const request=await read('evaluation/report-request.json'),plan=await read('evaluation/plan.json'),freeze=await read('evaluation/freeze.json');
 if(!/^\d+$/.test(String(request.evaluation_run))||!/^[a-f0-9]{40}$/.test(request.evaluation_source))throw new Error('REPORT_REQUEST_INVALID');
-const get=(ref:string,path:string)=>{const raw=execFileSync('gh',['api','repos/mekala27-45/crewbench/contents/'+path+'?ref='+ref],{encoding:'utf8',maxBuffer:40*1024*1024});const body=JSON.parse(raw);if(!body.content)throw new Error('IMPORT_BODY_MISSING');return Buffer.from(body.content,'base64').toString('utf8');};
+const get=(ref:string,path:string)=>{const raw=execFileSync('gh',['api','-H','Accept: application/vnd.github.raw+json','repos/mekala27-45/crewbench/contents/'+path+'?ref='+ref],{encoding:'utf8',maxBuffer:40*1024*1024});if(!raw.trim())throw new Error('IMPORT_BODY_MISSING');return raw;};
 const branch='results/evaluation-'+request.evaluation_run,manifest=JSON.parse(get(branch,'artifacts/actual/manifest.json'));
 verifyImport(manifest,{source_commit:request.evaluation_source,plan_digest:digest(plan),branch});
 const actual=get(branch,'artifacts/actual/results.json'),record=manifest.files.find((r:any)=>r.path==='artifacts/actual/results.json');
