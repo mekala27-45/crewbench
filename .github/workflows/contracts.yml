@@ -2,7 +2,7 @@ name: Runtime and grading contracts
 on:
   push:
     branches: [main]
-    paths: [src/**, tests/*.ts, tests/test_*.py, evaluation/*.py, scripts/import-*.ts, scripts/import-*.mjs, scripts/seal-evidence.ts, .github/workflows/contracts.yml]
+    paths: [src/**, tests/*.ts, tests/test_*.py, evaluation/*.py, scripts/import-*.ts, scripts/import-*.mjs, scripts/seal-evidence.ts, scripts/check-retention.ts, evaluation/retention.json, .github/workflows/contracts.yml]
   pull_request:
     paths: [src/**, tests/**, evaluation/**]
 permissions:
@@ -30,6 +30,10 @@ jobs:
           set -o pipefail
           mkdir -p artifacts/contracts
           python3 -m unittest discover -s tests -p 'test_*.py' -v 2>&1 | tee artifacts/contracts/grading.log
+      - name: Verify pinned evidence and retention eligibility
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/check-retention.ts
       - name: Preserve contract outcomes
         if: always() && github.event_name == 'push'
         env:
