@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "source_commit": "eb7e6d5304c2dd8bb054bf56188540d93002f1af",
+  "scope": "WCAG contrast pairs only; color-vision simulation and browser interaction are separate checks",
+  "checks": [
+    {
+      "theme": "light",
+      "pair": "ink/surface",
+      "ratio": 11.58057541300058,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "pair": "ink2/surface",
+      "ratio": 6.0616694655858625,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "pair": "slot1/surface",
+      "ratio": 5.757392694321816,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot2/surface",
+      "ratio": 13.134522581637587,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot3/surface",
+      "ratio": 4.123962451689001,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot4/surface",
+      "ratio": 11.02773839428093,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot5/surface",
+      "ratio": 3.2605904160596935,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot6/surface",
+      "ratio": 8.173118647465799,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot7/surface",
+      "ratio": 9.136955731093197,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot8/surface",
+      "ratio": 4.073573895719182,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "status_good/surface",
+      "ratio": 6.057863135768202,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "pair": "status_warning/surface",
+      "ratio": 6.049488435696187,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "pair": "status_serious/surface",
+      "ratio": 5.415897199702723,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "pair": "status_critical/surface",
+      "ratio": 7.411172568512277,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "pair": "control/surface",
+      "ratio": 4.327380990539104,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "ink/raised",
+      "ratio": 12.783254273689327,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "pair": "ink2/raised",
+      "ratio": 6.691192737681514,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "pair": "slot1/raised",
+      "ratio": 6.3553158750966965,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot2/raised",
+      "ratio": 14.498583700434926,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot3/raised",
+      "ratio": 4.552248809321329,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot4/raised",
+      "ratio": 12.173003407029627,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot5/raised",
+      "ratio": 3.5992128961099534,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot6/raised",
+      "ratio": 9.021922499835101,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot7/raised",
+      "ratio": 10.085857069492878,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "slot8/raised",
+      "ratio": 4.496627244720738,
+      "minimum": 3
+    },
+    {
+      "theme": "light",
+      "pair": "status_good/raised",
+      "ratio": 6.686991108645529,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "pair": "status_warning/raised",
+      "ratio": 6.6777466698617465,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "pair": "status_serious/raised",
+      "ratio": 5.978355008701882,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "pair": "status_critical/raised",
+      "ratio": 8.18084594510977,
+      "minimum": 4.5
+    },
+    {
+      "theme": "light",
+      "pair": "control/raised",
+      "ratio": 4.776792997616497,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "ink/surface",
+      "ratio": 12.558761677558945,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "pair": "ink2/surface",
+      "ratio": 8.580489261714161,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "pair": "slot1/surface",
+      "ratio": 8.416763347544618,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot2/surface",
+      "ratio": 4.1154444601560245,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot3/surface",
+      "ratio": 5.377517470535435,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot4/surface",
+      "ratio": 6.742967528773383,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot5/surface",
+      "ratio": 11.072297235939121,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot6/surface",
+      "ratio": 7.296530200072328,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot7/surface",
+      "ratio": 8.92707475346105,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot8/surface",
+      "ratio": 9.229726539522426,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "status_good/surface",
+      "ratio": 8.360903674188735,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "pair": "status_warning/surface",
+      "ratio": 8.500216568531403,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "pair": "status_serious/surface",
+      "ratio": 8.078961263918629,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "pair": "status_critical/surface",
+      "ratio": 7.208386555364907,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "pair": "control/surface",
+      "ratio": 6.437637870832942,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "ink/raised",
+      "ratio": 9.52123703585136,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "pair": "ink2/raised",
+      "ratio": 6.505169398217074,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "pair": "slot1/raised",
+      "ratio": 6.38104304900024,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot2/raised",
+      "ratio": 3.1200625681944696,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot3/raised",
+      "ratio": 4.076884315186049,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot4/raised",
+      "ratio": 5.112079822425544,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot5/raised",
+      "ratio": 8.394296286643856,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot6/raised",
+      "ratio": 5.5317550693134825,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot7/raised",
+      "ratio": 6.767927996941485,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "slot8/raised",
+      "ratio": 6.997378914826427,
+      "minimum": 3
+    },
+    {
+      "theme": "dark",
+      "pair": "status_good/raised",
+      "ratio": 6.338693874422227,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "pair": "status_warning/raised",
+      "ratio": 6.444311858363848,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "pair": "status_serious/raised",
+      "ratio": 6.124943459567416,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "pair": "status_critical/raised",
+      "ratio": 5.464930285468524,
+      "minimum": 4.5
+    },
+    {
+      "theme": "dark",
+      "pair": "control/raised",
+      "ratio": 4.880598716089954,
+      "minimum": 3
+    }
+  ],
+  "failures": []
+}
