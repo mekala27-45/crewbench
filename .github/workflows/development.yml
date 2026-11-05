@@ -2,7 +2,7 @@ name: Database and agent development
 on:
   push:
     branches: [main]
-    paths: [agent/**, src/runtime/**, scripts/run-development.ts, scripts/recovery.ts, .github/workflows/development.yml]
+    paths: [package.json, package-lock.json,agent/**, src/runtime/**, scripts/run-development.ts, scripts/recovery.ts, .github/workflows/development.yml]
   workflow_dispatch:
 permissions:
   contents: write

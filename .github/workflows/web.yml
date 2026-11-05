@@ -2,7 +2,7 @@ name: API and browser verification
 on:
   push:
     branches: [main]
-    paths: [site/**, src/api/**, tests/browser/**, scripts/check-api.ts, db/**, vite.config.ts, playwright.config.ts, .github/workflows/web.yml]
+    paths: [package.json, package-lock.json,site/**, src/api/**, tests/browser/**, scripts/check-api.ts, db/**, vite.config.ts, playwright.config.ts, .github/workflows/web.yml]
   workflow_dispatch:
 permissions:
   contents: write
