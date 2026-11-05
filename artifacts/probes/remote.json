@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "execution_mode": "environment_probe",
-  "source_commit": "83b6b607b93425445315826b7db4c96bd351b852",
-  "started_at": "2026-11-05T19:32:27.600Z",
+  "source_commit": "c6a5a39086584c6acd68b76dcba7ce42837756b6",
+  "started_at": "2026-11-05T21:37:12.872Z",
   "node": "v24.19.0",
   "os": "linux",
   "arch": "x64",
-  "cpu": "AMD EPYC 7763 64-Core Processor",
-  "memory_bytes": 16760344576,
+  "cpu": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+  "memory_bytes": 16759308288,
   "python": {
     "status": 0,
     "version": "Python 3.12.3",
@@ -155,5 +155,5 @@
     "code": "ECONNREFUSED",
     "actual_dispatch": false
   },
-  "ended_at": "2026-11-05T19:32:28.691Z"
+  "ended_at": "2026-11-05T21:37:14.394Z"
 }
