@@ -45,11 +45,11 @@ test('evidence text meets contrast in the active theme',async({page})=>{
 test('case selection retains keyboard focus',async({page})=>{await page.goto('./#case');await page.locator('#case-select').focus();await page.keyboard.press('ArrowDown');await page.keyboard.press('Enter');await expect(page.locator('#case-select')).toBeFocused();});
 
 test('a lost advance response resumes the persisted trial without creating another',async({page})=>{
- let creations=0,dropped=false;
+ let creations=0,advances=0,committed=false;
  await page.route('http://127.0.0.1:8080/api/v1/trials',async route=>{if(route.request().method()==='POST')creations++;await route.continue();});
- await page.route('http://127.0.0.1:8080/api/v1/trials/*/advance',async route=>{if(!dropped){dropped=true;await route.fetch();await route.abort();}else await route.continue();});
+ await page.route('http://127.0.0.1:8080/api/v1/trials/*/advance',async route=>{if(route.request().method()==='POST'&&++advances===2){const result=await route.fetch();expect((await result.json()).status).toBe('submitted');committed=true;await route.abort();}else await route.continue();});
  await page.goto('./#case');await page.getByRole('button',{name:'Run live baseline'}).click();
  await expect(page.locator('#live-status')).toContainText('may have committed');
  const trial=(await page.locator('#live-status').textContent())!.match(/Trial (demo_[a-z0-9]+)/)![1];
- await page.getByRole('button',{name:'Run live baseline'}).click();await expect(page.locator('#live-status')).toContainText('Live deterministic baseline: submitted');await expect(page.locator('#live-status')).toContainText(trial);expect(creations).toBe(1);
+ await page.getByRole('button',{name:'Run live baseline'}).click();await expect(page.locator('#live-status')).toContainText('Live deterministic baseline: submitted');await expect(page.locator('#live-status')).toContainText(trial);expect(creations).toBe(1);expect(advances).toBe(2);expect(committed).toBe(true);
 });
