@@ -1,9 +1,7 @@
 {
   "framework": "node",
   "git": {
-    "deploymentEnabled": {
-      "results/**": false
-    }
+    "deploymentEnabled": false
   },
   "functions": {
     "server.ts": {
