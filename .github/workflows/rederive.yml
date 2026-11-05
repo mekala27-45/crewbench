@@ -1,0 +1,54 @@
+name: Clean provisional rederive
+on:
+  push:
+    branches: [main]
+    paths: [evaluation/rederive-request.json]
+permissions:
+  contents: write
+jobs:
+  rederive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:18@sha256:bd5dfa494a5a259704365813dbfa5fa6b3e69be7348d43b547f540c730478583
+        env:
+          POSTGRES_PASSWORD: crewbench_test
+          POSTGRES_DB: crewbench
+          PGUSER: postgres
+        ports: ['5432:5432']
+        options: --health-cmd pg_isready --health-interval 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:crewbench_test@127.0.0.1:5432/crewbench
+      SOURCE_COMMIT: ${{ github.sha }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.19.0
+      - name: Require the intended frozen source
+        run: node -e "const fs=require('fs'),r=JSON.parse(fs.readFileSync('evaluation/rederive-request.json')),q=JSON.parse(fs.readFileSync('evaluation/report-request.json')); if(r.evaluation_run!==q.evaluation_run||r.evaluation_source!==q.evaluation_source)throw Error('REDERIVE_SOURCE_MISMATCH')"
+      - run: npm ci
+      - run: npm test
+      - run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Rederive without new actual inference
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/rederive.ts
+      - run: npx vite build
+      - name: Preserve independent regenerated evidence
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p artifacts/rederive
+          python3 -c 'import json,os,pathlib; pathlib.Path("artifacts/rederive/workflow.json").write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"verification_present":pathlib.Path("artifacts/rederive/verification.json").exists(),"private_truth_verified":False}))'
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/rederive-${GITHUB_RUN_ID}
+          git add artifacts/rederive artifacts/baseline artifacts/recovery artifacts/actual site/public/data
+          git commit -m 'test: preserve clean public-record rederive and fresh recovery evidence'
+          gh auth setup-git
+          git push origin HEAD
