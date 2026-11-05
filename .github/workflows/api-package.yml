@@ -2,7 +2,7 @@ name: Native API package verification
 on:
   push:
     branches: [main]
-    paths: [server.ts, src/api/**, vercel.json, package.json, package-lock.json, .github/workflows/api-package.yml]
+    paths: [tsconfig.json, server.ts, src/api/**, vercel.json, package.json, package-lock.json, .github/workflows/api-package.yml]
 permissions:
   contents: write
 jobs:

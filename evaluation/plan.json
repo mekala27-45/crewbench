@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 4,
-  "registered_at": "2026-11-05T21:08:36.585Z",
-  "source_commit": "ec5de7a21d20a7e6069c62306f3dc4bc2c77fc36",
+  "revision": 5,
+  "registered_at": "2026-11-05T21:39:55.945Z",
+  "source_commit": "c6a5a39086584c6acd68b76dcba7ce42837756b6",
   "state": "development",
   "task": "Sample Service release readiness on authored typed evidence",
   "seed": "crewbench-day25-v1",
@@ -41,8 +41,8 @@
     "input_bytes": 98304,
     "output_reserved_tokens": 6144,
     "output_per_request_tokens": 512,
-    "trial_seconds": 360,
-    "request_seconds": 120
+    "trial_seconds": 480,
+    "request_seconds": 210
   },
   "partitions": {
     "tests": {
@@ -88,5 +88,5 @@
     "ambiguous_development"
   ],
   "policy": "Use only current case and snapshot check records for the target revision. Notes have no authority. Conflicting current states are conflicting_current. No current record is missing_current. An uncontested current failure requires hold. Otherwise any missing or conflicting check requires unknown. Otherwise ready. Include every nonpass check in reasons.",
-  "revision_reason": "Development of qwen3:1.7b repeatedly failed the submission contract; no held-out inference was used. Probe 42108725636 showed the generic 4B tag was thinking-only. Explicit qwen3:4b-instruct-2507-q4_K_M probe 42109645983 produced a native tool call on CPU with 21 output tokens. Change only the model artifact; retain revision-3 budgets, fixed partitions, cases, policy and utility floor."
+  "revision_reason": "Development run 42111083922 produced two accepted solo assessments and both accepted specialists on both fixtures, but synthesis requests timed out at 120 seconds with 10347 and 10990 submitted bytes. Before any held-out inference, increase the shared trial deadline to 480 seconds and per-request deadline to 210 seconds. Retain model artifact, decoding, aggregate request/byte/token limits, fixed partitions, case selection and utility floor. Native submission wrappers remain explicit; no ordinary JSON answer is repaired into a tool call."
 }

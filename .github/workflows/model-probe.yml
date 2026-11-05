@@ -2,7 +2,7 @@ name: CPU model development probe
 on:
   push:
     branches: [main]
-    paths: [scripts/probe-model.mjs, scripts/probe-payload-fit.ts, scripts/install-ollama.py, .github/workflows/model-probe.yml]
+    paths: [evaluation/plan.json, evaluation/model-lock.json,scripts/probe-model.mjs, scripts/probe-payload-fit.ts, scripts/install-ollama.py, .github/workflows/model-probe.yml]
   workflow_dispatch:
 permissions:
   contents: write

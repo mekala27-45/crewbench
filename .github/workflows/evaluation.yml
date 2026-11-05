@@ -11,7 +11,7 @@ concurrency:
 jobs:
   paired:
     runs-on: ubuntu-24.04
-    timeout-minutes: 180
+    timeout-minutes: 220
     services:
       postgres:
         image: postgres:18@sha256:bd5dfa494a5a259704365813dbfa5fa6b3e69be7348d43b547f540c730478583
