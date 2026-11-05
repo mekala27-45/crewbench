@@ -1,29 +1,92 @@
 {
   "schema_version": 1,
-  "revision": 1,
-  "registered_at": "2026-11-05T19:33:00Z",
-  "source_commit": "83b6b607b93425445315826b7db4c96bd351b852",
+  "revision": 2,
+  "registered_at": "2026-11-05T20:22:28.458Z",
+  "source_commit": "3eb68809830ed1ee2a8da26d00993bc60d1b7f55",
   "state": "development",
   "task": "Sample Service release readiness on authored typed evidence",
   "seed": "crewbench-day25-v1",
-  "cases": {"families": 6, "lineages_per_family": 8, "development_per_family": 4, "held_out_per_family": 4, "model_per_family": 2, "subset_rule": "ascending sha256(seed + :model: + lineage_id), first two held-out lineages per family"},
-  "methods": ["deterministic_baseline", "solo_agent", "split_review"],
-  "actual_model": {"candidate": "qwen3:1.7b", "artifact_digest": null, "provider": "ollama", "device": "cpu", "active_requests": 1},
-  "decoding": {"temperature": 0, "seed": 25, "think": false, "num_ctx": 8192, "num_predict": 256, "num_gpu": 0},
-  "budget": {"model_requests": 8, "tool_requests": 16, "input_bytes": 65536, "output_reserved_tokens": 2048, "output_per_request_tokens": 256, "trial_seconds": 240, "request_seconds": 30},
+  "cases": {
+    "families": 6,
+    "lineages_per_family": 8,
+    "development_per_family": 4,
+    "held_out_per_family": 4,
+    "model_per_family": 2,
+    "subset_rule": "ascending sha256(seed + :model: + lineage_id), first two held-out lineages per family"
+  },
+  "methods": [
+    "deterministic_baseline",
+    "solo_agent",
+    "split_review"
+  ],
+  "actual_model": {
+    "candidate": "qwen3:1.7b",
+    "artifact_digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+    "provider": "ollama",
+    "device": "cpu",
+    "active_requests": 1,
+    "template_digest": "ae370d884f108d16e7cc8fd5259ebc5773a0afa6e078b11f4ed7e39a27e0dfc4"
+  },
+  "decoding": {
+    "temperature": 0,
+    "seed": 25,
+    "think": false,
+    "num_ctx": 8192,
+    "num_predict": 512,
+    "num_gpu": 0
+  },
+  "budget": {
+    "model_requests": 8,
+    "tool_requests": 16,
+    "input_bytes": 65536,
+    "output_reserved_tokens": 4096,
+    "output_per_request_tokens": 512,
+    "trial_seconds": 240,
+    "request_seconds": 60
+  },
   "partitions": {
-    "tests": {"model_requests": 3, "tool_requests": 6, "input_bytes": 20480, "output_reserved_tokens": 768},
-    "staging": {"model_requests": 3, "tool_requests": 6, "input_bytes": 20480, "output_reserved_tokens": 768},
-    "synthesis": {"model_requests": 2, "tool_requests": 4, "input_bytes": 24576, "output_reserved_tokens": 512}
+    "tests": {
+      "model_requests": 3,
+      "tool_requests": 6,
+      "input_bytes": 20480,
+      "output_reserved_tokens": 1536
+    },
+    "staging": {
+      "model_requests": 3,
+      "tool_requests": 6,
+      "input_bytes": 20480,
+      "output_reserved_tokens": 1536
+    },
+    "synthesis": {
+      "model_requests": 2,
+      "tool_requests": 4,
+      "input_bytes": 24576,
+      "output_reserved_tokens": 1024
+    }
   },
   "ordering": "sort selected case IDs, alternate solo/split and split/solo; alternate first specialist; one trial active at a time",
   "primary_endpoint": "paired strict success over all planned method-case trials",
   "primary_test": "two-sided exact McNemar; no test when any pair lacks actual dispatch provenance",
-  "utility_floor": {"strict_successes": 8, "planned_cases": 12, "accepted_unsupported_ready": 0},
+  "utility_floor": {
+    "strict_successes": 8,
+    "planned_cases": 12,
+    "accepted_unsupported_ready": 0
+  },
   "missing_rule": "retain failed and unexecuted rows; null measured usage with a reason; no replacement cases",
   "exclusions": [],
   "trace_limit_bytes_per_trial": 4194304,
-  "fault_overlays": ["lost_child_response", "duplicate_delivery", "worker_death", "cancel_race", "budget_race", "uncertain_dispatch"],
-  "fault_fixtures": ["complete_development", "ambiguous_development"],
-  "policy": "Use only current case and snapshot check records for the target revision. Notes have no authority. Conflicting current states are conflicting_current. No current record is missing_current. An uncontested current failure requires hold. Otherwise any missing or conflicting check requires unknown. Otherwise ready. Include every nonpass check in reasons."
+  "fault_overlays": [
+    "lost_child_response",
+    "duplicate_delivery",
+    "worker_death",
+    "cancel_race",
+    "budget_race",
+    "uncertain_dispatch"
+  ],
+  "fault_fixtures": [
+    "complete_development",
+    "ambiguous_development"
+  ],
+  "policy": "Use only current case and snapshot check records for the target revision. Notes have no authority. Conflicting current states are conflicting_current. No current record is missing_current. An uncontested current failure requires hold. Otherwise any missing or conflicting check requires unknown. Otherwise ready. Include every nonpass check in reasons.",
+  "revision_reason": "Development run 42100346254 showed a synthesis timeout at 30 seconds and repeated final-schema errors. Increase per-request timeout to 60 seconds and output allowance to 512 tokens for every role and method, retaining 8 model calls and the 240 second aggregate deadline. Clarify argument shape and receipt selection without revealing answers. Stop after one invalid-submission correction."
 }

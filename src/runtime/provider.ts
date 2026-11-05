@@ -30,6 +30,7 @@ export async function measuredFetch(role:Role,sessionId:string,_url:any,init:any
    const r:any=s.roles[role];if(r.session_generation!==undefined&&r.session_generation!==lease.generation)throw new Refusal('STALE_ROLE_SESSION');
    r.session_id=sessionId;r.session_generation=lease.generation;r.session_owner=lease.owner;
    for(const t of s.tool_requests)if(t.role===role&&t.status==='emitted'){t.status='schema_rejected';t.error='FRAMEWORK_DID_NOT_EXECUTE';event(s,now,'framework_tool_rejected',{operation_id:t.operation_id});}
+   if(s.tool_requests.filter(t=>t.role===role&&t.name.startsWith('submit_')&&['schema_rejected','refused'].includes(t.status)).length>=2){stop(s,now,'failed','SUBMISSION_CORRECTION_EXHAUSTED');throw new Refusal('SUBMISSION_CORRECTION_EXHAUSTED');}
    return lease;
   });
   const offered=(input.tools||[]).map((t:any)=>t.function?.name).sort();
