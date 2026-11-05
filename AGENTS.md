@@ -16,3 +16,5 @@ Complete work already authorized by the user. A failed automatic approval review
 
 
 Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.
+
+In the concurrent review session, automatic approval review also rejected updating main. Preserve the draft review branch until that specific merge is authorized. Do not bypass a rejected action through another tool.

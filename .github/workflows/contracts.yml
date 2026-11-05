@@ -1,7 +1,7 @@
 name: Runtime and grading contracts
 on:
   push:
-    branches: [main]
+    branches: [main, codex/crewbench-completion]
     paths: [package.json, package-lock.json,src/**, tests/*.ts, tests/test_*.py, evaluation/*.py, scripts/import-*.ts, scripts/import-*.mjs, scripts/seal-evidence.ts, scripts/check-retention.ts, evaluation/retention.json, .github/workflows/contracts.yml]
   pull_request:
     paths: [src/**, tests/**, evaluation/**]
@@ -19,6 +19,11 @@ jobs:
         with:
           node-version: 24.19.0
       - run: npm ci
+      - name: Check reporting entrypoint syntax
+        run: |
+          node --check scripts/bind-report-event.mjs
+          node --check scripts/import-report.ts
+          node --check scripts/rederive.ts
       - name: Runtime contracts
         run: |
           set -o pipefail
@@ -30,6 +35,7 @@ jobs:
           set -o pipefail
           mkdir -p artifacts/contracts
           python3 -m unittest discover -s tests -p 'test_*.py' -v 2>&1 | tee artifacts/contracts/grading.log
+      - run: node scripts/collect-notices.mjs
       - name: Verify pinned evidence and retention eligibility
         env:
           GH_TOKEN: ${{ github.token }}
@@ -47,6 +53,7 @@ jobs:
           git switch -c results/contracts-${GITHUB_RUN_ID}
           node scripts/seal-evidence.ts contracts
           git add artifacts/contracts
+          if [ -d site/public/notices ]; then git add site/public/notices; fi
           git add -f artifacts/contracts/*.log
           git commit -m 'test: retain runtime and grading contract evidence'
           gh auth setup-git

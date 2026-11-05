@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "registered_before_result_inspection": true,
+  "execution_run": "42118015947",
+  "execution_source": "d3d3a2e5a81cf6a0cd46e80b92fbf403b0ae2c92",
+  "analysis_freeze_digest": "b4074a3379d5cee8177956e23477b49531d9a2a5f9ff2b9ad53eb8d58eb3a429",
+  "analysis_source": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+  "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
+  "superseded_unstarted_run": "42118122731",
+  "reason": "The physical model execution is shared. Runtime, model, prompts, cases, dependencies, resource limits and dispatch control are identical. Review grading and accounting remain independently frozen and must validate the unchanged raw result before any claim. No held-out results have been inspected."
+}

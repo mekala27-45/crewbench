@@ -1,0 +1,98 @@
+{
+  "source_commit": "89495e8c99b7f5fb928da61a95e2fc64a8df9286",
+  "rows": [
+    {
+      "requirement": "Scaffold, dependency and host probes are recorded and reproducible.",
+      "status": "done",
+      "evidence": "artifacts/probes/remote.json; selected native model calibration run 42114717980; host packaging run 42116306332; lockfile and CI install probes retained."
+    },
+    {
+      "requirement": "Claim renderer refuses missing provenance and separates execution modes.",
+      "status": "done",
+      "evidence": "https://github.com/mekala27-45/crewbench/blob/a67e32fb03a40d3c598b1b64512257b213589a9f/artifacts/contracts/runtime.log; source b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45; contract suite passed and this report was generated through the provenance renderer."
+    },
+    {
+      "requirement": "All forty-eight cases, isolated splits and the exact subset are validated.",
+      "status": "done",
+      "evidence": "https://github.com/mekala27-45/crewbench/blob/a67e32fb03a40d3c598b1b64512257b213589a9f/artifacts/contracts/runtime.log; source b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45; corpus contract passed."
+    },
+    {
+      "requirement": "Baseline and independent grader agree on declared truth and edge cases.",
+      "status": "not done",
+      "evidence": "Fresh public-policy grading passed; the separately retained private latent key could not be rerun in the invalid Windows workspace configuration."
+    },
+    {
+      "requirement": "Trial receipts, uniqueness and session scope pass independent readback.",
+      "status": "done",
+      "evidence": "https://github.com/mekala27-45/crewbench/blob/dc6296b74b20da5159e8c302d76ad065792edbab/artifacts/api/check.json; source 7a8ad6d919ceb9dff2b9bd33ddb623d52939423c; persisted assessment, duplicate replay, conflict and cross-session isolation checks passed."
+    },
+    {
+      "requirement": "Actual solo tool use and every dispatched request have verified accounting.",
+      "status": "done",
+      "evidence": "https://github.com/mekala27-45/crewbench/blob/77f943782bf8af098430d77160716104dcec4e73/artifacts/development/trials.json; source 43789f67432efa7c0720270a6268eaaccd8c0873; artifacts/development/accounting-audit.json binds requests, native emissions, usage, receipts and fresh database readback."
+    },
+    {
+      "requirement": "Both specialists and synthesis have actual development invocation evidence.",
+      "status": "done",
+      "evidence": "https://github.com/mekala27-45/crewbench/blob/77f943782bf8af098430d77160716104dcec4e73/artifacts/development/trials.json; source 43789f67432efa7c0720270a6268eaaccd8c0873; completed native responses by role: {\"solo\":10,\"tests\":6,\"staging\":8,\"synthesis\":4}. Timed-out dispatches are retained separately."
+    },
+    {
+      "requirement": "Fencing, joins, expiry, cancellation and late output preserve invariants.",
+      "status": "done",
+      "evidence": "https://github.com/mekala27-45/crewbench/blob/a67e32fb03a40d3c598b1b64512257b213589a9f/artifacts/contracts/runtime.log and https://github.com/mekala27-45/crewbench/blob/12720bdec552e1e2529583ee577e160f73386ed5/artifacts/recovery/results.json; contract checks and independently graded fault evidence."
+    },
+    {
+      "requirement": "Live API completes a persisted baseline flow from browser and separate client.",
+      "status": "not done",
+      "evidence": "https://crewbench-api.vercel.app; public database binding/access are not configured. https://github.com/mekala27-45/crewbench/blob/dc6296b74b20da5159e8c302d76ad065792edbab/artifacts/api/check.json proves isolated CI behavior only."
+    },
+    {
+      "requirement": "All twelve scripted overlays have injection and fresh post-action evidence.",
+      "status": "done",
+      "evidence": "https://github.com/mekala27-45/crewbench/blob/12720bdec552e1e2529583ee577e160f73386ed5/artifacts/recovery/results.json; source b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45; 12/12 passed schema-v2 verification."
+    },
+    {
+      "requirement": "Frozen paired evaluation attempts all twenty-four actual method-case trials.",
+      "status": "not done",
+      "evidence": "Registered run https://github.com/mekala27-45/crewbench/actions/runs/42118015947 at d3d3a2e5a81cf6a0cd46e80b92fbf403b0ae2c92 has status in_progress. Both execution and analysis are frozen; 93 causal files and dispatch control match. Completed raw inventory has not been inspected or verified."
+    },
+    {
+      "requirement": "Immutable grades, paired statistics and resource claims reconcile with evidence.",
+      "status": "not done",
+      "evidence": "Awaiting the unchanged raw bundle from registered run 42118015947. The pre-frozen independent grader, accounting, exact paired inventory and statistics gates must pass before utility claims."
+    },
+    {
+      "requirement": "Compare and Case work with exact evidence navigation and visible mode labels.",
+      "status": "done",
+      "evidence": "https://github.com/mekala27-45/crewbench/blob/dc6296b74b20da5159e8c302d76ad065792edbab/artifacts/browser/results.json; source 7a8ad6d919ceb9dff2b9bd33ddb623d52939423c; 60 browser checks passed, including committed-response recovery."
+    },
+    {
+      "requirement": "Recovery and Method pass responsive, keyboard and error-state browser checks.",
+      "status": "done",
+      "evidence": "https://github.com/mekala27-45/crewbench/blob/dc6296b74b20da5159e8c302d76ad065792edbab/artifacts/browser/results.json; source 7a8ad6d919ceb9dff2b9bd33ddb623d52939423c; all configured viewport/theme projects passed without skipped, unexpected or flaky tests."
+    },
+    {
+      "requirement": "Repository guidance, three skills, decisions, notices and operating notes exist.",
+      "status": "done",
+      "evidence": "AGENTS.md, CLAUDE.md, .agents/skills/, DECISIONS.md, DEAD-ENDS.md, docs/NOTICES.md, docs/OPERATIONS.md; all required files checked by this generator."
+    },
+    {
+      "requirement": "CI preserves failed runs, validates provenance and protects retained evidence.",
+      "status": "done",
+      "evidence": "https://github.com/mekala27-45/crewbench/blob/a67e32fb03a40d3c598b1b64512257b213589a9f/artifacts/contracts/retention.json; source b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45; 5 immutable pins checked, automatic deletion disabled. Failed runs 42111622499, 42113530294 and 42113752057 remain in Actions."
+    },
+    {
+      "requirement": "Clean rederive and fresh final live verification pass for release inputs.",
+      "status": "not done",
+      "evidence": "Public-record rederive is provisional. Private-key verification, final production browser/client readback and release-input checks remain incomplete."
+    },
+    {
+      "requirement": "Authorized release commit and tag match the verified evidence manifest.",
+      "status": "not done",
+      "evidence": "Draft PR https://github.com/mekala27-45/crewbench/pull/1; no completed release tag. Merge and deployment configuration require explicit authorization after automatic review rejection."
+    }
+  ],
+  "node_tests": 33,
+  "python_tests": 26,
+  "browser_tests": 60
+}

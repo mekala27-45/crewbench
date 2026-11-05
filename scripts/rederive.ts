@@ -7,7 +7,7 @@ const read=async(p:string)=>JSON.parse(await readFile(p,'utf8'));
 const run=(cmd:string,args:string[],env=process.env)=>execFileSync(cmd,args,{env,stdio:'inherit'});
 if(!['localhost','127.0.0.1'].includes(new URL(process.env.DATABASE_URL!).hostname))throw Error('REDERIVE_REQUIRES_ISOLATED_DATABASE');
 await mkdir('artifacts/rederive',{recursive:true});
-run('node',['scripts/freeze.ts','--verify']);
+run('node',['scripts/verify-shared-execution.ts']);
 run('node',['scripts/import-report.ts']);
 const raw=await readFile('artifacts/actual/results.json'),originalBaseline=await read('artifacts/baseline/postgres.json');
 const rawDigest=bytesDigest(raw),summaries=[];
@@ -20,7 +20,7 @@ for(const seed of ['1','817']){
 }
 assert.equal(digest(summaries[0]),digest(summaries[1]),'HASH_SEED_CHANGED_ACTUAL_SUMMARY');
 assert.equal(bytesDigest(await readFile('artifacts/actual/results.json')),rawDigest,'RAW_ACTUAL_CHANGED');
-const env={...process.env,CREWBENCH_SCHEMA:'crewbench_rederive_'+randomBytes(6).toString('hex')};
+const env={...process.env,CREWBENCH_SCHEMA:'crewbench_test_'+randomBytes(6).toString('hex')};
 run('node',['scripts/migrate.ts'],env);
 run('node',['scripts/baseline.ts','--postgres'],env);
 const freshBaseline=await read('artifacts/baseline/results.json');

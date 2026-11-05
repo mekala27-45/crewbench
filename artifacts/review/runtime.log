@@ -1,0 +1,45 @@
+
+> crewbench@0.1.0 test
+> node --test tests/*.test.ts
+
+✔ accounting clean pass, corrupted transport and empty refusal (7.589861ms)
+✔ usage, role and response mutations cannot manufacture comparable results (3.057993ms)
+✔ a dispatch intent without outcome is uncertain, never a confirmed execution (0.846733ms)
+✔ an unoffered tool is refused even with updated request bytes and digest (0.857783ms)
+✔ a handler ledger cannot invent a model tool call (1.194282ms)
+✔ claim gate accepts provenance, refuses mixed modes and empty evidence (1.984458ms)
+✔ missing measurement remains missing (0.31543ms)
+✔ bundle gate accepts startup failure and refuses traversal and nothing (1.181868ms)
+✔ corpus has isolated lineages and exact deterministic subset (1.976533ms)
+✔ runtime packets validate and carry no truth canary or family metadata (12.171502ms)
+✔ packet gate refuses wrong scope, empty and body mutation (0.606724ms)
+✔ failed development stays visible but cannot qualify missing model roles (10.653636ms)
+✔ retained readback must bind state, database counts, timestamp and model (7.545208ms)
+✔ missing or empty development evidence is refused (0.930108ms)
+✔ evidence import binds the exact source, plan, branch and paths (2.066571ms)
+✔ publication refuses credentials and preserves ordinary synthetic data (4.568426ms)
+✔ retention never evicts pinned reports or deletes automatically (18.060325ms)
+✔ freeze accepts exact input digests and refuses changed or absent evidence (3.186413ms)
+✔ freeze rejects traversal and unbound development evidence (0.757926ms)
+✔ report binds exact grades and renders deterministic provenance (4.230676ms)
+✔ duplicate grades cannot increase counts (0.294981ms)
+✔ absent evidence never creates claims or measurements (0.244257ms)
+✔ exact role exposure excludes delegation and arbitrary access (6.100991ms)
+✔ catalog reveals no record state or body (1.231942ms)
+✔ reservation is atomic in every dimension and nonrefundable (1.243053ms)
+✔ one remaining request grants one concurrent reservation (1.460519ms)
+✔ child redelivery is stable and changed payload conflicts (5.240814ms)
+✔ lease turnover preserves accepted child and fences old generation (2.78794ms)
+✔ uncertain dispatch terminates on restart without new dispatch (0.975553ms)
+✔ cancellation quarantines late response and keeps reserved usage (0.653932ms)
+✔ expired trial cannot reset the deadline or reserve (1.193701ms)
+✔ structurally valid wrong verdict is preserved for independent grading (2.014895ms)
+✔ an oversized native tool batch is fully logged and cannot accept an earlier submission (4.926205ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 699.616156

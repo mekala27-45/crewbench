@@ -15,7 +15,7 @@ def expected_from_records(packet):
     for key in CHECKS:
         seen_pass = seen_fail = False
         for record in packet["records"]:
-            if record["record_kind"] != "check" or record["check_key"] != key or record["subject_revision"] != packet["target_revision"]:
+            if record["record_kind"] != "check" or record["check_key"] != key or record["subject_revision"] != packet["target_revision"] or record.get("case_id") != packet.get("case_id") or record.get("snapshot_id") != packet.get("snapshot_id"):
                 continue
             seen_pass = seen_pass or record["state"] == "pass"
             seen_fail = seen_fail or record["state"] == "fail"
@@ -33,11 +33,14 @@ def grade(packet, truth, result):
     out["check_states_correct"] = assessment.get("checks") == truth["checks"]
     reasons = lambda xs: sorted((x.get("check_key"), x.get("code")) for x in xs)
     out["reasons_correct"] = reasons(assessment.get("reasons", [])) == reasons(truth["reasons"])
-    receipts = {r["id"]: r for r in result.get("receipts", [])}
+    raw_receipts=result.get("receipts", [])
+    receipts = {r["id"]: r for r in raw_receipts}
+    final_role={"deterministic_baseline":"baseline","solo_agent":"solo","split_review":"synthesis"}.get(result["method"])
+    accepted=result["status"]=="submitted" and any(r.get("trial_id")==result["trial_id"] and r.get("role")==final_role and r.get("tool")=="submit_assessment" and r.get("payload")==assessment and r.get("payload_digest")==sha(assessment) for r in raw_receipts)
     records = {r["evidence_id"]: r for r in packet["records"]}
     support = {k: set() for k in CHECKS}
     catalogs = set()
-    valid = bool(assessment.get("evidence_refs")) and assessment.get("case_id") == packet["case_id"] and assessment.get("snapshot_id") == packet["snapshot_id"]
+    valid = accepted and len(receipts)==len(raw_receipts) and bool(assessment.get("evidence_refs")) and assessment.get("case_id") == packet["case_id"] and assessment.get("snapshot_id") == packet["snapshot_id"]
     for ref in assessment.get("evidence_refs", []):
         receipt = receipts.get(ref.get("receipt_id"))
         if not receipt or receipt.get("trial_id") != result["trial_id"] or receipt.get("payload_digest") != sha(receipt["payload"]):
@@ -82,7 +85,7 @@ def grade(packet, truth, result):
         else:
             valid = False
     out["references_valid"] = bool(valid)
-    out["unsupported_ready"] = assessment.get("verdict") == "ready" and not (valid and truth["verdict"] == "ready" and out["check_states_correct"])
+    out["unsupported_ready"] = accepted and assessment.get("verdict") == "ready" and not (valid and truth["verdict"] == "ready" and out["check_states_correct"])
     provenance = True
     if result['method'] in ('solo_agent','split_review'):
         state=result.get('state') or {};attempts=state.get('attempts',[]);reservations=state.get('reservations',[])

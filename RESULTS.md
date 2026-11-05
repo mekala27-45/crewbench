@@ -1,42 +1,46 @@
-# Results and release status
+# Crewbench review results
 
-This is a development checkpoint, not a completed release. The [public evidence site](https://mekala27-45.github.io/crewbench/) is usable and the recorded deterministic baseline is 48/48. The twelve scripted recovery overlays passed independent post-action verification. Held-out actual model performance has not been published.
+Status: review candidate, not a completed release.
 
-The explicit qwen3:4b-instruct-2507-q4_K_M candidate produced two accepted solo assessments and one accepted full split flow in [development run 42115848494](https://github.com/mekala27-45/crewbench/actions/runs/42115848494). Its other split trial failed to submit. All 28 model requests reconciled with native responses, reservations and tool emissions. Freeze run 42117814226 sealed 101 inputs. The primary 24-trial evaluation is running at source d3d3a2e5a81cf6a0cd46e80b92fbf403b0ae2c92. Utility is pending.
+[Evidence site](https://mekala27-45.github.io/crewbench/) | [API](https://crewbench-api.vercel.app) | [Review PR](https://github.com/mekala27-45/crewbench/pull/1)
 
-Contract run 42118672431 at source 5992d6effb017920e2d3d8d92a2957fc486ca644 has 25 passing runtime tests and 15 independent Python tests, and verifies all 10 pinned evidence bundles. API verification has 21 checks and the responsive browser suite has 42. A workflow publisher succeeding does not override a failed test or trial: inspect the retained status and logs.
+Verification source: 89495e8c99b7f5fb928da61a95e2fc64a8df9286. Imported evidence uses the exact commits in evaluation/review-request.json. No release tag or completed actual report is claimed. Execution and independent analysis were frozen before inference.
 
-The API host originally built the container, then reached its container image limit through unnecessary evidence-branch deployments. The replacement native Node package now compiles with TypeScript 6.0.3; host run 42116306332 passed the compiled package inspection and all 21 database/API checks, including independent SQL readback. Automatic API deployment is disabled after Vercel imposed a 24-hour rate limit. No paid plan change was made.
+Baseline grading here applies the public evidence policy. Separate private answer-key verification remains pending.
 
-Automatic review rejected transfer of the dedicated Neon credential to the Vercel API and removal of deployment protection. Those actions remain untouched. The private answer key remains private. The local Windows runner and browser controller currently reject Linux paths in their permission configuration, so fresh private-key grading and local final verification cannot run.
+deterministic_baseline: 48 of 48 planned cases passed strict grading. Source 70280d6e8c3587ae16e0349212254d32f655a48bb16cc7cd8e905534222c4f53. Window 2026-11-05T22:02:42.354Z to 2026-11-05T22:02:42.785Z.
 
-The [uninterrupted public demonstration](https://github.com/mekala27-45/crewbench/raw/refs/heads/main/artifacts/demo/crewbench-demo.webm) was captured in run 42118672438 with five verified scenes and no page errors. It shows the explicit missing held-out result state. [Interview cards](docs/INTERVIEW-CARDS.md), [daily build log](docs/DAILY-BUILD-25.md) and [unsent post draft](docs/POST-DRAFT.md) are derived from the public report.
+runtime_invariants: 12 of 12 planned fault overlays passed independent verification. Source 19faca8afca392278b4dd7d3eae588a8b1961421eb2de64256658434bb3ef843. Window 2026-11-05T22:02:43.000Z to 2026-11-05T22:11:25.941Z.
 
-The primary evaluation is [42118015947](https://github.com/mekala27-45/crewbench/actions/runs/42118015947), source d3d3a2e5a81cf6a0cd46e80b92fbf403b0ae2c92. Completion automatically triggers provisional grading and an independent clean rederive. Their retained artifacts still require review and promotion; they are not yet measured results.
+Contract checks: 33 Node tests and 26 Python tests passed. Browser checks: 60 passed.
 
-Utility outcome: pending. Neither method is asserted to meet the registered 8/12 and zero unsupported-ready floor. Optional stretch experiments have not been started.
+## Section 20
 
-## Section 20 checklist
-
-| Status | Requirement | Evidence |
+| Requirement | Status | Evidence and observed outcome |
 | --- | --- | --- |
-| done | Scaffold, dependency and host probes are recorded and reproducible. | Bootstrap 42114258088 retains the exact package lock; host run 42116306332 verifies the compiled native package and its 21 API/database checks. |
-| done | Claim renderer refuses missing provenance and separates execution modes. | tests/claims.test.ts and contract run 42115848469; public report keeps baseline, actual and scripted sections separate. |
-| done | All forty-eight cases, isolated splits and the exact subset are validated. | Corpus contract checks in run 42115848469; evaluation/case-index.json and model-subset.json. |
-| done | Baseline and independent grader agree on declared truth and edge cases. | Prior private-key baseline verification was 48/48; current independent-policy and negative provenance tests pass in run 42115848469. |
-| done | Trial receipts, uniqueness and session scope pass independent readback. | API run 42113424255: 21 checks, one accepted assessment, replay and cross-session refusal with separate SQL readback. |
-| not done | Actual solo tool use and every dispatched request have verified accounting. | Development 42115848494 and freeze 42117814226 independently reconcile all 28 development requests. The active primary evaluation must finish before its complete request audit can be verified. |
-| done | Both specialists and synthesis have actual development invocation evidence. | Development 42115848494 records accepted tests, staging and synthesis submissions in the same split trial. |
-| done | Fencing, joins, expiry, cancellation and late output preserve invariants. | Current runtime contracts pass; scripted recovery run 42103168989 verifies takeover, cancellation and uncertainty. |
-| not done | Live API completes a persisted baseline flow from browser and separate client. | Isolated API/browser checks pass. Public database binding and access are not authorized; Vercel has also imposed a deployment cooldown. |
-| done | All twelve scripted overlays have injection and fresh post-action evidence. | Run 42103168989: 12/12, including SIGKILL and fresh-process SQL observations; canonical digest 38b5dac999e7199baf35e52eacb38f61f1e3ad458d039d4b42e11bda26db2804. |
-| not done | Frozen paired evaluation attempts all twenty-four actual method-case trials. | Freeze 42117814226 passed. Primary run 42118015947 is in progress; its 24 actual dispatches have not yet been verified. |
-| not done | Immutable grades, paired statistics and resource claims reconcile with evidence. | Frozen grading and paired-statistics code is tested. No held-out result is claimed; private-key regrading is also blocked by the local runner configuration. |
-| done | Compare and Case work with exact evidence navigation and visible mode labels. | Run 42114717646 passed 42 browser checks with current data and both themes. |
-| done | Recovery and Method pass responsive, keyboard and error-state browser checks. | Run 42114717646 covers 360, 768 and 1440 pixels, keyboard access, doubled zoom, denied/offline service and failed-model presentation. |
-| done | Repository guidance, three skills, decisions, notices and operating notes exist. | AGENTS.md, CLAUDE.md, .agents/skills, DECISIONS.md, DEAD-ENDS.md and docs/NOTICES.md. |
-| done | CI preserves failed runs, validates provenance and protects retained evidence. | Results branches preserve failures; sealed manifests validate hashes. Contract run 42118672431 verified all 10 pinned evidence branches; retention never deletes automatically. |
-| not done | Clean rederive and fresh final live verification pass for release inputs. | Local execution and browser control are blocked by invalid Linux permission paths in the Windows session. Public live verification remains pending. |
-| not done | Authorized release commit and tag match the verified evidence manifest. | No completed-release tag has been created. Required model and live-service gates remain open. |
+| Scaffold, dependency and host probes are recorded and reproducible. | done | artifacts/probes/remote.json; selected native model calibration run 42114717980; host packaging run 42116306332; lockfile and CI install probes retained. |
+| Claim renderer refuses missing provenance and separates execution modes. | done | https://github.com/mekala27-45/crewbench/blob/a67e32fb03a40d3c598b1b64512257b213589a9f/artifacts/contracts/runtime.log; source b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45; contract suite passed and this report was generated through the provenance renderer. |
+| All forty-eight cases, isolated splits and the exact subset are validated. | done | https://github.com/mekala27-45/crewbench/blob/a67e32fb03a40d3c598b1b64512257b213589a9f/artifacts/contracts/runtime.log; source b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45; corpus contract passed. |
+| Baseline and independent grader agree on declared truth and edge cases. | not done | Fresh public-policy grading passed; the separately retained private latent key could not be rerun in the invalid Windows workspace configuration. |
+| Trial receipts, uniqueness and session scope pass independent readback. | done | https://github.com/mekala27-45/crewbench/blob/dc6296b74b20da5159e8c302d76ad065792edbab/artifacts/api/check.json; source 7a8ad6d919ceb9dff2b9bd33ddb623d52939423c; persisted assessment, duplicate replay, conflict and cross-session isolation checks passed. |
+| Actual solo tool use and every dispatched request have verified accounting. | done | https://github.com/mekala27-45/crewbench/blob/77f943782bf8af098430d77160716104dcec4e73/artifacts/development/trials.json; source 43789f67432efa7c0720270a6268eaaccd8c0873; artifacts/development/accounting-audit.json binds requests, native emissions, usage, receipts and fresh database readback. |
+| Both specialists and synthesis have actual development invocation evidence. | done | https://github.com/mekala27-45/crewbench/blob/77f943782bf8af098430d77160716104dcec4e73/artifacts/development/trials.json; source 43789f67432efa7c0720270a6268eaaccd8c0873; completed native responses by role: {"solo":10,"tests":6,"staging":8,"synthesis":4}. Timed-out dispatches are retained separately. |
+| Fencing, joins, expiry, cancellation and late output preserve invariants. | done | https://github.com/mekala27-45/crewbench/blob/a67e32fb03a40d3c598b1b64512257b213589a9f/artifacts/contracts/runtime.log and https://github.com/mekala27-45/crewbench/blob/12720bdec552e1e2529583ee577e160f73386ed5/artifacts/recovery/results.json; contract checks and independently graded fault evidence. |
+| Live API completes a persisted baseline flow from browser and separate client. | not done | https://crewbench-api.vercel.app; public database binding/access are not configured. https://github.com/mekala27-45/crewbench/blob/dc6296b74b20da5159e8c302d76ad065792edbab/artifacts/api/check.json proves isolated CI behavior only. |
+| All twelve scripted overlays have injection and fresh post-action evidence. | done | https://github.com/mekala27-45/crewbench/blob/12720bdec552e1e2529583ee577e160f73386ed5/artifacts/recovery/results.json; source b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45; 12/12 passed schema-v2 verification. |
+| Frozen paired evaluation attempts all twenty-four actual method-case trials. | not done | Registered run https://github.com/mekala27-45/crewbench/actions/runs/42118015947 at d3d3a2e5a81cf6a0cd46e80b92fbf403b0ae2c92 has status in_progress. Both execution and analysis are frozen; 93 causal files and dispatch control match. Completed raw inventory has not been inspected or verified. |
+| Immutable grades, paired statistics and resource claims reconcile with evidence. | not done | Awaiting the unchanged raw bundle from registered run 42118015947. The pre-frozen independent grader, accounting, exact paired inventory and statistics gates must pass before utility claims. |
+| Compare and Case work with exact evidence navigation and visible mode labels. | done | https://github.com/mekala27-45/crewbench/blob/dc6296b74b20da5159e8c302d76ad065792edbab/artifacts/browser/results.json; source 7a8ad6d919ceb9dff2b9bd33ddb623d52939423c; 60 browser checks passed, including committed-response recovery. |
+| Recovery and Method pass responsive, keyboard and error-state browser checks. | done | https://github.com/mekala27-45/crewbench/blob/dc6296b74b20da5159e8c302d76ad065792edbab/artifacts/browser/results.json; source 7a8ad6d919ceb9dff2b9bd33ddb623d52939423c; all configured viewport/theme projects passed without skipped, unexpected or flaky tests. |
+| Repository guidance, three skills, decisions, notices and operating notes exist. | done | AGENTS.md, CLAUDE.md, .agents/skills/, DECISIONS.md, DEAD-ENDS.md, docs/NOTICES.md, docs/OPERATIONS.md; all required files checked by this generator. |
+| CI preserves failed runs, validates provenance and protects retained evidence. | done | https://github.com/mekala27-45/crewbench/blob/a67e32fb03a40d3c598b1b64512257b213589a9f/artifacts/contracts/retention.json; source b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45; 5 immutable pins checked, automatic deletion disabled. Failed runs 42111622499, 42113530294 and 42113752057 remain in Actions. |
+| Clean rederive and fresh final live verification pass for release inputs. | not done | Public-record rederive is provisional. Private-key verification, final production browser/client readback and release-input checks remain incomplete. |
+| Authorized release commit and tag match the verified evidence manifest. | not done | Draft PR https://github.com/mekala27-45/crewbench/pull/1; no completed release tag. Merge and deployment configuration require explicit authorization after automatic review rejection. |
+
+Utility outcome: unassessed. The registered frozen paired run is in_progress; no result-dependent claim is made before immutable import and grading.
+
+Stretch work: not started.
+
+Publication blockers: the review branch is ready for review; updating main and configuring the dedicated Neon connection and public bounded API require explicit authorization. Vercel deployment capacity and the Windows workspace configuration must also be available before final verification.
 
 Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.

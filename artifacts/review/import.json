@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "development_run": "42115848494",
+  "development_source": "43789f67432efa7c0720270a6268eaaccd8c0873",
+  "results_commit": "77f943782bf8af098430d77160716104dcec4e73",
+  "recovery_run": "42117978561",
+  "recovery_source": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
+  "recovery_results_commit": "12720bdec552e1e2529583ee577e160f73386ed5",
+  "recovery_kind": "runtime_rederive",
+  "web_run": "42117828030",
+  "web_source": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+  "web_results_commit": "dc6296b74b20da5159e8c302d76ad065792edbab",
+  "contracts_run": "42117978313",
+  "contracts_source": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
+  "contracts_results_commit": "a67e32fb03a40d3c598b1b64512257b213589a9f",
+  "revision": 3,
+  "purpose": "Independently verify selected frozen development, fresh baseline and recovery, browser and contracts. Report registered evaluation metadata without inspecting held-out outcomes.",
+  "verification_source": "89495e8c99b7f5fb928da61a95e2fc64a8df9286"
+}

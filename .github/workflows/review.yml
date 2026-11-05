@@ -1,0 +1,55 @@
+name: Verify retained review evidence
+on:
+  push:
+    branches: [codex/crewbench-completion]
+    paths: [evaluation/review-request.json]
+permissions:
+  contents: write
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.19.0
+      - run: npm ci
+      - run: npm test
+      - run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Verify pre-inference analysis and shared execution equivalence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/verify-shared-execution.ts
+      - name: Import immutable retained evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/import-review.mjs
+      - name: Audit all retained model requests and database readback
+        run: node scripts/audit-development.ts
+      - name: Rederive provisional baseline and strict recovery grades
+        run: |
+          python3 evaluation/grade.py artifacts/baseline/postgres.json artifacts/baseline/postgres-grades.json --public-records
+          python3 evaluation/recovery.py artifacts/recovery/results.json artifacts/recovery/grades.json
+          node scripts/build-report.ts
+          node scripts/write-review-results.ts
+          npx vite build
+      - name: Preserve report and any failures
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -o pipefail
+          mkdir -p artifacts/review
+          python3 -c 'import os,json,pathlib; pathlib.Path("artifacts/review/workflow.json").write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"private_truth_verified":False,"audit_present":pathlib.Path("artifacts/development/accounting-audit.json").exists()}))'
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/review-${GITHUB_RUN_ID}
+          git add artifacts site/public/data
+          if [ -f RESULTS.md ]; then git add RESULTS.md; fi
+          if [ -f artifacts/review/runtime.log ]; then git add -f artifacts/review/*.log; fi
+          git commit -m 'test: retain independent review accounting and provisional report'
+          gh auth setup-git
+          git push origin HEAD
