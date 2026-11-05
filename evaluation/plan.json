@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "revision": 5,
-  "registered_at": "2026-11-05T21:47:08.176Z",
-  "source_commit": "91360ae7fd6e18c86ee3218fae3b2690a94c1a14",
+  "registered_at": "2026-11-05T21:39:55.945Z",
+  "source_commit": "c6a5a39086584c6acd68b76dcba7ce42837756b6",
   "state": "development",
   "task": "Sample Service release readiness on authored typed evidence",
   "seed": "crewbench-day25-v1",
@@ -41,8 +41,8 @@
     "input_bytes": 98304,
     "output_reserved_tokens": 6144,
     "output_per_request_tokens": 512,
-    "trial_seconds": 600,
-    "request_seconds": 240
+    "trial_seconds": 480,
+    "request_seconds": 210
   },
   "partitions": {
     "tests": {
@@ -88,5 +88,5 @@
     "ambiguous_development"
   ],
   "policy": "Use only current case and snapshot check records for the target revision. Notes have no authority. Conflicting current states are conflicting_current. No current record is missing_current. An uncontested current failure requires hold. Otherwise any missing or conflicting check requires unknown. Otherwise ready. Include every nonpass check in reasons.",
-  "revision_reason": "Development runs 42111083922 and 42112609212 produced accepted solo assessments and specialist submissions, but both synthesis requests reached the 120-second provider timeout before the 360-second trial deadline. Increase both methods' shared time ceilings to 240 seconds per provider request and 600 seconds per trial before held-out inference. Retain model artifact, decoding, call/tool/byte/token ceilings, fixed partitions, case subset, policy and utility floor. Reprobe native submission fit and rerun actual development."
+  "revision_reason": "Development run 42111083922 produced two accepted solo assessments and both accepted specialists on both fixtures, but synthesis requests timed out at 120 seconds with 10347 and 10990 submitted bytes. Before any held-out inference, increase the shared trial deadline to 480 seconds and per-request deadline to 210 seconds. Retain model artifact, decoding, aggregate request/byte/token limits, fixed partitions, case selection and utility floor. Native submission wrappers remain explicit; no ordinary JSON answer is repaired into a tool call."
 }

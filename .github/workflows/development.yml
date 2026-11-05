@@ -1,7 +1,7 @@
 name: Database and agent development
 on:
   push:
-    branches: [main, codex/crewbench-completion]
+    branches: [main]
     paths: [evaluation/development-request.json, evaluation/plan.json, package.json, package-lock.json,agent/**, src/runtime/**, scripts/run-development.ts, scripts/recovery.ts, .github/workflows/development.yml]
   workflow_dispatch:
 permissions:

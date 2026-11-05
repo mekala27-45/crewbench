@@ -1,6 +1,0 @@
-{
-  "schema_version": 1,
-  "plan_revision": 5,
-  "reason": "Verify matched time ceilings after synthesis request timeouts; development cases only",
-  "source_parent": "91360ae7fd6e18c86ee3218fae3b2690a94c1a14"
-}

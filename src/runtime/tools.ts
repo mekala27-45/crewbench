@@ -1,6 +1,6 @@
 import {CHECKS,digest,exactKeys,groupFor,keysFor,Refusal,validateSubmissionShape,validId} from '../contracts/core.ts';
 import type {Packet,Role,Receipt} from '../contracts/core.ts';
-import {charge,event,guard} from './state.ts';
+import {charge,event,guard,stop} from './state.ts';
 import type {Lease,Trial} from './state.ts';
 export const toolsFor=(role:Role)=>role==='synthesis'?['read_evidence','submit_assessment']:['list_evidence','read_evidence',role==='tests'||role==='staging'?'submit_findings':'submit_assessment'];
 export function recordToolEmission(s:Trial,now:number,lease:Lease,role:Role,operationId:string,name:string,input:any){
@@ -60,3 +60,5 @@ export function executeTool(s:Trial,now:number,lease:Lease,role:Role,operationId
   return receipt;
  }catch(e){requested.status='refused';requested.error=e instanceof Refusal?e.code:'INTERNAL_TOOL_FAILURE';event(s,now,'tool_refused',{role,name,operation_id:operationId,code:requested.error});throw e;}
 }
+
+export function rejectUnfundedToolBatch(s:Trial,now:number,operationIds:string[]){const refused=s.tool_requests.some(t=>operationIds.includes(t.operation_id)&&t.error==='BUDGET_EXHAUSTED');if(refused)stop(s,now,'failed','TOOL_BATCH_BUDGET_EXHAUSTED');return refused;}

@@ -3,7 +3,7 @@ import {canonical,bytesDigest,digest,Refusal} from '../contracts/core.ts';
 import type {Role} from '../contracts/core.ts';
 import {PgStore} from './store.ts';
 import {acquire,reserve,dispatchIntent,recordResponse,stop,event,workerId,guard} from './state.ts';
-import {toolsFor,recordToolEmission} from './tools.ts';
+import {toolsFor,recordToolEmission,rejectUnfundedToolBatch} from './tools.ts';
 
 let queue=Promise.resolve();
 export function serializeRequest(body:any){return canonical(body);}
@@ -57,11 +57,14 @@ export async function measuredFetch(role:Role,sessionId:string,_url:any,init:any
    await store.change(trialId,(s,now)=>{const a=s.attempts.find(a=>a.operation_id===op);a.status=error.name==='TimeoutError'?'timed_out':'provider_failed';a.failure=error.cause?.code||error.message;a.elapsed_ms=performance.now()-start;event(s,now,'provider_failed',{operation_id:op,code:a.failure});stop(s,now,a.status==='timed_out'?'timed_out':'failed',a.failure);});
    return new Response(JSON.stringify({error:{message:'PROVIDER_REQUEST_FAILED',type:'invalid_request_error'}}),{status:400,headers:{'content-type':'application/json'}});
   }
-  const accepted=await store.change(trialId,(s,now)=>recordResponse(s,now,lease,op,response,{input_tokens:Number.isSafeInteger(response.prompt_eval_count)?response.prompt_eval_count:null,output_tokens:Number.isSafeInteger(response.eval_count)?response.eval_count:null},performance.now()-start));
-  if(!accepted)throw new Refusal('LATE_RESPONSE_EXCLUDED');
-  const calls=response.message?.tool_calls||[];
-  for(const [i,call] of calls.entries()){call.id=`t_${op.slice(2)}_${i}`;await store.change(trialId,(s,now)=>recordToolEmission(s,now,lease,role,call.id,call.function.name,call.function.arguments));}
-  return openaiResponse(input,response,false);
+  const calls=(response.message?.tool_calls||[]).map((call:any,i:number)=>({...call,id:`t_${op.slice(2)}_${i}`}));
+  const accepted=await store.change(trialId,(s,now)=>{
+   if(!recordResponse(s,now,lease,op,response,{input_tokens:Number.isSafeInteger(response.prompt_eval_count)?response.prompt_eval_count:null,output_tokens:Number.isSafeInteger(response.eval_count)?response.eval_count:null},performance.now()-start))return false;
+   for(const call of calls)recordToolEmission(s,now,lease,role,call.id,call.function.name,call.function.arguments);
+   return !rejectUnfundedToolBatch(s,now,calls.map((c:any)=>c.id));
+  });
+  if(!accepted)throw new Refusal('RESPONSE_NOT_ELIGIBLE_FOR_EXECUTION');
+  return openaiResponse(input,{...response,message:{...response.message,tool_calls:calls}},false);
  }catch(error:any){return new Response(JSON.stringify({error:{message:error.code||'PROVIDER_GATE_REFUSAL',type:'invalid_request_error'}}),{status:400,headers:{'content-type':'application/json'}});}
  finally{unlock();await store.close();}
 }
