@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "mode": "instrument_calibration",
+  "scope": "Largest representative valid submission in the 24 development cases for each role; raw native token count with 8-token delimiter margin; not an actual task assessment",
+  "source_commit": "b8735be461cbececdbdd0713d00e73d349ce0115",
+  "plan_digest": "c5150ed828a23248a7adc35668d99e324baa0fc4f474cbd2a2cbd452a18e05cb",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "rows": [
+    {
+      "role": "solo",
+      "case_id": "c2cdad678dd",
+      "serialized_bytes": 673,
+      "request_digest": "658e12987faf6b492cf51e2859ea521216fd0a286f69eccf8ee6938603cdbeea",
+      "response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-11-05T21:48:17.917152842Z",
+        "response": "\n",
+        "done": true,
+        "done_reason": "length",
+        "total_duration": 4650805537,
+        "load_duration": 779402,
+        "prompt_eval_count": 191,
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_duration": 4631226000,
+        "eval_count": 1,
+        "eval_duration": 1000
+      },
+      "tokenized_submission_tokens": 191,
+      "output_ceiling": 512,
+      "fits": true
+    },
+    {
+      "role": "tests",
+      "case_id": "c2cdad678dd",
+      "serialized_bytes": 342,
+      "request_digest": "decc8f64c932185aaa8f2d1bcaa9b32d1be7d42923bdf3cb97a92c19cf364425",
+      "response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-11-05T21:48:20.118746448Z",
+        "response": "\n",
+        "done": true,
+        "done_reason": "length",
+        "total_duration": 2195204492,
+        "load_duration": 582805,
+        "prompt_eval_count": 102,
+        "prompt_eval_cached_count": 14,
+        "prompt_eval_duration": 2178940000,
+        "eval_count": 1,
+        "eval_duration": 1000
+      },
+      "tokenized_submission_tokens": 102,
+      "output_ceiling": 512,
+      "fits": true
+    },
+    {
+      "role": "staging",
+      "case_id": "cac3ff5ecdd",
+      "serialized_bytes": 350,
+      "request_digest": "99b046a216a71e4bb160a1b79968c03312a5560826f816eac1914769f388843b",
+      "response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-11-05T21:48:22.520043144Z",
+        "response": "\n",
+        "done": true,
+        "done_reason": "length",
+        "total_duration": 2399132647,
+        "load_duration": 675193,
+        "prompt_eval_count": 106,
+        "prompt_eval_cached_count": 7,
+        "prompt_eval_duration": 2390049000,
+        "eval_count": 1,
+        "eval_duration": 1000
+      },
+      "tokenized_submission_tokens": 106,
+      "output_ceiling": 512,
+      "fits": true
+    },
+    {
+      "role": "synthesis",
+      "case_id": "c2cdad678dd",
+      "serialized_bytes": 673,
+      "request_digest": "658e12987faf6b492cf51e2859ea521216fd0a286f69eccf8ee6938603cdbeea",
+      "response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-11-05T21:48:22.613794541Z",
+        "response": "\n",
+        "done": true,
+        "done_reason": "length",
+        "total_duration": 90713246,
+        "load_duration": 811159,
+        "prompt_eval_count": 191,
+        "prompt_eval_cached_count": 190,
+        "prompt_eval_duration": 76787000,
+        "eval_count": 1,
+        "eval_duration": 1000
+      },
+      "tokenized_submission_tokens": 191,
+      "output_ceiling": 512,
+      "fits": true
+    }
+  ],
+  "all_fit": true
+}
