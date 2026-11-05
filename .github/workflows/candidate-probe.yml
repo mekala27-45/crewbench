@@ -1,0 +1,43 @@
+name: Larger CPU candidate probe
+on:
+  push:
+    branches: [main]
+    paths: [evaluation/candidate-request.json]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      OLLAMA_HOST: 127.0.0.1:11434
+      OLLAMA_NUM_PARALLEL: '1'
+      OLLAMA_MAX_LOADED_MODELS: '1'
+      CUDA_VISIBLE_DEVICES: '-1'
+      CREWBENCH_CANDIDATE_MODEL: qwen3:4b
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.19.0
+      - run: python3 scripts/install-ollama.py
+      - name: Load candidate on CPU
+        run: |
+          ollama serve > /tmp/ollama-candidate.log 2>&1 &
+          for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:11434/api/version && break; sleep 1; done
+          ollama pull qwen3:4b
+      - run: node scripts/probe-model.mjs
+      - name: Retain candidate outcome
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/candidate-probe-${GITHUB_RUN_ID}
+          git add artifacts/probes
+          git commit -m 'test: retain larger CPU candidate identity and native tool probe'
+          gh auth setup-git
+          git push origin HEAD

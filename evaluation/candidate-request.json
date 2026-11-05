@@ -1,0 +1,6 @@
+{
+  "candidate": "qwen3:4b",
+  "stage": "development_only",
+  "reason": "qwen3:1.7b failed the three-role development gate through run 42107541552; no held-out inference has occurred",
+  "no_held_out_results_inspected": true
+}
