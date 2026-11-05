@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "mode": "contract_verification",
+  "source_commit": "ad7d6fe5156f0e7c69e60e16feeb8add2ff21273",
+  "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
+  "results_branch": "results/contracts-42121693356",
+  "files": [
+    {
+      "path": "artifacts/contracts/grading.log",
+      "bytes": 3239,
+      "sha256": "972e69422776143546f59955dba1b62273b4698312f781131810744213e3da01"
+    },
+    {
+      "path": "artifacts/contracts/retention.json",
+      "bytes": 3612,
+      "sha256": "545811e76798a151f9f7c511324ba4b6c2bc564fc14c8920b7437f892c008bd1"
+    },
+    {
+      "path": "artifacts/contracts/runtime.log",
+      "bytes": 2780,
+      "sha256": "7adf940835f20ff903afa3c785f05048c1fcb3442876da0fb0f03d06434f9bec"
+    },
+    {
+      "path": "artifacts/contracts/workflow.json",
+      "bytes": 119,
+      "sha256": "e4a5bb5347ca3e8e9650fc3be96a0add8694851bb7b30d80739e0a5c94248860"
+    }
+  ]
+}
