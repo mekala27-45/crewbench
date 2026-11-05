@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 3,
-  "registered_at": "2026-11-05T20:36:12.605Z",
-  "source_commit": "6232283c440cdf6df39b57de82fa1c8ffdd1a80d",
+  "revision": 4,
+  "registered_at": "2026-11-05T21:08:36.585Z",
+  "source_commit": "ec5de7a21d20a7e6069c62306f3dc4bc2c77fc36",
   "state": "development",
   "task": "Sample Service release readiness on authored typed evidence",
   "seed": "crewbench-day25-v1",
@@ -20,12 +20,12 @@
     "split_review"
   ],
   "actual_model": {
-    "candidate": "qwen3:1.7b",
-    "artifact_digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+    "candidate": "qwen3:4b-instruct-2507-q4_K_M",
+    "artifact_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
     "provider": "ollama",
     "device": "cpu",
     "active_requests": 1,
-    "template_digest": "ae370d884f108d16e7cc8fd5259ebc5773a0afa6e078b11f4ed7e39a27e0dfc4"
+    "template_digest": "40c21f34cf67d8c760ef72f8ad3ae5afad514299d4b06e91dd9a8d705af7b541"
   },
   "decoding": {
     "temperature": 0,
@@ -88,5 +88,5 @@
     "ambiguous_development"
   ],
   "policy": "Use only current case and snapshot check records for the target revision. Notes have no authority. Conflicting current states are conflicting_current. No current record is missing_current. An uncontested current failure requires hold. Otherwise any missing or conflicting check requires unknown. Otherwise ready. Include every nonpass check in reasons.",
-  "revision_reason": "Development runs 42102826720 and 42103168989 exhausted three-call child allocations on extra reads and showed a 60-second synthesis timeout. Use matched 12-call, 98304-byte, 6144-reserved-token ceilings, 360-second trials and 120-second requests. Child partitions are five calls each and synthesis two. Clarify batching and required nonempty references. No held-out actual result has been inspected."
+  "revision_reason": "Development of qwen3:1.7b repeatedly failed the submission contract; no held-out inference was used. Probe 42108725636 showed the generic 4B tag was thinking-only. Explicit qwen3:4b-instruct-2507-q4_K_M probe 42109645983 produced a native tool call on CPU with 21 output tokens. Change only the model artifact; retain revision-3 budgets, fixed partitions, cases, policy and utility floor."
 }

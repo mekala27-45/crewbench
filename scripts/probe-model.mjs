@@ -1,7 +1,7 @@
 import {mkdir,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import os from 'node:os';
-const candidate=process.env.CREWBENCH_CANDIDATE_MODEL||'qwen3:1.7b';
+const candidate=process.env.CREWBENCH_CANDIDATE_MODEL||'qwen3:4b-instruct-2507-q4_K_M';
 const path=new URL('../artifacts/probes/model-native.json',import.meta.url);
 await mkdir(new URL('.',path),{recursive:true});
 const report={schema_version:1,execution_mode:'development_native_probe',source_commit:process.env.GITHUB_SHA||null,started_at:new Date().toISOString(),status:'startup_failed',actual_dispatch:false,worker:{os:os.platform(),cpu:os.cpus()[0]?.model,memory_bytes:os.totalmem(),node:process.version},provider:null,model:null,requests:[],error:null};
