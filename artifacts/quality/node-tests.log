@@ -1,0 +1,47 @@
+
+> crewbench@0.1.0 test
+> node --test tests/*.test.ts
+
+✔ accounting clean pass, corrupted transport and empty refusal (7.646731ms)
+✔ usage, role and response mutations cannot manufacture comparable results (4.742055ms)
+✔ a dispatch intent without outcome is uncertain, never a confirmed execution (0.590083ms)
+✔ an unoffered tool is refused even with updated request bytes and digest (0.616092ms)
+✔ claim gate accepts provenance, refuses mixed modes and empty evidence (1.374737ms)
+✔ missing measurement remains missing (0.205647ms)
+✔ bundle gate accepts startup failure and refuses traversal and nothing (0.877674ms)
+✔ corpus has isolated lineages and exact deterministic subset (1.232464ms)
+✔ runtime packets validate and carry no truth canary or family metadata (10.133623ms)
+✔ packet gate refuses wrong scope, empty and body mutation (0.572036ms)
+✔ paired inventory preserves all cases and counterbalances method order (2.644066ms)
+✔ startup failure preserves twenty-four unexecuted rows with null measurements (0.632747ms)
+✔ empty, duplicate and unsafe inventory cannot start evaluation (0.382563ms)
+✔ freeze accepts exact input digests and refuses changed or absent evidence (2.308214ms)
+✔ freeze rejects traversal and unbound development evidence (0.613317ms)
+✔ identity views keep shared receipt IDs and never classify records (1.574126ms)
+✔ catalog and empty views do not invent state references (0.224816ms)
+✔ startup publication keeps the complete missing inventory (2.625148ms)
+✔ publication rejects secrets, traversal, changed source and missing rows (0.972074ms)
+✔ escaped and nested credentials remain forbidden after JSON parsing (0.322463ms)
+✔ a confirmed actual attempt is publishable only with its exact trial binding (4.459102ms)
+✔ report binds exact grades and renders deterministic provenance (3.207069ms)
+✔ duplicate grades cannot increase counts (0.214841ms)
+✔ absent evidence never creates claims or measurements (0.226679ms)
+✔ bounded requests bind both frozen inputs and reject missing evidence (1.561517ms)
+✔ exact role exposure excludes delegation and arbitrary access (2.853489ms)
+✔ catalog reveals no record state or body (0.518356ms)
+✔ reservation is atomic in every dimension and nonrefundable (0.690123ms)
+✔ one remaining request grants one concurrent reservation (0.806307ms)
+✔ child redelivery is stable and changed payload conflicts (2.338979ms)
+✔ lease turnover preserves accepted child and fences old generation (1.398943ms)
+✔ uncertain dispatch terminates on restart without new dispatch (0.493569ms)
+✔ cancellation quarantines late response and keeps reserved usage (0.393709ms)
+✔ expired trial cannot reset the deadline or reserve (0.424996ms)
+✔ structurally valid wrong verdict is preserved for independent grading (0.952355ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 607.998228
