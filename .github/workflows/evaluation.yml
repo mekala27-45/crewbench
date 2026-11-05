@@ -83,6 +83,8 @@ jobs:
           git config user.email 'mekalaajayk@gmail.com'
           git switch -c results/evaluation-${GITHUB_RUN_ID}
           git add artifacts/actual artifacts/probes
+          node scripts/seal-evidence.ts evaluation
+          git add artifacts/actual/manifest.json
           git add -f artifacts/actual/*.log || true
           git commit -m 'test: retain every planned paired model evaluation outcome'
           gh auth setup-git
