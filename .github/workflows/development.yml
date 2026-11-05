@@ -48,6 +48,8 @@ jobs:
           token=$(node -e 'console.log(require("crypto").randomBytes(32).toString("base64url"))')
           echo "::add-mask::$token"
           echo "CREWBENCH_WORKER_TOKEN=$token" >> "$GITHUB_ENV"
+      - name: Register development inventory before inference
+        run: node scripts/run-development.ts --initialize
       - name: Compile fixed Eve workflow
         run: npx eve build --skip-sandbox-prewarm > /tmp/eve-build.log 2>&1
       - name: Install and start CPU provider
@@ -68,6 +70,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          node scripts/run-development.ts --finalize || true
           mkdir -p artifacts/development
           for item in /tmp/eve-build.log /tmp/eve-runtime.log; do if [ -f "$item" ]; then cp "$item" artifacts/development/; fi; done
           git config user.name 'Ajay Mekala'
