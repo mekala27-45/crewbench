@@ -3,6 +3,10 @@ on:
   push:
     branches: [main]
     paths: [evaluation/report-request.json]
+  workflow_run:
+    workflows: ['Frozen paired evaluation']
+    types: [completed]
+    branches: [main]
 permissions:
   contents: write
 jobs:
@@ -18,6 +22,9 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 24.19.0
+      - name: Bind the report to the completed evaluation event
+        if: github.event_name == 'workflow_run'
+        run: node -e "const fs=require('fs'),e=JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH));fs.writeFileSync('evaluation/report-request.json',JSON.stringify({schema_version:1,evaluation_run:String(e.workflow_run.id),evaluation_source:e.workflow_run.head_sha},null,2)+'\\n')"
       - run: npm ci
       - run: npm test
       - run: python3 -m unittest discover -s tests -p 'test_*.py'
@@ -46,7 +53,8 @@ jobs:
           git config user.name 'Ajay Mekala'
           git config user.email 'mekalaajayk@gmail.com'
           git switch -c results/report-${GITHUB_RUN_ID}
-          git add artifacts site/public/data docs/INTERVIEW-CARDS.md docs/DAILY-BUILD-25.md docs/POST-DRAFT.md
+          git add artifacts site/public/data evaluation/report-request.json
+          for item in docs/INTERVIEW-CARDS.md docs/DAILY-BUILD-25.md docs/POST-DRAFT.md; do if [ -f "$item" ]; then git add "$item"; fi; done
           git commit -m 'test: retain provisional grades with exact execution provenance'
           gh auth setup-git
           git push origin HEAD
