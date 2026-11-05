@@ -25,7 +25,7 @@ def expected_from_records(packet):
 
 def grade(packet, truth, result):
     assessment = result.get("assessment")
-    out = {"case_id": packet["case_id"], "method": result["method"], "strict_success": False, "verdict_correct": False, "check_states_correct": False, "reasons_correct": False, "references_valid": False, "unsupported_ready": False, "status": result["status"], "assessment_digest": sha(assessment) if assessment else None, "grader_digest": hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
+    out = {"trial_id": result.get("trial_id"), "case_id": packet["case_id"], "method": result["method"], "strict_success": False, "verdict_correct": False, "check_states_correct": False, "reasons_correct": False, "references_valid": False, "unsupported_ready": False, "status": result["status"], "assessment_digest": sha(assessment) if assessment else None, "grader_digest": hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
     if not assessment:
         out["failure"] = "no_assessment"
         return out

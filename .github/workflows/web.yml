@@ -1,0 +1,56 @@
+name: API and browser verification
+on:
+  push:
+    branches: [main]
+    paths: [site/**, src/api/**, tests/browser/**, scripts/check-api.ts, db/**, vite.config.ts, playwright.config.ts, .github/workflows/web.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  web:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_PASSWORD: crewbench_test
+          POSTGRES_DB: crewbench
+        ports: ['5432:5432']
+        options: --health-cmd 'pg_isready -U postgres' --health-interval 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:crewbench_test@127.0.0.1:5432/crewbench
+      VITE_API_URL: http://127.0.0.1:8080
+      SOURCE_COMMIT: ${{ github.sha }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.19.0
+      - run: npm ci
+      - run: node scripts/migrate.ts
+      - name: Start API and independent client
+        run: |
+          node src/api/server.ts > /tmp/crewbench-api.log 2>&1 &
+          for attempt in $(seq 1 20); do curl --fail --silent http://127.0.0.1:8080/healthz && break; sleep 1; done
+          node scripts/check-api.ts
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test
+      - name: Build static site with canonical API
+        env:
+          VITE_API_URL: https://crewbench-api.vercel.app
+        run: npx vite build
+      - name: Preserve checks and screenshots
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/web-${GITHUB_RUN_ID}
+          git add artifacts/api artifacts/browser
+          git commit -m 'test: preserve independent API and responsive browser evidence'
+          gh auth setup-git
+          git push origin HEAD
