@@ -3,10 +3,15 @@ on:
   push:
     branches: [main]
     paths: [evaluation/rederive-request.json]
+  workflow_run:
+    workflows: ['Build provisional evidence report']
+    types: [completed]
+    branches: [main]
 permissions:
   contents: write
 jobs:
   rederive:
+    if: github.event_name == 'push' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     services:
@@ -28,6 +33,14 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 24.19.0
+      - name: Import the exact completed report request
+        if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          report_run=$(node -e "console.log(JSON.parse(require('fs').readFileSync(process.env.GITHUB_EVENT_PATH)).workflow_run.id)")
+          gh api -H 'Accept: application/vnd.github.raw+json' "repos/mekala27-45/crewbench/contents/evaluation/report-request.json?ref=results/report-$report_run" > evaluation/report-request.json
+          cp evaluation/report-request.json evaluation/rederive-request.json
       - name: Require the intended frozen source
         run: node -e "const fs=require('fs'),r=JSON.parse(fs.readFileSync('evaluation/rederive-request.json')),q=JSON.parse(fs.readFileSync('evaluation/report-request.json')); if(r.evaluation_run!==q.evaluation_run||r.evaluation_source!==q.evaluation_source)throw Error('REDERIVE_SOURCE_MISMATCH')"
       - run: npm ci
@@ -48,7 +61,7 @@ jobs:
           git config user.name 'Ajay Mekala'
           git config user.email 'mekalaajayk@gmail.com'
           git switch -c results/rederive-${GITHUB_RUN_ID}
-          git add artifacts/rederive artifacts/baseline artifacts/recovery artifacts/actual site/public/data
+          git add artifacts/rederive artifacts/baseline artifacts/recovery artifacts/actual site/public/data evaluation/report-request.json evaluation/rederive-request.json
           git commit -m 'test: preserve clean public-record rederive and fresh recovery evidence'
           gh auth setup-git
           git push origin HEAD
