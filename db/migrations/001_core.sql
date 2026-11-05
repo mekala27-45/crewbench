@@ -3,6 +3,7 @@ CREATE TABLE IF NOT EXISTS crewbench.schema_version(version integer PRIMARY KEY,
 CREATE TABLE IF NOT EXISTS crewbench.admission(id integer PRIMARY KEY CHECK(id=1), session_count integer NOT NULL DEFAULT 0 CHECK(session_count BETWEEN 0 AND 1000));
 INSERT INTO crewbench.admission(id) VALUES(1) ON CONFLICT DO NOTHING;
 CREATE TABLE IF NOT EXISTS crewbench.sessions(id text PRIMARY KEY, capability_digest text UNIQUE NOT NULL, created_at timestamptz NOT NULL DEFAULT now(), expires_at timestamptz NOT NULL, requests integer NOT NULL DEFAULT 0 CHECK(requests BETWEEN 0 AND 500));
+ALTER TABLE crewbench.sessions ADD COLUMN IF NOT EXISTS creation_key text UNIQUE;
 CREATE TABLE IF NOT EXISTS crewbench.cases(id text PRIMARY KEY, packet_digest text NOT NULL, packet jsonb NOT NULL);
 CREATE TABLE IF NOT EXISTS crewbench.snapshots(case_id text NOT NULL REFERENCES crewbench.cases(id), id text NOT NULL, packet_digest text NOT NULL, PRIMARY KEY(case_id,id));
 CREATE TABLE IF NOT EXISTS crewbench.trials(

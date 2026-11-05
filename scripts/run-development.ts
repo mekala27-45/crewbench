@@ -6,7 +6,7 @@ import {digest} from '../src/contracts/core.ts';
 const read=async(p:string)=>JSON.parse(await readFile(p,'utf8'));
 const index=await read('evaluation/case-index.json'),plan=await read('evaluation/plan.json');
 const cases=['complete_current','contradictory'].map(f=>index.find((r:any)=>r.family===f&&r.split==='development'));
-const db=await PgStore.open(),client=new Client({baseUrl:'http://127.0.0.1:2000'}),rows=[];
+const db=await PgStore.open(),client=new Client({baseUrl:'http://127.0.0.1:2000',auth:{bearer:process.env.CREWBENCH_WORKER_TOKEN!}}),rows=[];
 await mkdir('artifacts/development',{recursive:true});
 try{
  for(const [i,row] of cases.entries())for(const method of (i%2?['split_review','solo_agent']:['solo_agent','split_review'])){
