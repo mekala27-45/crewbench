@@ -31,6 +31,7 @@ jobs:
         with:
           node-version: 24.19.0
       - run: npm ci
+      - run: node scripts/check-palette.mjs
       - run: node scripts/migrate.ts
       - name: Start API and independent client
         run: |

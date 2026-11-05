@@ -1,5 +1,5 @@
 """Verify post-action observations independently of the injection process."""
-import json,sys
+import json,sys,hashlib
 from pathlib import Path
 data=json.loads(Path(sys.argv[1]).read_text()); grades=[]
 for row in data['trials']:
@@ -17,6 +17,6 @@ for row in data['trials']:
     elif fault=='budget_race': ok=ok and p['outcomes'].count('reserved')==1 and p['outcomes'].count('BUDGET_EXHAUSTED')==1 and c['budget_reservations']==1 and s['spent']['model_requests']==1
     elif fault=='uncertain_dispatch': ok=ok and s['status']=='indeterminate' and c['provider_attempts']==1 and c['budget_reservations']==1 and c['assessments']==0
     grades.append({'trial_id':row['trial_id'],'verified':bool(ok),'fault':fault})
-out={'schema_version':1,'mode':'scripted_runtime','planned':12,'observed':len(grades),'verified':sum(g['verified'] for g in grades),'grades':grades}
+out={'schema_version':1,'mode':'scripted_runtime','source_digest':hashlib.sha256(json.dumps(data,sort_keys=True,separators=(',',':')).encode()).hexdigest(),'planned':12,'observed':len(grades),'verified':sum(g['verified'] for g in grades),'grades':grades}
 Path(sys.argv[2]).write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({k:v for k,v in out.items() if k!='grades'}))
 if out['observed']!=12 or out['verified']!=12: sys.exit(1)
