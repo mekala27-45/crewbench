@@ -1,0 +1,55 @@
+➜ Listening on: http://127.0.0.1:2000/
+[START] server listening at http://127.0.0.1:2000/
+[START] schedules disabled
+[workflow-sdk] Max retries reached, bubbling error to parent workflow
+  run    wrun_01M6PRSVFKE27XRA2RCS1ESSJ4
+  step   — · verifyRole (./agent/lib/workflow-steps)
+  retry  4 attempts · 3 max retries
+Error: ROLE_DID_NOT_SUBMIT
+    at verifyRole (file:///home/runner/work/crewbench/crewbench/.output/server/_chunks/node-server.mjs:1735:10)
+        … 1 more frame in framework internals
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve49.mjs:1399:51
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve41.mjs:2304:12
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve49.mjs:1399:10
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve41.mjs:2304:12
+    at async Fi (file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve48.mjs:7257:10)
+        … 3 more frames (run `pnpm wf inspect run <id>` for the full stack)
+[workflow-sdk] Max retries reached, bubbling error to parent workflow
+  run    wrun_01M6PRW1RPJNM64ZJT1MR7WCVJ
+  step   — · verifyRole (./agent/lib/workflow-steps)
+  retry  4 attempts · 3 max retries
+Error: ROLE_DID_NOT_SUBMIT
+    at verifyRole (file:///home/runner/work/crewbench/crewbench/.output/server/_chunks/node-server.mjs:1735:10)
+        … 1 more frame in framework internals
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve49.mjs:1399:51
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve41.mjs:2304:12
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve49.mjs:1399:10
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve41.mjs:2304:12
+    at async Fi (file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve48.mjs:7257:10)
+        … 3 more frames (run `pnpm wf inspect run <id>` for the full stack)
+[workflow-sdk] Max retries reached, bubbling error to parent workflow
+  run    wrun_01M6PRXAAZKJ85V2Y77ZKCTR16
+  step   — · verifyRole (./agent/lib/workflow-steps)
+  retry  4 attempts · 3 max retries
+Error: ROLE_DID_NOT_SUBMIT
+    at verifyRole (file:///home/runner/work/crewbench/crewbench/.output/server/_chunks/node-server.mjs:1735:10)
+        … 1 more frame in framework internals
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve49.mjs:1399:51
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve41.mjs:2304:12
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve49.mjs:1399:10
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve41.mjs:2304:12
+    at async Fi (file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve48.mjs:7257:10)
+        … 3 more frames (run `pnpm wf inspect run <id>` for the full stack)
+[workflow-sdk] Max retries reached, bubbling error to parent workflow
+  run    wrun_01M6PRYH4G2FGCVPVWC9MXY9RK
+  step   — · verifyRole (./agent/lib/workflow-steps)
+  retry  4 attempts · 3 max retries
+Error: ROLE_DID_NOT_SUBMIT
+    at verifyRole (file:///home/runner/work/crewbench/crewbench/.output/server/_chunks/node-server.mjs:1735:10)
+        … 1 more frame in framework internals
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve49.mjs:1399:51
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve41.mjs:2304:12
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve49.mjs:1399:10
+    at async file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve41.mjs:2304:12
+    at async Fi (file:///home/runner/work/crewbench/crewbench/.output/server/_libs/eve48.mjs:7257:10)
+        … 3 more frames (run `pnpm wf inspect run <id>` for the full stack)
