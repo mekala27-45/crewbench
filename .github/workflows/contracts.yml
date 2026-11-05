@@ -1,0 +1,46 @@
+name: Runtime and grading contracts
+on:
+  push:
+    branches: [main]
+    paths: [src/**, tests/*.ts, tests/test_*.py, evaluation/*.py, scripts/import-*.ts, scripts/import-*.mjs, scripts/seal-evidence.ts, .github/workflows/contracts.yml]
+  pull_request:
+    paths: [src/**, tests/**, evaluation/**]
+permissions:
+  contents: write
+jobs:
+  contracts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.19.0
+      - run: npm ci
+      - name: Runtime contracts
+        run: |
+          mkdir -p artifacts/contracts
+          npm test 2>&1 | tee artifacts/contracts/runtime.log
+      - name: Independent grading contracts
+        if: always()
+        run: |
+          mkdir -p artifacts/contracts
+          python3 -m unittest discover -s tests -p 'test_*.py' -v 2>&1 | tee artifacts/contracts/grading.log
+      - name: Preserve contract outcomes
+        if: always() && github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p artifacts/contracts
+          python3 -c 'import os,json,pathlib; pathlib.Path("artifacts/contracts/workflow.json").write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"mode":"contract_verification"}))'
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/contracts-${GITHUB_RUN_ID}
+          node scripts/seal-evidence.ts contracts
+          git add artifacts/contracts
+          git add -f artifacts/contracts/*.log
+          git commit -m 'test: retain runtime and grading contract evidence'
+          gh auth setup-git
+          git push origin HEAD
