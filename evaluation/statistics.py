@@ -22,6 +22,17 @@ def summarize(results,grades,subset):
         out[method]={'successes':k,'planned':12,'attempted':len(measured),'unexecuted':12-len(measured),'wilson_95_descriptive':wilson(k,12),'unsupported_ready':unsafe,'utility_floor_met':k>=8 and unsafe==0,'model_requests':len(attempts),'input_bytes':sum(r.get('state',{}).get('spent',{}).get('input_bytes',0) for r in selected),'output_tokens':sum(a['output_tokens'] for a in attempts) if not missing else None,'usage_missing_requests':missing,'known_output_tokens':sum(a.get('output_tokens') or 0 for a in attempts)}
         out[method].update({'submitted':sum(r['status']=='submitted' for r in selected if 'status' in r),'graded':12,'input_tokens':sum(a['input_tokens'] for a in attempts) if attempts and not missing else None,'tool_requests':sum(len(r.get('state',{}).get('tool_requests',[])) for r in selected),'elapsed_median_ms':median,'elapsed_range_ms':[min(elapsed),max(elapsed)] if elapsed else None,'timeout_count':sum(r.get('status')=='timed_out' for r in selected),'usage_missing_reason':'No dispatch or incomplete provider usage' if not attempts or missing else None})
         if not attempts:out[method]['output_tokens']=None
+    for method in methods:
+        selected=[by[(c,method)] for c in subset]
+        roles=['solo'] if method=='solo_agent' else ['tests','staging','synthesis']
+        out[method]['roles']={}
+        for role in roles:
+            attempts=[a for r in selected for a in r.get('state',{}).get('attempts',[]) if a.get('role')==role]
+            reservations=[a for r in selected for a in r.get('state',{}).get('reservations',[]) if a.get('role')==role]
+            tools=[a for r in selected for a in r.get('state',{}).get('tool_requests',[]) if a.get('role')==role]
+            missing=sum(a.get('output_tokens') is None or a.get('input_tokens') is None for a in attempts)
+            elapsed=[a['elapsed_ms'] for a in attempts if a.get('elapsed_ms') is not None]
+            out[method]['roles'][role]={'model_requests':len(attempts),'recorded_responses':sum(a.get('status')=='response_recorded' for a in attempts),'tool_emissions':len(tools),'input_bytes_reserved':sum(a.get('input_bytes',0) for a in reservations),'output_tokens_reserved':sum(a.get('output_tokens',a.get('output_reserved_tokens',0)) for a in reservations),'input_tokens':sum(a['input_tokens'] for a in attempts) if attempts and not missing else None,'output_tokens':sum(a['output_tokens'] for a in attempts) if attempts and not missing else None,'known_output_tokens':sum(a.get('output_tokens') or 0 for a in attempts),'usage_missing_requests':missing,'provider_elapsed_known_ms':sum(elapsed),'provider_elapsed_missing_requests':len(attempts)-len(elapsed),'usage_missing_reason':'No dispatch or incomplete provider usage' if not attempts or missing else None}
     solo_only=split_only=both=neither=0
     for case in subset:
         a=gs[(case,'solo_agent')]['strict_success'];b=gs[(case,'split_review')]['strict_success']
