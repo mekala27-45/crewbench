@@ -1,6 +1,6 @@
 import {z} from 'zod';
 const state=z.enum(['current_pass','current_failure','missing_current','conflicting_current']);
-const refs=z.array(z.object({receipt_id:z.string(),evidence_id:z.string(),field:z.enum(['state','subject_revision','catalog_complete'])}).strict()).max(16);
+const refs=z.array(z.object({receipt_id:z.string(),evidence_id:z.string(),field:z.enum(['state','subject_revision','catalog_complete'])}).strict()).min(1).max(16);
 export const listSchema=z.object({group:z.enum(['all','tests','staging'])}).strict();
 export const readSchema=z.object({evidence_ids:z.array(z.string()).min(1).max(4)}).strict();
 export const checks={unit_tests:state,api_tests:state,artifact_match:state,staging_probe:state};

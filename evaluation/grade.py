@@ -7,7 +7,7 @@ from pathlib import Path
 CHECKS = ("unit_tests", "api_tests", "artifact_match", "staging_probe")
 
 def sha(value):
-    return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+    return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()).hexdigest()
 
 def expected_from_records(packet):
     # Deliberately separate implementation used to verify latent answers.

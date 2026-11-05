@@ -14,7 +14,7 @@ try{
   await db.create(newTrial({id,packet,plan,method:method as any,model_digest:process.env.MODEL_DIGEST||null}),packet,id);
   await db.change(id,(s,n)=>{(s as any).case_order=i;return acquire(s,n,workerId());});
   let session:any=null;let watchdog:any=null;
-  try{const created=await client.sessions.create({message:JSON.stringify({trial_id:id})});session=created.session;await Promise.race([created.delivery!.result(),new Promise((_,reject)=>watchdog=setTimeout(()=>reject(new Error('WORKFLOW_DEADLINE')),245000))]);}
+  try{const created=await client.sessions.create({message:JSON.stringify({trial_id:id})});session=created.session;await Promise.race([created.delivery!.result(),new Promise((_,reject)=>watchdog=setTimeout(()=>reject(new Error('WORKFLOW_DEADLINE')),plan.budget.trial_seconds*1000+5000))]);}
   catch(error:any){await db.change(id,(s,n)=>stop(s,n,error.message==='WORKFLOW_DEADLINE'?'timed_out':'failed',String(error.message).slice(0,300)));}
   finally{clearTimeout(watchdog);try{await session?.end({reason:'Registered trial ended'});}catch{}}
   const s=await db.read(id);if(s.status==='active')await db.change(id,(s,n)=>stop(s,n,'failed','NO_ASSESSMENT'));
