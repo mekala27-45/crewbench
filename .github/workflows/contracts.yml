@@ -19,6 +19,11 @@ jobs:
         with:
           node-version: 24.19.0
       - run: npm ci
+      - name: Check reporting entrypoint syntax
+        run: |
+          node --check scripts/bind-report-event.mjs
+          node --check scripts/import-report.ts
+          node --check scripts/rederive.ts
       - name: Runtime contracts
         run: |
           set -o pipefail
