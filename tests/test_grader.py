@@ -1,5 +1,6 @@
 import importlib.util
 import unittest
+import json,subprocess,sys,tempfile,shutil
 from pathlib import Path
 spec=importlib.util.spec_from_file_location('grader',Path(__file__).resolve().parents[1]/'evaluation/grade.py')
 grader=importlib.util.module_from_spec(spec)
@@ -56,4 +57,19 @@ class GraderCases(unittest.TestCase):
     def test_no_assessment_is_retained_as_failure(self):
         p,t,r=self.full();r['assessment']=None;self.assertEqual(grader.grade(p,t,r)['failure'],'no_assessment')
 
+    def test_public_record_cli_is_explicit_and_never_claims_private_key_agreement(self):
+        p,truth,row=self.full()
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'evaluation').mkdir();(root/'fixtures/runtime').mkdir(parents=True)
+            shutil.copy(Path(grader.__file__),root/'evaluation/grade.py')
+            (root/'fixtures/runtime/c1.json').write_text(json.dumps(p))
+            (root/'input.json').write_text(json.dumps({'trials':[row]}))
+            cmd=[sys.executable,str(root/'evaluation/grade.py'),str(root/'input.json'),str(root/'output.json')]
+            result=subprocess.run(cmd+['--public-records'],capture_output=True,text=True)
+            self.assertEqual(result.returncode,0,result.stderr)
+            report=json.loads((root/'output.json').read_text())
+            self.assertEqual(report['grading_basis'],'independent_public_record_policy');self.assertFalse(report['private_truth_verified']);self.assertTrue(report['grades'][0]['strict_success'])
+            self.assertNotEqual(subprocess.run(cmd,capture_output=True).returncode,0)
+
 if __name__=='__main__':unittest.main()
+
