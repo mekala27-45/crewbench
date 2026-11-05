@@ -1,6 +1,6 @@
 # Daily Build Series: Day 25
 
-Date: 2026-11-05. Project: Crewbench. State: development; no completed-release tag.
+Date: 2026-11-05. Project: Crewbench. State: provisional_evaluation; no completed-release tag.
 
 Repository: https://github.com/mekala27-45/crewbench
 
@@ -8,13 +8,13 @@ Public evidence site: https://mekala27-45.github.io/crewbench/
 
 API destination: https://crewbench-api.vercel.app (public persisted flow pending).
 
-Report source: c6a5a39086584c6acd68b76dcba7ce42837756b6. Actual source: not yet published. This source reference is not a final release verification.
+Report source: 6ca1995b640d395d3a6e619259b7c8e2e6eacdc7. Actual source: d3d3a2e5a81cf6a0cd46e80b92fbf403b0ae2c92. This source reference is not a final release verification.
 
-The held-out actual comparison is pending. Development traces establish model invocation only; no held-out model success rate is claimed.
+The frozen comparison covered 12 paired cases. Solo produced 3 of 12 strict successes; split review produced 1 of 12. The observed split-minus-solo difference was -16.7 percentage points. No demonstrated useful model behavior under the registered utility floor.
 
-Private-key baseline checks do not establish a completed actual comparison.
+These results are provisional: independent public-record grading is complete, but comparison with the private authored answer key is pending.
 
-Utility outcome: pending actual evaluation. Engineering completion is tracked separately in [RESULTS.md](../RESULTS.md).
+Utility outcome: solo not met; split not met. Engineering completion is tracked separately in [RESULTS.md](../RESULTS.md).
 
 Evidence: [report](https://mekala27-45.github.io/crewbench/data/report.json), [case traces](https://mekala27-45.github.io/crewbench/data/cases.json), [scripted recovery](https://mekala27-45.github.io/crewbench/data/recovery.json).
 

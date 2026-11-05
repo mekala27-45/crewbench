@@ -1,6 +1,6 @@
 # Interview cards
 
-Project evidence only. These statements describe this repository, not employment experience. Generated from public report digest 6469c8b7efe014f6c8075727242843a17a5bd828e49a61c9ab7401b215771988.
+Project evidence only. These statements describe this repository, not employment experience. Generated from public report digest e33f67734d0f14e7befbafe6a91190fdae6c6c9c62de206daea804048b55d7f3.
 
 ## Problem
 
@@ -12,9 +12,9 @@ One method uses a single tool-using agent. The other uses two specialists and a 
 
 ## Evidence
 
-The held-out actual comparison is pending. Development traces establish model invocation only; no held-out model success rate is claimed.
+The frozen comparison covered 12 paired cases. Solo produced 3 of 12 strict successes; split review produced 1 of 12. The observed split-minus-solo difference was -16.7 percentage points. No demonstrated useful model behavior under the registered utility floor.
 
-Private-key baseline checks do not establish a completed actual comparison. The deterministic baseline has 48 of 48 strict successes. Scripted recovery has 12 of 12 independently verified overlays. Requests, tokens, elapsed time and source digests are in [report data](https://mekala27-45.github.io/crewbench/data/report.json).
+These results are provisional: independent public-record grading is complete, but comparison with the private authored answer key is pending. The deterministic baseline has 48 of 48 strict successes. Scripted recovery has 12 of 12 independently verified overlays. Requests, tokens, elapsed time and source digests are in [report data](https://mekala27-45.github.io/crewbench/data/report.json).
 
 ## Tradeoff
 

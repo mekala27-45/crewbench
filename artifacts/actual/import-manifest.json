@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "mode": "actual_model",
+  "source_commit": "d3d3a2e5a81cf6a0cd46e80b92fbf403b0ae2c92",
+  "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
+  "results_branch": "results/evaluation-42118015947",
+  "files": [
+    {
+      "path": "artifacts/actual/eve-build.log",
+      "bytes": 18312,
+      "sha256": "14d56e4b709268621202346146b45708a7f8a534f22d2bde2b07c0cfcde1f401"
+    },
+    {
+      "path": "artifacts/actual/eve-runtime.log",
+      "bytes": 171368,
+      "sha256": "9673b7143c8e064d46582b530e454960631e3a898e5a4156924acfca61bfe5a6"
+    },
+    {
+      "path": "artifacts/actual/results.json",
+      "bytes": 3028239,
+      "sha256": "a16511ad85557c0b910e3ec6f13c4adee574fa97f0f560957f0eb2282d85206d"
+    },
+    {
+      "path": "artifacts/actual/workflow.json",
+      "bytes": 140,
+      "sha256": "b95c7c4b36476f6a7dd6d4c39af212b07d2e52c0ea2b0b5ae467d968962f0470"
+    },
+    {
+      "path": "artifacts/probes/accepted-native.json",
+      "bytes": 15596,
+      "sha256": "0c3e021bd3870f676add5b924c25084fa3ab9ba0bcce11ba06938d5982ff9961"
+    },
+    {
+      "path": "artifacts/probes/local.json",
+      "bytes": 2622,
+      "sha256": "654f1d4364beca494f5332a57e13406d8e3fedbfb83c85be765505b0d9e5ca74"
+    },
+    {
+      "path": "artifacts/probes/model-native.json",
+      "bytes": 15590,
+      "sha256": "45111aba8a9ccfd229461d75dc2c1fcb673779d480b7d98ee62330abd1139d62"
+    },
+    {
+      "path": "artifacts/probes/ollama-binary.json",
+      "bytes": 276,
+      "sha256": "20fbb0745466f687961d7dc90dd1268acb99b2cdb62f58dd1c30ef4ebe692bac"
+    },
+    {
+      "path": "artifacts/probes/payload-fit.json",
+      "bytes": 3477,
+      "sha256": "006569b77ad04ace8ad5eaf277751516c5743f3a2648d952cb739b2fb4107a7d"
+    },
+    {
+      "path": "artifacts/probes/remote.json",
+      "bytes": 5582,
+      "sha256": "b047236b64700a5aac056cf25c94a34fed41cd5d0e5d71d6cbf23c7551112ce8"
+    }
+  ]
+}
