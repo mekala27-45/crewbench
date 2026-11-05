@@ -1,0 +1,536 @@
+{
+  "schema_version": 1,
+  "mode": "deterministic_baseline",
+  "environment": "isolated_ci_database",
+  "canonical_url": "http://127.0.0.1:8080",
+  "source_commit": "12789c90b93ebaae063aa679d5a5de4c7e1480bf",
+  "passed": true,
+  "failure": null,
+  "events": [
+    {
+      "path": "/healthz",
+      "status": 200,
+      "request_digest": "a773647c9c48744e05c1e7735a5a68e0d3f9669fc430ae391dc73ba729f08b88",
+      "response_digest": "50472e0dc226870810c9ffa8e96d949803c612668e8e65fe452af72b1efc6c75",
+      "at": "2026-11-05T20:47:25.796Z"
+    },
+    {
+      "path": "/readyz",
+      "status": 200,
+      "request_digest": "48711cd0ff7524f6f20d7fafc8e3a65b6a7d0c257c7729c9b006e6c0222e1a93",
+      "response_digest": "4a127979a8be92c6d5f70f2841e5203cdd4bf82981c2eabb78fa864475a05c27",
+      "at": "2026-11-05T20:47:25.846Z"
+    },
+    {
+      "path": "/api/v1/catalog",
+      "status": 200,
+      "request_digest": "6e5d50aa89b96770d40551f59222ce1c429ccf0f1694623e9c8ea9f36ebd2e70",
+      "response_digest": "8342bc85bef867497b8ffe7c63d3e69e76854c9a775bf48c5965fad02b1b6da7",
+      "at": "2026-11-05T20:47:25.882Z"
+    },
+    {
+      "path": "/api/v1/sessions",
+      "status": 201,
+      "request_digest": "e643ee233cdb9f4d4ab0275d414788ac4b49ea6bf93b3f58729e4eee9acb1720",
+      "response_digest": "4d5540cb31fdf474cb56e299449f8a35dd02d3b9bd993db2a89624c734ead37f",
+      "at": "2026-11-05T20:47:25.887Z"
+    },
+    {
+      "path": "/api/v1/trials",
+      "status": 201,
+      "request_digest": "2b2bfca813faab28485bf430613956c4296c5575b55479b9b61733bcac5336fe",
+      "response_digest": "ba3f3773ecb9a3c5f55140e551c52d1c5ccc781e9f164dac7ae90b8c950aba97",
+      "at": "2026-11-05T20:47:25.907Z"
+    },
+    {
+      "path": "/api/v1/trials",
+      "status": 200,
+      "request_digest": "2b2bfca813faab28485bf430613956c4296c5575b55479b9b61733bcac5336fe",
+      "response_digest": "ba3f3773ecb9a3c5f55140e551c52d1c5ccc781e9f164dac7ae90b8c950aba97",
+      "at": "2026-11-05T20:47:25.929Z"
+    },
+    {
+      "path": "/api/v1/trials",
+      "status": 409,
+      "request_digest": "03ade95b5676d5294bc96f48452538b96907590b8d064cf78b3ae5a11f69587d",
+      "response_digest": "c8c7aa18125b48efa624402fd563fc160389a96db2ad08c48c3f4ebe2dea0b3d",
+      "at": "2026-11-05T20:47:25.944Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_346f0dc4d3804c01a58dba52bada4ba3/advance",
+      "status": 202,
+      "request_digest": "09365bffac57ba81179970f0df8a0d464610b29f924f015308be0fae9584311a",
+      "response_digest": "88f23f214b411a2cf1fbc3e95c02d324fa5af3a3aceb7c447dd32a7c9c06b094",
+      "at": "2026-11-05T20:47:25.956Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_346f0dc4d3804c01a58dba52bada4ba3/advance",
+      "status": 200,
+      "request_digest": "09365bffac57ba81179970f0df8a0d464610b29f924f015308be0fae9584311a",
+      "response_digest": "f968d1a8d227f98c932f7e4abadeb50d25416f0bae93fd404b81921b5ef5d53d",
+      "at": "2026-11-05T20:47:25.980Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_346f0dc4d3804c01a58dba52bada4ba3/advance",
+      "status": 200,
+      "request_digest": "09365bffac57ba81179970f0df8a0d464610b29f924f015308be0fae9584311a",
+      "response_digest": "88f23f214b411a2cf1fbc3e95c02d324fa5af3a3aceb7c447dd32a7c9c06b094",
+      "at": "2026-11-05T20:47:26.011Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_346f0dc4d3804c01a58dba52bada4ba3",
+      "status": 200,
+      "request_digest": "939a3781c3a6fe059392427f80f065d30bfacaa994a58aa6dac46e1b9ad2123f",
+      "response_digest": "f968d1a8d227f98c932f7e4abadeb50d25416f0bae93fd404b81921b5ef5d53d",
+      "at": "2026-11-05T20:47:26.024Z"
+    },
+    {
+      "path": "/api/v1/sessions",
+      "status": 201,
+      "request_digest": "e643ee233cdb9f4d4ab0275d414788ac4b49ea6bf93b3f58729e4eee9acb1720",
+      "response_digest": "5802b70b454673e34d6bd5ba0cbc1a42307c694ee7036530d11cd5738329dd46",
+      "at": "2026-11-05T20:47:26.034Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_346f0dc4d3804c01a58dba52bada4ba3",
+      "status": 404,
+      "request_digest": "939a3781c3a6fe059392427f80f065d30bfacaa994a58aa6dac46e1b9ad2123f",
+      "response_digest": "fff849d77ea523e7affd167552563f7327ecad1d445502f542fe408b571211f1",
+      "at": "2026-11-05T20:47:26.045Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_346f0dc4d3804c01a58dba52bada4ba3",
+      "status": 401,
+      "request_digest": "939a3781c3a6fe059392427f80f065d30bfacaa994a58aa6dac46e1b9ad2123f",
+      "response_digest": "299dc87643f4f951257a9c012d65b86a498e456d5b2881f1a134658363e9fbaf",
+      "at": "2026-11-05T20:47:26.054Z"
+    },
+    {
+      "path": "/api/v1/trials/demo_346f0dc4d3804c01a58dba52bada4ba3/events?cursor=oops",
+      "status": 400,
+      "request_digest": "06d8774eff9b53bd69af41785888b7754e1a1967419caccae0674387cc525684",
+      "response_digest": "911e24b402d4da3dbcf6e85161fe69676de05dc4bd3b2f8124adcedebd95c913",
+      "at": "2026-11-05T20:47:26.063Z"
+    },
+    {
+      "path": "/api/v1/trials",
+      "status": 400,
+      "request_digest": "aea12b66f64da4da7969d004ac3bb894afcf1a2cfcd0da593364ac8c15bd7490",
+      "response_digest": "871dbcde61f830a53762e47a3373b6d15f853405a30e8b29bcc0fdfbb4b4c552",
+      "at": "2026-11-05T20:47:26.073Z"
+    },
+    {
+      "path": "/api/v1/trials",
+      "status": 400,
+      "request_digest": "8c6a927fcf9b09730989d7ba30774f9c2400e00675cfe7d5e34f3a2b5fe5bc0f",
+      "response_digest": "84f38047740405c96673e5dde6eab537458085ac602b280d10dc6373d9b4923d",
+      "at": "2026-11-05T20:47:26.083Z"
+    },
+    {
+      "path": "/api/v1/trials",
+      "status": 413,
+      "request_digest": "517b3af5c55b6e1a7784934c2362bd1668ec80c7cd445da18cc264266d1f068f",
+      "response_digest": "71ec0de3cd1e6f4dd0d9c339f23be6e56eed30b9716cf19a239d77f273d46ba4",
+      "at": "2026-11-05T20:47:26.094Z"
+    },
+    {
+      "path": "/api/v1/catalog",
+      "status": 403,
+      "request_digest": "6e5d50aa89b96770d40551f59222ce1c429ccf0f1694623e9c8ea9f36ebd2e70",
+      "response_digest": "13b972537aafe29a6ded9b410dfccf8e00f4d861fbbe794fd6d087d2c8f64e7a",
+      "at": "2026-11-05T20:47:26.097Z"
+    },
+    {
+      "path": "/api/v1/catalog",
+      "status": 200,
+      "request_digest": "6e5d50aa89b96770d40551f59222ce1c429ccf0f1694623e9c8ea9f36ebd2e70",
+      "response_digest": "8342bc85bef867497b8ffe7c63d3e69e76854c9a775bf48c5965fad02b1b6da7",
+      "at": "2026-11-05T20:47:26.099Z"
+    }
+  ],
+  "observation": {
+    "trial_id": "demo_346f0dc4d3804c01a58dba52bada4ba3",
+    "schema": "crewbench",
+    "state_digest": "313c52d83aa214718b70c29c08caa4a07749de4b1444253d1d1158d49e0e16b4",
+    "state": {
+      "id": "demo_346f0dc4d3804c01a58dba52bada4ba3",
+      "join": null,
+      "mode": "deterministic_baseline",
+      "owner": "baseline-worker",
+      "roles": {
+        "baseline": {
+          "spent": {
+            "input_bytes": 0,
+            "tool_requests": 0,
+            "model_requests": 0,
+            "output_reserved_tokens": 0
+          },
+          "status": "submitted",
+          "session_id": null
+        }
+      },
+      "spent": {
+        "input_bytes": 0,
+        "tool_requests": 0,
+        "model_requests": 0,
+        "output_reserved_tokens": 0
+      },
+      "budget": {
+        "input_bytes": 98304,
+        "tool_requests": 24,
+        "trial_seconds": 360,
+        "model_requests": 12,
+        "request_seconds": 120,
+        "output_reserved_tokens": 6144,
+        "output_per_request_tokens": 512
+      },
+      "events": [
+        {
+          "at": "2026-11-05T20:47:25.974Z",
+          "type": "activated",
+          "details": {},
+          "sequence": 1
+        },
+        {
+          "at": "2026-11-05T20:47:25.974Z",
+          "type": "lease_acquired",
+          "details": {
+            "owner": "baseline-worker",
+            "generation": 1
+          },
+          "sequence": 2
+        },
+        {
+          "at": "2026-11-05T20:47:25.998Z",
+          "type": "lease_acquired",
+          "details": {
+            "owner": "baseline-worker",
+            "generation": 1
+          },
+          "sequence": 3
+        },
+        {
+          "at": "2026-11-05T20:47:25.998Z",
+          "type": "handler_executed",
+          "details": {
+            "name": "list_evidence",
+            "role": "baseline",
+            "operation_id": "list"
+          },
+          "sequence": 4
+        },
+        {
+          "at": "2026-11-05T20:47:25.998Z",
+          "type": "handler_executed",
+          "details": {
+            "name": "read_evidence",
+            "role": "baseline",
+            "operation_id": "read_0"
+          },
+          "sequence": 5
+        },
+        {
+          "at": "2026-11-05T20:47:25.998Z",
+          "type": "handler_executed",
+          "details": {
+            "name": "submit_assessment",
+            "role": "baseline",
+            "operation_id": "submit"
+          },
+          "sequence": 6
+        },
+        {
+          "at": "2026-11-05T20:47:25.998Z",
+          "type": "assessment_committed",
+          "details": {
+            "receipt_id": "h3"
+          },
+          "sequence": 7
+        }
+      ],
+      "method": "deterministic_baseline",
+      "status": "submitted",
+      "case_id": "c061cbcf2cc",
+      "failure": null,
+      "attempts": [],
+      "children": {},
+      "deadline": 1793912005974.091,
+      "receipts": [
+        {
+          "id": "h1",
+          "role": "baseline",
+          "tool": "list_evidence",
+          "payload": {
+            "catalogs": [
+              {
+                "rows": [
+                  {
+                    "check_key": "unit_tests",
+                    "evidence_id": "e8572b65",
+                    "record_kind": "check",
+                    "evidence_group": "tests",
+                    "subject_revision": "r6991686"
+                  },
+                  {
+                    "check_key": "api_tests",
+                    "evidence_id": "e6a054d7",
+                    "record_kind": "check",
+                    "evidence_group": "tests",
+                    "subject_revision": "r6991686"
+                  }
+                ],
+                "group": "tests",
+                "case_id": "c061cbcf2cc",
+                "snapshot_id": "s785fa6ab",
+                "catalog_complete": true
+              },
+              {
+                "rows": [
+                  {
+                    "check_key": "staging_probe",
+                    "evidence_id": "eff19ad1",
+                    "record_kind": "check",
+                    "evidence_group": "staging",
+                    "subject_revision": "rf64ef2a"
+                  },
+                  {
+                    "check_key": "artifact_match",
+                    "evidence_id": "ed58b3ae",
+                    "record_kind": "check",
+                    "evidence_group": "staging",
+                    "subject_revision": "r6991686"
+                  }
+                ],
+                "group": "staging",
+                "case_id": "c061cbcf2cc",
+                "snapshot_id": "s785fa6ab",
+                "catalog_complete": true
+              }
+            ]
+          },
+          "sequence": 4,
+          "trial_id": "demo_346f0dc4d3804c01a58dba52bada4ba3",
+          "created_at": "2026-11-05T20:47:25.998Z",
+          "operation_id": "list",
+          "payload_digest": "26d3584bd238a562937d139b4c63ec1a6fdfb4bfd4bbe47fb4de54043b3e40a3"
+        },
+        {
+          "id": "h2",
+          "role": "baseline",
+          "tool": "read_evidence",
+          "payload": {
+            "records": [
+              {
+                "body": "Sample Service check staging_probe on revision rf64ef2a. Recorded state: pass.",
+                "state": "pass",
+                "case_id": "c061cbcf2cc",
+                "check_key": "staging_probe",
+                "body_digest": "ea58e44465c260c4a53fdb89d2de2a093fc167160274f805b764941abf88ae0a",
+                "evidence_id": "eff19ad1",
+                "record_kind": "check",
+                "snapshot_id": "s785fa6ab",
+                "evidence_group": "staging",
+                "observed_order": 4,
+                "subject_revision": "rf64ef2a"
+              },
+              {
+                "body": "Sample Service check artifact_match on revision r6991686. Recorded state: pass.",
+                "state": "pass",
+                "case_id": "c061cbcf2cc",
+                "check_key": "artifact_match",
+                "body_digest": "2c3425b770bbbc7422d818d627257109d19dba0a5a3c4c05b35341ea2a239098",
+                "evidence_id": "ed58b3ae",
+                "record_kind": "check",
+                "snapshot_id": "s785fa6ab",
+                "evidence_group": "staging",
+                "observed_order": 3,
+                "subject_revision": "r6991686"
+              },
+              {
+                "body": "Sample Service check unit_tests on revision r6991686. Recorded state: pass.",
+                "state": "pass",
+                "case_id": "c061cbcf2cc",
+                "check_key": "unit_tests",
+                "body_digest": "1b17920e638d10e450bfd1f78bdd5254a90caa4196be0dc028b9b35ff4f2f2d3",
+                "evidence_id": "e8572b65",
+                "record_kind": "check",
+                "snapshot_id": "s785fa6ab",
+                "evidence_group": "tests",
+                "observed_order": 1,
+                "subject_revision": "r6991686"
+              },
+              {
+                "body": "Sample Service check api_tests on revision r6991686. Recorded state: pass.",
+                "state": "pass",
+                "case_id": "c061cbcf2cc",
+                "check_key": "api_tests",
+                "body_digest": "77569c6a53ca594e38622387ca960e2af3166dccf717a466e058ec3a30a2d26f",
+                "evidence_id": "e6a054d7",
+                "record_kind": "check",
+                "snapshot_id": "s785fa6ab",
+                "evidence_group": "tests",
+                "observed_order": 2,
+                "subject_revision": "r6991686"
+              }
+            ]
+          },
+          "sequence": 5,
+          "trial_id": "demo_346f0dc4d3804c01a58dba52bada4ba3",
+          "created_at": "2026-11-05T20:47:25.998Z",
+          "operation_id": "read_0",
+          "payload_digest": "66275d196576d2d0b7d0aa32f1d4ab144ea7b4b34e34f63e2be38f0cf78537bc"
+        },
+        {
+          "id": "h3",
+          "role": "baseline",
+          "tool": "submit_assessment",
+          "payload": {
+            "checks": {
+              "api_tests": "current_pass",
+              "unit_tests": "current_pass",
+              "staging_probe": "missing_current",
+              "artifact_match": "current_pass"
+            },
+            "case_id": "c061cbcf2cc",
+            "reasons": [
+              {
+                "code": "missing_current",
+                "check_key": "staging_probe"
+              }
+            ],
+            "verdict": "unknown",
+            "snapshot_id": "s785fa6ab",
+            "evidence_refs": [
+              {
+                "field": "state",
+                "receipt_id": "h2",
+                "evidence_id": "e8572b65"
+              },
+              {
+                "field": "state",
+                "receipt_id": "h2",
+                "evidence_id": "e6a054d7"
+              },
+              {
+                "field": "state",
+                "receipt_id": "h2",
+                "evidence_id": "ed58b3ae"
+              },
+              {
+                "field": "catalog_complete",
+                "receipt_id": "h1",
+                "evidence_id": "catalog_staging"
+              }
+            ]
+          },
+          "sequence": 6,
+          "trial_id": "demo_346f0dc4d3804c01a58dba52bada4ba3",
+          "created_at": "2026-11-05T20:47:25.998Z",
+          "operation_id": "submit",
+          "payload_digest": "b424d30829ae094df09193a65a44573a6b1b41d2f75d7cc69bf726cabe97142c"
+        }
+      ],
+      "assessment": {
+        "checks": {
+          "api_tests": "current_pass",
+          "unit_tests": "current_pass",
+          "staging_probe": "missing_current",
+          "artifact_match": "current_pass"
+        },
+        "case_id": "c061cbcf2cc",
+        "reasons": [
+          {
+            "code": "missing_current",
+            "check_key": "staging_probe"
+          }
+        ],
+        "verdict": "unknown",
+        "snapshot_id": "s785fa6ab",
+        "evidence_refs": [
+          {
+            "field": "state",
+            "receipt_id": "h2",
+            "evidence_id": "e8572b65"
+          },
+          {
+            "field": "state",
+            "receipt_id": "h2",
+            "evidence_id": "e6a054d7"
+          },
+          {
+            "field": "state",
+            "receipt_id": "h2",
+            "evidence_id": "ed58b3ae"
+          },
+          {
+            "field": "catalog_complete",
+            "receipt_id": "h1",
+            "evidence_id": "catalog_staging"
+          }
+        ]
+      },
+      "generation": 1,
+      "partitions": {
+        "baseline": {
+          "input_bytes": 98304,
+          "tool_requests": 24,
+          "trial_seconds": 360,
+          "model_requests": 12,
+          "request_seconds": 120,
+          "output_reserved_tokens": 6144,
+          "output_per_request_tokens": 512
+        }
+      },
+      "lease_until": 1793911690998.319,
+      "plan_digest": "ac29898883518a83c3de2f44f47026ee686336d115f0afe4c66cae35806e72b7",
+      "snapshot_id": "s785fa6ab",
+      "terminal_at": 1793911645998.319,
+      "activated_at": 1793911645974.091,
+      "model_digest": null,
+      "reservations": [],
+      "config_digest": "ac29898883518a83c3de2f44f47026ee686336d115f0afe4c66cae35806e72b7",
+      "packet_digest": "2b7934d666a40a521d316ab48a74cfbd64b31bcdc7b9a0bc6a95bdd1f29c9096",
+      "tool_requests": [
+        {
+          "name": "list_evidence",
+          "role": "baseline",
+          "error": null,
+          "status": "executed",
+          "deliveries": 1,
+          "operation_id": "list",
+          "request_digest": "4c728469991790b436fcb9f726f7cb86d9380270adb760484c095174dde6b136"
+        },
+        {
+          "name": "read_evidence",
+          "role": "baseline",
+          "error": null,
+          "status": "executed",
+          "deliveries": 1,
+          "operation_id": "read_0",
+          "request_digest": "e363b700c73c1b45e8873508061abc32fcea4a35c87f438dfe2ae3b3460ec0a7"
+        },
+        {
+          "name": "submit_assessment",
+          "role": "baseline",
+          "error": null,
+          "status": "executed",
+          "deliveries": 1,
+          "operation_id": "submit",
+          "request_digest": "f8dba3347961704a590a4e04f0df4ce8a0cf28a22a381b3e5abd4ac8a85441af"
+        }
+      ],
+      "assessment_receipt": "h3"
+    },
+    "counts": {
+      "child_packets": 0,
+      "join_receipts": 0,
+      "assessments": 1,
+      "budget_reservations": 0,
+      "provider_attempts": 0,
+      "tool_receipts": 3
+    },
+    "event_sequence": 7,
+    "read_at": "2026-11-05T20:47:26.135Z",
+    "connection_id": 121
+  }
+}
