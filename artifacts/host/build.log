@@ -1,0 +1,68 @@
+Vercel CLI 65.11.0
+WARNING! Build not running on Vercel. System environment variables will not be available.
+Warning: Detected "engines": { "node": "24.19.0" } in your `package.json` with major.minor.patch, but only major Node.js Version can be selected. Learn More: https://vercel.link/node-version
+Running "install" command: `npm ci`...
+
+added 57 packages, and audited 58 packages in 4s
+
+12 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[90m[1m[36m✓[39m[22m Build complete — Using [1mserver.ts[22m as the root entrypoint.[39m
+Using TypeScript 6.0.3 (local user-provided)
+
+TypeScript type check failed:
+
+server.ts(1,23): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/api/app.ts(1,38): error TS2591: Cannot find name 'node:crypto'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/api/app.ts(2,24): error TS2591: Cannot find name 'node:fs/promises'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/api/app.ts(3,20): error TS2591: Cannot find name 'node:path'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/api/app.ts(4,48): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/api/app.ts(5,29): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/api/app.ts(6,23): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/api/app.ts(7,31): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/api/app.ts(8,38): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/api/app.ts(10,55): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/api/app.ts(10,79): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/api/app.ts(25,87): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/api/app.ts(25,114): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/api/app.ts(34,174): error TS2591: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/api/server.ts(1,28): error TS2591: Cannot find name 'node:http'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/api/server.ts(2,21): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/api/server.ts(4,5): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/api/server.ts(4,45): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/api/server.ts(4,69): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/api/server.ts(5,1): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/contracts/core.ts(1,26): error TS2591: Cannot find name 'node:crypto'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/methods/baseline.ts(1,46): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/methods/run-baseline.ts(1,22): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/methods/run-baseline.ts(2,29): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/methods/run-baseline.ts(3,27): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/runtime/state.ts(1,39): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/runtime/state.ts(8,27): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/runtime/state.ts(8,70): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/runtime/store.ts(1,24): error TS2591: Cannot find name 'node:fs/promises'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/runtime/store.ts(2,30): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/runtime/store.ts(9,24): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/runtime/store.ts(9,56): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/runtime/tools.ts(1,96): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/runtime/tools.ts(3,34): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+src/runtime/tools.ts(21,142): error TS2550: Property 'hasOwn' does not exist on type 'ObjectConstructor'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2022' or later.
+
+Error: An unexpected error occurred!
+Error: TypeScript type check failed
+    at fail (file:///home/runner/.cache/com.vercel.cli/builders-vlt/e2c3af42e4020bc39fc982347dbbd8ff0191cfe93d9fd4e135151902c2cc4791/node_modules/.vlt/%7Enpm%7E@vercel+backends@24.0.1/node_modules/@vercel/backends/dist/index.mjs:970:9)
+    at doTypeCheck (file:///home/runner/.cache/com.vercel.cli/builders-vlt/e2c3af42e4020bc39fc982347dbbd8ff0191cfe93d9fd4e135151902c2cc4791/node_modules/.vlt/%7Enpm%7E@vercel+backends@24.0.1/node_modules/@vercel/backends/dist/index.mjs:1022:2)
+    at file:///home/runner/.cache/com.vercel.cli/builders-vlt/e2c3af42e4020bc39fc982347dbbd8ff0191cfe93d9fd4e135151902c2cc4791/node_modules/.vlt/%7Enpm%7E@vercel+backends@24.0.1/node_modules/@vercel/backends/dist/index.mjs:953:10
+    at _Span.trace (/snapshot/vercel-cli-binary-staging/node_modules/@vercel/build-utils/dist/index.js:109:4642)
+    at typescript (file:///home/runner/.cache/com.vercel.cli/builders-vlt/e2c3af42e4020bc39fc982347dbbd8ff0191cfe93d9fd4e135151902c2cc4791/node_modules/.vlt/%7Enpm%7E@vercel+backends@24.0.1/node_modules/@vercel/backends/dist/index.mjs:941:53)
+    at file:///home/runner/.cache/com.vercel.cli/builders-vlt/e2c3af42e4020bc39fc982347dbbd8ff0191cfe93d9fd4e135151902c2cc4791/node_modules/.vlt/%7Enpm%7E@vercel+backends@24.0.1/node_modules/@vercel/backends/dist/index.mjs:2363:30
+    at async _Span.trace (/snapshot/vercel-cli-binary-staging/node_modules/@vercel/build-utils/dist/index.js:109:4636)
+    at async InprocessBuildRunner2.build (file:///snapshot/vercel-cli-binary-staging/dist/commands/build/index.js:7:5957)
+    at async _Span.trace (/snapshot/vercel-cli-binary-staging/node_modules/@vercel/build-utils/dist/index.js:109:4636)
+    at async executeBuilder2 (file:///snapshot/vercel-cli-binary-staging/dist/commands/build/index.js:7:9060)
+(node:2460) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 900)
+(Use `vercel --trace-warnings ...` to show where the warning was created)
+Error: [BUILD_FAILED] TypeScript type check failed
+Fix: Review the build output above and fix the reported error before running `vercel build` again.
