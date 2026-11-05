@@ -1,0 +1,1 @@
+Follow AGENTS.md, docs/SPEC.md and OPERATIONS.md. Preserve mode separation, private truth, immutable evidence and all recorded approval blocks. Operator skills are outside runtime prompts. Do not claim release completion without RESULTS.md evidence.
