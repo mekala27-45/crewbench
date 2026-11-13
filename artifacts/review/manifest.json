@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "review_verification",
-  "source_commit": "89495e8c99b7f5fb928da61a95e2fc64a8df9286",
+  "source_commit": "f626658c56520ca21a602fc16fb866b5c5d17059",
   "inputs": {
     "schema_version": 1,
     "development_run": "42115848494",
@@ -17,24 +17,24 @@
     "contracts_run": "42117978313",
     "contracts_source": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
     "contracts_results_commit": "a67e32fb03a40d3c598b1b64512257b213589a9f",
-    "revision": 3,
-    "purpose": "Independently verify selected frozen development, fresh baseline and recovery, browser and contracts. Report registered evaluation metadata without inspecting held-out outcomes."
+    "revision": 4,
+    "purpose": "Verify the completed shared execution with the unchanged pre-inference analysis freeze and independent public-record grader; regenerate the review checklist without claiming private truth or a completed release."
   },
   "files": [
     {
       "path": "RESULTS.md",
-      "bytes": 7694,
-      "sha256": "8b1bd1c29f8f3479cc93deec50b78fe59282f460f6d0f8f2dd93fba0f92571ff"
+      "bytes": 8137,
+      "sha256": "a9dc5a2f294154dbdf090689e91647255e6e032f6da6e3035573234d21164cf6"
     },
     {
       "path": "site/public/data/report.json",
-      "bytes": 5821,
-      "sha256": "cd442857debf7ec94cc480e1c07293abe63013dd5d08d0ce71b69ddcf555eb29"
+      "bytes": 15286,
+      "sha256": "67f87c4c7aeb5919ebb7d0c22b990907f5ea184567b3bd325afc4cd0b40c388e"
     },
     {
       "path": "site/public/data/cases.json",
-      "bytes": 312767,
-      "sha256": "9b565007effb64dfe5e5d434eafd6891f675258cc0e10ff53f8e434d5277b50b"
+      "bytes": 2053765,
+      "sha256": "442d805b6f7f3d86ab133237e23f33fba353c26ff399ad5a853608700f6ada55"
     },
     {
       "path": "site/public/data/recovery.json",
@@ -58,18 +58,43 @@
     },
     {
       "path": "artifacts/review/checklist.json",
-      "bytes": 7090,
-      "sha256": "a51189ec0bb22a389577e6d37bb244ba01fe3150064bc180be40ca2bb07b72b0"
+      "bytes": 7106,
+      "sha256": "ad9d75f6e84a437af8bcd29778aabfa14962b04af80d9fa783239e0d1922897f"
     },
     {
       "path": "artifacts/shared/verification.json",
       "bytes": 819,
-      "sha256": "30d576bd00cafb3ae10f3eb156dbfb296f64bc30fd935b543a028dd91676a747"
+      "sha256": "fc583f42a5083a297d011b31093aa01f4b475cbd3d97d144c023199fc640c3f4"
     },
     {
       "path": "artifacts/review/evaluation-status.json",
-      "bytes": 217,
-      "sha256": "11bbc7cbed41a9129babb026157d175f2459fcb468d56b5dac521a477cd8abda"
+      "bytes": 220,
+      "sha256": "f11a6d1a891eebb1534f77f7854245b82986da199be0184cbc18157230af3d92"
+    },
+    {
+      "path": "artifacts/actual/results.json",
+      "bytes": 3028239,
+      "sha256": "a16511ad85557c0b910e3ec6f13c4adee574fa97f0f560957f0eb2282d85206d"
+    },
+    {
+      "path": "artifacts/actual/grades.json",
+      "bytes": 13433,
+      "sha256": "4825c0f52ab801affb70fbd0707f7ce91eeb8df2ea28b840119d74763293be96"
+    },
+    {
+      "path": "artifacts/actual/summary.json",
+      "bytes": 11278,
+      "sha256": "063ca047c231f1759ab07e31082ac47a7dae0c89cf4770586bd05a11222375de"
+    },
+    {
+      "path": "artifacts/actual/independent-accounting.json",
+      "bytes": 8422,
+      "sha256": "e7e1daa94c61ba45e15a84bca2f1b61bd63ca45a93c4a26b336b9567c0da5d9c"
+    },
+    {
+      "path": "artifacts/actual/import-manifest.json",
+      "bytes": 1942,
+      "sha256": "5e73764259989c4f180bedef5d4a379737d91a62254727fc7fd73380cf4769dd"
     }
   ]
 }
