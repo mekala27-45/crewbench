@@ -1,0 +1,52 @@
+
+> crewbench@0.1.0 test
+> node --test tests/*.test.ts
+
+✔ accounting clean pass, corrupted transport and empty refusal (11.746783ms)
+✔ usage, role and response mutations cannot manufacture comparable results (3.443234ms)
+✔ a dispatch intent without outcome is uncertain, never a confirmed execution (0.817154ms)
+✔ an unoffered tool is refused even with updated request bytes and digest (0.869289ms)
+✔ a handler ledger cannot invent a model tool call (1.810126ms)
+✔ claim gate accepts provenance, refuses mixed modes and empty evidence (1.836941ms)
+✔ missing measurement remains missing (0.32856ms)
+✔ bundle gate accepts startup failure and refuses traversal and nothing (1.226091ms)
+✔ corpus has isolated lineages and exact deterministic subset (1.868603ms)
+✔ runtime packets validate and carry no truth canary or family metadata (11.147372ms)
+✔ packet gate refuses wrong scope, empty and body mutation (0.826287ms)
+✔ failed development stays visible but cannot qualify missing model roles (15.108621ms)
+✔ retained readback must bind state, database counts, timestamp and model (10.898182ms)
+✔ missing or empty development evidence is refused (0.990016ms)
+✔ evidence import binds the exact source, plan, branch and paths (1.997954ms)
+✔ publication refuses credentials and preserves ordinary synthetic data (1.425106ms)
+✔ retention never evicts pinned reports or deletes automatically (14.055517ms)
+✔ freeze accepts exact input digests and refuses changed or absent evidence (3.373887ms)
+✔ freeze rejects traversal and unbound development evidence (0.786019ms)
+✔ report binds exact grades and renders deterministic provenance (5.25418ms)
+✔ duplicate grades cannot increase counts (0.37409ms)
+✔ absent evidence never creates claims or measurements (0.394152ms)
+✔ completed evidence does not require a favorable model result (2.423641ms)
+✔ absent held-out evidence remains pending (0.27676ms)
+✔ an incomplete execution cannot produce completed checklist lines (1.067384ms)
+✔ results must match the registered execution and analysis identities (0.440204ms)
+✔ omitted or duplicate case and accounting rows fail closed (0.296742ms)
+✔ every actual request and success must reconcile with the reported totals (1.453039ms)
+✔ public-record grades cannot claim private truth verification (0.252218ms)
+✔ exact role exposure excludes delegation and arbitrary access (5.353859ms)
+✔ catalog reveals no record state or body (1.67706ms)
+✔ reservation is atomic in every dimension and nonrefundable (1.158641ms)
+✔ one remaining request grants one concurrent reservation (2.909139ms)
+✔ child redelivery is stable and changed payload conflicts (4.670009ms)
+✔ lease turnover preserves accepted child and fences old generation (3.194312ms)
+✔ uncertain dispatch terminates on restart without new dispatch (1.065217ms)
+✔ cancellation quarantines late response and keeps reserved usage (0.987064ms)
+✔ expired trial cannot reset the deadline or reserve (1.00705ms)
+✔ structurally valid wrong verdict is preserved for independent grading (2.13002ms)
+✔ an oversized native tool batch is fully logged and cannot accept an earlier submission (4.456237ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 40
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 788.840004
