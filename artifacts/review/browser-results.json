@@ -1,0 +1,2665 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+      "/home/runner/work/crewbench/crewbench/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/home/runner/work/crewbench/crewbench/playwright.config.ts",
+    "rootDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+        "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+        "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+      },
+      "gitCommit": {
+        "shortHash": "7a8ad6d",
+        "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+        "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+        "body": "merge: qualify one verified configuration before freezing the paired experiment",
+        "author": {
+          "name": "Ajay Mekala",
+          "email": "mekalaajayk@gmail.com",
+          "time": 1793916070000
+        },
+        "committer": {
+          "name": "Ajay Mekala",
+          "email": "mekalaajayk@gmail.com",
+          "time": 1793916070000
+        },
+        "branch": "codex/crewbench-completion"
+      },
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+          },
+          "gitCommit": {
+            "shortHash": "7a8ad6d",
+            "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+            "body": "merge: qualify one verified configuration before freezing the paired experiment",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "id": "360-light",
+        "name": "360-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+          },
+          "gitCommit": {
+            "shortHash": "7a8ad6d",
+            "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+            "body": "merge: qualify one verified configuration before freezing the paired experiment",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "id": "360-dark",
+        "name": "360-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+          },
+          "gitCommit": {
+            "shortHash": "7a8ad6d",
+            "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+            "body": "merge: qualify one verified configuration before freezing the paired experiment",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "id": "768-light",
+        "name": "768-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+          },
+          "gitCommit": {
+            "shortHash": "7a8ad6d",
+            "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+            "body": "merge: qualify one verified configuration before freezing the paired experiment",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "id": "768-dark",
+        "name": "768-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+          },
+          "gitCommit": {
+            "shortHash": "7a8ad6d",
+            "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+            "body": "merge: qualify one verified configuration before freezing the paired experiment",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "id": "1440-light",
+        "name": "1440-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+          },
+          "gitCommit": {
+            "shortHash": "7a8ad6d",
+            "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+            "body": "merge: qualify one verified configuration before freezing the paired experiment",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "id": "1440-dark",
+        "name": "1440-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+          },
+          "gitCommit": {
+            "shortHash": "7a8ad6d",
+            "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+            "body": "merge: qualify one verified configuration before freezing the paired experiment",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "name": "360-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 360,
+            "height": 1000
+          },
+          "colorScheme": "light"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "360-light"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+          },
+          "gitCommit": {
+            "shortHash": "7a8ad6d",
+            "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+            "body": "merge: qualify one verified configuration before freezing the paired experiment",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "name": "360-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 360,
+            "height": 1000
+          },
+          "colorScheme": "dark"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "360-dark"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+          },
+          "gitCommit": {
+            "shortHash": "7a8ad6d",
+            "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+            "body": "merge: qualify one verified configuration before freezing the paired experiment",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "name": "768-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 768,
+            "height": 1000
+          },
+          "colorScheme": "light"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "768-light"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+          },
+          "gitCommit": {
+            "shortHash": "7a8ad6d",
+            "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+            "body": "merge: qualify one verified configuration before freezing the paired experiment",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "name": "768-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 768,
+            "height": 1000
+          },
+          "colorScheme": "dark"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "768-dark"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+          },
+          "gitCommit": {
+            "shortHash": "7a8ad6d",
+            "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+            "body": "merge: qualify one verified configuration before freezing the paired experiment",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "name": "1440-light",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "colorScheme": "light"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "1440-light"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/crewbench/crewbench/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/mekala27-45/crewbench/commit/7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "commitHash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "buildHref": "https://github.com/mekala27-45/crewbench/actions/runs/42117828030"
+          },
+          "gitCommit": {
+            "shortHash": "7a8ad6d",
+            "hash": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+            "subject": "merge: qualify one verified configuration before freezing the paired experiment",
+            "body": "merge: qualify one verified configuration before freezing the paired experiment",
+            "author": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "committer": {
+              "name": "Ajay Mekala",
+              "email": "mekalaajayk@gmail.com",
+              "time": 1793916070000
+            },
+            "branch": "codex/crewbench-completion"
+          },
+          "actualWorkers": 2
+        },
+        "name": "1440-dark",
+        "testDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "snapshotDir": "/home/runner/work/crewbench/crewbench/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173/crewbench/",
+          "trace": "retain-on-failure",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "colorScheme": "dark"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "1440-dark"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "artifacts/browser/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 2,
+    "webServer": {
+      "command": "npx vite --host 0.0.0.0",
+      "url": "http://localhost:5173/crewbench/",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "workbench.spec.ts",
+      "file": "workbench.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1389,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:04.654Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-44a7feaf00fe7f862f69",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "theme persists and enlarged text remains navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 632,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:06.325Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-31f2e3f04b194d42997c",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "denied service 401 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 387,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:06.971Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-f1a4b26e7045e5d6ec71",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "denied service 403 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 402,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:07.380Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-94d1f50791a868c43550",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "all-failed model results keep the planned denominator and query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 349,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:07.817Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-8fd1d6fe4be81ae903b1",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 475,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:08.198Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-7e5d2054f66a8e002f22",
+          "file": "workbench.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 410,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:08.692Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-93d866814b79c11d8fd4",
+          "file": "workbench.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "evidence text meets contrast in the active theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 244,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:09.143Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-01df486f8a563fd794b6",
+          "file": "workbench.spec.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "case selection retains keyboard focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 380,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:09.409Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-fd33e9fe48df6cb6010d",
+          "file": "workbench.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "a lost advance response resumes the persisted trial without creating another",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-light",
+              "projectName": "360-light",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 665,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:09.807Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-becb36fb1f38df2533bc",
+          "file": "workbench.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1400,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:04.631Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-26738ceeb535fec15d1b",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "theme persists and enlarged text remains navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 528,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:06.313Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-a655a439dbab2e4e638c",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "denied service 401 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 368,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:06.859Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-d71a833ec6fbf8868c33",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "denied service 403 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 358,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:07.240Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-4370274f4289d56f466a",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "all-failed model results keep the planned denominator and query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 418,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:07.617Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-55efccaf5108e4b691aa",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 598,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:08.050Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-3ab87218d46ac89f050e",
+          "file": "workbench.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 364,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:08.663Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-a445536f9dc8c55c2bcc",
+          "file": "workbench.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "evidence text meets contrast in the active theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 265,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:09.041Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-57948ba136d5c00d94c7",
+          "file": "workbench.spec.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "case selection retains keyboard focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 428,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:09.322Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-53f37c66caeec548ee52",
+          "file": "workbench.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "a lost advance response resumes the persisted trial without creating another",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "360-dark",
+              "projectName": "360-dark",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 670,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:09.766Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-0c2ee3a2f91e2a7cc4ad",
+          "file": "workbench.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1658,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:10.960Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-df58062a1557d945b8f7",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "theme persists and enlarged text remains navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 617,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:12.757Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-a1d76571f1ab6a4fdedc",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "denied service 401 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 409,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:13.391Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-371b36d82e68374ab84b",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "denied service 403 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 385,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:13.822Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-5703c92148d3e6de2a91",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "all-failed model results keep the planned denominator and query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 387,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:14.227Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-d66f8ee6c003952aec9c",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 587,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:14.631Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-e17d6e7475806b4d7cfc",
+          "file": "workbench.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 421,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:15.231Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-0445731136ecabb62e32",
+          "file": "workbench.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "evidence text meets contrast in the active theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 318,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:15.668Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-868c9c1e8b36de0cbbe9",
+          "file": "workbench.spec.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "case selection retains keyboard focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 424,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:16.003Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-e3cf75d6897866857998",
+          "file": "workbench.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "a lost advance response resumes the persisted trial without creating another",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-light",
+              "projectName": "768-light",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 691,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:16.444Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-200c46d479e8d9b6da65",
+          "file": "workbench.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1591,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:10.988Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-f81ca1171679773df1b9",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "theme persists and enlarged text remains navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 618,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:12.705Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-d682b1a46094d9240dd0",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "denied service 401 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 409,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:13.353Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-51af9cd38a0bfd2b6d90",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "denied service 403 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 381,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:13.777Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-1a9ccad38061416048aa",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "all-failed model results keep the planned denominator and query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 437,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:14.175Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-1c6814a37bf114d180bc",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 550,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:14.629Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-7233fc2c2d0a6712fec7",
+          "file": "workbench.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 435,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:15.193Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-cfcfbfcffabe5c45e9ec",
+          "file": "workbench.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "evidence text meets contrast in the active theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 315,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:15.642Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-ce8ecae56c589ee642af",
+          "file": "workbench.spec.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "case selection retains keyboard focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 437,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:15.976Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-508cce1e3d90b343cd06",
+          "file": "workbench.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "a lost advance response resumes the persisted trial without creating another",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "768-dark",
+              "projectName": "768-dark",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 746,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:16.431Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-e2ca0c61f244c62dbf9e",
+          "file": "workbench.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1715,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:17.640Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-556d5d8e7433ac09a9b1",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "theme persists and enlarged text remains navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 663,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:19.477Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-25aec51a21a9a8894fff",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "denied service 401 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 398,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:20.160Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-aeff8de8e481c17071bd",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "denied service 403 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 420,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:20.575Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-0325f411b6361bb59c2a",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "all-failed model results keep the planned denominator and query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 409,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:21.015Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-02068f651f87413c37aa",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 545,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:21.447Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-8ee9d77815f2358e5855",
+          "file": "workbench.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 423,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:22.011Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-5b2e6228df25eaf0c154",
+          "file": "workbench.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "evidence text meets contrast in the active theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 286,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:22.456Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-cec8e580622a51b0d9d5",
+          "file": "workbench.spec.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "case selection retains keyboard focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 422,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:22.766Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-c680d48186e82c9b1202",
+          "file": "workbench.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "a lost advance response resumes the persisted trial without creating another",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-light",
+              "projectName": "1440-light",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1335,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:23.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-f4061da213bcc8c44e28",
+          "file": "workbench.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "all evidence views remain legible and keyboard reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1761,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:17.722Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-7b79e4fcc43d62e7d6b6",
+          "file": "workbench.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "theme persists and enlarged text remains navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 585,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:19.627Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-8cb1828d37ecf58c92f9",
+          "file": "workbench.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "denied service 401 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 426,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:20.230Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-f3771528971edca5f611",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "denied service 403 ends with explicit error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 422,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:20.678Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-87dcbae98da34b2db969",
+          "file": "workbench.spec.ts",
+          "line": 19,
+          "column": 29
+        },
+        {
+          "title": "all-failed model results keep the planned denominator and query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 437,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:21.127Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-3b2e03153755efee596f",
+          "file": "workbench.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "live baseline uses API and persists a visible result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 554,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:21.598Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-bfa210f47d08ff749e5f",
+          "file": "workbench.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "service failure remains explicit and preserves recorded evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 453,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:22.176Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-6aebc9709020e74a5233",
+          "file": "workbench.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "evidence text meets contrast in the active theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 277,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:22.682Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-09684665595f04891da1",
+          "file": "workbench.spec.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "case selection retains keyboard focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 394,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:22.989Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-0b269df62956dea3f85c",
+          "file": "workbench.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "a lost advance response resumes the persisted trial without creating another",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "1440-dark",
+              "projectName": "1440-dark",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 773,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T22:02:23.403Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "921e070f285a8b470d11-202c35b8ad1821440e61",
+          "file": "workbench.spec.ts",
+          "line": 47,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-05T22:02:03.169Z",
+    "duration": 21453.219,
+    "expected": 60,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

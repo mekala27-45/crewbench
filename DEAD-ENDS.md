@@ -18,4 +18,8 @@ The first contract pipeline retained a real failing Python test but returned suc
 
 Later local commands could not start because the Windows sandbox configuration contained a Linux /workspace URI. Cloud verification continues, but fresh private answer-key grading remains pending restoration of that local environment.
 
+During review-branch reconciliation, the stricter grader exposed incomplete hand-written fixtures. Their case and snapshot fields were corrected without weakening the grader. A duplicated PostgreSQL image digest then stopped browser jobs before checkout; the image reference was normalized and the later browser suite passed. Those failed Actions runs remain retained.
+
+The first review import refused a recovery bundle that predated the new manifest format. The scripted input is now pinned to its exact Git commit and blob identity and independently regraded. Actual model imports still require the sealed native-request bundle.
+
 Portfolio experiment on authored synthetic release evidence. No production release is assessed or changed. Actual model runs, deterministic decisions and scripted runtime tests are reported separately. Results apply only to the declared cases, model, budgets and execution environment.

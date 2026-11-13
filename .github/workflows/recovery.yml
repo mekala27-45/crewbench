@@ -1,0 +1,52 @@
+name: Rederive baseline and recovery evidence
+on:
+  push:
+    branches: [main, codex/crewbench-completion]
+    paths: [evaluation/recovery-request.json]
+permissions:
+  contents: write
+jobs:
+  recovery:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    services:
+      postgres:
+        image: postgres:18@sha256:bd5dfa494a5a259704365813dbfa5fa6b3e69be7348d43b547f540c730478583
+        env:
+          POSTGRES_PASSWORD: crewbench_test
+          POSTGRES_DB: crewbench
+        ports: ['5432:5432']
+        options: --health-cmd pg_isready --health-interval 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:crewbench_test@127.0.0.1:5432/crewbench
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.19.0
+      - run: npm ci
+      - run: npm test
+      - run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - run: node scripts/migrate.ts
+      - run: node scripts/baseline.ts --postgres
+      - run: python3 evaluation/grade.py artifacts/baseline/results.json artifacts/baseline/provisional-grades.json --public-records
+      - run: node scripts/recovery.ts
+      - run: python3 evaluation/recovery.py artifacts/recovery/results.json artifacts/recovery/grades.json
+      - name: Preserve every observed outcome
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -o pipefail
+          mkdir -p artifacts/baseline artifacts/recovery
+          python3 -c 'import os,json,pathlib; pathlib.Path("artifacts/recovery/workflow.json").write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"mode":"scripted_runtime","private_truth_verified":False}))'
+          node scripts/seal-recovery.ts
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/recovery-${GITHUB_RUN_ID}
+          git add artifacts/baseline artifacts/recovery
+          git commit -m 'test: retain fresh baseline and scripted recovery rederive'
+          gh auth setup-git
+          git push origin HEAD

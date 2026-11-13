@@ -1,0 +1,21 @@
+name: Cancel the queued duplicate evaluation
+on:
+  push:
+    branches: [codex/crewbench-completion]
+    paths: [evaluation/cancel-duplicate-request.json]
+permissions:
+  contents: read
+  actions: write
+jobs:
+  cancel_duplicate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify ownership and cancel only the unstarted duplicate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node --input-type=module -e 'import fs from "node:fs";import{execFileSync}from"node:child_process";const q=JSON.parse(fs.readFileSync("evaluation/cancel-duplicate-request.json","utf8"));if(q.run_id!==42118122731||q.head_sha!=="4c1dfd5875b0db2348ac153315572d56bbfae267")throw Error("CANCEL_SCOPE");const endpoint="repos/mekala27-45/crewbench/actions/runs/"+q.run_id;const r=JSON.parse(execFileSync("gh",["api",endpoint],{encoding:"utf8"}));if(r.head_sha!==q.head_sha||r.head_branch!=="codex/crewbench-completion"||!["pending","queued","requested","waiting"].includes(r.status))throw Error("NOT_THE_QUEUED_DUPLICATE");execFileSync("gh",["api","--method","POST",endpoint+"/cancel"],{stdio:"inherit"});console.log(JSON.stringify({requested:true,run_id:q.run_id,reason:q.reason}));'

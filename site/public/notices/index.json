@@ -1,0 +1,68 @@
+[
+  {
+    "name": "eve",
+    "version": "1.0.0-rc.5",
+    "license": "Apache-2.0",
+    "path": "notices/eve-LICENSE.txt"
+  },
+  {
+    "name": "ai",
+    "version": "7.0.163",
+    "license": "Apache-2.0",
+    "path": "notices/ai-LICENSE.txt"
+  },
+  {
+    "name": "@ai-sdk/openai-compatible",
+    "version": "3.0.85",
+    "license": "Apache-2.0",
+    "path": "notices/@ai-sdk-openai-compatible-LICENSE.txt"
+  },
+  {
+    "name": "pg",
+    "version": "8.23.1",
+    "license": "MIT",
+    "path": "notices/pg-LICENSE.txt"
+  },
+  {
+    "name": "zod",
+    "version": "4.6.7",
+    "license": "MIT",
+    "path": "notices/zod-LICENSE.txt"
+  },
+  {
+    "name": "vite",
+    "version": "8.3.6",
+    "license": "MIT",
+    "path": "notices/vite-LICENSE.md.txt"
+  },
+  {
+    "name": "typescript",
+    "version": "7.0.2",
+    "license": "Apache-2.0",
+    "path": "notices/typescript-LICENSE.txt"
+  },
+  {
+    "name": "@playwright/test",
+    "version": "1.64.1",
+    "license": "Apache-2.0",
+    "path": "notices/@playwright-test-LICENSE.txt"
+  },
+  {
+    "name": "@fontsource/faustina",
+    "version": "5.3.0",
+    "license": "OFL-1.1",
+    "path": "notices/@fontsource-faustina-LICENSE.txt"
+  },
+  {
+    "name": "@fontsource/sarabun",
+    "version": "5.3.0",
+    "license": "OFL-1.1",
+    "path": "notices/@fontsource-sarabun-LICENSE.txt"
+  },
+  {
+    "name": "@fontsource/sono",
+    "version": "5.3.0",
+    "license": "OFL-1.1",
+    "path": "notices/@fontsource-sono-LICENSE.txt"
+  }
+]

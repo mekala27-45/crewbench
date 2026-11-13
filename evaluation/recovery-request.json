@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "mode": "scripted_runtime",
+  "purpose": "Fresh baseline and strict fault rederive for the selected pre-freeze configuration",
+  "source_parent": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c"
+}

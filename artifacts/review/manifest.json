@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "mode": "review_verification",
+  "source_commit": "ca0b9f3f12b482e91b12423b338a194296b86148",
+  "inputs": {
+    "schema_version": 1,
+    "development_run": "42115848494",
+    "development_source": "43789f67432efa7c0720270a6268eaaccd8c0873",
+    "results_commit": "77f943782bf8af098430d77160716104dcec4e73",
+    "recovery_run": "42117978561",
+    "recovery_source": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
+    "recovery_results_commit": "12720bdec552e1e2529583ee577e160f73386ed5",
+    "recovery_kind": "runtime_rederive",
+    "web_run": "42117828030",
+    "web_source": "7a8ad6d919ceb9dff2b9bd33ddb623d52939423c",
+    "web_results_commit": "dc6296b74b20da5159e8c302d76ad065792edbab",
+    "contracts_run": "42117978313",
+    "contracts_source": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
+    "contracts_results_commit": "a67e32fb03a40d3c598b1b64512257b213589a9f",
+    "revision": 5,
+    "purpose": "Reconcile the completed frozen evaluation and record independently verified inspection state; private truth and hosted release gates remain open."
+  },
+  "files": [
+    {
+      "path": "RESULTS.md",
+      "bytes": 8137,
+      "sha256": "275d28257b69a5e38c4a09ffffaa2279a17b00f652557ebc4c34ddc9218e50b5"
+    },
+    {
+      "path": "site/public/data/report.json",
+      "bytes": 15286,
+      "sha256": "2053af3939f19174a400ca0f5e6ec7c84914b60442b4d2082abd69f1a2372092"
+    },
+    {
+      "path": "site/public/data/cases.json",
+      "bytes": 2053765,
+      "sha256": "442d805b6f7f3d86ab133237e23f33fba353c26ff399ad5a853608700f6ada55"
+    },
+    {
+      "path": "site/public/data/recovery.json",
+      "bytes": 207554,
+      "sha256": "5d0313b08eee4694a487aa8eb3f46718c1b437cadb14ed1d4afcebbe11871989"
+    },
+    {
+      "path": "artifacts/development/accounting-audit.json",
+      "bytes": 4383,
+      "sha256": "0a5eefd49c3c1fb011611a260605065ec6896617bbc946b122d4e98a35d8a95b"
+    },
+    {
+      "path": "artifacts/baseline/postgres-grades.json",
+      "bytes": 27869,
+      "sha256": "2dd30dd013db0e9e59d20da1c5dde0175c8291f21d6445493d119d51165747eb"
+    },
+    {
+      "path": "artifacts/recovery/grades.json",
+      "bytes": 1881,
+      "sha256": "acd266a25d50cbc343c86f55f0bb91f6f04a5ca391042e557b59b2809774e029"
+    },
+    {
+      "path": "artifacts/review/checklist.json",
+      "bytes": 7106,
+      "sha256": "39d1793eb77aa4f46afded3ced43956b52ea58cbd43d31e5c38082eba9cbb25d"
+    },
+    {
+      "path": "artifacts/shared/verification.json",
+      "bytes": 819,
+      "sha256": "edf19c5279e4e11ab02e0a1eb0bd4816c79c53f2de036ce94e92f7c823d47caf"
+    },
+    {
+      "path": "artifacts/review/evaluation-status.json",
+      "bytes": 358,
+      "sha256": "88c0e81c9c6496571fba17ef7c945e271146583e9c0b19fb25a45086d873eef2"
+    },
+    {
+      "path": "artifacts/actual/results.json",
+      "bytes": 3028239,
+      "sha256": "a16511ad85557c0b910e3ec6f13c4adee574fa97f0f560957f0eb2282d85206d"
+    },
+    {
+      "path": "artifacts/actual/grades.json",
+      "bytes": 13433,
+      "sha256": "4825c0f52ab801affb70fbd0707f7ce91eeb8df2ea28b840119d74763293be96"
+    },
+    {
+      "path": "artifacts/actual/summary.json",
+      "bytes": 11278,
+      "sha256": "063ca047c231f1759ab07e31082ac47a7dae0c89cf4770586bd05a11222375de"
+    },
+    {
+      "path": "artifacts/actual/independent-accounting.json",
+      "bytes": 8422,
+      "sha256": "105d4bbf779475ea9c7eb09f150ad5657ebee065ae04aee683666816eb02eda4"
+    },
+    {
+      "path": "artifacts/actual/import-manifest.json",
+      "bytes": 1942,
+      "sha256": "5e73764259989c4f180bedef5d4a379737d91a62254727fc7fd73380cf4769dd"
+    }
+  ]
+}

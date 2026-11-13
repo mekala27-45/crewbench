@@ -8,7 +8,7 @@ export function renderClaim(c:Claim){
   if(!Number.isSafeInteger(c.denominator)||c.denominator<=0)throw new Refusal('CLAIM_DENOMINATOR');
   if(c.numerator===null){if(!c.missing_reason)throw new Refusal('MISSING_REASON');return `${c.method}: no measured result available. ${c.missing_reason}`;}
   if(!Number.isSafeInteger(c.numerator)||c.numerator<0||c.numerator>c.denominator||c.missing_reason!==null)throw new Refusal('CLAIM_COUNT');
-  return `${c.method}: ${c.numerator} of ${c.denominator} planned cases passed strict grading. Source ${c.evidence_digest}. Window ${c.window.start} to ${c.window.end}.`;
+  return `${c.method}: ${c.numerator} of ${c.denominator} ${c.mode==='scripted_runtime'?'planned fault overlays passed independent verification':'planned cases passed strict grading'}. Source ${c.evidence_digest}. Window ${c.window.start} to ${c.window.end}.`;
 }
 export function renderDocument(title:string,claims:Claim[]){return `# ${title}\n\n${STATEMENT}\n\n${claims.length?claims.map(renderClaim).join('\n\n'):'No measured result available.'}\n`;}
 export function validateBundle(b:any){

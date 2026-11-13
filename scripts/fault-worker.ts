@@ -1,6 +1,10 @@
 import {PgStore} from '../src/runtime/store.ts';
 import {scriptedChild} from './runtime-fixture.ts';
+import {acquire,reserve,dispatchIntent} from '../src/runtime/state.ts';
+import {digest} from '../src/contracts/core.ts';
 const db=await PgStore.open(),id=process.argv[2];
 const s=await db.read(id);const packet=(await db.pool.query(`SELECT packet FROM ${db.schema}.cases WHERE id=$1`,[s.case_id])).rows[0].packet;
-await scriptedChild(db,id,packet,'tests','fault-child');process.send?.({pid:process.pid,accepted:true,trial_id:id});
+if(process.argv[3]==='intent')await db.change(id,(s,n)=>{const lease=acquire(s,n,'fault-child');reserve(s,n,lease,'tests','uncertain',100,s.budget.output_per_request_tokens,digest('scripted'),[]);dispatchIntent(s,n,lease,'uncertain');});
+else await scriptedChild(db,id,packet,'tests','fault-child');
+process.send?.({pid:process.pid,accepted:true,trial_id:id,boundary:process.argv[3]==='intent'?'dispatch_intent':'child_committed'});
 setInterval(()=>{},1000);

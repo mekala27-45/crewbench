@@ -35,21 +35,29 @@ try{for(const [fixtureIndex,f] of fixtures.entries())for(const fault of plan.fau
    const repeated=await db.change(id,(s,n)=>executeTool(s,n,{owner:s.owner!,generation:s.generation},'tests','tests_submit','submit_findings',args,packet));
    proof.repeat_receipt=repeated.id;proof.injected=receipt.id===repeated.id;await scriptedChild(db,id,packet,'staging','fault-worker');await scriptedFinal(db,id,packet,'fault-worker');
   }else if(fault==='cancel_race'){
-   await scriptedChild(db,id,packet,'tests','fault-worker');await scriptedChild(db,id,packet,'staging','fault-worker');
-   if(fixtureIndex===0){await db.change(id,(s,n)=>stop(s,n,'canceled','SCRIPTED_CANCEL'));try{await scriptedFinal(db,id,packet,'fault-worker');}catch(e:any){proof.late_submit_refusal=e.code;}proof.order='cancel_then_submit';}
-   else{await scriptedFinal(db,id,packet,'fault-worker');await db.change(id,(s,n)=>stop(s,n,'canceled','SCRIPTED_CANCEL'));proof.order='submit_then_cancel';}
-   proof.injected=true;
+   proof.orderings=[];
+   for(const [j,order]of ['cancel_then_submit','submit_then_cancel'].entries()){
+    const subId=j===0?id:id+'_reverse';if(j)await db.create(newTrial({id:subId,packet,plan:structuredClone(plan),method:'split_review',mode:'scripted_runtime'}),packet,subId);
+    await scriptedChild(db,subId,packet,'tests','fault-worker');await scriptedChild(db,subId,packet,'staging','fault-worker');
+    let release!:()=>void;const barrier=new Promise<void>(r=>release=r);const sub:any={order,barrier_armed:true,trial_id:subId};
+    const waiting=(async()=>{await barrier;try{if(j===0)await scriptedFinal(db,subId,packet,'fault-worker');else await db.change(subId,(s,n)=>stop(s,n,'canceled','SCRIPTED_CANCEL'));}catch(e:any){sub.late_submit_refusal=e.code;}})();
+    if(j===0)await db.change(subId,(s,n)=>stop(s,n,'canceled','SCRIPTED_CANCEL'));else await scriptedFinal(db,subId,packet,'fault-worker');
+    sub.first_committed=true;release();await waiting;sub.action_end=new Date().toISOString();
+    const fresh=await promisify(execFile)(process.execPath,[fileURLToPath(new URL('./fresh-readback.ts',import.meta.url)),subId],{env:process.env,maxBuffer:4*1024*1024});sub.observation=JSON.parse(fresh.stdout);proof.orderings.push(sub);
+   }
+   proof.order='cancel_then_submit';proof.injected=proof.orderings.length===2;
   }else if(fault==='budget_race'){
    const lease=await db.change(id,(s,n)=>acquire(s,n,'fault-worker'));
    const contenders=await Promise.allSettled(['one','two'].map(op=>db.change(id,(s,n)=>reserve(s,n,lease,'tests',op,100,s.budget.output_per_request_tokens,digest(op),[]))));
    proof.outcomes=contenders.map(r=>r.status==='fulfilled'?'reserved':r.reason.code);proof.injected=proof.outcomes.filter((x:string)=>x==='reserved').length===1;
    await db.change(id,(s,n)=>stop(s,n,'failed','SCRIPTED_BUDGET_RACE_COMPLETE'));
   }else if(fault==='uncertain_dispatch'){
-   const lease=await db.change(id,(s,n)=>acquire(s,n,'fault-worker'));
-   await db.change(id,(s,n)=>{reserve(s,n,lease,'tests','uncertain',100,s.budget.output_per_request_tokens,digest('scripted'),[]);dispatchIntent(s,n,lease,'uncertain');});
+   const child=fork(new URL('./fault-worker.ts',import.meta.url),[id,'intent'],{stdio:['ignore','pipe','pipe','ipc']});
+   proof.barrier=await new Promise((resolve,reject)=>{child.once('message',resolve);child.once('error',reject);setTimeout(()=>reject(new Error('CHILD_START_TIMEOUT')),10000).unref();});
+   const ended=new Promise(resolve=>child.once('exit',(code,signal)=>resolve({code,signal})));child.kill('SIGKILL');proof.exit=await ended;proof.killed_pid=child.pid;
    proof.dispatch_intent_written=true;const before=await db.read(id);await new Promise(r=>setTimeout(r,Math.max(0,before.lease_until-Date.now()+100)));
    try{await db.change(id,(s,n)=>acquire(s,n,'recovered-worker'));}catch(e:any){proof.recovery_refusal=e.code;}
-   proof.injected=proof.recovery_refusal==='UNCERTAIN_DISPATCH';
+   proof.injected=proof.recovery_refusal==='UNCERTAIN_DISPATCH'&&proof.exit.signal==='SIGKILL';
   }
  }catch(error:any){proof.error=error.code||error.message;}
  const actionEnd=new Date().toISOString();const fresh=await promisify(execFile)(process.execPath,[fileURLToPath(new URL('./fresh-readback.ts',import.meta.url)),id],{env:process.env,maxBuffer:4*1024*1024});const observation=JSON.parse(fresh.stdout);

@@ -1,0 +1,36 @@
+name: Verify shared execution before results
+on:
+  push:
+    branches: [codex/crewbench-completion]
+    paths: [evaluation/shared-execution.json, scripts/verify-shared-execution.ts, .github/workflows/shared-execution.yml]
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.19.0
+      - name: Compare exact runtime inputs and dispatch control
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/verify-shared-execution.ts
+      - name: Preserve verification without reading held-out results
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p artifacts/shared
+          python3 -c 'import os,json,pathlib; pathlib.Path("artifacts/shared/workflow.json").write_text(json.dumps({"source_commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"held_out_results_read":False}))'
+          git config user.name 'Ajay Mekala'
+          git config user.email 'mekalaajayk@gmail.com'
+          git switch -c results/shared-${GITHUB_RUN_ID}
+          git add artifacts/shared
+          git commit -m 'test: verify shared execution equivalence before observing held-out outcomes'
+          gh auth setup-git
+          git push origin HEAD

@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "mode": "actual_model_development_audit",
+  "source_commit": "43789f67432efa7c0720270a6268eaaccd8c0873",
+  "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
+  "input_digest": "dd82515755ee28f51d16f59c333069cd49f49dc9e5b1c6665673432b19877384",
+  "verified": true,
+  "trial_count": 4,
+  "role_evidence": {
+    "solo": 10,
+    "tests": 6,
+    "staging": 8,
+    "synthesis": 4
+  },
+  "three_role_flow_observed": true,
+  "all_required_roles_observed": true,
+  "rows": [
+    {
+      "trial_id": "dev_42115848494_c110824f699_solo_agent",
+      "case_id": "c110824f699",
+      "method": "solo_agent",
+      "status": "submitted",
+      "failure": null,
+      "assessment_present": true,
+      "state_digest": "bcfb5c65c8fe61ae2afd64ec94237f81883bc366463950361f0bde3883f944ad",
+      "read_at": "2026-11-05T21:57:54.906Z",
+      "connection_id": 1145,
+      "accounting": {
+        "verified": true,
+        "reserved": 4,
+        "dispatch_intents": 4,
+        "confirmed_attempts": 4,
+        "observed_responses": 4,
+        "known_input_tokens": 7099,
+        "known_output_tokens": 279,
+        "usage_missing": 0
+      },
+      "roles": {
+        "solo": {
+          "responses": 4,
+          "tools": 3,
+          "receipts": 3,
+          "status": "submitted"
+        }
+      }
+    },
+    {
+      "trial_id": "dev_42115848494_c110824f699_split_review",
+      "case_id": "c110824f699",
+      "method": "split_review",
+      "status": "submitted",
+      "failure": null,
+      "assessment_present": true,
+      "state_digest": "3bba8965f2f1c6f03139516e8904f4325ff81ce0a5f7ab1b803b437c54cae302",
+      "read_at": "2026-11-05T21:57:54.924Z",
+      "connection_id": 1146,
+      "accounting": {
+        "verified": true,
+        "reserved": 9,
+        "dispatch_intents": 9,
+        "confirmed_attempts": 9,
+        "observed_responses": 9,
+        "known_input_tokens": 16738,
+        "known_output_tokens": 703,
+        "usage_missing": 0
+      },
+      "roles": {
+        "tests": {
+          "responses": 3,
+          "tools": 3,
+          "receipts": 3,
+          "status": "submitted"
+        },
+        "staging": {
+          "responses": 4,
+          "tools": 3,
+          "receipts": 3,
+          "status": "submitted"
+        },
+        "synthesis": {
+          "responses": 2,
+          "tools": 2,
+          "receipts": 2,
+          "status": "submitted"
+        }
+      }
+    },
+    {
+      "trial_id": "dev_42115848494_c2cdad678dd_split_review",
+      "case_id": "c2cdad678dd",
+      "method": "split_review",
+      "status": "failed",
+      "failure": "ROLE_DID_NOT_SUBMIT",
+      "assessment_present": false,
+      "state_digest": "5a1001b9b990f6cb9b779f36ab76d6c1b246640ed0d7e5f1098577938144e4ba",
+      "read_at": "2026-11-05T21:57:54.934Z",
+      "connection_id": 1147,
+      "accounting": {
+        "verified": true,
+        "reserved": 9,
+        "dispatch_intents": 9,
+        "confirmed_attempts": 9,
+        "observed_responses": 9,
+        "known_input_tokens": 16664,
+        "known_output_tokens": 491,
+        "usage_missing": 0
+      },
+      "roles": {
+        "tests": {
+          "responses": 3,
+          "tools": 3,
+          "receipts": 3,
+          "status": "submitted"
+        },
+        "staging": {
+          "responses": 4,
+          "tools": 3,
+          "receipts": 3,
+          "status": "submitted"
+        },
+        "synthesis": {
+          "responses": 2,
+          "tools": 1,
+          "receipts": 1,
+          "status": "failed"
+        }
+      }
+    },
+    {
+      "trial_id": "dev_42115848494_c2cdad678dd_solo_agent",
+      "case_id": "c2cdad678dd",
+      "method": "solo_agent",
+      "status": "submitted",
+      "failure": null,
+      "assessment_present": true,
+      "state_digest": "71775df997a42c2e08e798325207b333458cba602e442693a5d3a2314e2f0626",
+      "read_at": "2026-11-05T21:57:54.943Z",
+      "connection_id": 1148,
+      "accounting": {
+        "verified": true,
+        "reserved": 6,
+        "dispatch_intents": 6,
+        "confirmed_attempts": 6,
+        "observed_responses": 6,
+        "known_input_tokens": 12114,
+        "known_output_tokens": 432,
+        "usage_missing": 0
+      },
+      "roles": {
+        "solo": {
+          "responses": 6,
+          "tools": 4,
+          "receipts": 4,
+          "status": "submitted"
+        }
+      }
+    }
+  ]
+}
