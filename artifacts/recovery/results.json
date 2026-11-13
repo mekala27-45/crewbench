@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "source_commit": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
+  "source_commit": "0aced2f621850615c459e7984fd4653e391f9ee7",
   "mode": "scripted_runtime",
   "model_dispatches": 0,
   "trials": [
     {
       "schema_version": 1,
       "mode": "scripted_runtime",
-      "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
+      "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
       "fault": "lost_child_response",
       "fixture_id": "c070de96e3f",
       "window": {
-        "start": "2026-11-05T22:02:43.000Z",
-        "action_end": "2026-11-05T22:02:43.322Z",
-        "end": "2026-11-05T22:02:43.405Z"
+        "start": "2026-11-13T23:42:43.530Z",
+        "action_end": "2026-11-13T23:42:43.563Z",
+        "end": "2026-11-13T23:42:43.665Z"
       },
       "injection": {
         "fault": "lost_child_response",
@@ -24,11 +24,11 @@
         "repeat_receipt": "h3"
       },
       "observation": {
-        "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
-        "schema": "crewbench_test_1a3cacae9536",
-        "state_digest": "bf13d53b0ee6f47e46d610bb8c645dc2b4ab7a6d2cf588acb5c5155c2d0273c5",
+        "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
+        "schema": "crewbench_test_f79a71738f88",
+        "state_digest": "f6028c4e0f81a849dcc9a9b90ad605e1b5156e9bb5b67cdb6fc4ca47d7e4214c",
         "state": {
-          "id": "fault_c070de96e3f_lost_child_response_42117978561",
+          "id": "fault_c070de96e3f_lost_child_response_43529053019",
           "join": {
             "case_id": "c070de96e3f",
             "packets": {
@@ -78,7 +78,7 @@
                 ]
               }
             },
-            "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
+            "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
             "snapshot_id": "sfb1b6a83",
             "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
             "child_receipts": [
@@ -117,8 +117,8 @@
                   ]
                 },
                 "sequence": 3,
-                "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
-                "created_at": "2026-11-05T22:02:43.001Z",
+                "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
+                "created_at": "2026-11-13T23:42:43.531Z",
                 "operation_id": "tests_catalog",
                 "payload_digest": "5b67ca5ac94f4d47561962386197ba811e22c4479a7f63db8473ff1c90b09fdf"
               },
@@ -157,8 +157,8 @@
                   ]
                 },
                 "sequence": 4,
-                "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
-                "created_at": "2026-11-05T22:02:43.001Z",
+                "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
+                "created_at": "2026-11-13T23:42:43.531Z",
                 "operation_id": "tests_read_0",
                 "payload_digest": "dc859ea4de86b69c8748be257288de453c6aa11f4b535bc3c809ff9b3a484ca4"
               },
@@ -200,8 +200,8 @@
                   ]
                 },
                 "sequence": 9,
-                "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
-                "created_at": "2026-11-05T22:02:43.307Z",
+                "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
+                "created_at": "2026-11-13T23:42:43.543Z",
                 "operation_id": "staging_catalog",
                 "payload_digest": "c268504020e4773a6fba4e269de871ff82f2b5ae72ea24cc055577e0e2b0ebd2"
               },
@@ -253,8 +253,8 @@
                   ]
                 },
                 "sequence": 10,
-                "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
-                "created_at": "2026-11-05T22:02:43.307Z",
+                "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
+                "created_at": "2026-11-13T23:42:43.543Z",
                 "operation_id": "staging_read_0",
                 "payload_digest": "3ba79923c6489b3bff8a1a696682e01138e9deb3013f705d22de1d6eb1b32f7b"
               }
@@ -311,13 +311,13 @@
           },
           "events": [
             {
-              "at": "2026-11-05T22:02:43.001Z",
+              "at": "2026-11-13T23:42:43.531Z",
               "type": "activated",
               "details": {},
               "sequence": 1
             },
             {
-              "at": "2026-11-05T22:02:43.001Z",
+              "at": "2026-11-13T23:42:43.531Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -326,7 +326,7 @@
               "sequence": 2
             },
             {
-              "at": "2026-11-05T22:02:43.001Z",
+              "at": "2026-11-13T23:42:43.531Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -336,7 +336,7 @@
               "sequence": 3
             },
             {
-              "at": "2026-11-05T22:02:43.001Z",
+              "at": "2026-11-13T23:42:43.531Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -346,7 +346,7 @@
               "sequence": 4
             },
             {
-              "at": "2026-11-05T22:02:43.001Z",
+              "at": "2026-11-13T23:42:43.531Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -356,7 +356,7 @@
               "sequence": 5
             },
             {
-              "at": "2026-11-05T22:02:43.001Z",
+              "at": "2026-11-13T23:42:43.531Z",
               "type": "child_committed",
               "details": {
                 "role": "tests",
@@ -365,7 +365,7 @@
               "sequence": 6
             },
             {
-              "at": "2026-11-05T22:02:43.219Z",
+              "at": "2026-11-13T23:42:43.541Z",
               "type": "tool_redelivery",
               "details": {
                 "role": "tests",
@@ -374,7 +374,7 @@
               "sequence": 7
             },
             {
-              "at": "2026-11-05T22:02:43.307Z",
+              "at": "2026-11-13T23:42:43.543Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -383,7 +383,7 @@
               "sequence": 8
             },
             {
-              "at": "2026-11-05T22:02:43.307Z",
+              "at": "2026-11-13T23:42:43.543Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -393,7 +393,7 @@
               "sequence": 9
             },
             {
-              "at": "2026-11-05T22:02:43.307Z",
+              "at": "2026-11-13T23:42:43.543Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -403,7 +403,7 @@
               "sequence": 10
             },
             {
-              "at": "2026-11-05T22:02:43.307Z",
+              "at": "2026-11-13T23:42:43.543Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -413,7 +413,7 @@
               "sequence": 11
             },
             {
-              "at": "2026-11-05T22:02:43.307Z",
+              "at": "2026-11-13T23:42:43.543Z",
               "type": "child_committed",
               "details": {
                 "role": "staging",
@@ -422,7 +422,7 @@
               "sequence": 12
             },
             {
-              "at": "2026-11-05T22:02:43.317Z",
+              "at": "2026-11-13T23:42:43.550Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -431,10 +431,10 @@
               "sequence": 13
             },
             {
-              "at": "2026-11-05T22:02:43.317Z",
+              "at": "2026-11-13T23:42:43.550Z",
               "type": "join_committed",
               "details": {
-                "digest": "4e9bb56ca59f2b4c4434d87280d88a17978e2086e0a5a8a5a48180b63e2b8fdf",
+                "digest": "032bdc2a273ce82fd720c5943ef92660baf8b43c62b4cc1ab64c6bb3fb486de4",
                 "children": [
                   "h3",
                   "h6"
@@ -443,7 +443,7 @@
               "sequence": 14
             },
             {
-              "at": "2026-11-05T22:02:43.317Z",
+              "at": "2026-11-13T23:42:43.550Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_assessment",
@@ -453,7 +453,7 @@
               "sequence": 15
             },
             {
-              "at": "2026-11-05T22:02:43.317Z",
+              "at": "2026-11-13T23:42:43.550Z",
               "type": "assessment_committed",
               "details": {
                 "receipt_id": "h7"
@@ -521,7 +521,7 @@
               "receipt_id": "h6"
             }
           },
-          "deadline": 1793916643001.174,
+          "deadline": 1794613843531.704,
           "receipts": [
             {
               "id": "h1",
@@ -554,8 +554,8 @@
                 ]
               },
               "sequence": 3,
-              "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:02:43.001Z",
+              "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:42:43.531Z",
               "operation_id": "tests_catalog",
               "payload_digest": "5b67ca5ac94f4d47561962386197ba811e22c4479a7f63db8473ff1c90b09fdf"
             },
@@ -594,8 +594,8 @@
                 ]
               },
               "sequence": 4,
-              "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:02:43.001Z",
+              "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:42:43.531Z",
               "operation_id": "tests_read_0",
               "payload_digest": "dc859ea4de86b69c8748be257288de453c6aa11f4b535bc3c809ff9b3a484ca4"
             },
@@ -624,8 +624,8 @@
                 ]
               },
               "sequence": 5,
-              "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:02:43.001Z",
+              "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:42:43.531Z",
               "operation_id": "tests_submit",
               "payload_digest": "b9629c60c97f13a5884e3bf1eb5b66c3840cbf0a5f6443132fdb4ce3e9274cdd"
             },
@@ -667,8 +667,8 @@
                 ]
               },
               "sequence": 9,
-              "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:02:43.307Z",
+              "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:42:43.543Z",
               "operation_id": "staging_catalog",
               "payload_digest": "c268504020e4773a6fba4e269de871ff82f2b5ae72ea24cc055577e0e2b0ebd2"
             },
@@ -720,8 +720,8 @@
                 ]
               },
               "sequence": 10,
-              "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:02:43.307Z",
+              "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:42:43.543Z",
               "operation_id": "staging_read_0",
               "payload_digest": "3ba79923c6489b3bff8a1a696682e01138e9deb3013f705d22de1d6eb1b32f7b"
             },
@@ -755,8 +755,8 @@
                 ]
               },
               "sequence": 11,
-              "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:02:43.307Z",
+              "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:42:43.543Z",
               "operation_id": "staging_submit",
               "payload_digest": "a4901cc1da5066f879c4a8306728bfffc3dfa4bb61bcc34dafea77b7750d70f5"
             },
@@ -804,8 +804,8 @@
                 ]
               },
               "sequence": 15,
-              "trial_id": "fault_c070de96e3f_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:02:43.317Z",
+              "trial_id": "fault_c070de96e3f_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:42:43.550Z",
               "operation_id": "final",
               "payload_digest": "bdacf2439c10885347fcb66174302f05a15026cff9c34a71cb47d5c392a0187c"
             }
@@ -870,11 +870,11 @@
               "output_reserved_tokens": 1024
             }
           },
-          "lease_until": 1793916208317.269,
+          "lease_until": 1794613408550.602,
           "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
           "snapshot_id": "sfb1b6a83",
-          "terminal_at": 1793916163317.269,
-          "activated_at": 1793916163001.174,
+          "terminal_at": 1794613363550.602,
+          "activated_at": 1794613363531.704,
           "model_digest": null,
           "reservations": [],
           "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
@@ -955,20 +955,20 @@
           "tool_receipts": 7
         },
         "event_sequence": 16,
-        "read_at": "2026-11-05T22:02:43.405Z",
-        "connection_id": 106
+        "read_at": "2026-11-13T23:42:43.665Z",
+        "connection_id": 114
       }
     },
     {
       "schema_version": 1,
       "mode": "scripted_runtime",
-      "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
+      "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
       "fault": "duplicate_delivery",
       "fixture_id": "c070de96e3f",
       "window": {
-        "start": "2026-11-05T22:02:43.424Z",
-        "action_end": "2026-11-05T22:02:43.442Z",
-        "end": "2026-11-05T22:02:43.522Z"
+        "start": "2026-11-13T23:42:43.689Z",
+        "action_end": "2026-11-13T23:42:43.711Z",
+        "end": "2026-11-13T23:42:43.818Z"
       },
       "injection": {
         "fault": "duplicate_delivery",
@@ -978,11 +978,11 @@
         "repeat_receipt": "h3"
       },
       "observation": {
-        "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
-        "schema": "crewbench_test_1a3cacae9536",
-        "state_digest": "196368f0ed4f7de220e9cd9bf0255d194f7d7827c25f1a9134f626d623ed2119",
+        "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
+        "schema": "crewbench_test_f79a71738f88",
+        "state_digest": "4491c6c4b291ca701d5ec3d8dec7dc7ba7cb28072d17a47ead1fa511c0cbe9d4",
         "state": {
-          "id": "fault_c070de96e3f_duplicate_delivery_42117978561",
+          "id": "fault_c070de96e3f_duplicate_delivery_43529053019",
           "join": {
             "case_id": "c070de96e3f",
             "packets": {
@@ -1032,7 +1032,7 @@
                 ]
               }
             },
-            "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
+            "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
             "snapshot_id": "sfb1b6a83",
             "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
             "child_receipts": [
@@ -1071,8 +1071,8 @@
                   ]
                 },
                 "sequence": 3,
-                "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
-                "created_at": "2026-11-05T22:02:43.424Z",
+                "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
+                "created_at": "2026-11-13T23:42:43.689Z",
                 "operation_id": "tests_catalog",
                 "payload_digest": "5b67ca5ac94f4d47561962386197ba811e22c4479a7f63db8473ff1c90b09fdf"
               },
@@ -1111,8 +1111,8 @@
                   ]
                 },
                 "sequence": 4,
-                "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
-                "created_at": "2026-11-05T22:02:43.424Z",
+                "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
+                "created_at": "2026-11-13T23:42:43.689Z",
                 "operation_id": "tests_read_0",
                 "payload_digest": "dc859ea4de86b69c8748be257288de453c6aa11f4b535bc3c809ff9b3a484ca4"
               },
@@ -1154,8 +1154,8 @@
                   ]
                 },
                 "sequence": 9,
-                "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
-                "created_at": "2026-11-05T22:02:43.434Z",
+                "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
+                "created_at": "2026-11-13T23:42:43.698Z",
                 "operation_id": "staging_catalog",
                 "payload_digest": "c268504020e4773a6fba4e269de871ff82f2b5ae72ea24cc055577e0e2b0ebd2"
               },
@@ -1207,8 +1207,8 @@
                   ]
                 },
                 "sequence": 10,
-                "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
-                "created_at": "2026-11-05T22:02:43.434Z",
+                "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
+                "created_at": "2026-11-13T23:42:43.698Z",
                 "operation_id": "staging_read_0",
                 "payload_digest": "3ba79923c6489b3bff8a1a696682e01138e9deb3013f705d22de1d6eb1b32f7b"
               }
@@ -1265,13 +1265,13 @@
           },
           "events": [
             {
-              "at": "2026-11-05T22:02:43.424Z",
+              "at": "2026-11-13T23:42:43.689Z",
               "type": "activated",
               "details": {},
               "sequence": 1
             },
             {
-              "at": "2026-11-05T22:02:43.424Z",
+              "at": "2026-11-13T23:42:43.689Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -1280,7 +1280,7 @@
               "sequence": 2
             },
             {
-              "at": "2026-11-05T22:02:43.424Z",
+              "at": "2026-11-13T23:42:43.689Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -1290,7 +1290,7 @@
               "sequence": 3
             },
             {
-              "at": "2026-11-05T22:02:43.424Z",
+              "at": "2026-11-13T23:42:43.689Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -1300,7 +1300,7 @@
               "sequence": 4
             },
             {
-              "at": "2026-11-05T22:02:43.424Z",
+              "at": "2026-11-13T23:42:43.689Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -1310,7 +1310,7 @@
               "sequence": 5
             },
             {
-              "at": "2026-11-05T22:02:43.424Z",
+              "at": "2026-11-13T23:42:43.689Z",
               "type": "child_committed",
               "details": {
                 "role": "tests",
@@ -1319,7 +1319,7 @@
               "sequence": 6
             },
             {
-              "at": "2026-11-05T22:02:43.431Z",
+              "at": "2026-11-13T23:42:43.695Z",
               "type": "tool_redelivery",
               "details": {
                 "role": "tests",
@@ -1328,7 +1328,7 @@
               "sequence": 7
             },
             {
-              "at": "2026-11-05T22:02:43.434Z",
+              "at": "2026-11-13T23:42:43.698Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -1337,7 +1337,7 @@
               "sequence": 8
             },
             {
-              "at": "2026-11-05T22:02:43.434Z",
+              "at": "2026-11-13T23:42:43.698Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -1347,7 +1347,7 @@
               "sequence": 9
             },
             {
-              "at": "2026-11-05T22:02:43.434Z",
+              "at": "2026-11-13T23:42:43.698Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -1357,7 +1357,7 @@
               "sequence": 10
             },
             {
-              "at": "2026-11-05T22:02:43.434Z",
+              "at": "2026-11-13T23:42:43.698Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -1367,7 +1367,7 @@
               "sequence": 11
             },
             {
-              "at": "2026-11-05T22:02:43.434Z",
+              "at": "2026-11-13T23:42:43.698Z",
               "type": "child_committed",
               "details": {
                 "role": "staging",
@@ -1376,7 +1376,7 @@
               "sequence": 12
             },
             {
-              "at": "2026-11-05T22:02:43.438Z",
+              "at": "2026-11-13T23:42:43.706Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -1385,10 +1385,10 @@
               "sequence": 13
             },
             {
-              "at": "2026-11-05T22:02:43.438Z",
+              "at": "2026-11-13T23:42:43.706Z",
               "type": "join_committed",
               "details": {
-                "digest": "46cd130c2f9893fdebdbc6a8b320f6272056a3a2f6ead278f9fd82934b9855ad",
+                "digest": "d68f0b0db9e1643306356650a7ec4a431805cef67fd3522e644c37c1420f2b44",
                 "children": [
                   "h3",
                   "h6"
@@ -1397,7 +1397,7 @@
               "sequence": 14
             },
             {
-              "at": "2026-11-05T22:02:43.438Z",
+              "at": "2026-11-13T23:42:43.706Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_assessment",
@@ -1407,7 +1407,7 @@
               "sequence": 15
             },
             {
-              "at": "2026-11-05T22:02:43.438Z",
+              "at": "2026-11-13T23:42:43.706Z",
               "type": "assessment_committed",
               "details": {
                 "receipt_id": "h7"
@@ -1475,7 +1475,7 @@
               "receipt_id": "h6"
             }
           },
-          "deadline": 1793916643424.658,
+          "deadline": 1794613843689.471,
           "receipts": [
             {
               "id": "h1",
@@ -1508,8 +1508,8 @@
                 ]
               },
               "sequence": 3,
-              "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:02:43.424Z",
+              "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:42:43.689Z",
               "operation_id": "tests_catalog",
               "payload_digest": "5b67ca5ac94f4d47561962386197ba811e22c4479a7f63db8473ff1c90b09fdf"
             },
@@ -1548,8 +1548,8 @@
                 ]
               },
               "sequence": 4,
-              "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:02:43.424Z",
+              "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:42:43.689Z",
               "operation_id": "tests_read_0",
               "payload_digest": "dc859ea4de86b69c8748be257288de453c6aa11f4b535bc3c809ff9b3a484ca4"
             },
@@ -1578,8 +1578,8 @@
                 ]
               },
               "sequence": 5,
-              "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:02:43.424Z",
+              "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:42:43.689Z",
               "operation_id": "tests_submit",
               "payload_digest": "b9629c60c97f13a5884e3bf1eb5b66c3840cbf0a5f6443132fdb4ce3e9274cdd"
             },
@@ -1621,8 +1621,8 @@
                 ]
               },
               "sequence": 9,
-              "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:02:43.434Z",
+              "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:42:43.698Z",
               "operation_id": "staging_catalog",
               "payload_digest": "c268504020e4773a6fba4e269de871ff82f2b5ae72ea24cc055577e0e2b0ebd2"
             },
@@ -1674,8 +1674,8 @@
                 ]
               },
               "sequence": 10,
-              "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:02:43.434Z",
+              "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:42:43.698Z",
               "operation_id": "staging_read_0",
               "payload_digest": "3ba79923c6489b3bff8a1a696682e01138e9deb3013f705d22de1d6eb1b32f7b"
             },
@@ -1709,8 +1709,8 @@
                 ]
               },
               "sequence": 11,
-              "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:02:43.434Z",
+              "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:42:43.698Z",
               "operation_id": "staging_submit",
               "payload_digest": "a4901cc1da5066f879c4a8306728bfffc3dfa4bb61bcc34dafea77b7750d70f5"
             },
@@ -1758,8 +1758,8 @@
                 ]
               },
               "sequence": 15,
-              "trial_id": "fault_c070de96e3f_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:02:43.438Z",
+              "trial_id": "fault_c070de96e3f_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:42:43.706Z",
               "operation_id": "final",
               "payload_digest": "bdacf2439c10885347fcb66174302f05a15026cff9c34a71cb47d5c392a0187c"
             }
@@ -1824,11 +1824,11 @@
               "output_reserved_tokens": 1024
             }
           },
-          "lease_until": 1793916208438.633,
+          "lease_until": 1794613408706.331,
           "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
           "snapshot_id": "sfb1b6a83",
-          "terminal_at": 1793916163438.633,
-          "activated_at": 1793916163424.658,
+          "terminal_at": 1794613363706.331,
+          "activated_at": 1794613363689.471,
           "model_digest": null,
           "reservations": [],
           "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
@@ -1909,20 +1909,20 @@
           "tool_receipts": 7
         },
         "event_sequence": 16,
-        "read_at": "2026-11-05T22:02:43.522Z",
-        "connection_id": 107
+        "read_at": "2026-11-13T23:42:43.818Z",
+        "connection_id": 115
       }
     },
     {
       "schema_version": 1,
       "mode": "scripted_runtime",
-      "trial_id": "fault_c070de96e3f_worker_death_42117978561",
+      "trial_id": "fault_c070de96e3f_worker_death_43529053019",
       "fault": "worker_death",
       "fixture_id": "c070de96e3f",
       "window": {
-        "start": "2026-11-05T22:02:43.538Z",
-        "action_end": "2026-11-05T22:03:28.744Z",
-        "end": "2026-11-05T22:03:28.820Z"
+        "start": "2026-11-13T23:42:43.836Z",
+        "action_end": "2026-11-13T23:43:29.060Z",
+        "end": "2026-11-13T23:43:29.167Z"
       },
       "injection": {
         "fault": "worker_death",
@@ -1932,16 +1932,16 @@
           "code": null,
           "signal": "SIGKILL"
         },
-        "killed_pid": 2804,
+        "killed_pid": 2978,
         "before_child_digest": "f806d089b0f79da765ece34c8a2dc239d604964e5cc03bb4f48e7ce0e93f1098",
-        "original_deadline": 1793916643625.636
+        "original_deadline": 1794613843938.594
       },
       "observation": {
-        "trial_id": "fault_c070de96e3f_worker_death_42117978561",
-        "schema": "crewbench_test_1a3cacae9536",
-        "state_digest": "ac056b802b07cd956435b4129d6d48215a94917126335b9c398a6714f6ac1b76",
+        "trial_id": "fault_c070de96e3f_worker_death_43529053019",
+        "schema": "crewbench_test_f79a71738f88",
+        "state_digest": "494e5840e78db1f62b0192affa56ea315b0f4893a830282812a72ea0e3d93891",
         "state": {
-          "id": "fault_c070de96e3f_worker_death_42117978561",
+          "id": "fault_c070de96e3f_worker_death_43529053019",
           "join": {
             "case_id": "c070de96e3f",
             "packets": {
@@ -1991,7 +1991,7 @@
                 ]
               }
             },
-            "trial_id": "fault_c070de96e3f_worker_death_42117978561",
+            "trial_id": "fault_c070de96e3f_worker_death_43529053019",
             "snapshot_id": "sfb1b6a83",
             "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
             "child_receipts": [
@@ -2030,8 +2030,8 @@
                   ]
                 },
                 "sequence": 3,
-                "trial_id": "fault_c070de96e3f_worker_death_42117978561",
-                "created_at": "2026-11-05T22:02:43.625Z",
+                "trial_id": "fault_c070de96e3f_worker_death_43529053019",
+                "created_at": "2026-11-13T23:42:43.938Z",
                 "operation_id": "tests_catalog",
                 "payload_digest": "5b67ca5ac94f4d47561962386197ba811e22c4479a7f63db8473ff1c90b09fdf"
               },
@@ -2070,8 +2070,8 @@
                   ]
                 },
                 "sequence": 4,
-                "trial_id": "fault_c070de96e3f_worker_death_42117978561",
-                "created_at": "2026-11-05T22:02:43.625Z",
+                "trial_id": "fault_c070de96e3f_worker_death_43529053019",
+                "created_at": "2026-11-13T23:42:43.938Z",
                 "operation_id": "tests_read_0",
                 "payload_digest": "dc859ea4de86b69c8748be257288de453c6aa11f4b535bc3c809ff9b3a484ca4"
               },
@@ -2113,8 +2113,8 @@
                   ]
                 },
                 "sequence": 8,
-                "trial_id": "fault_c070de96e3f_worker_death_42117978561",
-                "created_at": "2026-11-05T22:03:28.734Z",
+                "trial_id": "fault_c070de96e3f_worker_death_43529053019",
+                "created_at": "2026-11-13T23:43:29.047Z",
                 "operation_id": "staging_catalog",
                 "payload_digest": "c268504020e4773a6fba4e269de871ff82f2b5ae72ea24cc055577e0e2b0ebd2"
               },
@@ -2166,8 +2166,8 @@
                   ]
                 },
                 "sequence": 9,
-                "trial_id": "fault_c070de96e3f_worker_death_42117978561",
-                "created_at": "2026-11-05T22:03:28.734Z",
+                "trial_id": "fault_c070de96e3f_worker_death_43529053019",
+                "created_at": "2026-11-13T23:43:29.047Z",
                 "operation_id": "staging_read_0",
                 "payload_digest": "3ba79923c6489b3bff8a1a696682e01138e9deb3013f705d22de1d6eb1b32f7b"
               }
@@ -2224,13 +2224,13 @@
           },
           "events": [
             {
-              "at": "2026-11-05T22:02:43.625Z",
+              "at": "2026-11-13T23:42:43.938Z",
               "type": "activated",
               "details": {},
               "sequence": 1
             },
             {
-              "at": "2026-11-05T22:02:43.625Z",
+              "at": "2026-11-13T23:42:43.938Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-child",
@@ -2239,7 +2239,7 @@
               "sequence": 2
             },
             {
-              "at": "2026-11-05T22:02:43.625Z",
+              "at": "2026-11-13T23:42:43.938Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -2249,7 +2249,7 @@
               "sequence": 3
             },
             {
-              "at": "2026-11-05T22:02:43.625Z",
+              "at": "2026-11-13T23:42:43.938Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -2259,7 +2259,7 @@
               "sequence": 4
             },
             {
-              "at": "2026-11-05T22:02:43.625Z",
+              "at": "2026-11-13T23:42:43.938Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -2269,7 +2269,7 @@
               "sequence": 5
             },
             {
-              "at": "2026-11-05T22:02:43.625Z",
+              "at": "2026-11-13T23:42:43.938Z",
               "type": "child_committed",
               "details": {
                 "role": "tests",
@@ -2278,7 +2278,7 @@
               "sequence": 6
             },
             {
-              "at": "2026-11-05T22:03:28.734Z",
+              "at": "2026-11-13T23:43:29.047Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "recovered-worker",
@@ -2287,7 +2287,7 @@
               "sequence": 7
             },
             {
-              "at": "2026-11-05T22:03:28.734Z",
+              "at": "2026-11-13T23:43:29.047Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -2297,7 +2297,7 @@
               "sequence": 8
             },
             {
-              "at": "2026-11-05T22:03:28.734Z",
+              "at": "2026-11-13T23:43:29.047Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -2307,7 +2307,7 @@
               "sequence": 9
             },
             {
-              "at": "2026-11-05T22:03:28.734Z",
+              "at": "2026-11-13T23:43:29.047Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -2317,7 +2317,7 @@
               "sequence": 10
             },
             {
-              "at": "2026-11-05T22:03:28.734Z",
+              "at": "2026-11-13T23:43:29.047Z",
               "type": "child_committed",
               "details": {
                 "role": "staging",
@@ -2326,7 +2326,7 @@
               "sequence": 11
             },
             {
-              "at": "2026-11-05T22:03:28.740Z",
+              "at": "2026-11-13T23:43:29.055Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "recovered-worker",
@@ -2335,10 +2335,10 @@
               "sequence": 12
             },
             {
-              "at": "2026-11-05T22:03:28.740Z",
+              "at": "2026-11-13T23:43:29.055Z",
               "type": "join_committed",
               "details": {
-                "digest": "2de8f14a8ada181a3ebaa73c129d8f90e33aa141b35b6ace3afd030caceda7cf",
+                "digest": "a37df50aa7d311632fe05628ddacb4469d4ed022f6b1e1bc60c96a07a686e8fd",
                 "children": [
                   "h3",
                   "h6"
@@ -2347,7 +2347,7 @@
               "sequence": 13
             },
             {
-              "at": "2026-11-05T22:03:28.740Z",
+              "at": "2026-11-13T23:43:29.055Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_assessment",
@@ -2357,7 +2357,7 @@
               "sequence": 14
             },
             {
-              "at": "2026-11-05T22:03:28.740Z",
+              "at": "2026-11-13T23:43:29.055Z",
               "type": "assessment_committed",
               "details": {
                 "receipt_id": "h7"
@@ -2425,7 +2425,7 @@
               "receipt_id": "h6"
             }
           },
-          "deadline": 1793916643625.636,
+          "deadline": 1794613843938.594,
           "receipts": [
             {
               "id": "h1",
@@ -2458,8 +2458,8 @@
                 ]
               },
               "sequence": 3,
-              "trial_id": "fault_c070de96e3f_worker_death_42117978561",
-              "created_at": "2026-11-05T22:02:43.625Z",
+              "trial_id": "fault_c070de96e3f_worker_death_43529053019",
+              "created_at": "2026-11-13T23:42:43.938Z",
               "operation_id": "tests_catalog",
               "payload_digest": "5b67ca5ac94f4d47561962386197ba811e22c4479a7f63db8473ff1c90b09fdf"
             },
@@ -2498,8 +2498,8 @@
                 ]
               },
               "sequence": 4,
-              "trial_id": "fault_c070de96e3f_worker_death_42117978561",
-              "created_at": "2026-11-05T22:02:43.625Z",
+              "trial_id": "fault_c070de96e3f_worker_death_43529053019",
+              "created_at": "2026-11-13T23:42:43.938Z",
               "operation_id": "tests_read_0",
               "payload_digest": "dc859ea4de86b69c8748be257288de453c6aa11f4b535bc3c809ff9b3a484ca4"
             },
@@ -2528,8 +2528,8 @@
                 ]
               },
               "sequence": 5,
-              "trial_id": "fault_c070de96e3f_worker_death_42117978561",
-              "created_at": "2026-11-05T22:02:43.625Z",
+              "trial_id": "fault_c070de96e3f_worker_death_43529053019",
+              "created_at": "2026-11-13T23:42:43.938Z",
               "operation_id": "tests_submit",
               "payload_digest": "b9629c60c97f13a5884e3bf1eb5b66c3840cbf0a5f6443132fdb4ce3e9274cdd"
             },
@@ -2571,8 +2571,8 @@
                 ]
               },
               "sequence": 8,
-              "trial_id": "fault_c070de96e3f_worker_death_42117978561",
-              "created_at": "2026-11-05T22:03:28.734Z",
+              "trial_id": "fault_c070de96e3f_worker_death_43529053019",
+              "created_at": "2026-11-13T23:43:29.047Z",
               "operation_id": "staging_catalog",
               "payload_digest": "c268504020e4773a6fba4e269de871ff82f2b5ae72ea24cc055577e0e2b0ebd2"
             },
@@ -2624,8 +2624,8 @@
                 ]
               },
               "sequence": 9,
-              "trial_id": "fault_c070de96e3f_worker_death_42117978561",
-              "created_at": "2026-11-05T22:03:28.734Z",
+              "trial_id": "fault_c070de96e3f_worker_death_43529053019",
+              "created_at": "2026-11-13T23:43:29.047Z",
               "operation_id": "staging_read_0",
               "payload_digest": "3ba79923c6489b3bff8a1a696682e01138e9deb3013f705d22de1d6eb1b32f7b"
             },
@@ -2659,8 +2659,8 @@
                 ]
               },
               "sequence": 10,
-              "trial_id": "fault_c070de96e3f_worker_death_42117978561",
-              "created_at": "2026-11-05T22:03:28.734Z",
+              "trial_id": "fault_c070de96e3f_worker_death_43529053019",
+              "created_at": "2026-11-13T23:43:29.047Z",
               "operation_id": "staging_submit",
               "payload_digest": "a4901cc1da5066f879c4a8306728bfffc3dfa4bb61bcc34dafea77b7750d70f5"
             },
@@ -2708,8 +2708,8 @@
                 ]
               },
               "sequence": 14,
-              "trial_id": "fault_c070de96e3f_worker_death_42117978561",
-              "created_at": "2026-11-05T22:03:28.740Z",
+              "trial_id": "fault_c070de96e3f_worker_death_43529053019",
+              "created_at": "2026-11-13T23:43:29.055Z",
               "operation_id": "final",
               "payload_digest": "bdacf2439c10885347fcb66174302f05a15026cff9c34a71cb47d5c392a0187c"
             }
@@ -2774,11 +2774,11 @@
               "output_reserved_tokens": 1024
             }
           },
-          "lease_until": 1793916253740.291,
+          "lease_until": 1794613454055.37,
           "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
           "snapshot_id": "sfb1b6a83",
-          "terminal_at": 1793916208740.291,
-          "activated_at": 1793916163625.636,
+          "terminal_at": 1794613409055.37,
+          "activated_at": 1794613363938.594,
           "model_digest": null,
           "reservations": [],
           "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
@@ -2859,20 +2859,20 @@
           "tool_receipts": 7
         },
         "event_sequence": 15,
-        "read_at": "2026-11-05T22:03:28.820Z",
-        "connection_id": 184
+        "read_at": "2026-11-13T23:43:29.167Z",
+        "connection_id": 192
       }
     },
     {
       "schema_version": 1,
       "mode": "scripted_runtime",
-      "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
+      "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
       "fault": "cancel_race",
       "fixture_id": "c070de96e3f",
       "window": {
-        "start": "2026-11-05T22:03:28.836Z",
-        "action_end": "2026-11-05T22:03:29.056Z",
-        "end": "2026-11-05T22:03:29.137Z"
+        "start": "2026-11-13T23:43:29.186Z",
+        "action_end": "2026-11-13T23:43:29.453Z",
+        "end": "2026-11-13T23:43:29.553Z"
       },
       "injection": {
         "fault": "cancel_race",
@@ -2882,16 +2882,16 @@
           {
             "order": "cancel_then_submit",
             "barrier_armed": true,
-            "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
+            "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
             "first_committed": true,
             "late_submit_refusal": "TRIAL_TERMINAL",
-            "action_end": "2026-11-05T22:03:28.850Z",
+            "action_end": "2026-11-13T23:43:29.201Z",
             "observation": {
-              "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-              "schema": "crewbench_test_1a3cacae9536",
-              "state_digest": "06748142eff33999564e43d14d9028f7ed9c4eca82932a63bf3c2ab3084b31c7",
+              "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+              "schema": "crewbench_test_f79a71738f88",
+              "state_digest": "e7b4896b277f6256a052f3b7ff0bf47f947fb5df794b2dada6c2b55123146af7",
               "state": {
-                "id": "fault_c070de96e3f_cancel_race_42117978561",
+                "id": "fault_c070de96e3f_cancel_race_43529053019",
                 "join": null,
                 "mode": "scripted_runtime",
                 "owner": "fault-worker",
@@ -2944,13 +2944,13 @@
                 },
                 "events": [
                   {
-                    "at": "2026-11-05T22:03:28.837Z",
+                    "at": "2026-11-13T23:43:29.186Z",
                     "type": "activated",
                     "details": {},
                     "sequence": 1
                   },
                   {
-                    "at": "2026-11-05T22:03:28.837Z",
+                    "at": "2026-11-13T23:43:29.186Z",
                     "type": "lease_acquired",
                     "details": {
                       "owner": "fault-worker",
@@ -2959,7 +2959,7 @@
                     "sequence": 2
                   },
                   {
-                    "at": "2026-11-05T22:03:28.837Z",
+                    "at": "2026-11-13T23:43:29.186Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "list_evidence",
@@ -2969,7 +2969,7 @@
                     "sequence": 3
                   },
                   {
-                    "at": "2026-11-05T22:03:28.837Z",
+                    "at": "2026-11-13T23:43:29.186Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "read_evidence",
@@ -2979,7 +2979,7 @@
                     "sequence": 4
                   },
                   {
-                    "at": "2026-11-05T22:03:28.837Z",
+                    "at": "2026-11-13T23:43:29.186Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "submit_findings",
@@ -2989,7 +2989,7 @@
                     "sequence": 5
                   },
                   {
-                    "at": "2026-11-05T22:03:28.837Z",
+                    "at": "2026-11-13T23:43:29.186Z",
                     "type": "child_committed",
                     "details": {
                       "role": "tests",
@@ -2998,7 +2998,7 @@
                     "sequence": 6
                   },
                   {
-                    "at": "2026-11-05T22:03:28.841Z",
+                    "at": "2026-11-13T23:43:29.191Z",
                     "type": "lease_acquired",
                     "details": {
                       "owner": "fault-worker",
@@ -3007,7 +3007,7 @@
                     "sequence": 7
                   },
                   {
-                    "at": "2026-11-05T22:03:28.841Z",
+                    "at": "2026-11-13T23:43:29.191Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "list_evidence",
@@ -3017,7 +3017,7 @@
                     "sequence": 8
                   },
                   {
-                    "at": "2026-11-05T22:03:28.841Z",
+                    "at": "2026-11-13T23:43:29.191Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "read_evidence",
@@ -3027,7 +3027,7 @@
                     "sequence": 9
                   },
                   {
-                    "at": "2026-11-05T22:03:28.841Z",
+                    "at": "2026-11-13T23:43:29.191Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "submit_findings",
@@ -3037,7 +3037,7 @@
                     "sequence": 10
                   },
                   {
-                    "at": "2026-11-05T22:03:28.841Z",
+                    "at": "2026-11-13T23:43:29.191Z",
                     "type": "child_committed",
                     "details": {
                       "role": "staging",
@@ -3046,7 +3046,7 @@
                     "sequence": 11
                   },
                   {
-                    "at": "2026-11-05T22:03:28.846Z",
+                    "at": "2026-11-13T23:43:29.196Z",
                     "type": "terminal",
                     "details": {
                       "reason": "SCRIPTED_CANCEL",
@@ -3055,7 +3055,7 @@
                     "sequence": 12
                   },
                   {
-                    "at": "2026-11-05T22:03:28.848Z",
+                    "at": "2026-11-13T23:43:29.199Z",
                     "type": "refusal",
                     "details": {
                       "code": "TRIAL_TERMINAL"
@@ -3123,7 +3123,7 @@
                     "receipt_id": "h6"
                   }
                 },
-                "deadline": 1793916688837.334,
+                "deadline": 1794613889186.978,
                 "receipts": [
                   {
                     "id": "h1",
@@ -3156,8 +3156,8 @@
                       ]
                     },
                     "sequence": 3,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-                    "created_at": "2026-11-05T22:03:28.837Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+                    "created_at": "2026-11-13T23:43:29.186Z",
                     "operation_id": "tests_catalog",
                     "payload_digest": "5b67ca5ac94f4d47561962386197ba811e22c4479a7f63db8473ff1c90b09fdf"
                   },
@@ -3196,8 +3196,8 @@
                       ]
                     },
                     "sequence": 4,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-                    "created_at": "2026-11-05T22:03:28.837Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+                    "created_at": "2026-11-13T23:43:29.186Z",
                     "operation_id": "tests_read_0",
                     "payload_digest": "dc859ea4de86b69c8748be257288de453c6aa11f4b535bc3c809ff9b3a484ca4"
                   },
@@ -3226,8 +3226,8 @@
                       ]
                     },
                     "sequence": 5,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-                    "created_at": "2026-11-05T22:03:28.837Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+                    "created_at": "2026-11-13T23:43:29.186Z",
                     "operation_id": "tests_submit",
                     "payload_digest": "b9629c60c97f13a5884e3bf1eb5b66c3840cbf0a5f6443132fdb4ce3e9274cdd"
                   },
@@ -3269,8 +3269,8 @@
                       ]
                     },
                     "sequence": 8,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-                    "created_at": "2026-11-05T22:03:28.841Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+                    "created_at": "2026-11-13T23:43:29.191Z",
                     "operation_id": "staging_catalog",
                     "payload_digest": "c268504020e4773a6fba4e269de871ff82f2b5ae72ea24cc055577e0e2b0ebd2"
                   },
@@ -3322,8 +3322,8 @@
                       ]
                     },
                     "sequence": 9,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-                    "created_at": "2026-11-05T22:03:28.841Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+                    "created_at": "2026-11-13T23:43:29.191Z",
                     "operation_id": "staging_read_0",
                     "payload_digest": "3ba79923c6489b3bff8a1a696682e01138e9deb3013f705d22de1d6eb1b32f7b"
                   },
@@ -3357,8 +3357,8 @@
                       ]
                     },
                     "sequence": 10,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-                    "created_at": "2026-11-05T22:03:28.841Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+                    "created_at": "2026-11-13T23:43:29.191Z",
                     "operation_id": "staging_submit",
                     "payload_digest": "a4901cc1da5066f879c4a8306728bfffc3dfa4bb61bcc34dafea77b7750d70f5"
                   }
@@ -3388,8 +3388,8 @@
                 "lease_until": 0,
                 "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
                 "snapshot_id": "sfb1b6a83",
-                "terminal_at": 1793916208846.21,
-                "activated_at": 1793916208837.334,
+                "terminal_at": 1794613409196.76,
+                "activated_at": 1794613409186.978,
                 "model_digest": null,
                 "reservations": [],
                 "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
@@ -3461,22 +3461,22 @@
                 "tool_receipts": 6
               },
               "event_sequence": 13,
-              "read_at": "2026-11-05T22:03:28.927Z",
-              "connection_id": 185
+              "read_at": "2026-11-13T23:43:29.300Z",
+              "connection_id": 193
             }
           },
           {
             "order": "submit_then_cancel",
             "barrier_armed": true,
-            "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
+            "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
             "first_committed": true,
-            "action_end": "2026-11-05T22:03:28.960Z",
+            "action_end": "2026-11-13T23:43:29.339Z",
             "observation": {
-              "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
-              "schema": "crewbench_test_1a3cacae9536",
-              "state_digest": "00bf6a274c169d1862f20bad9a9d61c104731cf68a3be175e220a32fd6049c1e",
+              "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
+              "schema": "crewbench_test_f79a71738f88",
+              "state_digest": "42c5528a5904d68c4693b2609723ca823d10d37ec81835009a050dc587a0205d",
               "state": {
-                "id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
+                "id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
                 "join": {
                   "case_id": "c070de96e3f",
                   "packets": {
@@ -3526,7 +3526,7 @@
                       ]
                     }
                   },
-                  "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
+                  "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
                   "snapshot_id": "sfb1b6a83",
                   "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
                   "child_receipts": [
@@ -3565,8 +3565,8 @@
                         ]
                       },
                       "sequence": 3,
-                      "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
-                      "created_at": "2026-11-05T22:03:28.943Z",
+                      "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
+                      "created_at": "2026-11-13T23:43:29.319Z",
                       "operation_id": "tests_catalog",
                       "payload_digest": "5b67ca5ac94f4d47561962386197ba811e22c4479a7f63db8473ff1c90b09fdf"
                     },
@@ -3605,8 +3605,8 @@
                         ]
                       },
                       "sequence": 4,
-                      "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
-                      "created_at": "2026-11-05T22:03:28.943Z",
+                      "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
+                      "created_at": "2026-11-13T23:43:29.319Z",
                       "operation_id": "tests_read_0",
                       "payload_digest": "dc859ea4de86b69c8748be257288de453c6aa11f4b535bc3c809ff9b3a484ca4"
                     },
@@ -3648,8 +3648,8 @@
                         ]
                       },
                       "sequence": 8,
-                      "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
-                      "created_at": "2026-11-05T22:03:28.950Z",
+                      "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
+                      "created_at": "2026-11-13T23:43:29.328Z",
                       "operation_id": "staging_catalog",
                       "payload_digest": "c268504020e4773a6fba4e269de871ff82f2b5ae72ea24cc055577e0e2b0ebd2"
                     },
@@ -3701,8 +3701,8 @@
                         ]
                       },
                       "sequence": 9,
-                      "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
-                      "created_at": "2026-11-05T22:03:28.950Z",
+                      "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
+                      "created_at": "2026-11-13T23:43:29.328Z",
                       "operation_id": "staging_read_0",
                       "payload_digest": "3ba79923c6489b3bff8a1a696682e01138e9deb3013f705d22de1d6eb1b32f7b"
                     }
@@ -3759,13 +3759,13 @@
                 },
                 "events": [
                   {
-                    "at": "2026-11-05T22:03:28.943Z",
+                    "at": "2026-11-13T23:43:29.319Z",
                     "type": "activated",
                     "details": {},
                     "sequence": 1
                   },
                   {
-                    "at": "2026-11-05T22:03:28.943Z",
+                    "at": "2026-11-13T23:43:29.319Z",
                     "type": "lease_acquired",
                     "details": {
                       "owner": "fault-worker",
@@ -3774,7 +3774,7 @@
                     "sequence": 2
                   },
                   {
-                    "at": "2026-11-05T22:03:28.943Z",
+                    "at": "2026-11-13T23:43:29.319Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "list_evidence",
@@ -3784,7 +3784,7 @@
                     "sequence": 3
                   },
                   {
-                    "at": "2026-11-05T22:03:28.943Z",
+                    "at": "2026-11-13T23:43:29.319Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "read_evidence",
@@ -3794,7 +3794,7 @@
                     "sequence": 4
                   },
                   {
-                    "at": "2026-11-05T22:03:28.943Z",
+                    "at": "2026-11-13T23:43:29.319Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "submit_findings",
@@ -3804,7 +3804,7 @@
                     "sequence": 5
                   },
                   {
-                    "at": "2026-11-05T22:03:28.943Z",
+                    "at": "2026-11-13T23:43:29.319Z",
                     "type": "child_committed",
                     "details": {
                       "role": "tests",
@@ -3813,7 +3813,7 @@
                     "sequence": 6
                   },
                   {
-                    "at": "2026-11-05T22:03:28.950Z",
+                    "at": "2026-11-13T23:43:29.328Z",
                     "type": "lease_acquired",
                     "details": {
                       "owner": "fault-worker",
@@ -3822,7 +3822,7 @@
                     "sequence": 7
                   },
                   {
-                    "at": "2026-11-05T22:03:28.950Z",
+                    "at": "2026-11-13T23:43:29.328Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "list_evidence",
@@ -3832,7 +3832,7 @@
                     "sequence": 8
                   },
                   {
-                    "at": "2026-11-05T22:03:28.950Z",
+                    "at": "2026-11-13T23:43:29.328Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "read_evidence",
@@ -3842,7 +3842,7 @@
                     "sequence": 9
                   },
                   {
-                    "at": "2026-11-05T22:03:28.950Z",
+                    "at": "2026-11-13T23:43:29.328Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "submit_findings",
@@ -3852,7 +3852,7 @@
                     "sequence": 10
                   },
                   {
-                    "at": "2026-11-05T22:03:28.950Z",
+                    "at": "2026-11-13T23:43:29.328Z",
                     "type": "child_committed",
                     "details": {
                       "role": "staging",
@@ -3861,7 +3861,7 @@
                     "sequence": 11
                   },
                   {
-                    "at": "2026-11-05T22:03:28.955Z",
+                    "at": "2026-11-13T23:43:29.333Z",
                     "type": "lease_acquired",
                     "details": {
                       "owner": "fault-worker",
@@ -3870,10 +3870,10 @@
                     "sequence": 12
                   },
                   {
-                    "at": "2026-11-05T22:03:28.955Z",
+                    "at": "2026-11-13T23:43:29.333Z",
                     "type": "join_committed",
                     "details": {
-                      "digest": "4f27ceb06b3e6196dd393a55a98d9125c16eaae0a4e55792f4fd15ad79ae4869",
+                      "digest": "11a358509fa486dbe789e3ec012f0df3a24021a328200cbc8f8ca787184a80b2",
                       "children": [
                         "h3",
                         "h6"
@@ -3882,7 +3882,7 @@
                     "sequence": 13
                   },
                   {
-                    "at": "2026-11-05T22:03:28.955Z",
+                    "at": "2026-11-13T23:43:29.333Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "submit_assessment",
@@ -3892,7 +3892,7 @@
                     "sequence": 14
                   },
                   {
-                    "at": "2026-11-05T22:03:28.955Z",
+                    "at": "2026-11-13T23:43:29.333Z",
                     "type": "assessment_committed",
                     "details": {
                       "receipt_id": "h7"
@@ -3960,7 +3960,7 @@
                     "receipt_id": "h6"
                   }
                 },
-                "deadline": 1793916688943.208,
+                "deadline": 1794613889319.408,
                 "receipts": [
                   {
                     "id": "h1",
@@ -3993,8 +3993,8 @@
                       ]
                     },
                     "sequence": 3,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:03:28.943Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:43:29.319Z",
                     "operation_id": "tests_catalog",
                     "payload_digest": "5b67ca5ac94f4d47561962386197ba811e22c4479a7f63db8473ff1c90b09fdf"
                   },
@@ -4033,8 +4033,8 @@
                       ]
                     },
                     "sequence": 4,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:03:28.943Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:43:29.319Z",
                     "operation_id": "tests_read_0",
                     "payload_digest": "dc859ea4de86b69c8748be257288de453c6aa11f4b535bc3c809ff9b3a484ca4"
                   },
@@ -4063,8 +4063,8 @@
                       ]
                     },
                     "sequence": 5,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:03:28.943Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:43:29.319Z",
                     "operation_id": "tests_submit",
                     "payload_digest": "b9629c60c97f13a5884e3bf1eb5b66c3840cbf0a5f6443132fdb4ce3e9274cdd"
                   },
@@ -4106,8 +4106,8 @@
                       ]
                     },
                     "sequence": 8,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:03:28.950Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:43:29.328Z",
                     "operation_id": "staging_catalog",
                     "payload_digest": "c268504020e4773a6fba4e269de871ff82f2b5ae72ea24cc055577e0e2b0ebd2"
                   },
@@ -4159,8 +4159,8 @@
                       ]
                     },
                     "sequence": 9,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:03:28.950Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:43:29.328Z",
                     "operation_id": "staging_read_0",
                     "payload_digest": "3ba79923c6489b3bff8a1a696682e01138e9deb3013f705d22de1d6eb1b32f7b"
                   },
@@ -4194,8 +4194,8 @@
                       ]
                     },
                     "sequence": 10,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:03:28.950Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:43:29.328Z",
                     "operation_id": "staging_submit",
                     "payload_digest": "a4901cc1da5066f879c4a8306728bfffc3dfa4bb61bcc34dafea77b7750d70f5"
                   },
@@ -4243,8 +4243,8 @@
                       ]
                     },
                     "sequence": 14,
-                    "trial_id": "fault_c070de96e3f_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:03:28.955Z",
+                    "trial_id": "fault_c070de96e3f_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:43:29.333Z",
                     "operation_id": "final",
                     "payload_digest": "bdacf2439c10885347fcb66174302f05a15026cff9c34a71cb47d5c392a0187c"
                   }
@@ -4309,11 +4309,11 @@
                     "output_reserved_tokens": 1024
                   }
                 },
-                "lease_until": 1793916253955.065,
+                "lease_until": 1794613454333.322,
                 "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
                 "snapshot_id": "sfb1b6a83",
-                "terminal_at": 1793916208955.065,
-                "activated_at": 1793916208943.208,
+                "terminal_at": 1794613409333.322,
+                "activated_at": 1794613409319.408,
                 "model_digest": null,
                 "reservations": [],
                 "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
@@ -4394,19 +4394,19 @@
                 "tool_receipts": 7
               },
               "event_sequence": 15,
-              "read_at": "2026-11-05T22:03:29.043Z",
-              "connection_id": 186
+              "read_at": "2026-11-13T23:43:29.440Z",
+              "connection_id": 194
             }
           }
         ],
         "order": "cancel_then_submit"
       },
       "observation": {
-        "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-        "schema": "crewbench_test_1a3cacae9536",
-        "state_digest": "06748142eff33999564e43d14d9028f7ed9c4eca82932a63bf3c2ab3084b31c7",
+        "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+        "schema": "crewbench_test_f79a71738f88",
+        "state_digest": "e7b4896b277f6256a052f3b7ff0bf47f947fb5df794b2dada6c2b55123146af7",
         "state": {
-          "id": "fault_c070de96e3f_cancel_race_42117978561",
+          "id": "fault_c070de96e3f_cancel_race_43529053019",
           "join": null,
           "mode": "scripted_runtime",
           "owner": "fault-worker",
@@ -4459,13 +4459,13 @@
           },
           "events": [
             {
-              "at": "2026-11-05T22:03:28.837Z",
+              "at": "2026-11-13T23:43:29.186Z",
               "type": "activated",
               "details": {},
               "sequence": 1
             },
             {
-              "at": "2026-11-05T22:03:28.837Z",
+              "at": "2026-11-13T23:43:29.186Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -4474,7 +4474,7 @@
               "sequence": 2
             },
             {
-              "at": "2026-11-05T22:03:28.837Z",
+              "at": "2026-11-13T23:43:29.186Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -4484,7 +4484,7 @@
               "sequence": 3
             },
             {
-              "at": "2026-11-05T22:03:28.837Z",
+              "at": "2026-11-13T23:43:29.186Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -4494,7 +4494,7 @@
               "sequence": 4
             },
             {
-              "at": "2026-11-05T22:03:28.837Z",
+              "at": "2026-11-13T23:43:29.186Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -4504,7 +4504,7 @@
               "sequence": 5
             },
             {
-              "at": "2026-11-05T22:03:28.837Z",
+              "at": "2026-11-13T23:43:29.186Z",
               "type": "child_committed",
               "details": {
                 "role": "tests",
@@ -4513,7 +4513,7 @@
               "sequence": 6
             },
             {
-              "at": "2026-11-05T22:03:28.841Z",
+              "at": "2026-11-13T23:43:29.191Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -4522,7 +4522,7 @@
               "sequence": 7
             },
             {
-              "at": "2026-11-05T22:03:28.841Z",
+              "at": "2026-11-13T23:43:29.191Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -4532,7 +4532,7 @@
               "sequence": 8
             },
             {
-              "at": "2026-11-05T22:03:28.841Z",
+              "at": "2026-11-13T23:43:29.191Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -4542,7 +4542,7 @@
               "sequence": 9
             },
             {
-              "at": "2026-11-05T22:03:28.841Z",
+              "at": "2026-11-13T23:43:29.191Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -4552,7 +4552,7 @@
               "sequence": 10
             },
             {
-              "at": "2026-11-05T22:03:28.841Z",
+              "at": "2026-11-13T23:43:29.191Z",
               "type": "child_committed",
               "details": {
                 "role": "staging",
@@ -4561,7 +4561,7 @@
               "sequence": 11
             },
             {
-              "at": "2026-11-05T22:03:28.846Z",
+              "at": "2026-11-13T23:43:29.196Z",
               "type": "terminal",
               "details": {
                 "reason": "SCRIPTED_CANCEL",
@@ -4570,7 +4570,7 @@
               "sequence": 12
             },
             {
-              "at": "2026-11-05T22:03:28.848Z",
+              "at": "2026-11-13T23:43:29.199Z",
               "type": "refusal",
               "details": {
                 "code": "TRIAL_TERMINAL"
@@ -4638,7 +4638,7 @@
               "receipt_id": "h6"
             }
           },
-          "deadline": 1793916688837.334,
+          "deadline": 1794613889186.978,
           "receipts": [
             {
               "id": "h1",
@@ -4671,8 +4671,8 @@
                 ]
               },
               "sequence": 3,
-              "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-              "created_at": "2026-11-05T22:03:28.837Z",
+              "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+              "created_at": "2026-11-13T23:43:29.186Z",
               "operation_id": "tests_catalog",
               "payload_digest": "5b67ca5ac94f4d47561962386197ba811e22c4479a7f63db8473ff1c90b09fdf"
             },
@@ -4711,8 +4711,8 @@
                 ]
               },
               "sequence": 4,
-              "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-              "created_at": "2026-11-05T22:03:28.837Z",
+              "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+              "created_at": "2026-11-13T23:43:29.186Z",
               "operation_id": "tests_read_0",
               "payload_digest": "dc859ea4de86b69c8748be257288de453c6aa11f4b535bc3c809ff9b3a484ca4"
             },
@@ -4741,8 +4741,8 @@
                 ]
               },
               "sequence": 5,
-              "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-              "created_at": "2026-11-05T22:03:28.837Z",
+              "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+              "created_at": "2026-11-13T23:43:29.186Z",
               "operation_id": "tests_submit",
               "payload_digest": "b9629c60c97f13a5884e3bf1eb5b66c3840cbf0a5f6443132fdb4ce3e9274cdd"
             },
@@ -4784,8 +4784,8 @@
                 ]
               },
               "sequence": 8,
-              "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-              "created_at": "2026-11-05T22:03:28.841Z",
+              "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+              "created_at": "2026-11-13T23:43:29.191Z",
               "operation_id": "staging_catalog",
               "payload_digest": "c268504020e4773a6fba4e269de871ff82f2b5ae72ea24cc055577e0e2b0ebd2"
             },
@@ -4837,8 +4837,8 @@
                 ]
               },
               "sequence": 9,
-              "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-              "created_at": "2026-11-05T22:03:28.841Z",
+              "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+              "created_at": "2026-11-13T23:43:29.191Z",
               "operation_id": "staging_read_0",
               "payload_digest": "3ba79923c6489b3bff8a1a696682e01138e9deb3013f705d22de1d6eb1b32f7b"
             },
@@ -4872,8 +4872,8 @@
                 ]
               },
               "sequence": 10,
-              "trial_id": "fault_c070de96e3f_cancel_race_42117978561",
-              "created_at": "2026-11-05T22:03:28.841Z",
+              "trial_id": "fault_c070de96e3f_cancel_race_43529053019",
+              "created_at": "2026-11-13T23:43:29.191Z",
               "operation_id": "staging_submit",
               "payload_digest": "a4901cc1da5066f879c4a8306728bfffc3dfa4bb61bcc34dafea77b7750d70f5"
             }
@@ -4903,8 +4903,8 @@
           "lease_until": 0,
           "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
           "snapshot_id": "sfb1b6a83",
-          "terminal_at": 1793916208846.21,
-          "activated_at": 1793916208837.334,
+          "terminal_at": 1794613409196.76,
+          "activated_at": 1794613409186.978,
           "model_digest": null,
           "reservations": [],
           "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
@@ -4976,20 +4976,20 @@
           "tool_receipts": 6
         },
         "event_sequence": 13,
-        "read_at": "2026-11-05T22:03:29.137Z",
-        "connection_id": 187
+        "read_at": "2026-11-13T23:43:29.553Z",
+        "connection_id": 195
       }
     },
     {
       "schema_version": 1,
       "mode": "scripted_runtime",
-      "trial_id": "fault_c070de96e3f_budget_race_42117978561",
+      "trial_id": "fault_c070de96e3f_budget_race_43529053019",
       "fault": "budget_race",
       "fixture_id": "c070de96e3f",
       "window": {
-        "start": "2026-11-05T22:03:29.155Z",
-        "action_end": "2026-11-05T22:03:29.168Z",
-        "end": "2026-11-05T22:03:29.247Z"
+        "start": "2026-11-13T23:43:29.572Z",
+        "action_end": "2026-11-13T23:43:29.585Z",
+        "end": "2026-11-13T23:43:29.683Z"
       },
       "injection": {
         "fault": "budget_race",
@@ -5001,11 +5001,11 @@
         ]
       },
       "observation": {
-        "trial_id": "fault_c070de96e3f_budget_race_42117978561",
-        "schema": "crewbench_test_1a3cacae9536",
-        "state_digest": "2d434732e3c8f5bb046de49d9363d57e7b392248aea2f48b0581f7430f537ac0",
+        "trial_id": "fault_c070de96e3f_budget_race_43529053019",
+        "schema": "crewbench_test_f79a71738f88",
+        "state_digest": "848734ca1633f28d01181242e514b2e42735da9fdb21abd421f4204b17d7a0e0",
         "state": {
-          "id": "fault_c070de96e3f_budget_race_42117978561",
+          "id": "fault_c070de96e3f_budget_race_43529053019",
           "join": null,
           "mode": "scripted_runtime",
           "owner": "fault-worker",
@@ -5018,7 +5018,7 @@
                 "output_reserved_tokens": 512
               },
               "status": "failed",
-              "session_id": "fault_c070de96e3f_budget_race_42117978561_tests"
+              "session_id": "fault_c070de96e3f_budget_race_43529053019_tests"
             },
             "staging": {
               "spent": {
@@ -5058,13 +5058,13 @@
           },
           "events": [
             {
-              "at": "2026-11-05T22:03:29.156Z",
+              "at": "2026-11-13T23:43:29.573Z",
               "type": "activated",
               "details": {},
               "sequence": 1
             },
             {
-              "at": "2026-11-05T22:03:29.156Z",
+              "at": "2026-11-13T23:43:29.573Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -5073,7 +5073,7 @@
               "sequence": 2
             },
             {
-              "at": "2026-11-05T22:03:29.160Z",
+              "at": "2026-11-13T23:43:29.575Z",
               "type": "reserved",
               "details": {
                 "role": "tests",
@@ -5088,7 +5088,7 @@
               "sequence": 3
             },
             {
-              "at": "2026-11-05T22:03:29.165Z",
+              "at": "2026-11-13T23:43:29.581Z",
               "type": "refusal",
               "details": {
                 "code": "BUDGET_EXHAUSTED"
@@ -5096,7 +5096,7 @@
               "sequence": 4
             },
             {
-              "at": "2026-11-05T22:03:29.167Z",
+              "at": "2026-11-13T23:43:29.583Z",
               "type": "terminal",
               "details": {
                 "reason": "SCRIPTED_BUDGET_RACE_COMPLETE",
@@ -5111,7 +5111,7 @@
           "failure": "SCRIPTED_BUDGET_RACE_COMPLETE",
           "attempts": [],
           "children": {},
-          "deadline": 1793916689156.317,
+          "deadline": 1794613889573.011,
           "receipts": [],
           "assessment": null,
           "generation": 2,
@@ -5138,8 +5138,8 @@
           "lease_until": 0,
           "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
           "snapshot_id": "sfb1b6a83",
-          "terminal_at": 1793916209167.641,
-          "activated_at": 1793916209156.317,
+          "terminal_at": 1794613409583.882,
+          "activated_at": 1794613409573.011,
           "model_digest": null,
           "reservations": [
             {
@@ -5167,45 +5167,45 @@
           "tool_receipts": 0
         },
         "event_sequence": 5,
-        "read_at": "2026-11-05T22:03:29.247Z",
-        "connection_id": 189
+        "read_at": "2026-11-13T23:43:29.683Z",
+        "connection_id": 197
       }
     },
     {
       "schema_version": 1,
       "mode": "scripted_runtime",
-      "trial_id": "fault_c070de96e3f_uncertain_dispatch_42117978561",
+      "trial_id": "fault_c070de96e3f_uncertain_dispatch_43529053019",
       "fault": "uncertain_dispatch",
       "fixture_id": "c070de96e3f",
       "window": {
-        "start": "2026-11-05T22:03:29.265Z",
-        "action_end": "2026-11-05T22:07:04.462Z",
-        "end": "2026-11-05T22:07:04.545Z"
+        "start": "2026-11-13T23:43:29.701Z",
+        "action_end": "2026-11-13T23:47:04.926Z",
+        "end": "2026-11-13T23:47:05.011Z"
       },
       "injection": {
         "fault": "uncertain_dispatch",
         "fixture": "c070de96e3f",
         "injected": true,
         "barrier": {
-          "pid": 3081,
+          "pid": 3254,
           "accepted": true,
-          "trial_id": "fault_c070de96e3f_uncertain_dispatch_42117978561",
+          "trial_id": "fault_c070de96e3f_uncertain_dispatch_43529053019",
           "boundary": "dispatch_intent"
         },
         "exit": {
           "code": null,
           "signal": "SIGKILL"
         },
-        "killed_pid": 3081,
+        "killed_pid": 3254,
         "dispatch_intent_written": true,
         "recovery_refusal": "UNCERTAIN_DISPATCH"
       },
       "observation": {
-        "trial_id": "fault_c070de96e3f_uncertain_dispatch_42117978561",
-        "schema": "crewbench_test_1a3cacae9536",
-        "state_digest": "ff9dbe999d99371573e572e1a088706d85bad5fb72726d61208b8cf1793f75c2",
+        "trial_id": "fault_c070de96e3f_uncertain_dispatch_43529053019",
+        "schema": "crewbench_test_f79a71738f88",
+        "state_digest": "b855599d0af8b3483109c27016ef78d04584ee06eb70f44027e53079abecfafc",
         "state": {
-          "id": "fault_c070de96e3f_uncertain_dispatch_42117978561",
+          "id": "fault_c070de96e3f_uncertain_dispatch_43529053019",
           "join": null,
           "mode": "scripted_runtime",
           "owner": "fault-child",
@@ -5218,7 +5218,7 @@
                 "output_reserved_tokens": 512
               },
               "status": "indeterminate",
-              "session_id": "fault_c070de96e3f_uncertain_dispatch_42117978561_tests"
+              "session_id": "fault_c070de96e3f_uncertain_dispatch_43529053019_tests"
             },
             "staging": {
               "spent": {
@@ -5258,13 +5258,13 @@
           },
           "events": [
             {
-              "at": "2026-11-05T22:03:29.353Z",
+              "at": "2026-11-13T23:43:29.808Z",
               "type": "activated",
               "details": {},
               "sequence": 1
             },
             {
-              "at": "2026-11-05T22:03:29.353Z",
+              "at": "2026-11-13T23:43:29.808Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-child",
@@ -5273,7 +5273,7 @@
               "sequence": 2
             },
             {
-              "at": "2026-11-05T22:03:29.353Z",
+              "at": "2026-11-13T23:43:29.808Z",
               "type": "reserved",
               "details": {
                 "role": "tests",
@@ -5288,7 +5288,7 @@
               "sequence": 3
             },
             {
-              "at": "2026-11-05T22:03:29.353Z",
+              "at": "2026-11-13T23:43:29.808Z",
               "type": "dispatch_intent",
               "details": {
                 "operation_id": "uncertain"
@@ -5296,7 +5296,7 @@
               "sequence": 4
             },
             {
-              "at": "2026-11-05T22:07:04.459Z",
+              "at": "2026-11-13T23:47:04.922Z",
               "type": "terminal",
               "details": {
                 "reason": "UNCERTAIN_DISPATCH",
@@ -5305,7 +5305,7 @@
               "sequence": 5
             },
             {
-              "at": "2026-11-05T22:07:04.459Z",
+              "at": "2026-11-13T23:47:04.922Z",
               "type": "refusal",
               "details": {
                 "code": "UNCERTAIN_DISPATCH"
@@ -5321,7 +5321,7 @@
             {
               "role": "tests",
               "status": "indeterminate",
-              "dispatch_at": "2026-11-05T22:03:29.353Z",
+              "dispatch_at": "2026-11-13T23:43:29.808Z",
               "input_tokens": null,
               "operation_id": "uncertain",
               "output_tokens": null,
@@ -5331,7 +5331,7 @@
             }
           ],
           "children": {},
-          "deadline": 1793916689353.838,
+          "deadline": 1794613889808.861,
           "receipts": [],
           "assessment": null,
           "generation": 2,
@@ -5358,8 +5358,8 @@
           "lease_until": 0,
           "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
           "snapshot_id": "sfb1b6a83",
-          "terminal_at": 1793916424459.703,
-          "activated_at": 1793916209353.838,
+          "terminal_at": 1794613624922.9,
+          "activated_at": 1794613409808.861,
           "model_digest": null,
           "reservations": [
             {
@@ -5387,20 +5387,20 @@
           "tool_receipts": 0
         },
         "event_sequence": 6,
-        "read_at": "2026-11-05T22:07:04.545Z",
-        "connection_id": 539
+        "read_at": "2026-11-13T23:47:05.011Z",
+        "connection_id": 555
       }
     },
     {
       "schema_version": 1,
       "mode": "scripted_runtime",
-      "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
+      "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
       "fault": "lost_child_response",
       "fixture_id": "c2cdad678dd",
       "window": {
-        "start": "2026-11-05T22:07:04.564Z",
-        "action_end": "2026-11-05T22:07:04.581Z",
-        "end": "2026-11-05T22:07:04.684Z"
+        "start": "2026-11-13T23:47:05.032Z",
+        "action_end": "2026-11-13T23:47:05.049Z",
+        "end": "2026-11-13T23:47:05.135Z"
       },
       "injection": {
         "fault": "lost_child_response",
@@ -5411,11 +5411,11 @@
         "repeat_receipt": "h3"
       },
       "observation": {
-        "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
-        "schema": "crewbench_test_1a3cacae9536",
-        "state_digest": "da84dd660f15e9634815b59dc2f54a1d0f347e2b9328ca6267a370e90183bc3e",
+        "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
+        "schema": "crewbench_test_f79a71738f88",
+        "state_digest": "f9f2b17a97c41abced8f4e6fb19436130add027a8fbc3ee07ce7453f6a4a7253",
         "state": {
-          "id": "fault_c2cdad678dd_lost_child_response_42117978561",
+          "id": "fault_c2cdad678dd_lost_child_response_43529053019",
           "join": {
             "case_id": "c2cdad678dd",
             "packets": {
@@ -5465,7 +5465,7 @@
                 ]
               }
             },
-            "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
+            "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
             "snapshot_id": "s2a4724c4",
             "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
             "child_receipts": [
@@ -5511,8 +5511,8 @@
                   ]
                 },
                 "sequence": 3,
-                "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
-                "created_at": "2026-11-05T22:07:04.565Z",
+                "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
+                "created_at": "2026-11-13T23:47:05.032Z",
                 "operation_id": "tests_catalog",
                 "payload_digest": "7618cf77449717abb758b896a5bd5b76f9030e12e55d2ae72cb9ef0b733b952d"
               },
@@ -5564,8 +5564,8 @@
                   ]
                 },
                 "sequence": 4,
-                "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
-                "created_at": "2026-11-05T22:07:04.565Z",
+                "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
+                "created_at": "2026-11-13T23:47:05.032Z",
                 "operation_id": "tests_read_0",
                 "payload_digest": "03e0c6f8c69f0c653790c660dadded35863751aa5356b46f6e0e43d96dc3beba"
               },
@@ -5600,8 +5600,8 @@
                   ]
                 },
                 "sequence": 9,
-                "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
-                "created_at": "2026-11-05T22:07:04.572Z",
+                "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
+                "created_at": "2026-11-13T23:47:05.040Z",
                 "operation_id": "staging_catalog",
                 "payload_digest": "d8a0f1522e93ba424d949071e8ff94547b42520636f9029fda25d7e3387d63aa"
               },
@@ -5640,8 +5640,8 @@
                   ]
                 },
                 "sequence": 10,
-                "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
-                "created_at": "2026-11-05T22:07:04.572Z",
+                "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
+                "created_at": "2026-11-13T23:47:05.040Z",
                 "operation_id": "staging_read_0",
                 "payload_digest": "be8c464d5e0098600cf1f36ef3468c4d58da014217c9dfeed6458c4277bca318"
               }
@@ -5698,13 +5698,13 @@
           },
           "events": [
             {
-              "at": "2026-11-05T22:07:04.565Z",
+              "at": "2026-11-13T23:47:05.032Z",
               "type": "activated",
               "details": {},
               "sequence": 1
             },
             {
-              "at": "2026-11-05T22:07:04.565Z",
+              "at": "2026-11-13T23:47:05.032Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -5713,7 +5713,7 @@
               "sequence": 2
             },
             {
-              "at": "2026-11-05T22:07:04.565Z",
+              "at": "2026-11-13T23:47:05.032Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -5723,7 +5723,7 @@
               "sequence": 3
             },
             {
-              "at": "2026-11-05T22:07:04.565Z",
+              "at": "2026-11-13T23:47:05.032Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -5733,7 +5733,7 @@
               "sequence": 4
             },
             {
-              "at": "2026-11-05T22:07:04.565Z",
+              "at": "2026-11-13T23:47:05.032Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -5743,7 +5743,7 @@
               "sequence": 5
             },
             {
-              "at": "2026-11-05T22:07:04.565Z",
+              "at": "2026-11-13T23:47:05.032Z",
               "type": "child_committed",
               "details": {
                 "role": "tests",
@@ -5752,7 +5752,7 @@
               "sequence": 6
             },
             {
-              "at": "2026-11-05T22:07:04.570Z",
+              "at": "2026-11-13T23:47:05.037Z",
               "type": "tool_redelivery",
               "details": {
                 "role": "tests",
@@ -5761,7 +5761,7 @@
               "sequence": 7
             },
             {
-              "at": "2026-11-05T22:07:04.572Z",
+              "at": "2026-11-13T23:47:05.040Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -5770,7 +5770,7 @@
               "sequence": 8
             },
             {
-              "at": "2026-11-05T22:07:04.572Z",
+              "at": "2026-11-13T23:47:05.040Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -5780,7 +5780,7 @@
               "sequence": 9
             },
             {
-              "at": "2026-11-05T22:07:04.572Z",
+              "at": "2026-11-13T23:47:05.040Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -5790,7 +5790,7 @@
               "sequence": 10
             },
             {
-              "at": "2026-11-05T22:07:04.572Z",
+              "at": "2026-11-13T23:47:05.040Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -5800,7 +5800,7 @@
               "sequence": 11
             },
             {
-              "at": "2026-11-05T22:07:04.572Z",
+              "at": "2026-11-13T23:47:05.040Z",
               "type": "child_committed",
               "details": {
                 "role": "staging",
@@ -5809,7 +5809,7 @@
               "sequence": 12
             },
             {
-              "at": "2026-11-05T22:07:04.577Z",
+              "at": "2026-11-13T23:47:05.044Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -5818,10 +5818,10 @@
               "sequence": 13
             },
             {
-              "at": "2026-11-05T22:07:04.577Z",
+              "at": "2026-11-13T23:47:05.044Z",
               "type": "join_committed",
               "details": {
-                "digest": "f1064ca6ccdee869ffaf4944825a8b2e7ac9745be474c2f6518bfba27470dca2",
+                "digest": "35363d8a23c9274596e237e8c5d9ecd00347c8835c3401da2971d2d547f8e75d",
                 "children": [
                   "h3",
                   "h6"
@@ -5830,7 +5830,7 @@
               "sequence": 14
             },
             {
-              "at": "2026-11-05T22:07:04.577Z",
+              "at": "2026-11-13T23:47:05.044Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_assessment",
@@ -5840,7 +5840,7 @@
               "sequence": 15
             },
             {
-              "at": "2026-11-05T22:07:04.577Z",
+              "at": "2026-11-13T23:47:05.044Z",
               "type": "assessment_committed",
               "details": {
                 "receipt_id": "h7"
@@ -5908,7 +5908,7 @@
               "receipt_id": "h6"
             }
           },
-          "deadline": 1793916904565.195,
+          "deadline": 1794614105032.505,
           "receipts": [
             {
               "id": "h1",
@@ -5948,8 +5948,8 @@
                 ]
               },
               "sequence": 3,
-              "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:07:04.565Z",
+              "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:47:05.032Z",
               "operation_id": "tests_catalog",
               "payload_digest": "7618cf77449717abb758b896a5bd5b76f9030e12e55d2ae72cb9ef0b733b952d"
             },
@@ -6001,8 +6001,8 @@
                 ]
               },
               "sequence": 4,
-              "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:07:04.565Z",
+              "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:47:05.032Z",
               "operation_id": "tests_read_0",
               "payload_digest": "03e0c6f8c69f0c653790c660dadded35863751aa5356b46f6e0e43d96dc3beba"
             },
@@ -6036,8 +6036,8 @@
                 ]
               },
               "sequence": 5,
-              "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:07:04.565Z",
+              "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:47:05.032Z",
               "operation_id": "tests_submit",
               "payload_digest": "dcfce4589e4bfc73e228d4c741bc904f7f9e97c9c3bd0ca0901afc69d2241f08"
             },
@@ -6072,8 +6072,8 @@
                 ]
               },
               "sequence": 9,
-              "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:07:04.572Z",
+              "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:47:05.040Z",
               "operation_id": "staging_catalog",
               "payload_digest": "d8a0f1522e93ba424d949071e8ff94547b42520636f9029fda25d7e3387d63aa"
             },
@@ -6112,8 +6112,8 @@
                 ]
               },
               "sequence": 10,
-              "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:07:04.572Z",
+              "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:47:05.040Z",
               "operation_id": "staging_read_0",
               "payload_digest": "be8c464d5e0098600cf1f36ef3468c4d58da014217c9dfeed6458c4277bca318"
             },
@@ -6142,8 +6142,8 @@
                 ]
               },
               "sequence": 11,
-              "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:07:04.572Z",
+              "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:47:05.040Z",
               "operation_id": "staging_submit",
               "payload_digest": "e01ab3c31326def7b45e3f3f1214455b871d6acbd82a5b754a8a9cf7d625a9f0"
             },
@@ -6200,8 +6200,8 @@
                 ]
               },
               "sequence": 15,
-              "trial_id": "fault_c2cdad678dd_lost_child_response_42117978561",
-              "created_at": "2026-11-05T22:07:04.577Z",
+              "trial_id": "fault_c2cdad678dd_lost_child_response_43529053019",
+              "created_at": "2026-11-13T23:47:05.044Z",
               "operation_id": "final",
               "payload_digest": "b021785c1b4a2025535285a8fe376500f5c940c7695e12c37411678f3d72a765"
             }
@@ -6275,11 +6275,11 @@
               "output_reserved_tokens": 1024
             }
           },
-          "lease_until": 1793916469577.271,
+          "lease_until": 1794613670044.356,
           "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
           "snapshot_id": "s2a4724c4",
-          "terminal_at": 1793916424577.271,
-          "activated_at": 1793916424565.195,
+          "terminal_at": 1794613625044.356,
+          "activated_at": 1794613625032.505,
           "model_digest": null,
           "reservations": [],
           "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
@@ -6360,20 +6360,20 @@
           "tool_receipts": 7
         },
         "event_sequence": 16,
-        "read_at": "2026-11-05T22:07:04.684Z",
-        "connection_id": 547
+        "read_at": "2026-11-13T23:47:05.135Z",
+        "connection_id": 556
       }
     },
     {
       "schema_version": 1,
       "mode": "scripted_runtime",
-      "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
+      "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
       "fault": "duplicate_delivery",
       "fixture_id": "c2cdad678dd",
       "window": {
-        "start": "2026-11-05T22:07:04.704Z",
-        "action_end": "2026-11-05T22:07:04.719Z",
-        "end": "2026-11-05T22:07:04.809Z"
+        "start": "2026-11-13T23:47:05.154Z",
+        "action_end": "2026-11-13T23:47:05.168Z",
+        "end": "2026-11-13T23:47:05.259Z"
       },
       "injection": {
         "fault": "duplicate_delivery",
@@ -6383,11 +6383,11 @@
         "repeat_receipt": "h3"
       },
       "observation": {
-        "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
-        "schema": "crewbench_test_1a3cacae9536",
-        "state_digest": "9f11d5a51e5f86603725ba26963f4b794d7da6cf089a008cdc5f2623d83f0c77",
+        "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
+        "schema": "crewbench_test_f79a71738f88",
+        "state_digest": "3347cff2496c2708ed608a8b9d749a7e9b063a151fea5c69aea336043a902172",
         "state": {
-          "id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
+          "id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
           "join": {
             "case_id": "c2cdad678dd",
             "packets": {
@@ -6437,7 +6437,7 @@
                 ]
               }
             },
-            "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
+            "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
             "snapshot_id": "s2a4724c4",
             "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
             "child_receipts": [
@@ -6483,8 +6483,8 @@
                   ]
                 },
                 "sequence": 3,
-                "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
-                "created_at": "2026-11-05T22:07:04.704Z",
+                "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
+                "created_at": "2026-11-13T23:47:05.154Z",
                 "operation_id": "tests_catalog",
                 "payload_digest": "7618cf77449717abb758b896a5bd5b76f9030e12e55d2ae72cb9ef0b733b952d"
               },
@@ -6536,8 +6536,8 @@
                   ]
                 },
                 "sequence": 4,
-                "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
-                "created_at": "2026-11-05T22:07:04.704Z",
+                "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
+                "created_at": "2026-11-13T23:47:05.154Z",
                 "operation_id": "tests_read_0",
                 "payload_digest": "03e0c6f8c69f0c653790c660dadded35863751aa5356b46f6e0e43d96dc3beba"
               },
@@ -6572,8 +6572,8 @@
                   ]
                 },
                 "sequence": 9,
-                "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
-                "created_at": "2026-11-05T22:07:04.711Z",
+                "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
+                "created_at": "2026-11-13T23:47:05.161Z",
                 "operation_id": "staging_catalog",
                 "payload_digest": "d8a0f1522e93ba424d949071e8ff94547b42520636f9029fda25d7e3387d63aa"
               },
@@ -6612,8 +6612,8 @@
                   ]
                 },
                 "sequence": 10,
-                "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
-                "created_at": "2026-11-05T22:07:04.711Z",
+                "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
+                "created_at": "2026-11-13T23:47:05.161Z",
                 "operation_id": "staging_read_0",
                 "payload_digest": "be8c464d5e0098600cf1f36ef3468c4d58da014217c9dfeed6458c4277bca318"
               }
@@ -6670,13 +6670,13 @@
           },
           "events": [
             {
-              "at": "2026-11-05T22:07:04.704Z",
+              "at": "2026-11-13T23:47:05.154Z",
               "type": "activated",
               "details": {},
               "sequence": 1
             },
             {
-              "at": "2026-11-05T22:07:04.704Z",
+              "at": "2026-11-13T23:47:05.154Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -6685,7 +6685,7 @@
               "sequence": 2
             },
             {
-              "at": "2026-11-05T22:07:04.704Z",
+              "at": "2026-11-13T23:47:05.154Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -6695,7 +6695,7 @@
               "sequence": 3
             },
             {
-              "at": "2026-11-05T22:07:04.704Z",
+              "at": "2026-11-13T23:47:05.154Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -6705,7 +6705,7 @@
               "sequence": 4
             },
             {
-              "at": "2026-11-05T22:07:04.704Z",
+              "at": "2026-11-13T23:47:05.154Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -6715,7 +6715,7 @@
               "sequence": 5
             },
             {
-              "at": "2026-11-05T22:07:04.704Z",
+              "at": "2026-11-13T23:47:05.154Z",
               "type": "child_committed",
               "details": {
                 "role": "tests",
@@ -6724,7 +6724,7 @@
               "sequence": 6
             },
             {
-              "at": "2026-11-05T22:07:04.709Z",
+              "at": "2026-11-13T23:47:05.159Z",
               "type": "tool_redelivery",
               "details": {
                 "role": "tests",
@@ -6733,7 +6733,7 @@
               "sequence": 7
             },
             {
-              "at": "2026-11-05T22:07:04.711Z",
+              "at": "2026-11-13T23:47:05.161Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -6742,7 +6742,7 @@
               "sequence": 8
             },
             {
-              "at": "2026-11-05T22:07:04.711Z",
+              "at": "2026-11-13T23:47:05.161Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -6752,7 +6752,7 @@
               "sequence": 9
             },
             {
-              "at": "2026-11-05T22:07:04.711Z",
+              "at": "2026-11-13T23:47:05.161Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -6762,7 +6762,7 @@
               "sequence": 10
             },
             {
-              "at": "2026-11-05T22:07:04.711Z",
+              "at": "2026-11-13T23:47:05.161Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -6772,7 +6772,7 @@
               "sequence": 11
             },
             {
-              "at": "2026-11-05T22:07:04.711Z",
+              "at": "2026-11-13T23:47:05.161Z",
               "type": "child_committed",
               "details": {
                 "role": "staging",
@@ -6781,7 +6781,7 @@
               "sequence": 12
             },
             {
-              "at": "2026-11-05T22:07:04.715Z",
+              "at": "2026-11-13T23:47:05.164Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -6790,10 +6790,10 @@
               "sequence": 13
             },
             {
-              "at": "2026-11-05T22:07:04.715Z",
+              "at": "2026-11-13T23:47:05.164Z",
               "type": "join_committed",
               "details": {
-                "digest": "09b8831673422ec9ea2a27b1bbdfd0ffea8814eb36dd0f407a54c40c50963829",
+                "digest": "0558b1074ad5e43fc660eb8c44341d6e6db84d2467110613dce1287cfe27bb77",
                 "children": [
                   "h3",
                   "h6"
@@ -6802,7 +6802,7 @@
               "sequence": 14
             },
             {
-              "at": "2026-11-05T22:07:04.715Z",
+              "at": "2026-11-13T23:47:05.164Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_assessment",
@@ -6812,7 +6812,7 @@
               "sequence": 15
             },
             {
-              "at": "2026-11-05T22:07:04.715Z",
+              "at": "2026-11-13T23:47:05.164Z",
               "type": "assessment_committed",
               "details": {
                 "receipt_id": "h7"
@@ -6880,7 +6880,7 @@
               "receipt_id": "h6"
             }
           },
-          "deadline": 1793916904704.758,
+          "deadline": 1794614105154.72,
           "receipts": [
             {
               "id": "h1",
@@ -6920,8 +6920,8 @@
                 ]
               },
               "sequence": 3,
-              "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:07:04.704Z",
+              "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:47:05.154Z",
               "operation_id": "tests_catalog",
               "payload_digest": "7618cf77449717abb758b896a5bd5b76f9030e12e55d2ae72cb9ef0b733b952d"
             },
@@ -6973,8 +6973,8 @@
                 ]
               },
               "sequence": 4,
-              "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:07:04.704Z",
+              "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:47:05.154Z",
               "operation_id": "tests_read_0",
               "payload_digest": "03e0c6f8c69f0c653790c660dadded35863751aa5356b46f6e0e43d96dc3beba"
             },
@@ -7008,8 +7008,8 @@
                 ]
               },
               "sequence": 5,
-              "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:07:04.704Z",
+              "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:47:05.154Z",
               "operation_id": "tests_submit",
               "payload_digest": "dcfce4589e4bfc73e228d4c741bc904f7f9e97c9c3bd0ca0901afc69d2241f08"
             },
@@ -7044,8 +7044,8 @@
                 ]
               },
               "sequence": 9,
-              "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:07:04.711Z",
+              "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:47:05.161Z",
               "operation_id": "staging_catalog",
               "payload_digest": "d8a0f1522e93ba424d949071e8ff94547b42520636f9029fda25d7e3387d63aa"
             },
@@ -7084,8 +7084,8 @@
                 ]
               },
               "sequence": 10,
-              "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:07:04.711Z",
+              "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:47:05.161Z",
               "operation_id": "staging_read_0",
               "payload_digest": "be8c464d5e0098600cf1f36ef3468c4d58da014217c9dfeed6458c4277bca318"
             },
@@ -7114,8 +7114,8 @@
                 ]
               },
               "sequence": 11,
-              "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:07:04.711Z",
+              "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:47:05.161Z",
               "operation_id": "staging_submit",
               "payload_digest": "e01ab3c31326def7b45e3f3f1214455b871d6acbd82a5b754a8a9cf7d625a9f0"
             },
@@ -7172,8 +7172,8 @@
                 ]
               },
               "sequence": 15,
-              "trial_id": "fault_c2cdad678dd_duplicate_delivery_42117978561",
-              "created_at": "2026-11-05T22:07:04.715Z",
+              "trial_id": "fault_c2cdad678dd_duplicate_delivery_43529053019",
+              "created_at": "2026-11-13T23:47:05.164Z",
               "operation_id": "final",
               "payload_digest": "b021785c1b4a2025535285a8fe376500f5c940c7695e12c37411678f3d72a765"
             }
@@ -7247,11 +7247,11 @@
               "output_reserved_tokens": 1024
             }
           },
-          "lease_until": 1793916469715.848,
+          "lease_until": 1794613670164.871,
           "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
           "snapshot_id": "s2a4724c4",
-          "terminal_at": 1793916424715.848,
-          "activated_at": 1793916424704.758,
+          "terminal_at": 1794613625164.871,
+          "activated_at": 1794613625154.72,
           "model_digest": null,
           "reservations": [],
           "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
@@ -7332,20 +7332,20 @@
           "tool_receipts": 7
         },
         "event_sequence": 16,
-        "read_at": "2026-11-05T22:07:04.809Z",
-        "connection_id": 549
+        "read_at": "2026-11-13T23:47:05.259Z",
+        "connection_id": 557
       }
     },
     {
       "schema_version": 1,
       "mode": "scripted_runtime",
-      "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
+      "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
       "fault": "worker_death",
       "fixture_id": "c2cdad678dd",
       "window": {
-        "start": "2026-11-05T22:07:04.828Z",
-        "action_end": "2026-11-05T22:07:50.048Z",
-        "end": "2026-11-05T22:07:50.133Z"
+        "start": "2026-11-13T23:47:05.279Z",
+        "action_end": "2026-11-13T23:47:50.540Z",
+        "end": "2026-11-13T23:47:50.637Z"
       },
       "injection": {
         "fault": "worker_death",
@@ -7355,16 +7355,16 @@
           "code": null,
           "signal": "SIGKILL"
         },
-        "killed_pid": 4084,
+        "killed_pid": 4251,
         "before_child_digest": "9fbf43fb271ce793d5606bc989159c956bf92fc7dfc4b1026b42859934a89eab",
-        "original_deadline": 1793916904923.921
+        "original_deadline": 1794614105387.51
       },
       "observation": {
-        "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
-        "schema": "crewbench_test_1a3cacae9536",
-        "state_digest": "ffbba9d4c5c3e736c2300a339bbfb3bdef058ce92013b25736a627cebdf2fd17",
+        "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
+        "schema": "crewbench_test_f79a71738f88",
+        "state_digest": "1be1ea527918646ca2b7e5e3927ca23bed92fa99ac01757e7ea2fa8c897b1b85",
         "state": {
-          "id": "fault_c2cdad678dd_worker_death_42117978561",
+          "id": "fault_c2cdad678dd_worker_death_43529053019",
           "join": {
             "case_id": "c2cdad678dd",
             "packets": {
@@ -7414,7 +7414,7 @@
                 ]
               }
             },
-            "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
+            "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
             "snapshot_id": "s2a4724c4",
             "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
             "child_receipts": [
@@ -7460,8 +7460,8 @@
                   ]
                 },
                 "sequence": 3,
-                "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
-                "created_at": "2026-11-05T22:07:04.923Z",
+                "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
+                "created_at": "2026-11-13T23:47:05.387Z",
                 "operation_id": "tests_catalog",
                 "payload_digest": "7618cf77449717abb758b896a5bd5b76f9030e12e55d2ae72cb9ef0b733b952d"
               },
@@ -7513,8 +7513,8 @@
                   ]
                 },
                 "sequence": 4,
-                "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
-                "created_at": "2026-11-05T22:07:04.923Z",
+                "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
+                "created_at": "2026-11-13T23:47:05.387Z",
                 "operation_id": "tests_read_0",
                 "payload_digest": "03e0c6f8c69f0c653790c660dadded35863751aa5356b46f6e0e43d96dc3beba"
               },
@@ -7549,8 +7549,8 @@
                   ]
                 },
                 "sequence": 8,
-                "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
-                "created_at": "2026-11-05T22:07:50.035Z",
+                "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
+                "created_at": "2026-11-13T23:47:50.529Z",
                 "operation_id": "staging_catalog",
                 "payload_digest": "d8a0f1522e93ba424d949071e8ff94547b42520636f9029fda25d7e3387d63aa"
               },
@@ -7589,8 +7589,8 @@
                   ]
                 },
                 "sequence": 9,
-                "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
-                "created_at": "2026-11-05T22:07:50.035Z",
+                "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
+                "created_at": "2026-11-13T23:47:50.529Z",
                 "operation_id": "staging_read_0",
                 "payload_digest": "be8c464d5e0098600cf1f36ef3468c4d58da014217c9dfeed6458c4277bca318"
               }
@@ -7647,13 +7647,13 @@
           },
           "events": [
             {
-              "at": "2026-11-05T22:07:04.923Z",
+              "at": "2026-11-13T23:47:05.387Z",
               "type": "activated",
               "details": {},
               "sequence": 1
             },
             {
-              "at": "2026-11-05T22:07:04.923Z",
+              "at": "2026-11-13T23:47:05.387Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-child",
@@ -7662,7 +7662,7 @@
               "sequence": 2
             },
             {
-              "at": "2026-11-05T22:07:04.923Z",
+              "at": "2026-11-13T23:47:05.387Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -7672,7 +7672,7 @@
               "sequence": 3
             },
             {
-              "at": "2026-11-05T22:07:04.923Z",
+              "at": "2026-11-13T23:47:05.387Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -7682,7 +7682,7 @@
               "sequence": 4
             },
             {
-              "at": "2026-11-05T22:07:04.923Z",
+              "at": "2026-11-13T23:47:05.387Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -7692,7 +7692,7 @@
               "sequence": 5
             },
             {
-              "at": "2026-11-05T22:07:04.923Z",
+              "at": "2026-11-13T23:47:05.387Z",
               "type": "child_committed",
               "details": {
                 "role": "tests",
@@ -7701,7 +7701,7 @@
               "sequence": 6
             },
             {
-              "at": "2026-11-05T22:07:50.035Z",
+              "at": "2026-11-13T23:47:50.529Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "recovered-worker",
@@ -7710,7 +7710,7 @@
               "sequence": 7
             },
             {
-              "at": "2026-11-05T22:07:50.035Z",
+              "at": "2026-11-13T23:47:50.529Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -7720,7 +7720,7 @@
               "sequence": 8
             },
             {
-              "at": "2026-11-05T22:07:50.035Z",
+              "at": "2026-11-13T23:47:50.529Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -7730,7 +7730,7 @@
               "sequence": 9
             },
             {
-              "at": "2026-11-05T22:07:50.035Z",
+              "at": "2026-11-13T23:47:50.529Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -7740,7 +7740,7 @@
               "sequence": 10
             },
             {
-              "at": "2026-11-05T22:07:50.035Z",
+              "at": "2026-11-13T23:47:50.529Z",
               "type": "child_committed",
               "details": {
                 "role": "staging",
@@ -7749,7 +7749,7 @@
               "sequence": 11
             },
             {
-              "at": "2026-11-05T22:07:50.043Z",
+              "at": "2026-11-13T23:47:50.535Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "recovered-worker",
@@ -7758,10 +7758,10 @@
               "sequence": 12
             },
             {
-              "at": "2026-11-05T22:07:50.043Z",
+              "at": "2026-11-13T23:47:50.535Z",
               "type": "join_committed",
               "details": {
-                "digest": "8e5fa94f5f86fe37dea05bf90d9453c4cca88bb2ba305a70f79c3e0007c5ecfc",
+                "digest": "2b2314d4ea1ee56133427f3ce6a7abeecdd6fa99c83e7fa78a03fc8497976038",
                 "children": [
                   "h3",
                   "h6"
@@ -7770,7 +7770,7 @@
               "sequence": 13
             },
             {
-              "at": "2026-11-05T22:07:50.043Z",
+              "at": "2026-11-13T23:47:50.535Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_assessment",
@@ -7780,7 +7780,7 @@
               "sequence": 14
             },
             {
-              "at": "2026-11-05T22:07:50.043Z",
+              "at": "2026-11-13T23:47:50.535Z",
               "type": "assessment_committed",
               "details": {
                 "receipt_id": "h7"
@@ -7848,7 +7848,7 @@
               "receipt_id": "h6"
             }
           },
-          "deadline": 1793916904923.921,
+          "deadline": 1794614105387.51,
           "receipts": [
             {
               "id": "h1",
@@ -7888,8 +7888,8 @@
                 ]
               },
               "sequence": 3,
-              "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
-              "created_at": "2026-11-05T22:07:04.923Z",
+              "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
+              "created_at": "2026-11-13T23:47:05.387Z",
               "operation_id": "tests_catalog",
               "payload_digest": "7618cf77449717abb758b896a5bd5b76f9030e12e55d2ae72cb9ef0b733b952d"
             },
@@ -7941,8 +7941,8 @@
                 ]
               },
               "sequence": 4,
-              "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
-              "created_at": "2026-11-05T22:07:04.923Z",
+              "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
+              "created_at": "2026-11-13T23:47:05.387Z",
               "operation_id": "tests_read_0",
               "payload_digest": "03e0c6f8c69f0c653790c660dadded35863751aa5356b46f6e0e43d96dc3beba"
             },
@@ -7976,8 +7976,8 @@
                 ]
               },
               "sequence": 5,
-              "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
-              "created_at": "2026-11-05T22:07:04.923Z",
+              "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
+              "created_at": "2026-11-13T23:47:05.387Z",
               "operation_id": "tests_submit",
               "payload_digest": "dcfce4589e4bfc73e228d4c741bc904f7f9e97c9c3bd0ca0901afc69d2241f08"
             },
@@ -8012,8 +8012,8 @@
                 ]
               },
               "sequence": 8,
-              "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
-              "created_at": "2026-11-05T22:07:50.035Z",
+              "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
+              "created_at": "2026-11-13T23:47:50.529Z",
               "operation_id": "staging_catalog",
               "payload_digest": "d8a0f1522e93ba424d949071e8ff94547b42520636f9029fda25d7e3387d63aa"
             },
@@ -8052,8 +8052,8 @@
                 ]
               },
               "sequence": 9,
-              "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
-              "created_at": "2026-11-05T22:07:50.035Z",
+              "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
+              "created_at": "2026-11-13T23:47:50.529Z",
               "operation_id": "staging_read_0",
               "payload_digest": "be8c464d5e0098600cf1f36ef3468c4d58da014217c9dfeed6458c4277bca318"
             },
@@ -8082,8 +8082,8 @@
                 ]
               },
               "sequence": 10,
-              "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
-              "created_at": "2026-11-05T22:07:50.035Z",
+              "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
+              "created_at": "2026-11-13T23:47:50.529Z",
               "operation_id": "staging_submit",
               "payload_digest": "e01ab3c31326def7b45e3f3f1214455b871d6acbd82a5b754a8a9cf7d625a9f0"
             },
@@ -8140,8 +8140,8 @@
                 ]
               },
               "sequence": 14,
-              "trial_id": "fault_c2cdad678dd_worker_death_42117978561",
-              "created_at": "2026-11-05T22:07:50.043Z",
+              "trial_id": "fault_c2cdad678dd_worker_death_43529053019",
+              "created_at": "2026-11-13T23:47:50.535Z",
               "operation_id": "final",
               "payload_digest": "b021785c1b4a2025535285a8fe376500f5c940c7695e12c37411678f3d72a765"
             }
@@ -8215,11 +8215,11 @@
               "output_reserved_tokens": 1024
             }
           },
-          "lease_until": 1793916515043.392,
+          "lease_until": 1794613715535.954,
           "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
           "snapshot_id": "s2a4724c4",
-          "terminal_at": 1793916470043.392,
-          "activated_at": 1793916424923.921,
+          "terminal_at": 1794613670535.954,
+          "activated_at": 1794613625387.51,
           "model_digest": null,
           "reservations": [],
           "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
@@ -8300,20 +8300,20 @@
           "tool_receipts": 7
         },
         "event_sequence": 15,
-        "read_at": "2026-11-05T22:07:50.133Z",
-        "connection_id": 626
+        "read_at": "2026-11-13T23:47:50.637Z",
+        "connection_id": 635
       }
     },
     {
       "schema_version": 1,
       "mode": "scripted_runtime",
-      "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
+      "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
       "fault": "cancel_race",
       "fixture_id": "c2cdad678dd",
       "window": {
-        "start": "2026-11-05T22:07:50.154Z",
-        "action_end": "2026-11-05T22:07:50.378Z",
-        "end": "2026-11-05T22:07:50.463Z"
+        "start": "2026-11-13T23:47:50.659Z",
+        "action_end": "2026-11-13T23:47:50.913Z",
+        "end": "2026-11-13T23:47:51.004Z"
       },
       "injection": {
         "fault": "cancel_race",
@@ -8323,16 +8323,16 @@
           {
             "order": "cancel_then_submit",
             "barrier_armed": true,
-            "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
+            "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
             "first_committed": true,
             "late_submit_refusal": "TRIAL_TERMINAL",
-            "action_end": "2026-11-05T22:07:50.167Z",
+            "action_end": "2026-11-13T23:47:50.674Z",
             "observation": {
-              "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-              "schema": "crewbench_test_1a3cacae9536",
-              "state_digest": "f6bef530602ed68ea8b1d7bd0d39f565ec5e33651620077995d00e6a0cbfee5d",
+              "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+              "schema": "crewbench_test_f79a71738f88",
+              "state_digest": "e22cdde9704abcc74119999ec062704dc4d7776222ebcbbe6e0f30249573a4d2",
               "state": {
-                "id": "fault_c2cdad678dd_cancel_race_42117978561",
+                "id": "fault_c2cdad678dd_cancel_race_43529053019",
                 "join": null,
                 "mode": "scripted_runtime",
                 "owner": "fault-worker",
@@ -8385,13 +8385,13 @@
                 },
                 "events": [
                   {
-                    "at": "2026-11-05T22:07:50.155Z",
+                    "at": "2026-11-13T23:47:50.659Z",
                     "type": "activated",
                     "details": {},
                     "sequence": 1
                   },
                   {
-                    "at": "2026-11-05T22:07:50.155Z",
+                    "at": "2026-11-13T23:47:50.659Z",
                     "type": "lease_acquired",
                     "details": {
                       "owner": "fault-worker",
@@ -8400,7 +8400,7 @@
                     "sequence": 2
                   },
                   {
-                    "at": "2026-11-05T22:07:50.155Z",
+                    "at": "2026-11-13T23:47:50.659Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "list_evidence",
@@ -8410,7 +8410,7 @@
                     "sequence": 3
                   },
                   {
-                    "at": "2026-11-05T22:07:50.155Z",
+                    "at": "2026-11-13T23:47:50.659Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "read_evidence",
@@ -8420,7 +8420,7 @@
                     "sequence": 4
                   },
                   {
-                    "at": "2026-11-05T22:07:50.155Z",
+                    "at": "2026-11-13T23:47:50.659Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "submit_findings",
@@ -8430,7 +8430,7 @@
                     "sequence": 5
                   },
                   {
-                    "at": "2026-11-05T22:07:50.155Z",
+                    "at": "2026-11-13T23:47:50.659Z",
                     "type": "child_committed",
                     "details": {
                       "role": "tests",
@@ -8439,7 +8439,7 @@
                     "sequence": 6
                   },
                   {
-                    "at": "2026-11-05T22:07:50.159Z",
+                    "at": "2026-11-13T23:47:50.665Z",
                     "type": "lease_acquired",
                     "details": {
                       "owner": "fault-worker",
@@ -8448,7 +8448,7 @@
                     "sequence": 7
                   },
                   {
-                    "at": "2026-11-05T22:07:50.159Z",
+                    "at": "2026-11-13T23:47:50.665Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "list_evidence",
@@ -8458,7 +8458,7 @@
                     "sequence": 8
                   },
                   {
-                    "at": "2026-11-05T22:07:50.159Z",
+                    "at": "2026-11-13T23:47:50.665Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "read_evidence",
@@ -8468,7 +8468,7 @@
                     "sequence": 9
                   },
                   {
-                    "at": "2026-11-05T22:07:50.159Z",
+                    "at": "2026-11-13T23:47:50.665Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "submit_findings",
@@ -8478,7 +8478,7 @@
                     "sequence": 10
                   },
                   {
-                    "at": "2026-11-05T22:07:50.159Z",
+                    "at": "2026-11-13T23:47:50.665Z",
                     "type": "child_committed",
                     "details": {
                       "role": "staging",
@@ -8487,7 +8487,7 @@
                     "sequence": 11
                   },
                   {
-                    "at": "2026-11-05T22:07:50.163Z",
+                    "at": "2026-11-13T23:47:50.669Z",
                     "type": "terminal",
                     "details": {
                       "reason": "SCRIPTED_CANCEL",
@@ -8496,7 +8496,7 @@
                     "sequence": 12
                   },
                   {
-                    "at": "2026-11-05T22:07:50.165Z",
+                    "at": "2026-11-13T23:47:50.672Z",
                     "type": "refusal",
                     "details": {
                       "code": "TRIAL_TERMINAL"
@@ -8564,7 +8564,7 @@
                     "receipt_id": "h6"
                   }
                 },
-                "deadline": 1793916950155.019,
+                "deadline": 1794614150659.576,
                 "receipts": [
                   {
                     "id": "h1",
@@ -8604,8 +8604,8 @@
                       ]
                     },
                     "sequence": 3,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-                    "created_at": "2026-11-05T22:07:50.155Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+                    "created_at": "2026-11-13T23:47:50.659Z",
                     "operation_id": "tests_catalog",
                     "payload_digest": "7618cf77449717abb758b896a5bd5b76f9030e12e55d2ae72cb9ef0b733b952d"
                   },
@@ -8657,8 +8657,8 @@
                       ]
                     },
                     "sequence": 4,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-                    "created_at": "2026-11-05T22:07:50.155Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+                    "created_at": "2026-11-13T23:47:50.659Z",
                     "operation_id": "tests_read_0",
                     "payload_digest": "03e0c6f8c69f0c653790c660dadded35863751aa5356b46f6e0e43d96dc3beba"
                   },
@@ -8692,8 +8692,8 @@
                       ]
                     },
                     "sequence": 5,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-                    "created_at": "2026-11-05T22:07:50.155Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+                    "created_at": "2026-11-13T23:47:50.659Z",
                     "operation_id": "tests_submit",
                     "payload_digest": "dcfce4589e4bfc73e228d4c741bc904f7f9e97c9c3bd0ca0901afc69d2241f08"
                   },
@@ -8728,8 +8728,8 @@
                       ]
                     },
                     "sequence": 8,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-                    "created_at": "2026-11-05T22:07:50.159Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+                    "created_at": "2026-11-13T23:47:50.665Z",
                     "operation_id": "staging_catalog",
                     "payload_digest": "d8a0f1522e93ba424d949071e8ff94547b42520636f9029fda25d7e3387d63aa"
                   },
@@ -8768,8 +8768,8 @@
                       ]
                     },
                     "sequence": 9,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-                    "created_at": "2026-11-05T22:07:50.159Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+                    "created_at": "2026-11-13T23:47:50.665Z",
                     "operation_id": "staging_read_0",
                     "payload_digest": "be8c464d5e0098600cf1f36ef3468c4d58da014217c9dfeed6458c4277bca318"
                   },
@@ -8798,8 +8798,8 @@
                       ]
                     },
                     "sequence": 10,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-                    "created_at": "2026-11-05T22:07:50.159Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+                    "created_at": "2026-11-13T23:47:50.665Z",
                     "operation_id": "staging_submit",
                     "payload_digest": "e01ab3c31326def7b45e3f3f1214455b871d6acbd82a5b754a8a9cf7d625a9f0"
                   }
@@ -8829,8 +8829,8 @@
                 "lease_until": 0,
                 "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
                 "snapshot_id": "s2a4724c4",
-                "terminal_at": 1793916470163.547,
-                "activated_at": 1793916470155.019,
+                "terminal_at": 1794613670669.729,
+                "activated_at": 1794613670659.576,
                 "model_digest": null,
                 "reservations": [],
                 "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
@@ -8902,22 +8902,22 @@
                 "tool_receipts": 6
               },
               "event_sequence": 13,
-              "read_at": "2026-11-05T22:07:50.253Z",
-              "connection_id": 627
+              "read_at": "2026-11-13T23:47:50.771Z",
+              "connection_id": 636
             }
           },
           {
             "order": "submit_then_cancel",
             "barrier_armed": true,
-            "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
+            "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
             "first_committed": true,
-            "action_end": "2026-11-05T22:07:50.284Z",
+            "action_end": "2026-11-13T23:47:50.804Z",
             "observation": {
-              "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
-              "schema": "crewbench_test_1a3cacae9536",
-              "state_digest": "9709c1120b743fe041dda46964376c77b0ddecee28660a854a03f5af45857824",
+              "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
+              "schema": "crewbench_test_f79a71738f88",
+              "state_digest": "49c56be98ec4c1545d8d57ac33a6056d3390e3a2055366698e37e00e10f94097",
               "state": {
-                "id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
+                "id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
                 "join": {
                   "case_id": "c2cdad678dd",
                   "packets": {
@@ -8967,7 +8967,7 @@
                       ]
                     }
                   },
-                  "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
+                  "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
                   "snapshot_id": "s2a4724c4",
                   "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
                   "child_receipts": [
@@ -9013,8 +9013,8 @@
                         ]
                       },
                       "sequence": 3,
-                      "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
-                      "created_at": "2026-11-05T22:07:50.270Z",
+                      "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
+                      "created_at": "2026-11-13T23:47:50.788Z",
                       "operation_id": "tests_catalog",
                       "payload_digest": "7618cf77449717abb758b896a5bd5b76f9030e12e55d2ae72cb9ef0b733b952d"
                     },
@@ -9066,8 +9066,8 @@
                         ]
                       },
                       "sequence": 4,
-                      "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
-                      "created_at": "2026-11-05T22:07:50.270Z",
+                      "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
+                      "created_at": "2026-11-13T23:47:50.788Z",
                       "operation_id": "tests_read_0",
                       "payload_digest": "03e0c6f8c69f0c653790c660dadded35863751aa5356b46f6e0e43d96dc3beba"
                     },
@@ -9102,8 +9102,8 @@
                         ]
                       },
                       "sequence": 8,
-                      "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
-                      "created_at": "2026-11-05T22:07:50.274Z",
+                      "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
+                      "created_at": "2026-11-13T23:47:50.793Z",
                       "operation_id": "staging_catalog",
                       "payload_digest": "d8a0f1522e93ba424d949071e8ff94547b42520636f9029fda25d7e3387d63aa"
                     },
@@ -9142,8 +9142,8 @@
                         ]
                       },
                       "sequence": 9,
-                      "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
-                      "created_at": "2026-11-05T22:07:50.274Z",
+                      "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
+                      "created_at": "2026-11-13T23:47:50.793Z",
                       "operation_id": "staging_read_0",
                       "payload_digest": "be8c464d5e0098600cf1f36ef3468c4d58da014217c9dfeed6458c4277bca318"
                     }
@@ -9200,13 +9200,13 @@
                 },
                 "events": [
                   {
-                    "at": "2026-11-05T22:07:50.270Z",
+                    "at": "2026-11-13T23:47:50.788Z",
                     "type": "activated",
                     "details": {},
                     "sequence": 1
                   },
                   {
-                    "at": "2026-11-05T22:07:50.270Z",
+                    "at": "2026-11-13T23:47:50.788Z",
                     "type": "lease_acquired",
                     "details": {
                       "owner": "fault-worker",
@@ -9215,7 +9215,7 @@
                     "sequence": 2
                   },
                   {
-                    "at": "2026-11-05T22:07:50.270Z",
+                    "at": "2026-11-13T23:47:50.788Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "list_evidence",
@@ -9225,7 +9225,7 @@
                     "sequence": 3
                   },
                   {
-                    "at": "2026-11-05T22:07:50.270Z",
+                    "at": "2026-11-13T23:47:50.788Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "read_evidence",
@@ -9235,7 +9235,7 @@
                     "sequence": 4
                   },
                   {
-                    "at": "2026-11-05T22:07:50.270Z",
+                    "at": "2026-11-13T23:47:50.788Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "submit_findings",
@@ -9245,7 +9245,7 @@
                     "sequence": 5
                   },
                   {
-                    "at": "2026-11-05T22:07:50.270Z",
+                    "at": "2026-11-13T23:47:50.788Z",
                     "type": "child_committed",
                     "details": {
                       "role": "tests",
@@ -9254,7 +9254,7 @@
                     "sequence": 6
                   },
                   {
-                    "at": "2026-11-05T22:07:50.274Z",
+                    "at": "2026-11-13T23:47:50.793Z",
                     "type": "lease_acquired",
                     "details": {
                       "owner": "fault-worker",
@@ -9263,7 +9263,7 @@
                     "sequence": 7
                   },
                   {
-                    "at": "2026-11-05T22:07:50.274Z",
+                    "at": "2026-11-13T23:47:50.793Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "list_evidence",
@@ -9273,7 +9273,7 @@
                     "sequence": 8
                   },
                   {
-                    "at": "2026-11-05T22:07:50.274Z",
+                    "at": "2026-11-13T23:47:50.793Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "read_evidence",
@@ -9283,7 +9283,7 @@
                     "sequence": 9
                   },
                   {
-                    "at": "2026-11-05T22:07:50.274Z",
+                    "at": "2026-11-13T23:47:50.793Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "submit_findings",
@@ -9293,7 +9293,7 @@
                     "sequence": 10
                   },
                   {
-                    "at": "2026-11-05T22:07:50.274Z",
+                    "at": "2026-11-13T23:47:50.793Z",
                     "type": "child_committed",
                     "details": {
                       "role": "staging",
@@ -9302,7 +9302,7 @@
                     "sequence": 11
                   },
                   {
-                    "at": "2026-11-05T22:07:50.278Z",
+                    "at": "2026-11-13T23:47:50.797Z",
                     "type": "lease_acquired",
                     "details": {
                       "owner": "fault-worker",
@@ -9311,10 +9311,10 @@
                     "sequence": 12
                   },
                   {
-                    "at": "2026-11-05T22:07:50.278Z",
+                    "at": "2026-11-13T23:47:50.797Z",
                     "type": "join_committed",
                     "details": {
-                      "digest": "4a3ca8a43b39e93cdcc87ce6dcaee7e0998f7aa8633352f12f3ded464ba71701",
+                      "digest": "a5b6ebaa08d65a878b028ac81e77552f99ac45c1ca59db6ebeede966e3932434",
                       "children": [
                         "h3",
                         "h6"
@@ -9323,7 +9323,7 @@
                     "sequence": 13
                   },
                   {
-                    "at": "2026-11-05T22:07:50.278Z",
+                    "at": "2026-11-13T23:47:50.797Z",
                     "type": "handler_executed",
                     "details": {
                       "name": "submit_assessment",
@@ -9333,7 +9333,7 @@
                     "sequence": 14
                   },
                   {
-                    "at": "2026-11-05T22:07:50.278Z",
+                    "at": "2026-11-13T23:47:50.797Z",
                     "type": "assessment_committed",
                     "details": {
                       "receipt_id": "h7"
@@ -9401,7 +9401,7 @@
                     "receipt_id": "h6"
                   }
                 },
-                "deadline": 1793916950270.295,
+                "deadline": 1794614150788.868,
                 "receipts": [
                   {
                     "id": "h1",
@@ -9441,8 +9441,8 @@
                       ]
                     },
                     "sequence": 3,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:07:50.270Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:47:50.788Z",
                     "operation_id": "tests_catalog",
                     "payload_digest": "7618cf77449717abb758b896a5bd5b76f9030e12e55d2ae72cb9ef0b733b952d"
                   },
@@ -9494,8 +9494,8 @@
                       ]
                     },
                     "sequence": 4,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:07:50.270Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:47:50.788Z",
                     "operation_id": "tests_read_0",
                     "payload_digest": "03e0c6f8c69f0c653790c660dadded35863751aa5356b46f6e0e43d96dc3beba"
                   },
@@ -9529,8 +9529,8 @@
                       ]
                     },
                     "sequence": 5,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:07:50.270Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:47:50.788Z",
                     "operation_id": "tests_submit",
                     "payload_digest": "dcfce4589e4bfc73e228d4c741bc904f7f9e97c9c3bd0ca0901afc69d2241f08"
                   },
@@ -9565,8 +9565,8 @@
                       ]
                     },
                     "sequence": 8,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:07:50.274Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:47:50.793Z",
                     "operation_id": "staging_catalog",
                     "payload_digest": "d8a0f1522e93ba424d949071e8ff94547b42520636f9029fda25d7e3387d63aa"
                   },
@@ -9605,8 +9605,8 @@
                       ]
                     },
                     "sequence": 9,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:07:50.274Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:47:50.793Z",
                     "operation_id": "staging_read_0",
                     "payload_digest": "be8c464d5e0098600cf1f36ef3468c4d58da014217c9dfeed6458c4277bca318"
                   },
@@ -9635,8 +9635,8 @@
                       ]
                     },
                     "sequence": 10,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:07:50.274Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:47:50.793Z",
                     "operation_id": "staging_submit",
                     "payload_digest": "e01ab3c31326def7b45e3f3f1214455b871d6acbd82a5b754a8a9cf7d625a9f0"
                   },
@@ -9693,8 +9693,8 @@
                       ]
                     },
                     "sequence": 14,
-                    "trial_id": "fault_c2cdad678dd_cancel_race_42117978561_reverse",
-                    "created_at": "2026-11-05T22:07:50.278Z",
+                    "trial_id": "fault_c2cdad678dd_cancel_race_43529053019_reverse",
+                    "created_at": "2026-11-13T23:47:50.797Z",
                     "operation_id": "final",
                     "payload_digest": "b021785c1b4a2025535285a8fe376500f5c940c7695e12c37411678f3d72a765"
                   }
@@ -9768,11 +9768,11 @@
                     "output_reserved_tokens": 1024
                   }
                 },
-                "lease_until": 1793916515278.72,
+                "lease_until": 1794613715797.807,
                 "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
                 "snapshot_id": "s2a4724c4",
-                "terminal_at": 1793916470278.72,
-                "activated_at": 1793916470270.295,
+                "terminal_at": 1794613670797.807,
+                "activated_at": 1794613670788.868,
                 "model_digest": null,
                 "reservations": [],
                 "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
@@ -9853,19 +9853,19 @@
                 "tool_receipts": 7
               },
               "event_sequence": 15,
-              "read_at": "2026-11-05T22:07:50.368Z",
-              "connection_id": 628
+              "read_at": "2026-11-13T23:47:50.900Z",
+              "connection_id": 637
             }
           }
         ],
         "order": "cancel_then_submit"
       },
       "observation": {
-        "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-        "schema": "crewbench_test_1a3cacae9536",
-        "state_digest": "f6bef530602ed68ea8b1d7bd0d39f565ec5e33651620077995d00e6a0cbfee5d",
+        "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+        "schema": "crewbench_test_f79a71738f88",
+        "state_digest": "e22cdde9704abcc74119999ec062704dc4d7776222ebcbbe6e0f30249573a4d2",
         "state": {
-          "id": "fault_c2cdad678dd_cancel_race_42117978561",
+          "id": "fault_c2cdad678dd_cancel_race_43529053019",
           "join": null,
           "mode": "scripted_runtime",
           "owner": "fault-worker",
@@ -9918,13 +9918,13 @@
           },
           "events": [
             {
-              "at": "2026-11-05T22:07:50.155Z",
+              "at": "2026-11-13T23:47:50.659Z",
               "type": "activated",
               "details": {},
               "sequence": 1
             },
             {
-              "at": "2026-11-05T22:07:50.155Z",
+              "at": "2026-11-13T23:47:50.659Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -9933,7 +9933,7 @@
               "sequence": 2
             },
             {
-              "at": "2026-11-05T22:07:50.155Z",
+              "at": "2026-11-13T23:47:50.659Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -9943,7 +9943,7 @@
               "sequence": 3
             },
             {
-              "at": "2026-11-05T22:07:50.155Z",
+              "at": "2026-11-13T23:47:50.659Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -9953,7 +9953,7 @@
               "sequence": 4
             },
             {
-              "at": "2026-11-05T22:07:50.155Z",
+              "at": "2026-11-13T23:47:50.659Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -9963,7 +9963,7 @@
               "sequence": 5
             },
             {
-              "at": "2026-11-05T22:07:50.155Z",
+              "at": "2026-11-13T23:47:50.659Z",
               "type": "child_committed",
               "details": {
                 "role": "tests",
@@ -9972,7 +9972,7 @@
               "sequence": 6
             },
             {
-              "at": "2026-11-05T22:07:50.159Z",
+              "at": "2026-11-13T23:47:50.665Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -9981,7 +9981,7 @@
               "sequence": 7
             },
             {
-              "at": "2026-11-05T22:07:50.159Z",
+              "at": "2026-11-13T23:47:50.665Z",
               "type": "handler_executed",
               "details": {
                 "name": "list_evidence",
@@ -9991,7 +9991,7 @@
               "sequence": 8
             },
             {
-              "at": "2026-11-05T22:07:50.159Z",
+              "at": "2026-11-13T23:47:50.665Z",
               "type": "handler_executed",
               "details": {
                 "name": "read_evidence",
@@ -10001,7 +10001,7 @@
               "sequence": 9
             },
             {
-              "at": "2026-11-05T22:07:50.159Z",
+              "at": "2026-11-13T23:47:50.665Z",
               "type": "handler_executed",
               "details": {
                 "name": "submit_findings",
@@ -10011,7 +10011,7 @@
               "sequence": 10
             },
             {
-              "at": "2026-11-05T22:07:50.159Z",
+              "at": "2026-11-13T23:47:50.665Z",
               "type": "child_committed",
               "details": {
                 "role": "staging",
@@ -10020,7 +10020,7 @@
               "sequence": 11
             },
             {
-              "at": "2026-11-05T22:07:50.163Z",
+              "at": "2026-11-13T23:47:50.669Z",
               "type": "terminal",
               "details": {
                 "reason": "SCRIPTED_CANCEL",
@@ -10029,7 +10029,7 @@
               "sequence": 12
             },
             {
-              "at": "2026-11-05T22:07:50.165Z",
+              "at": "2026-11-13T23:47:50.672Z",
               "type": "refusal",
               "details": {
                 "code": "TRIAL_TERMINAL"
@@ -10097,7 +10097,7 @@
               "receipt_id": "h6"
             }
           },
-          "deadline": 1793916950155.019,
+          "deadline": 1794614150659.576,
           "receipts": [
             {
               "id": "h1",
@@ -10137,8 +10137,8 @@
                 ]
               },
               "sequence": 3,
-              "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-              "created_at": "2026-11-05T22:07:50.155Z",
+              "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+              "created_at": "2026-11-13T23:47:50.659Z",
               "operation_id": "tests_catalog",
               "payload_digest": "7618cf77449717abb758b896a5bd5b76f9030e12e55d2ae72cb9ef0b733b952d"
             },
@@ -10190,8 +10190,8 @@
                 ]
               },
               "sequence": 4,
-              "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-              "created_at": "2026-11-05T22:07:50.155Z",
+              "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+              "created_at": "2026-11-13T23:47:50.659Z",
               "operation_id": "tests_read_0",
               "payload_digest": "03e0c6f8c69f0c653790c660dadded35863751aa5356b46f6e0e43d96dc3beba"
             },
@@ -10225,8 +10225,8 @@
                 ]
               },
               "sequence": 5,
-              "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-              "created_at": "2026-11-05T22:07:50.155Z",
+              "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+              "created_at": "2026-11-13T23:47:50.659Z",
               "operation_id": "tests_submit",
               "payload_digest": "dcfce4589e4bfc73e228d4c741bc904f7f9e97c9c3bd0ca0901afc69d2241f08"
             },
@@ -10261,8 +10261,8 @@
                 ]
               },
               "sequence": 8,
-              "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-              "created_at": "2026-11-05T22:07:50.159Z",
+              "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+              "created_at": "2026-11-13T23:47:50.665Z",
               "operation_id": "staging_catalog",
               "payload_digest": "d8a0f1522e93ba424d949071e8ff94547b42520636f9029fda25d7e3387d63aa"
             },
@@ -10301,8 +10301,8 @@
                 ]
               },
               "sequence": 9,
-              "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-              "created_at": "2026-11-05T22:07:50.159Z",
+              "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+              "created_at": "2026-11-13T23:47:50.665Z",
               "operation_id": "staging_read_0",
               "payload_digest": "be8c464d5e0098600cf1f36ef3468c4d58da014217c9dfeed6458c4277bca318"
             },
@@ -10331,8 +10331,8 @@
                 ]
               },
               "sequence": 10,
-              "trial_id": "fault_c2cdad678dd_cancel_race_42117978561",
-              "created_at": "2026-11-05T22:07:50.159Z",
+              "trial_id": "fault_c2cdad678dd_cancel_race_43529053019",
+              "created_at": "2026-11-13T23:47:50.665Z",
               "operation_id": "staging_submit",
               "payload_digest": "e01ab3c31326def7b45e3f3f1214455b871d6acbd82a5b754a8a9cf7d625a9f0"
             }
@@ -10362,8 +10362,8 @@
           "lease_until": 0,
           "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
           "snapshot_id": "s2a4724c4",
-          "terminal_at": 1793916470163.547,
-          "activated_at": 1793916470155.019,
+          "terminal_at": 1794613670669.729,
+          "activated_at": 1794613670659.576,
           "model_digest": null,
           "reservations": [],
           "config_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
@@ -10435,20 +10435,20 @@
           "tool_receipts": 6
         },
         "event_sequence": 13,
-        "read_at": "2026-11-05T22:07:50.463Z",
-        "connection_id": 629
+        "read_at": "2026-11-13T23:47:51.004Z",
+        "connection_id": 638
       }
     },
     {
       "schema_version": 1,
       "mode": "scripted_runtime",
-      "trial_id": "fault_c2cdad678dd_budget_race_42117978561",
+      "trial_id": "fault_c2cdad678dd_budget_race_43529053019",
       "fault": "budget_race",
       "fixture_id": "c2cdad678dd",
       "window": {
-        "start": "2026-11-05T22:07:50.481Z",
-        "action_end": "2026-11-05T22:07:50.493Z",
-        "end": "2026-11-05T22:07:50.582Z"
+        "start": "2026-11-13T23:47:51.023Z",
+        "action_end": "2026-11-13T23:47:51.036Z",
+        "end": "2026-11-13T23:47:51.126Z"
       },
       "injection": {
         "fault": "budget_race",
@@ -10460,11 +10460,11 @@
         ]
       },
       "observation": {
-        "trial_id": "fault_c2cdad678dd_budget_race_42117978561",
-        "schema": "crewbench_test_1a3cacae9536",
-        "state_digest": "4fbfb53837599cba06fc37609a351aa66f364449d2b6a19d2ac918b3ed1f3d5d",
+        "trial_id": "fault_c2cdad678dd_budget_race_43529053019",
+        "schema": "crewbench_test_f79a71738f88",
+        "state_digest": "390010449622aefe12cefd7b659fdbe63135570c54100e257a0c55cd40699c28",
         "state": {
-          "id": "fault_c2cdad678dd_budget_race_42117978561",
+          "id": "fault_c2cdad678dd_budget_race_43529053019",
           "join": null,
           "mode": "scripted_runtime",
           "owner": "fault-worker",
@@ -10477,7 +10477,7 @@
                 "output_reserved_tokens": 512
               },
               "status": "failed",
-              "session_id": "fault_c2cdad678dd_budget_race_42117978561_tests"
+              "session_id": "fault_c2cdad678dd_budget_race_43529053019_tests"
             },
             "staging": {
               "spent": {
@@ -10517,13 +10517,13 @@
           },
           "events": [
             {
-              "at": "2026-11-05T22:07:50.482Z",
+              "at": "2026-11-13T23:47:51.024Z",
               "type": "activated",
               "details": {},
               "sequence": 1
             },
             {
-              "at": "2026-11-05T22:07:50.482Z",
+              "at": "2026-11-13T23:47:51.024Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-worker",
@@ -10532,7 +10532,7 @@
               "sequence": 2
             },
             {
-              "at": "2026-11-05T22:07:50.484Z",
+              "at": "2026-11-13T23:47:51.027Z",
               "type": "reserved",
               "details": {
                 "role": "tests",
@@ -10547,7 +10547,7 @@
               "sequence": 3
             },
             {
-              "at": "2026-11-05T22:07:50.488Z",
+              "at": "2026-11-13T23:47:51.031Z",
               "type": "refusal",
               "details": {
                 "code": "BUDGET_EXHAUSTED"
@@ -10555,7 +10555,7 @@
               "sequence": 4
             },
             {
-              "at": "2026-11-05T22:07:50.491Z",
+              "at": "2026-11-13T23:47:51.034Z",
               "type": "terminal",
               "details": {
                 "reason": "SCRIPTED_BUDGET_RACE_COMPLETE",
@@ -10570,7 +10570,7 @@
           "failure": "SCRIPTED_BUDGET_RACE_COMPLETE",
           "attempts": [],
           "children": {},
-          "deadline": 1793916950482.143,
+          "deadline": 1794614151024.268,
           "receipts": [],
           "assessment": null,
           "generation": 2,
@@ -10597,8 +10597,8 @@
           "lease_until": 0,
           "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
           "snapshot_id": "s2a4724c4",
-          "terminal_at": 1793916470491.453,
-          "activated_at": 1793916470482.143,
+          "terminal_at": 1794613671034.744,
+          "activated_at": 1794613671024.268,
           "model_digest": null,
           "reservations": [
             {
@@ -10626,45 +10626,45 @@
           "tool_receipts": 0
         },
         "event_sequence": 5,
-        "read_at": "2026-11-05T22:07:50.582Z",
-        "connection_id": 631
+        "read_at": "2026-11-13T23:47:51.126Z",
+        "connection_id": 640
       }
     },
     {
       "schema_version": 1,
       "mode": "scripted_runtime",
-      "trial_id": "fault_c2cdad678dd_uncertain_dispatch_42117978561",
+      "trial_id": "fault_c2cdad678dd_uncertain_dispatch_43529053019",
       "fault": "uncertain_dispatch",
       "fixture_id": "c2cdad678dd",
       "window": {
-        "start": "2026-11-05T22:07:50.602Z",
-        "action_end": "2026-11-05T22:11:25.864Z",
-        "end": "2026-11-05T22:11:25.941Z"
+        "start": "2026-11-13T23:47:51.147Z",
+        "action_end": "2026-11-13T23:51:26.457Z",
+        "end": "2026-11-13T23:51:26.543Z"
       },
       "injection": {
         "fault": "uncertain_dispatch",
         "fixture": "c2cdad678dd",
         "injected": true,
         "barrier": {
-          "pid": 4384,
+          "pid": 4553,
           "accepted": true,
-          "trial_id": "fault_c2cdad678dd_uncertain_dispatch_42117978561",
+          "trial_id": "fault_c2cdad678dd_uncertain_dispatch_43529053019",
           "boundary": "dispatch_intent"
         },
         "exit": {
           "code": null,
           "signal": "SIGKILL"
         },
-        "killed_pid": 4384,
+        "killed_pid": 4553,
         "dispatch_intent_written": true,
         "recovery_refusal": "UNCERTAIN_DISPATCH"
       },
       "observation": {
-        "trial_id": "fault_c2cdad678dd_uncertain_dispatch_42117978561",
-        "schema": "crewbench_test_1a3cacae9536",
-        "state_digest": "6fd4dd3934538f5f4df44986266a37fdef7173a6f87dc4cfd641bfad353850e3",
+        "trial_id": "fault_c2cdad678dd_uncertain_dispatch_43529053019",
+        "schema": "crewbench_test_f79a71738f88",
+        "state_digest": "0a1608b85272510fe66cf1ad1b369926b5d1c4d0ab63b32850ec98d9feade1e5",
         "state": {
-          "id": "fault_c2cdad678dd_uncertain_dispatch_42117978561",
+          "id": "fault_c2cdad678dd_uncertain_dispatch_43529053019",
           "join": null,
           "mode": "scripted_runtime",
           "owner": "fault-child",
@@ -10677,7 +10677,7 @@
                 "output_reserved_tokens": 512
               },
               "status": "indeterminate",
-              "session_id": "fault_c2cdad678dd_uncertain_dispatch_42117978561_tests"
+              "session_id": "fault_c2cdad678dd_uncertain_dispatch_43529053019_tests"
             },
             "staging": {
               "spent": {
@@ -10717,13 +10717,13 @@
           },
           "events": [
             {
-              "at": "2026-11-05T22:07:50.693Z",
+              "at": "2026-11-13T23:47:51.248Z",
               "type": "activated",
               "details": {},
               "sequence": 1
             },
             {
-              "at": "2026-11-05T22:07:50.693Z",
+              "at": "2026-11-13T23:47:51.248Z",
               "type": "lease_acquired",
               "details": {
                 "owner": "fault-child",
@@ -10732,7 +10732,7 @@
               "sequence": 2
             },
             {
-              "at": "2026-11-05T22:07:50.693Z",
+              "at": "2026-11-13T23:47:51.248Z",
               "type": "reserved",
               "details": {
                 "role": "tests",
@@ -10747,7 +10747,7 @@
               "sequence": 3
             },
             {
-              "at": "2026-11-05T22:07:50.693Z",
+              "at": "2026-11-13T23:47:51.248Z",
               "type": "dispatch_intent",
               "details": {
                 "operation_id": "uncertain"
@@ -10755,7 +10755,7 @@
               "sequence": 4
             },
             {
-              "at": "2026-11-05T22:11:25.861Z",
+              "at": "2026-11-13T23:51:26.454Z",
               "type": "terminal",
               "details": {
                 "reason": "UNCERTAIN_DISPATCH",
@@ -10764,7 +10764,7 @@
               "sequence": 5
             },
             {
-              "at": "2026-11-05T22:11:25.861Z",
+              "at": "2026-11-13T23:51:26.454Z",
               "type": "refusal",
               "details": {
                 "code": "UNCERTAIN_DISPATCH"
@@ -10780,7 +10780,7 @@
             {
               "role": "tests",
               "status": "indeterminate",
-              "dispatch_at": "2026-11-05T22:07:50.693Z",
+              "dispatch_at": "2026-11-13T23:47:51.248Z",
               "input_tokens": null,
               "operation_id": "uncertain",
               "output_tokens": null,
@@ -10790,7 +10790,7 @@
             }
           ],
           "children": {},
-          "deadline": 1793916950693.92,
+          "deadline": 1794614151248.048,
           "receipts": [],
           "assessment": null,
           "generation": 2,
@@ -10817,8 +10817,8 @@
           "lease_until": 0,
           "plan_digest": "a8f9ec727f05caeb58f8f1a20ad27bf5d5dc5a581b3cf8579ca6d39136f68468",
           "snapshot_id": "s2a4724c4",
-          "terminal_at": 1793916685861.301,
-          "activated_at": 1793916470693.92,
+          "terminal_at": 1794613886454.26,
+          "activated_at": 1794613671248.048,
           "model_digest": null,
           "reservations": [
             {
@@ -10846,8 +10846,8 @@
           "tool_receipts": 0
         },
         "event_sequence": 6,
-        "read_at": "2026-11-05T22:11:25.941Z",
-        "connection_id": 981
+        "read_at": "2026-11-13T23:51:26.543Z",
+        "connection_id": 998
       }
     }
   ]

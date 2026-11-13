@@ -1,0 +1,291 @@
+{
+  "source_digest": "b9d4f7550fe1bc0afe0cbc680d78031ca232ee73c67808d1aedba0ca02bb9757",
+  "analysis_freeze_digest": "b4074a3379d5cee8177956e23477b49531d9a2a5f9ff2b9ad53eb8d58eb3a429",
+  "shared_execution": {
+    "schema_version": 1,
+    "source_commit": "0aced2f621850615c459e7984fd4653e391f9ee7",
+    "execution_source": "d3d3a2e5a81cf6a0cd46e80b92fbf403b0ae2c92",
+    "execution_run": "42118015947",
+    "execution_freeze_digest": "e0498163893221ff2afd834b76fe2f902e0f6fbf069204c603516ae7eda6e74c",
+    "analysis_freeze_digest": "b4074a3379d5cee8177956e23477b49531d9a2a5f9ff2b9ad53eb8d58eb3a429",
+    "analysis_frozen_at": "2026-11-05T22:01:33.870Z",
+    "inference_started_at": "2026-11-05T22:04:47Z",
+    "causal_files": 93,
+    "control_digest": "38221f430035c75393ee75bb2cdea33f52f0646e4ef13add85aca36d208ad6b7",
+    "identical_causal_inputs": true,
+    "reporting_differences": [
+      "independent grader",
+      "independent accounting",
+      "atomic report-file write",
+      "larger nonbinding CI timeout"
+    ],
+    "raw_result_rewriting": false
+  },
+  "raw_results_unchanged": true,
+  "audits": [
+    {
+      "trial_id": "eval_42118015947_c143983345f_solo_agent",
+      "verified": true,
+      "reserved": 5,
+      "dispatch_intents": 5,
+      "confirmed_attempts": 5,
+      "observed_responses": 5,
+      "known_input_tokens": 9924,
+      "known_output_tokens": 495,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_c143983345f_split_review",
+      "verified": true,
+      "reserved": 7,
+      "dispatch_intents": 7,
+      "confirmed_attempts": 7,
+      "observed_responses": 7,
+      "known_input_tokens": 9975,
+      "known_output_tokens": 416,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_c49b605abfb_split_review",
+      "verified": true,
+      "reserved": 5,
+      "dispatch_intents": 5,
+      "confirmed_attempts": 5,
+      "observed_responses": 5,
+      "known_input_tokens": 7370,
+      "known_output_tokens": 255,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_c49b605abfb_solo_agent",
+      "verified": true,
+      "reserved": 5,
+      "dispatch_intents": 5,
+      "confirmed_attempts": 5,
+      "observed_responses": 5,
+      "known_input_tokens": 9450,
+      "known_output_tokens": 425,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_c58a443d8bf_solo_agent",
+      "verified": true,
+      "reserved": 5,
+      "dispatch_intents": 5,
+      "confirmed_attempts": 5,
+      "observed_responses": 5,
+      "known_input_tokens": 9373,
+      "known_output_tokens": 446,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_c58a443d8bf_split_review",
+      "verified": true,
+      "reserved": 5,
+      "dispatch_intents": 5,
+      "confirmed_attempts": 5,
+      "observed_responses": 5,
+      "known_input_tokens": 7327,
+      "known_output_tokens": 277,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_c608d4abcc6_split_review",
+      "verified": true,
+      "reserved": 4,
+      "dispatch_intents": 4,
+      "confirmed_attempts": 4,
+      "observed_responses": 4,
+      "known_input_tokens": 5840,
+      "known_output_tokens": 254,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_c608d4abcc6_solo_agent",
+      "verified": true,
+      "reserved": 5,
+      "dispatch_intents": 5,
+      "confirmed_attempts": 5,
+      "observed_responses": 5,
+      "known_input_tokens": 9786,
+      "known_output_tokens": 462,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_c6597f8a00a_solo_agent",
+      "verified": true,
+      "reserved": 6,
+      "dispatch_intents": 6,
+      "confirmed_attempts": 6,
+      "observed_responses": 6,
+      "known_input_tokens": 11881,
+      "known_output_tokens": 446,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_c6597f8a00a_split_review",
+      "verified": true,
+      "reserved": 5,
+      "dispatch_intents": 5,
+      "confirmed_attempts": 5,
+      "observed_responses": 5,
+      "known_input_tokens": 7284,
+      "known_output_tokens": 203,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_ca2601b9007_split_review",
+      "verified": true,
+      "reserved": 8,
+      "dispatch_intents": 8,
+      "confirmed_attempts": 8,
+      "observed_responses": 8,
+      "known_input_tokens": 15446,
+      "known_output_tokens": 480,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_ca2601b9007_solo_agent",
+      "verified": true,
+      "reserved": 6,
+      "dispatch_intents": 6,
+      "confirmed_attempts": 6,
+      "observed_responses": 6,
+      "known_input_tokens": 12433,
+      "known_output_tokens": 423,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_ca4de38e62e_solo_agent",
+      "verified": true,
+      "reserved": 5,
+      "dispatch_intents": 5,
+      "confirmed_attempts": 5,
+      "observed_responses": 5,
+      "known_input_tokens": 9779,
+      "known_output_tokens": 447,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_ca4de38e62e_split_review",
+      "verified": true,
+      "reserved": 4,
+      "dispatch_intents": 4,
+      "confirmed_attempts": 4,
+      "observed_responses": 4,
+      "known_input_tokens": 5818,
+      "known_output_tokens": 248,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_ca65a570f02_split_review",
+      "verified": true,
+      "reserved": 8,
+      "dispatch_intents": 8,
+      "confirmed_attempts": 8,
+      "observed_responses": 8,
+      "known_input_tokens": 15411,
+      "known_output_tokens": 471,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_ca65a570f02_solo_agent",
+      "verified": true,
+      "reserved": 6,
+      "dispatch_intents": 6,
+      "confirmed_attempts": 6,
+      "observed_responses": 6,
+      "known_input_tokens": 12183,
+      "known_output_tokens": 402,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_cafea71cc4b_solo_agent",
+      "verified": true,
+      "reserved": 6,
+      "dispatch_intents": 6,
+      "confirmed_attempts": 6,
+      "observed_responses": 6,
+      "known_input_tokens": 12624,
+      "known_output_tokens": 604,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_cafea71cc4b_split_review",
+      "verified": true,
+      "reserved": 4,
+      "dispatch_intents": 4,
+      "confirmed_attempts": 4,
+      "observed_responses": 4,
+      "known_input_tokens": 5794,
+      "known_output_tokens": 255,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_cb3c8374c01_split_review",
+      "verified": true,
+      "reserved": 8,
+      "dispatch_intents": 8,
+      "confirmed_attempts": 8,
+      "observed_responses": 8,
+      "known_input_tokens": 15354,
+      "known_output_tokens": 711,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_cb3c8374c01_solo_agent",
+      "verified": true,
+      "reserved": 4,
+      "dispatch_intents": 4,
+      "confirmed_attempts": 4,
+      "observed_responses": 4,
+      "known_input_tokens": 7142,
+      "known_output_tokens": 296,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_ccf541745ff_solo_agent",
+      "verified": true,
+      "reserved": 4,
+      "dispatch_intents": 4,
+      "confirmed_attempts": 4,
+      "observed_responses": 4,
+      "known_input_tokens": 7039,
+      "known_output_tokens": 283,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_ccf541745ff_split_review",
+      "verified": true,
+      "reserved": 8,
+      "dispatch_intents": 8,
+      "confirmed_attempts": 8,
+      "observed_responses": 8,
+      "known_input_tokens": 15128,
+      "known_output_tokens": 559,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_ce58b88508d_split_review",
+      "verified": true,
+      "reserved": 8,
+      "dispatch_intents": 8,
+      "confirmed_attempts": 8,
+      "observed_responses": 8,
+      "known_input_tokens": 15347,
+      "known_output_tokens": 456,
+      "usage_missing": 0
+    },
+    {
+      "trial_id": "eval_42118015947_ce58b88508d_solo_agent",
+      "verified": true,
+      "reserved": 5,
+      "dispatch_intents": 5,
+      "confirmed_attempts": 5,
+      "observed_responses": 5,
+      "known_input_tokens": 9357,
+      "known_output_tokens": 382,
+      "usage_missing": 0
+    }
+  ]
+}

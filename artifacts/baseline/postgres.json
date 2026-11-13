@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "mode": "deterministic_baseline",
-  "source_commit": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
+  "source_commit": "0aced2f621850615c459e7984fd4653e391f9ee7",
   "window": {
-    "start": "2026-11-05T22:02:42.354Z",
-    "end": "2026-11-05T22:02:42.785Z"
+    "start": "2026-11-13T23:42:42.236Z",
+    "end": "2026-11-13T23:42:43.325Z"
   },
   "trials": [
     {
@@ -110,7 +110,7 @@
           },
           "payload_digest": "26d3584bd238a562937d139b4c63ec1a6fdfb4bfd4bbe47fb4de54043b3e40a3",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.376Z"
+          "created_at": "2026-11-13T23:42:42.262Z"
         },
         {
           "id": "h2",
@@ -176,7 +176,7 @@
           },
           "payload_digest": "66275d196576d2d0b7d0aa32f1d4ab144ea7b4b34e34f63e2be38f0cf78537bc",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.376Z"
+          "created_at": "2026-11-13T23:42:42.262Z"
         },
         {
           "id": "h3",
@@ -225,14 +225,14 @@
           },
           "payload_digest": "b424d30829ae094df09193a65a44573a6b1b41d2f75d7cc69bf726cabe97142c",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.376Z"
+          "created_at": "2026-11-13T23:42:42.262Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 2.9130859375,
+      "elapsed_ms": 3.93896484375,
       "persistence": "postgres"
     },
     {
@@ -345,7 +345,7 @@
           },
           "payload_digest": "9744d439d1a5d3026479684ffc3847bd761b7d31218d6c1d219492868511c8a3",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.386Z"
+          "created_at": "2026-11-13T23:42:42.277Z"
         },
         {
           "id": "h2",
@@ -411,7 +411,7 @@
           },
           "payload_digest": "710ea0d49786503ee16e026d15e14e763e1672a64442250c969a29a79e3c80bc",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.386Z"
+          "created_at": "2026-11-13T23:42:42.277Z"
         },
         {
           "id": "h3",
@@ -438,7 +438,7 @@
           },
           "payload_digest": "d176da217837520c96644b345258a6e089fd929a8749146a15e3f0f0423777ca",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.386Z"
+          "created_at": "2026-11-13T23:42:42.277Z"
         },
         {
           "id": "h4",
@@ -487,14 +487,14 @@
           },
           "payload_digest": "92d6220160cfd34630c9ef9c8d3e5ea3eecaf487dfc0ee73c9efda7844d61400",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.386Z"
+          "created_at": "2026-11-13T23:42:42.277Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 1.89794921875,
+      "elapsed_ms": 2.09521484375,
       "persistence": "postgres"
     },
     {
@@ -600,7 +600,7 @@
           },
           "payload_digest": "d362ba5a03ad7baf1670a05e8268a52eba1ff22596bf24b9cd8bcd5602e85499",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.397Z"
+          "created_at": "2026-11-13T23:42:42.306Z"
         },
         {
           "id": "h2",
@@ -666,7 +666,7 @@
           },
           "payload_digest": "885ccd690de47281c97d4d55e84c436084d2fa829c312b72ae0cf6a377e8d699",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.397Z"
+          "created_at": "2026-11-13T23:42:42.306Z"
         },
         {
           "id": "h3",
@@ -715,14 +715,14 @@
           },
           "payload_digest": "9a124f0a446c904bb53ab737ea0639dfc440c210f3694451c564996ecff9911f",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.397Z"
+          "created_at": "2026-11-13T23:42:42.306Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.91796875,
+      "elapsed_ms": 13.303955078125,
       "persistence": "postgres"
     },
     {
@@ -823,7 +823,7 @@
           },
           "payload_digest": "3f72c4f48992a75c4ab6c83897c435864e6b5808f21db1bcbfdbf7f59d44da1b",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.405Z"
+          "created_at": "2026-11-13T23:42:42.314Z"
         },
         {
           "id": "h2",
@@ -889,7 +889,7 @@
           },
           "payload_digest": "f308d3bdf6c8cdb4749df1e496abac832db51615d47568512e74819ab9ecde9d",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.405Z"
+          "created_at": "2026-11-13T23:42:42.314Z"
         },
         {
           "id": "h3",
@@ -933,14 +933,14 @@
           },
           "payload_digest": "a77d11ca94905ce0242dd5ad125fa7b7b368ce2efbe13a00e70c006256e1f0e0",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.405Z"
+          "created_at": "2026-11-13T23:42:42.314Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.72216796875,
+      "elapsed_ms": 1.626953125,
       "persistence": "postgres"
     },
     {
@@ -1041,7 +1041,7 @@
           },
           "payload_digest": "9c5347097b33a65ab3fca133963fb5ee9643489437d7b7a4267190dcf6156493",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.414Z"
+          "created_at": "2026-11-13T23:42:42.338Z"
         },
         {
           "id": "h2",
@@ -1107,7 +1107,7 @@
           },
           "payload_digest": "b2fa476133ed39811aaa7e680294ae9a988f7f86803e04ac123346f5e5e1686c",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.414Z"
+          "created_at": "2026-11-13T23:42:42.338Z"
         },
         {
           "id": "h3",
@@ -1151,14 +1151,14 @@
           },
           "payload_digest": "5686aa132a7c3e871a5fa1a73342fd9aa2d88f9bb5b43ac895209080d6f2f08f",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.414Z"
+          "created_at": "2026-11-13T23:42:42.338Z"
         }
       ],
       "split": "held_out",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.615966796875,
+      "elapsed_ms": 13.048828125,
       "persistence": "postgres"
     },
     {
@@ -1268,7 +1268,7 @@
           },
           "payload_digest": "9cbd9a647211c76853267293a82999b195ee1cfb35b4c6cf56d63fb689c2e4a2",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.422Z"
+          "created_at": "2026-11-13T23:42:42.355Z"
         },
         {
           "id": "h2",
@@ -1334,7 +1334,7 @@
           },
           "payload_digest": "19037783ff1575962b39d0a758e321ab62e5bc7bbcb9b0adf7a88c10fb24e047",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.422Z"
+          "created_at": "2026-11-13T23:42:42.355Z"
         },
         {
           "id": "h3",
@@ -1387,14 +1387,14 @@
           },
           "payload_digest": "c3ccae8b8e0a26edcf93bcf238dc4eddc69514bd0fcf7b8da797d6a181a8d973",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.422Z"
+          "created_at": "2026-11-13T23:42:42.355Z"
         }
       ],
       "split": "held_out",
       "model_selected": true,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.636962890625,
+      "elapsed_ms": 1.814208984375,
       "persistence": "postgres"
     },
     {
@@ -1493,7 +1493,7 @@
           },
           "payload_digest": "43e57d930d7312c153521cc718bed828d0f187e219e80dde71798008c497e333",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.430Z"
+          "created_at": "2026-11-13T23:42:42.383Z"
         },
         {
           "id": "h2",
@@ -1546,7 +1546,7 @@
           },
           "payload_digest": "b8d630013a6ff558257231ed2e797fce847b4a8c87183b1550e057ee4d544f06",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.430Z"
+          "created_at": "2026-11-13T23:42:42.383Z"
         },
         {
           "id": "h3",
@@ -1595,14 +1595,14 @@
           },
           "payload_digest": "42bcb47d46cb9e08dd62c2fa1d35e6cca7b44c546128816b22bd66752e270a99",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.430Z"
+          "created_at": "2026-11-13T23:42:42.383Z"
         }
       ],
       "split": "held_out",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.5087890625,
+      "elapsed_ms": 12.135986328125,
       "persistence": "postgres"
     },
     {
@@ -1724,7 +1724,7 @@
           },
           "payload_digest": "0b1a9828230e7f83cfaab886a1843c5122b59ac2273731a928fdc38e05124f30",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.437Z"
+          "created_at": "2026-11-13T23:42:42.400Z"
         },
         {
           "id": "h2",
@@ -1790,7 +1790,7 @@
           },
           "payload_digest": "0a4ce7530da32b6f6526f3f0579b3c3f92278727d3d6c844f43d6032d2e1fac2",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.437Z"
+          "created_at": "2026-11-13T23:42:42.400Z"
         },
         {
           "id": "h3",
@@ -1817,7 +1817,7 @@
           },
           "payload_digest": "4fa9e05066bc0473935c548ac849c1fa41216a5dcc395dbf70590734ae723eba",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.437Z"
+          "created_at": "2026-11-13T23:42:42.400Z"
         },
         {
           "id": "h4",
@@ -1875,14 +1875,14 @@
           },
           "payload_digest": "49810f3f002852425758ba3049dbc257c28fc36bc6bfcd06f5109911c2ec0169",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.437Z"
+          "created_at": "2026-11-13T23:42:42.400Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 1.432861328125,
+      "elapsed_ms": 2.195068359375,
       "persistence": "postgres"
     },
     {
@@ -1988,7 +1988,7 @@
           },
           "payload_digest": "1505d940ae1f77d96b0ca501f2c46719b6106bd99322a06a0462f6323241f99f",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.445Z"
+          "created_at": "2026-11-13T23:42:42.428Z"
         },
         {
           "id": "h2",
@@ -2054,7 +2054,7 @@
           },
           "payload_digest": "798665c8136f588874eb01d944a2e056003e28c7a48a3935ba3a13f5b8acaef3",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.445Z"
+          "created_at": "2026-11-13T23:42:42.428Z"
         },
         {
           "id": "h3",
@@ -2103,14 +2103,14 @@
           },
           "payload_digest": "9e1b4fc927117bf9ef59e02b23d77947bea2d54858554edd68d5bf0c1ba6ed82",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.445Z"
+          "created_at": "2026-11-13T23:42:42.428Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.044921875,
+      "elapsed_ms": 12.2021484375,
       "persistence": "postgres"
     },
     {
@@ -2216,7 +2216,7 @@
           },
           "payload_digest": "60e5e087ef4b68f57572023c8884b3fe997d8a715ceee2206555b59b9649eb31",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.460Z"
+          "created_at": "2026-11-13T23:42:42.445Z"
         },
         {
           "id": "h2",
@@ -2282,7 +2282,7 @@
           },
           "payload_digest": "ea79d0f611bab2a47a2dccf1c1b09d70d4a905ac536dc79fc4b1f96605b36076",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.460Z"
+          "created_at": "2026-11-13T23:42:42.445Z"
         },
         {
           "id": "h3",
@@ -2331,14 +2331,14 @@
           },
           "payload_digest": "7a7c9f5675a1cb6f1e8c74c7139cf751b33c1a697c5b09bbb6f8c14fe162af73",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.460Z"
+          "created_at": "2026-11-13T23:42:42.445Z"
         }
       ],
       "split": "held_out",
       "model_selected": true,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.051025390625,
+      "elapsed_ms": 10.22900390625,
       "persistence": "postgres"
     },
     {
@@ -2448,7 +2448,7 @@
           },
           "payload_digest": "59667e9aa6b222ad1ff5beb69f73ac335c7aff0ffbfb29b9f8f9bf93d6dcc424",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.476Z"
+          "created_at": "2026-11-13T23:42:42.478Z"
         },
         {
           "id": "h2",
@@ -2514,7 +2514,7 @@
           },
           "payload_digest": "b49d2dc4e4d652790fb77fd16654b201b84e96e5cd4ff553f9e160b55cc26f0d",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.476Z"
+          "created_at": "2026-11-13T23:42:42.478Z"
         },
         {
           "id": "h3",
@@ -2567,14 +2567,14 @@
           },
           "payload_digest": "c488d75b4edc3e7282292cab069639d499e8e0a331098006bbd4ec84e8f266bb",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.476Z"
+          "created_at": "2026-11-13T23:42:42.478Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.34912109375,
+      "elapsed_ms": 13.48583984375,
       "persistence": "postgres"
     },
     {
@@ -2673,7 +2673,7 @@
           },
           "payload_digest": "475a84277018082f6feddad442391967afb1b6a1b5ce3809e2e91ec73876472c",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.494Z"
+          "created_at": "2026-11-13T23:42:42.496Z"
         },
         {
           "id": "h2",
@@ -2726,7 +2726,7 @@
           },
           "payload_digest": "acf1d7d965db985262ce6d5a111374c59431b40537a6d58981ef8d522975fbcb",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.494Z"
+          "created_at": "2026-11-13T23:42:42.496Z"
         },
         {
           "id": "h3",
@@ -2775,14 +2775,14 @@
           },
           "payload_digest": "c8c8b3c34f545e650719ab900a749fe0e9ff4fe788408e601b4cfc2bbd739411",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.494Z"
+          "created_at": "2026-11-13T23:42:42.496Z"
         }
       ],
       "split": "held_out",
       "model_selected": true,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 2.579833984375,
+      "elapsed_ms": 1.866943359375,
       "persistence": "postgres"
     },
     {
@@ -2888,7 +2888,7 @@
           },
           "payload_digest": "5d4b3d7b87e050d23691522d23b47a2a110d9e5167e10fe5d737d0cccfda9d64",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.508Z"
+          "created_at": "2026-11-13T23:42:42.525Z"
         },
         {
           "id": "h2",
@@ -2954,7 +2954,7 @@
           },
           "payload_digest": "f83e5d57ad1d352803bb7f595baed0fafa81e0e3ecc93f9ac285526527087883",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.508Z"
+          "created_at": "2026-11-13T23:42:42.525Z"
         },
         {
           "id": "h3",
@@ -3003,14 +3003,14 @@
           },
           "payload_digest": "c41d1691e7228099f3a1d9462cb7340bae02467f81d9d361fb945e43c61f4d1c",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.508Z"
+          "created_at": "2026-11-13T23:42:42.525Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.10498046875,
+      "elapsed_ms": 13.494140625,
       "persistence": "postgres"
     },
     {
@@ -3116,7 +3116,7 @@
           },
           "payload_digest": "102d84198ac4432c41092da8dfdc7129372a42db66554bb8298bb060d2567394",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.525Z"
+          "created_at": "2026-11-13T23:42:42.556Z"
         },
         {
           "id": "h2",
@@ -3182,7 +3182,7 @@
           },
           "payload_digest": "0a98babcc8700a468ce067167389768097c4dfffda7a1fbf92805f507015d402",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.525Z"
+          "created_at": "2026-11-13T23:42:42.556Z"
         },
         {
           "id": "h3",
@@ -3231,14 +3231,14 @@
           },
           "payload_digest": "184a8a4c632d152f5c7b924c38ef2d20e9e781fbf48e2a02c7ba93100d3709f8",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.525Z"
+          "created_at": "2026-11-13T23:42:42.556Z"
         }
       ],
       "split": "held_out",
       "model_selected": true,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.365966796875,
+      "elapsed_ms": 12.785888671875,
       "persistence": "postgres"
     },
     {
@@ -3348,7 +3348,7 @@
           },
           "payload_digest": "96dd4741cadbe2bbc4aa87bea559a0ebf2c086b77ef375ca9c073f94baf09697",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.540Z"
+          "created_at": "2026-11-13T23:42:42.586Z"
         },
         {
           "id": "h2",
@@ -3414,7 +3414,7 @@
           },
           "payload_digest": "cfcda8d727af930cf29a0310721b7f2f7bf8106725220881f6a2ff2dfe81e454",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.540Z"
+          "created_at": "2026-11-13T23:42:42.586Z"
         },
         {
           "id": "h3",
@@ -3467,14 +3467,14 @@
           },
           "payload_digest": "40e6cd58dbc5eeb4929a6c8172d8d4f817e39f31a3f11c16811256afb54142d9",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.540Z"
+          "created_at": "2026-11-13T23:42:42.586Z"
         }
       ],
       "split": "held_out",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.308837890625,
+      "elapsed_ms": 14.98388671875,
       "persistence": "postgres"
     },
     {
@@ -3573,7 +3573,7 @@
           },
           "payload_digest": "1454760965e6045af2845138ef983dda78efdd041d64c9dacf84babf4173b829",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.556Z"
+          "created_at": "2026-11-13T23:42:42.603Z"
         },
         {
           "id": "h2",
@@ -3626,7 +3626,7 @@
           },
           "payload_digest": "79dfaece9963023228b2f62276d51258c7db70b851929d3af14b0b5d1b9956ed",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.556Z"
+          "created_at": "2026-11-13T23:42:42.603Z"
         },
         {
           "id": "h3",
@@ -3675,14 +3675,14 @@
           },
           "payload_digest": "feb2c289191f2d3c3661a3f21fee7ab5e053cec37a18bb45615f8389fdd4ed01",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.556Z"
+          "created_at": "2026-11-13T23:42:42.603Z"
         }
       ],
       "split": "held_out",
       "model_selected": true,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.410888671875,
+      "elapsed_ms": 10.197021484375,
       "persistence": "postgres"
     },
     {
@@ -3800,7 +3800,7 @@
           },
           "payload_digest": "b63244b6297a6fcc3774266c97af4b2dbe734f3335d39a9f396783ed2bf12859",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.572Z"
+          "created_at": "2026-11-13T23:42:42.622Z"
         },
         {
           "id": "h2",
@@ -3866,7 +3866,7 @@
           },
           "payload_digest": "c66e0061a63974ec7289776bbe47609b19bf007b9a911fa636f12bc9310057f0",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.572Z"
+          "created_at": "2026-11-13T23:42:42.622Z"
         },
         {
           "id": "h3",
@@ -3893,7 +3893,7 @@
           },
           "payload_digest": "f66506df4fa382933a558274fdbb3f0a9277a8be363ddde66b882431ab9f9b12",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.572Z"
+          "created_at": "2026-11-13T23:42:42.622Z"
         },
         {
           "id": "h4",
@@ -3947,14 +3947,14 @@
           },
           "payload_digest": "0ac48cff7f2cf0615a1ef8becf21188d5a447c705cf4522ac6f33fff435057ac",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.572Z"
+          "created_at": "2026-11-13T23:42:42.622Z"
         }
       ],
       "split": "held_out",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 2.0390625,
+      "elapsed_ms": 2.462890625,
       "persistence": "postgres"
     },
     {
@@ -4067,7 +4067,7 @@
           },
           "payload_digest": "e215b6c09b6dac30b2335c4f7b52e3794053f5ef9ddb726c8f70deee43dc9d90",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.591Z"
+          "created_at": "2026-11-13T23:42:42.636Z"
         },
         {
           "id": "h2",
@@ -4133,7 +4133,7 @@
           },
           "payload_digest": "beb2c4c44cc9b263b080f12fa3e30e1aa64255a82e0dc3b564c0daad8f3ac5a3",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.591Z"
+          "created_at": "2026-11-13T23:42:42.636Z"
         },
         {
           "id": "h3",
@@ -4160,7 +4160,7 @@
           },
           "payload_digest": "84045bfde4fafc05892b5657f83e613a5275e53a0ce995a2e56837695ed8a4f4",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.591Z"
+          "created_at": "2026-11-13T23:42:42.636Z"
         },
         {
           "id": "h4",
@@ -4209,14 +4209,14 @@
           },
           "payload_digest": "77ba0264dbea41622d9ecb47704652fb7dea429688451b8490e12eef42efd1a8",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.591Z"
+          "created_at": "2026-11-13T23:42:42.636Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 2.744140625,
+      "elapsed_ms": 1.641845703125,
       "persistence": "postgres"
     },
     {
@@ -4334,7 +4334,7 @@
           },
           "payload_digest": "25429454b927f53b5ff9a09ea8e857a94705d2f4c75208bfa090000ecf42e188",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.604Z"
+          "created_at": "2026-11-13T23:42:42.654Z"
         },
         {
           "id": "h2",
@@ -4400,7 +4400,7 @@
           },
           "payload_digest": "b33d27d2d72cd81fd6442caae3d10f8affd963e24487a267a56383d627f5f355",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.604Z"
+          "created_at": "2026-11-13T23:42:42.654Z"
         },
         {
           "id": "h3",
@@ -4427,7 +4427,7 @@
           },
           "payload_digest": "35079394fd6409adb5cd4bab317cb5d642278969be4da3cae315dec3feea1307",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.604Z"
+          "created_at": "2026-11-13T23:42:42.654Z"
         },
         {
           "id": "h4",
@@ -4481,14 +4481,14 @@
           },
           "payload_digest": "75ea3d036af35c51d85b2cbc140bd1a3a1fbe4503f85be82383965a26fbadaf6",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.604Z"
+          "created_at": "2026-11-13T23:42:42.654Z"
         }
       ],
       "split": "held_out",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 1.281005859375,
+      "elapsed_ms": 1.24609375,
       "persistence": "postgres"
     },
     {
@@ -4594,7 +4594,7 @@
           },
           "payload_digest": "37ae19ae6802166fc5c450b1ccd6e5ee067fbc1c2f0adf18c878981ede9e6da1",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.612Z"
+          "created_at": "2026-11-13T23:42:42.682Z"
         },
         {
           "id": "h2",
@@ -4660,7 +4660,7 @@
           },
           "payload_digest": "9d328a0bc367edf9cec88c0290bc63e71b2555253882a20ead89c4d732ba1f99",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.612Z"
+          "created_at": "2026-11-13T23:42:42.682Z"
         },
         {
           "id": "h3",
@@ -4709,14 +4709,14 @@
           },
           "payload_digest": "86621d8ddc1df5e2c19ade75c0ead95626d77b17296fdf8ce8a252b8f39ac7a1",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.612Z"
+          "created_at": "2026-11-13T23:42:42.682Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.2890625,
+      "elapsed_ms": 12.14208984375,
       "persistence": "postgres"
     },
     {
@@ -4822,7 +4822,7 @@
           },
           "payload_digest": "11aaa441807caeb3a7bfd8f5eb4e0c0e28b02aaa2f25cb8cc2edb54f90b8eb57",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.619Z"
+          "created_at": "2026-11-13T23:42:42.714Z"
         },
         {
           "id": "h2",
@@ -4888,7 +4888,7 @@
           },
           "payload_digest": "bb66d606d0c7e246596fd0f33c118c5303d3567e3c3ab51c09ec9f68bd6cc831",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.619Z"
+          "created_at": "2026-11-13T23:42:42.714Z"
         },
         {
           "id": "h3",
@@ -4937,14 +4937,14 @@
           },
           "payload_digest": "00734f9923d393088720693c65d3c7148fe8b42d7dcc8d5d6471d368f9800606",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.619Z"
+          "created_at": "2026-11-13T23:42:42.714Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.07080078125,
+      "elapsed_ms": 1.98486328125,
       "persistence": "postgres"
     },
     {
@@ -5050,7 +5050,7 @@
           },
           "payload_digest": "7a84e119c69737a7c37deeabe87aa8158f549da00989e76c8b674a6c9a0e9d29",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.624Z"
+          "created_at": "2026-11-13T23:42:42.743Z"
         },
         {
           "id": "h2",
@@ -5116,7 +5116,7 @@
           },
           "payload_digest": "1acbdab8ba23f0814b0a5bffbee7af4d0fa47c1a928f39b7b26093b3c68a30bc",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.624Z"
+          "created_at": "2026-11-13T23:42:42.743Z"
         },
         {
           "id": "h3",
@@ -5165,14 +5165,14 @@
           },
           "payload_digest": "e9d3ded0f297a8435f12c8b29938ee567f7479dde255ab12843b962ab2d45195",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.624Z"
+          "created_at": "2026-11-13T23:42:42.743Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.18408203125,
+      "elapsed_ms": 13.281982421875,
       "persistence": "postgres"
     },
     {
@@ -5271,7 +5271,7 @@
           },
           "payload_digest": "ffdcfada68ee25a77fed217e5c6ab445a5e68f662377c0f1a6eb401ce13e23cf",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.629Z"
+          "created_at": "2026-11-13T23:42:42.760Z"
         },
         {
           "id": "h2",
@@ -5324,7 +5324,7 @@
           },
           "payload_digest": "d3b230b2dc46ec18406fa782c3767a5001be40a9a8f43aa0c1a1fe2e1de8507c",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.629Z"
+          "created_at": "2026-11-13T23:42:42.760Z"
         },
         {
           "id": "h3",
@@ -5373,14 +5373,14 @@
           },
           "payload_digest": "5ff9f980855977aa9882cd1739af95201b82c75e84dcfe349b298a3efcf429e7",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.629Z"
+          "created_at": "2026-11-13T23:42:42.760Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.14599609375,
+      "elapsed_ms": 10.617919921875,
       "persistence": "postgres"
     },
     {
@@ -5498,7 +5498,7 @@
           },
           "payload_digest": "7dec310084a8329893e8902fe324b0f2496f126f319e6754f4e79791917ab87c",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.635Z"
+          "created_at": "2026-11-13T23:42:42.778Z"
         },
         {
           "id": "h2",
@@ -5564,7 +5564,7 @@
           },
           "payload_digest": "d8f683794f533f1e5248f88c8b79732c388b49d38b4bddb81ceffc614c38689c",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.635Z"
+          "created_at": "2026-11-13T23:42:42.778Z"
         },
         {
           "id": "h3",
@@ -5591,7 +5591,7 @@
           },
           "payload_digest": "72c2fbd4b532fc108d803a16f7593f9852aa991551116812c6d335921613bf8d",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.635Z"
+          "created_at": "2026-11-13T23:42:42.778Z"
         },
         {
           "id": "h4",
@@ -5645,14 +5645,14 @@
           },
           "payload_digest": "00c50e09b7d7352ab5d5bdea25ea7878a297ea970ecb27290c3aacf0a76ab008",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.635Z"
+          "created_at": "2026-11-13T23:42:42.778Z"
         }
       ],
       "split": "held_out",
       "model_selected": true,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 1.298095703125,
+      "elapsed_ms": 1.77294921875,
       "persistence": "postgres"
     },
     {
@@ -5758,7 +5758,7 @@
           },
           "payload_digest": "645a0e4bb1c202705c71423b459a11cf1dacaa1f957102ba9d28d7aa3a53eff4",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.642Z"
+          "created_at": "2026-11-13T23:42:42.792Z"
         },
         {
           "id": "h2",
@@ -5824,7 +5824,7 @@
           },
           "payload_digest": "a37f48a010fb07286b0ebdd1c4944d75d6834057b5a3169a0dea7a8a1eb2b679",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.642Z"
+          "created_at": "2026-11-13T23:42:42.792Z"
         },
         {
           "id": "h3",
@@ -5873,14 +5873,14 @@
           },
           "payload_digest": "c982ee7702747f4a3ab36492f17ecdac2a7ff0bc98823c01f390c391d5a83beb",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.642Z"
+          "created_at": "2026-11-13T23:42:42.792Z"
         }
       ],
       "split": "held_out",
       "model_selected": true,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.244873046875,
+      "elapsed_ms": 8.410888671875,
       "persistence": "postgres"
     },
     {
@@ -5993,7 +5993,7 @@
           },
           "payload_digest": "d738c2af0417110cf2e5c013710555dc002999bd41d820869698fd0c1ad97c30",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.647Z"
+          "created_at": "2026-11-13T23:42:42.810Z"
         },
         {
           "id": "h2",
@@ -6059,7 +6059,7 @@
           },
           "payload_digest": "6fe7ef5de71d2ea8d838392c357e3546120ef1172ce9ed766f0a8af326bd10c1",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.647Z"
+          "created_at": "2026-11-13T23:42:42.810Z"
         },
         {
           "id": "h3",
@@ -6086,7 +6086,7 @@
           },
           "payload_digest": "553300344b01f82bcc797327d4396b29410dc58c989db301eaf7db643c526407",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.647Z"
+          "created_at": "2026-11-13T23:42:42.810Z"
         },
         {
           "id": "h4",
@@ -6135,14 +6135,14 @@
           },
           "payload_digest": "f8cb99107713398dbe7abac02f5cbcd7e8a829a216764828bededb44918dba26",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.647Z"
+          "created_at": "2026-11-13T23:42:42.810Z"
         }
       ],
       "split": "held_out",
       "model_selected": true,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 0.97802734375,
+      "elapsed_ms": 1.48095703125,
       "persistence": "postgres"
     },
     {
@@ -6260,7 +6260,7 @@
           },
           "payload_digest": "386493bac9ab19ecd7e1ff2750d275dc91a3bf7b5a5c5de62da4cfa9d80ea159",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.653Z"
+          "created_at": "2026-11-13T23:42:42.839Z"
         },
         {
           "id": "h2",
@@ -6326,7 +6326,7 @@
           },
           "payload_digest": "f1a31c69196fe0d080ef73ed51ca3081786eb9ff394f139bdaad8cf9b1916030",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.653Z"
+          "created_at": "2026-11-13T23:42:42.839Z"
         },
         {
           "id": "h3",
@@ -6353,7 +6353,7 @@
           },
           "payload_digest": "31c575fdb1ef36ce61ed9de92cd993aa581933f7758ee6242630ba841388c4e6",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.653Z"
+          "created_at": "2026-11-13T23:42:42.839Z"
         },
         {
           "id": "h4",
@@ -6407,14 +6407,14 @@
           },
           "payload_digest": "d5b23af9f6ef058c9ccdcc6f8e4ef6fe7edf59855a648acf1317747888d42544",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.653Z"
+          "created_at": "2026-11-13T23:42:42.839Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 1.139892578125,
+      "elapsed_ms": 12.778076171875,
       "persistence": "postgres"
     },
     {
@@ -6536,7 +6536,7 @@
           },
           "payload_digest": "4e47155e861c6b79c609603cbf2d85333fc8addddc7529ef0ac35661359a3acf",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.658Z"
+          "created_at": "2026-11-13T23:42:42.856Z"
         },
         {
           "id": "h2",
@@ -6602,7 +6602,7 @@
           },
           "payload_digest": "909870e075d10312ce7af1ee0538923476d1600b0a48e5b6915e51b1d3427bd2",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.658Z"
+          "created_at": "2026-11-13T23:42:42.856Z"
         },
         {
           "id": "h3",
@@ -6629,7 +6629,7 @@
           },
           "payload_digest": "55a1b6e656de486038775c47fcdfb72379f94a5ef00edfdb8adeacaea1489d75",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.658Z"
+          "created_at": "2026-11-13T23:42:42.856Z"
         },
         {
           "id": "h4",
@@ -6687,14 +6687,14 @@
           },
           "payload_digest": "e49d370feacab1397a2e1b6ce6d4cf09b7499a5d3767179337e586318d26fed0",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.658Z"
+          "created_at": "2026-11-13T23:42:42.856Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 1.126953125,
+      "elapsed_ms": 1.93408203125,
       "persistence": "postgres"
     },
     {
@@ -6816,7 +6816,7 @@
           },
           "payload_digest": "f03487100e733d8c1f294fbe128947c8ac0cd3c542692dbf75be1cee599d58b4",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.663Z"
+          "created_at": "2026-11-13T23:42:42.887Z"
         },
         {
           "id": "h2",
@@ -6882,7 +6882,7 @@
           },
           "payload_digest": "13a580cd1421785621aefea3b3476f9fddf609961c399283fa05bf3f3b1196b9",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.663Z"
+          "created_at": "2026-11-13T23:42:42.887Z"
         },
         {
           "id": "h3",
@@ -6909,7 +6909,7 @@
           },
           "payload_digest": "59b107582752b15c525878c0eac7d6fc260ee196c985f1f3793cb03b96d71139",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.663Z"
+          "created_at": "2026-11-13T23:42:42.887Z"
         },
         {
           "id": "h4",
@@ -6967,14 +6967,14 @@
           },
           "payload_digest": "a45c994c8e9e2620fdb2270c0fc76b0bbe600143d2154b03a9dffb44c4cdf1e2",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.663Z"
+          "created_at": "2026-11-13T23:42:42.887Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 0.953125,
+      "elapsed_ms": 1.433837890625,
       "persistence": "postgres"
     },
     {
@@ -7084,7 +7084,7 @@
           },
           "payload_digest": "65c42549ef5481ec37a0bf4f1883d1f45770c4baee50056e18ab3464b4a78369",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.668Z"
+          "created_at": "2026-11-13T23:42:42.904Z"
         },
         {
           "id": "h2",
@@ -7150,7 +7150,7 @@
           },
           "payload_digest": "4a49ab9048634e38a2aa8cc8f02352c26857e1d95f3a931b7d75e0378c3270cc",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.668Z"
+          "created_at": "2026-11-13T23:42:42.904Z"
         },
         {
           "id": "h3",
@@ -7203,14 +7203,14 @@
           },
           "payload_digest": "2d6eb7109557f32352d21f8ef03f80a319e8109ff663211825c20da4f9dbf11f",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.668Z"
+          "created_at": "2026-11-13T23:42:42.904Z"
         }
       ],
       "split": "held_out",
       "model_selected": true,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 0.9111328125,
+      "elapsed_ms": 1.22509765625,
       "persistence": "postgres"
     },
     {
@@ -7323,7 +7323,7 @@
           },
           "payload_digest": "8a01fa1d2860c322c38da9cbadbc393044b9c0f7c3a2a4fde11331aa8923743a",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.672Z"
+          "created_at": "2026-11-13T23:42:42.934Z"
         },
         {
           "id": "h2",
@@ -7389,7 +7389,7 @@
           },
           "payload_digest": "b1539fafe166abea6e9ebbfcc963b319102cefe43c800d7f18c68aca8835bf49",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.672Z"
+          "created_at": "2026-11-13T23:42:42.934Z"
         },
         {
           "id": "h3",
@@ -7416,7 +7416,7 @@
           },
           "payload_digest": "90da3af0cdf268dfcdb15c37aa5a20b58e030eeb96e9f44a2cd07476a8079e6e",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.672Z"
+          "created_at": "2026-11-13T23:42:42.934Z"
         },
         {
           "id": "h4",
@@ -7465,14 +7465,14 @@
           },
           "payload_digest": "5b7fcb5fca3504a3d426ce606ddf22828ba94f3467d465e9e0021476dbcbb7ff",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.672Z"
+          "created_at": "2026-11-13T23:42:42.934Z"
         }
       ],
       "split": "held_out",
       "model_selected": true,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 0.906982421875,
+      "elapsed_ms": 13.775146484375,
       "persistence": "postgres"
     },
     {
@@ -7578,7 +7578,7 @@
           },
           "payload_digest": "7fd5091ec3ae2bafeab4f16e9b4a9e72075c8b952e704fbebec24ad063460bde",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.678Z"
+          "created_at": "2026-11-13T23:42:42.950Z"
         },
         {
           "id": "h2",
@@ -7644,7 +7644,7 @@
           },
           "payload_digest": "57ba22217b2bc7fde33917879695ac5e5e6f520dfee2c55a397f4c2190708677",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.678Z"
+          "created_at": "2026-11-13T23:42:42.950Z"
         },
         {
           "id": "h3",
@@ -7693,14 +7693,14 @@
           },
           "payload_digest": "2a445866914a129d8fe3ab53b1ab4008ab4e869acf68968c781cd5029f80247b",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.678Z"
+          "created_at": "2026-11-13T23:42:42.950Z"
         }
       ],
       "split": "held_out",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.474853515625,
+      "elapsed_ms": 10.302001953125,
       "persistence": "postgres"
     },
     {
@@ -7806,7 +7806,7 @@
           },
           "payload_digest": "ffc95eca221c389f65c01d293af3ba7ad1fdd20ef27ebd537b8f34d2d11820bb",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.684Z"
+          "created_at": "2026-11-13T23:42:42.967Z"
         },
         {
           "id": "h2",
@@ -7872,7 +7872,7 @@
           },
           "payload_digest": "c6a16d2c2ab682ef386563b18649fd246e0ef1c800cfad88ecd0eb753b8ec838",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.684Z"
+          "created_at": "2026-11-13T23:42:42.967Z"
         },
         {
           "id": "h3",
@@ -7921,14 +7921,14 @@
           },
           "payload_digest": "4fe502c0daa53eb4fcd40cf0b5340e9c3d82aaec134f1e912aac1f3fccdf8816",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.684Z"
+          "created_at": "2026-11-13T23:42:42.967Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.185791015625,
+      "elapsed_ms": 1.631103515625,
       "persistence": "postgres"
     },
     {
@@ -8034,7 +8034,7 @@
           },
           "payload_digest": "f01ea7be0cfed0af54a1a81ac7da677c135f1b62799e1ecb7cf4cc7f77fea630",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.707Z"
+          "created_at": "2026-11-13T23:42:42.996Z"
         },
         {
           "id": "h2",
@@ -8100,7 +8100,7 @@
           },
           "payload_digest": "d3560cb326a2400c289d6b1d884fc48e35c0485d2ee4a34f355e1e737245721f",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.707Z"
+          "created_at": "2026-11-13T23:42:42.996Z"
         },
         {
           "id": "h3",
@@ -8149,14 +8149,14 @@
           },
           "payload_digest": "0d660ec3314f200bc37a06b9585c3137db59e157b9ec11afdc916550cf5f12a6",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.707Z"
+          "created_at": "2026-11-13T23:42:42.996Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.0771484375,
+      "elapsed_ms": 12.772216796875,
       "persistence": "postgres"
     },
     {
@@ -8255,7 +8255,7 @@
           },
           "payload_digest": "fbcbb3ade8602a3c6f3325afa3035a54ae3697dcca1005eefdbc9ba1ada7a365",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.712Z"
+          "created_at": "2026-11-13T23:42:43.011Z"
         },
         {
           "id": "h2",
@@ -8308,7 +8308,7 @@
           },
           "payload_digest": "b7de32d3a34831a2de02293b8ab38aa258c43dbb2334d3474d6331b700b3efe6",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.712Z"
+          "created_at": "2026-11-13T23:42:43.011Z"
         },
         {
           "id": "h3",
@@ -8357,14 +8357,14 @@
           },
           "payload_digest": "b3efdbc9b6659d1303d05b21b7645ad5be8f41d44e0f24c07c264ef7e04e90e1",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.712Z"
+          "created_at": "2026-11-13T23:42:43.011Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.117919921875,
+      "elapsed_ms": 9.364013671875,
       "persistence": "postgres"
     },
     {
@@ -8463,7 +8463,7 @@
           },
           "payload_digest": "7b59cc4094debd29c52f3e16aec801f3d329a3a01b6d4fe5619f1a217d2a1954",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.717Z"
+          "created_at": "2026-11-13T23:42:43.028Z"
         },
         {
           "id": "h2",
@@ -8516,7 +8516,7 @@
           },
           "payload_digest": "6538e1d8426a4092e510569ab08ae10de594f25fcf123a74d7a909dfcd8dd8c1",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.717Z"
+          "created_at": "2026-11-13T23:42:43.028Z"
         },
         {
           "id": "h3",
@@ -8565,14 +8565,14 @@
           },
           "payload_digest": "888b93598812e7b3a2a8863538e9a6e045692ced7309b4f78c30e8a7cf1f7328",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.717Z"
+          "created_at": "2026-11-13T23:42:43.028Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.178955078125,
+      "elapsed_ms": 1.791015625,
       "persistence": "postgres"
     },
     {
@@ -8685,7 +8685,7 @@
           },
           "payload_digest": "9738e202421d9fc60637a6f1557ce22b927b09bc86dc9b5d75aa948b7f9ee631",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.722Z"
+          "created_at": "2026-11-13T23:42:43.056Z"
         },
         {
           "id": "h2",
@@ -8751,7 +8751,7 @@
           },
           "payload_digest": "caa8308b1a046dcaefd91b657a58e586f8f91a722dd0462ac20f08474d3fb40a",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.722Z"
+          "created_at": "2026-11-13T23:42:43.056Z"
         },
         {
           "id": "h3",
@@ -8778,7 +8778,7 @@
           },
           "payload_digest": "66174b5dcf32edbecf80e8f572e54c19b9f9eb3821c78df99a0dad6737f7fabc",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.722Z"
+          "created_at": "2026-11-13T23:42:43.056Z"
         },
         {
           "id": "h4",
@@ -8827,14 +8827,14 @@
           },
           "payload_digest": "ec7ab019ced06a688871140c001ee908f675fe11d772b4b3ada8d1929b97ca70",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.722Z"
+          "created_at": "2026-11-13T23:42:43.056Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 1.091064453125,
+      "elapsed_ms": 12.967041015625,
       "persistence": "postgres"
     },
     {
@@ -8940,7 +8940,7 @@
           },
           "payload_digest": "8c16c03ec310508c811c4802adf258227f081e52915d55c049eae156e02c8ae6",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.728Z"
+          "created_at": "2026-11-13T23:42:43.074Z"
         },
         {
           "id": "h2",
@@ -9006,7 +9006,7 @@
           },
           "payload_digest": "3445750a9555b04d715463baacbcbee3f22450f9c6c7f5b97d0b1e14efc35917",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.728Z"
+          "created_at": "2026-11-13T23:42:43.074Z"
         },
         {
           "id": "h3",
@@ -9055,14 +9055,14 @@
           },
           "payload_digest": "9c44bae895c5e6d0972cf9c74056db5d3b66a94761b11969119bb5d115489e70",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.728Z"
+          "created_at": "2026-11-13T23:42:43.074Z"
         }
       ],
       "split": "held_out",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.201904296875,
+      "elapsed_ms": 12.10400390625,
       "persistence": "postgres"
     },
     {
@@ -9168,7 +9168,7 @@
           },
           "payload_digest": "74c61bf34d37e94313a47ccf26555bb1c880c6f3d53f0b0a165fe6ed2904d2ed",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.733Z"
+          "created_at": "2026-11-13T23:42:43.092Z"
         },
         {
           "id": "h2",
@@ -9234,7 +9234,7 @@
           },
           "payload_digest": "a96ceffc62cffcb6f7fdf53af56d69318ef1ac0d214f0a2cd72cfbde471d64cb",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.733Z"
+          "created_at": "2026-11-13T23:42:43.092Z"
         },
         {
           "id": "h3",
@@ -9283,14 +9283,14 @@
           },
           "payload_digest": "d7b14c464bba278314988c5a0ad16468b73af9ec1b35b50fa218f935435bf3ef",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.733Z"
+          "created_at": "2026-11-13T23:42:43.092Z"
         }
       ],
       "split": "held_out",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 0.946044921875,
+      "elapsed_ms": 1.41796875,
       "persistence": "postgres"
     },
     {
@@ -9391,7 +9391,7 @@
           },
           "payload_digest": "a7e8b77957d434b90691b4e686da9ffc91a80a27cf5e6c2c44652160946a662d",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.738Z"
+          "created_at": "2026-11-13T23:42:43.108Z"
         },
         {
           "id": "h2",
@@ -9457,7 +9457,7 @@
           },
           "payload_digest": "efdcd646c60437ebe248f5951bb4ca05ae9c022cbbb3da2204a696e841218fe9",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.738Z"
+          "created_at": "2026-11-13T23:42:43.108Z"
         },
         {
           "id": "h3",
@@ -9501,14 +9501,14 @@
           },
           "payload_digest": "1c4781467e75529da46c08c1a56cf2c4addbea63d3b6f8f5868016f12e15cff5",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.738Z"
+          "created_at": "2026-11-13T23:42:43.108Z"
         }
       ],
       "split": "held_out",
       "model_selected": true,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.18798828125,
+      "elapsed_ms": 1.60595703125,
       "persistence": "postgres"
     },
     {
@@ -9609,7 +9609,7 @@
           },
           "payload_digest": "72b8183dda256b95d5a1f33291d5f4e3f9dfb2b273a6b61ccf30795e6b8111f9",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.743Z"
+          "created_at": "2026-11-13T23:42:43.138Z"
         },
         {
           "id": "h2",
@@ -9675,7 +9675,7 @@
           },
           "payload_digest": "bc07aca048b3cd32275b7c19edb96f061fb9116e913095dcc3be54111d99136c",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.743Z"
+          "created_at": "2026-11-13T23:42:43.138Z"
         },
         {
           "id": "h3",
@@ -9719,14 +9719,14 @@
           },
           "payload_digest": "af002217605d0bcecd24673757d92fd8303a83ed230e0c552cfc3f8cc26c20b2",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.743Z"
+          "created_at": "2026-11-13T23:42:43.138Z"
         }
       ],
       "split": "held_out",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.157958984375,
+      "elapsed_ms": 13.31787109375,
       "persistence": "postgres"
     },
     {
@@ -9839,7 +9839,7 @@
           },
           "payload_digest": "c63429db7be22c54c52cc49f17df1c873b4d9314eeac8442ac58e348d49bfc8e",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.749Z"
+          "created_at": "2026-11-13T23:42:43.154Z"
         },
         {
           "id": "h2",
@@ -9905,7 +9905,7 @@
           },
           "payload_digest": "c24fad679cdc55a59a25315cb71ba2da17449a2e738fe07a81756027014662c6",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.749Z"
+          "created_at": "2026-11-13T23:42:43.154Z"
         },
         {
           "id": "h3",
@@ -9932,7 +9932,7 @@
           },
           "payload_digest": "19b3902794dba1d26d8e43824b91f14c5be1323fb2c5c045bd02c465fdac144b",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.749Z"
+          "created_at": "2026-11-13T23:42:43.154Z"
         },
         {
           "id": "h4",
@@ -9981,14 +9981,14 @@
           },
           "payload_digest": "1f7b77686b86f1a40f7f1caa3a8d26db43a9b38ab19795b4245607f3cfde1c75",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.749Z"
+          "created_at": "2026-11-13T23:42:43.154Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 1.154052734375,
+      "elapsed_ms": 1.389892578125,
       "persistence": "postgres"
     },
     {
@@ -10094,7 +10094,7 @@
           },
           "payload_digest": "bc099527d0c62bc94d5081f69ddf9b6c63022c20e228a8f960dad800cd09ebdb",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.755Z"
+          "created_at": "2026-11-13T23:42:43.185Z"
         },
         {
           "id": "h2",
@@ -10160,7 +10160,7 @@
           },
           "payload_digest": "6c08ec557b61fef141d3d00b23bccac3a7458ba49ef07e7d3c764bf0dc33aece",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.755Z"
+          "created_at": "2026-11-13T23:42:43.185Z"
         },
         {
           "id": "h3",
@@ -10209,14 +10209,14 @@
           },
           "payload_digest": "4db6185180e0b79f2d1d673214fdce7b73e1294944457b5e2d24a81e1c19611a",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.755Z"
+          "created_at": "2026-11-13T23:42:43.185Z"
         }
       ],
       "split": "held_out",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.218994140625,
+      "elapsed_ms": 1.84912109375,
       "persistence": "postgres"
     },
     {
@@ -10338,7 +10338,7 @@
           },
           "payload_digest": "940924fb87d38853a6bea28efa21e7ccc4a0bd4de95c38e2913be9bea14319bd",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.760Z"
+          "created_at": "2026-11-13T23:42:43.213Z"
         },
         {
           "id": "h2",
@@ -10404,7 +10404,7 @@
           },
           "payload_digest": "e1a0f120507c9c823df7d474205ffd11ee5b5f7f6009cb5bd9281b7a6250384e",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.760Z"
+          "created_at": "2026-11-13T23:42:43.213Z"
         },
         {
           "id": "h3",
@@ -10431,7 +10431,7 @@
           },
           "payload_digest": "250538c9954ea59fe7f0b7ee2b5ff50438092d6191fa0cee639d79ef8b359939",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.760Z"
+          "created_at": "2026-11-13T23:42:43.213Z"
         },
         {
           "id": "h4",
@@ -10489,14 +10489,14 @@
           },
           "payload_digest": "f526ac8078f0a44a75b4de3876c397690a4b9d4c0eb961f8ed952e1c9c6a48e4",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.760Z"
+          "created_at": "2026-11-13T23:42:43.213Z"
         }
       ],
       "split": "held_out",
       "model_selected": true,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 0.926025390625,
+      "elapsed_ms": 12.691162109375,
       "persistence": "postgres"
     },
     {
@@ -10609,7 +10609,7 @@
           },
           "payload_digest": "688c21b9003f45237ae52aa2b6346e9e6559fc771811a8d13dd25566c3553dd5",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.765Z"
+          "created_at": "2026-11-13T23:42:43.230Z"
         },
         {
           "id": "h2",
@@ -10675,7 +10675,7 @@
           },
           "payload_digest": "5db2663d176bea53d21d20cc9cbc2dbf697d92d9ba272ae6b2fe360a5c0e3ab0",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.765Z"
+          "created_at": "2026-11-13T23:42:43.230Z"
         },
         {
           "id": "h3",
@@ -10702,7 +10702,7 @@
           },
           "payload_digest": "5c6f43d4494f22147b592e01b7c629916c9151e19c798120eac4c51c70bb6789",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.765Z"
+          "created_at": "2026-11-13T23:42:43.230Z"
         },
         {
           "id": "h4",
@@ -10751,14 +10751,14 @@
           },
           "payload_digest": "e8368ea6ad255618da3dff5c19532b3181c4cb165543b57929fd54bd2882f62e",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.765Z"
+          "created_at": "2026-11-13T23:42:43.230Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 1.218994140625,
+      "elapsed_ms": 10.677001953125,
       "persistence": "postgres"
     },
     {
@@ -10857,7 +10857,7 @@
           },
           "payload_digest": "ec86046379fcc776d159d8169d780ccafdce2e4a621f89fb23bec4c4ebe766ff",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.771Z"
+          "created_at": "2026-11-13T23:42:43.247Z"
         },
         {
           "id": "h2",
@@ -10910,7 +10910,7 @@
           },
           "payload_digest": "bfe37264e89daa06e1f3b2fa27ea4ac394497e850d58a28ef2ba91d161f0e446",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.771Z"
+          "created_at": "2026-11-13T23:42:43.247Z"
         },
         {
           "id": "h3",
@@ -10959,14 +10959,14 @@
           },
           "payload_digest": "7eb5d45fa593f7ca516a8816de6a071b7506190110acfb046c8bc2f993dac7f1",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.771Z"
+          "created_at": "2026-11-13T23:42:43.247Z"
         }
       ],
       "split": "development",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.1611328125,
+      "elapsed_ms": 1.48193359375,
       "persistence": "postgres"
     },
     {
@@ -11079,7 +11079,7 @@
           },
           "payload_digest": "e3baf3d25aa362c9453ba704a23e6a5040b660fc8d9660133be37e9fc22a7feb",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.776Z"
+          "created_at": "2026-11-13T23:42:43.278Z"
         },
         {
           "id": "h2",
@@ -11145,7 +11145,7 @@
           },
           "payload_digest": "37e7b223e38be655078be5226230a517d5d78fe6a26f644cfc39c0298ae20be9",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.776Z"
+          "created_at": "2026-11-13T23:42:43.278Z"
         },
         {
           "id": "h3",
@@ -11172,7 +11172,7 @@
           },
           "payload_digest": "4518ce39e16f3a53fb9ce670553d3697b53bf9f9f0028ea79205ccff0a14a648",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.776Z"
+          "created_at": "2026-11-13T23:42:43.278Z"
         },
         {
           "id": "h4",
@@ -11221,14 +11221,14 @@
           },
           "payload_digest": "627a5b9f0e0a8f6574d4bd7392b64e377cdc6e271cfdeacfcb9baec54e5911b5",
           "sequence": 7,
-          "created_at": "2026-11-05T22:02:42.776Z"
+          "created_at": "2026-11-13T23:42:43.278Z"
         }
       ],
       "split": "held_out",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 4,
-      "elapsed_ms": 1.1669921875,
+      "elapsed_ms": 16.474853515625,
       "persistence": "postgres"
     },
     {
@@ -11327,7 +11327,7 @@
           },
           "payload_digest": "80e072ee9affb7dbbd9e7eeaee9a71049ed7ed025c7586b86737c7dd5a8b71a1",
           "sequence": 4,
-          "created_at": "2026-11-05T22:02:42.782Z"
+          "created_at": "2026-11-13T23:42:43.309Z"
         },
         {
           "id": "h2",
@@ -11380,7 +11380,7 @@
           },
           "payload_digest": "381c20c8f856dea18f84c0cebfa9b082c7c5dc894657312dcc446c73cfc68822",
           "sequence": 5,
-          "created_at": "2026-11-05T22:02:42.782Z"
+          "created_at": "2026-11-13T23:42:43.309Z"
         },
         {
           "id": "h3",
@@ -11429,14 +11429,14 @@
           },
           "payload_digest": "2a3830f70684f1fd000f069f57e198852cd0bd6fd9d411a9dde78c58c31cb657",
           "sequence": 6,
-          "created_at": "2026-11-05T22:02:42.782Z"
+          "created_at": "2026-11-13T23:42:43.309Z"
         }
       ],
       "split": "held_out",
       "model_selected": false,
       "model_requests": 0,
       "tools_executed": 3,
-      "elapsed_ms": 1.15087890625,
+      "elapsed_ms": 12.552001953125,
       "persistence": "postgres"
     }
   ]

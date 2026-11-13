@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "mode": "provisional_clean_rederive",
+  "source_commit": "0aced2f621850615c459e7984fd4653e391f9ee7",
+  "passed": true,
+  "actual_raw_digest": "a16511ad85557c0b910e3ec6f13c4adee574fa97f0f560957f0eb2282d85206d",
+  "actual_summary_digest": "fe8d2b3808d846fa7288bd576d6a06041f3a1444cb9ec6aad95df943e8390f2c",
+  "hash_seeds": [
+    "1",
+    "817"
+  ],
+  "fresh_baseline": 48,
+  "fresh_recovery": 12,
+  "report_claim_digest": "4afc43c751fcee2a8bcffd1fcfbf4efdf81dd58d6be78ef41e43831fdeb9678a",
+  "private_truth_verified": false,
+  "fixtures_regenerated": false,
+  "fixture_bytes_verified_against_freeze": true,
+  "live_api_verified": false,
+  "completed_release": false
+}
