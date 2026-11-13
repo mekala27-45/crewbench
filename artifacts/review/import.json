@@ -13,7 +13,7 @@
   "contracts_run": "42117978313",
   "contracts_source": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
   "contracts_results_commit": "a67e32fb03a40d3c598b1b64512257b213589a9f",
-  "revision": 3,
-  "purpose": "Independently verify selected frozen development, fresh baseline and recovery, browser and contracts. Report registered evaluation metadata without inspecting held-out outcomes.",
-  "verification_source": "89495e8c99b7f5fb928da61a95e2fc64a8df9286"
+  "revision": 5,
+  "purpose": "Reconcile the completed frozen evaluation and record independently verified inspection state; private truth and hosted release gates remain open.",
+  "verification_source": "ca0b9f3f12b482e91b12423b338a194296b86148"
 }
