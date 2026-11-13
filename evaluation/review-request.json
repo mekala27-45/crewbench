@@ -13,6 +13,6 @@
   "contracts_run": "42117978313",
   "contracts_source": "b35b8908b8f11ebdf8c5b933a40c3bbcafc24c45",
   "contracts_results_commit": "a67e32fb03a40d3c598b1b64512257b213589a9f",
-  "revision": 3,
-  "purpose": "Independently verify selected frozen development, fresh baseline and recovery, browser and contracts. Report registered evaluation metadata without inspecting held-out outcomes."
+  "revision": 4,
+  "purpose": "Verify the completed shared execution with the unchanged pre-inference analysis freeze and independent public-record grader; regenerate the review checklist without claiming private truth or a completed release."
 }

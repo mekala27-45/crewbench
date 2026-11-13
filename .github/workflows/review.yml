@@ -27,6 +27,15 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: node scripts/import-review.mjs
+      - name: Import and grade completed actual evidence when requested
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f evaluation/report-request.json ]; then
+            node scripts/import-report.ts
+            python3 evaluation/grade.py artifacts/actual/results.json artifacts/actual/grades.json --public-records
+            python3 evaluation/statistics.py artifacts/actual/results.json artifacts/actual/grades.json artifacts/actual/summary.json
+          fi
       - name: Audit all retained model requests and database readback
         run: node scripts/audit-development.ts
       - name: Rederive provisional baseline and strict recovery grades
