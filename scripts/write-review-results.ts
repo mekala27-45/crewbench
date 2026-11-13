@@ -8,6 +8,7 @@ const optional=async(p:string)=>{try{return await read(p);}catch(e:any){if(e.cod
 const actualAudit=await optional('artifacts/actual/independent-accounting.json'),actualRequest=await optional('evaluation/report-request.json');
 const actualReview=completedActualReview(report,actualAudit,execution,shared);
 if(actualReview.complete&&(!actualRequest||actualRequest.evaluation_source!==execution.source_commit||String(actualRequest.evaluation_run)!==String(execution.run_id)))throw Error('ACTUAL_REPORT_REQUEST_MISMATCH');
+if(actualReview.complete){execution.results_inspected=true;execution.independent_accounting_verified=true;execution.analysis_freeze_digest=shared.analysis_freeze_digest;await writeFile('artifacts/review/evaluation-status.json',JSON.stringify(execution,null,2)+'\n');}
 const runtimeLog=await text('artifacts/review/runtime.log'),gradingLog=await text('artifacts/review/grading.log');
 const nodeTests=Number(runtimeLog.match(/tests (\d+)/)?.[1]),pythonTests=Number(gradingLog.match(/Ran (\d+) tests/)?.[1]);
 if(!nodeTests||!pythonTests||!/fail 0/.test(runtimeLog)||!/^OK$/m.test(gradingLog)||browser.stats.unexpected!==0||browser.stats.skipped!==0||!api.passed||!audit.verified)throw Error('REVIEW_CHECK_FAILED');
